@@ -1,0 +1,83 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data":[
+    {
+      "type": "special",
+      "typeName": "专题",
+      "list": [
+        {
+          "src": "sizongzui.jpg",
+          "title": "四宗最",
+          "url": "http://qd.house.163.com/special/021014J8/qdsqszz.html"
+        },
+        {
+          "src": "yiqiqianxing.jpg",
+          "title": "易起前行",
+          "url": "http://qd.house.163.com/special/02100C7G/wangyiqingdao2014.html"
+        },
+        {
+
+          "src": "ditielaile.jpg",
+          "title": "地铁来了",
+          "url": "http://qd.house.163.com/special/02100C7G/qingdaoditie.html"
+        }
+      ]
+    },
+    {
+      "type": "soft",
+      "typeName": "应用软件",
+      "list": [
+        {
+          "src": "yiqiqianxing.jpg",
+          "title": "易起前行",
+          "url": "http://qd.house.163.com/special/02100C7G/wangyiqingdao2014.html"
+        },
+        {
+
+          "src": "ditielaile.jpg",
+          "title": "地铁来了",
+          "url": "http://qd.house.163.com/special/02100C7G/qingdaoditie.html"
+        }
+      ]
+    },
+    {
+      "type": "web",
+      "typeName": "网站",
+      "list": [
+        {
+          "src": "yiqiqianxing.jpg",
+          "title": "易起前行",
+          "url": "http://qd.house.163.com/special/02100C7G/wangyiqingdao2014.html"
+        }
+      ]
+    },
+    {
+      "type": "Mobil",
+      "typeName": "App应用",
+      "list": [
+        {
+          "src": "yiqiqianxing.jpg",
+          "title": "易起前行",
+          "url": "http://qd.house.163.com/special/02100C7G/wangyiqingdao2014.html"
+        },
+        {
+          "src": "sizongzui.jpg",
+          "title": "四宗最",
+          "url": "http://qd.house.163.com/special/021014J8/qdsqszz.html"
+        },
+        {
+          "src": "yiqiqianxing.jpg",
+          "title": "易起前行",
+          "url": "http://qd.house.163.com/special/02100C7G/wangyiqingdao2014.html"
+        },
+        {
+
+          "src": "ditielaile.jpg",
+          "title": "地铁来了",
+          "url": "http://qd.house.163.com/special/02100C7G/qingdaoditie.html"
+        }
+      ]
+    }
+  ]
+}

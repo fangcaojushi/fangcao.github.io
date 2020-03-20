@@ -1,7 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3105fa55-13a8-4eba-bc70-813bdb49ed4f" name="默认的" comment="" />
+    <list default="true" id="3105fa55-13a8-4eba-bc70-813bdb49ed4f" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_1_big.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo-adobe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo-apple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo-google.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo-netflix.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo-nike.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo-uber.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/person_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/person_1_sq.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/person_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/person_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/aos/aos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/aos/aos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/easing/easing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/easing/easing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/icofont/fonts/icofont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/icofont/fonts/icofont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/icofont/icofont.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/isotope/isotope.pkgd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/isotope/isotope.pkgd.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery-migrate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/line-awesome/css/line-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/line-awesome/css/line-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/line-awesome/fonts/la-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/line-awesome/fonts/la-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/line-awesome/fonts/la-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/line-awesome/fonts/la-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/line-awesome/fonts/la-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/line-awesome/fonts/la-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/line-awesome/fonts/la-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/line-awesome/fonts/la-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/line-awesome/fonts/la-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/line-awesome/fonts/la-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/line-awesome/fonts/la-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/line-awesome/fonts/la-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/line-awesome/fonts/la-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/line-awesome/fonts/la-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/line-awesome/fonts/la-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/owlcarousel/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/owlcarousel/assets/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/owlcarousel/assets/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/owlcarousel/assets/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/owlcarousel/assets/owl.theme.default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/owlcarousel/assets/owl.theme.default.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/owlcarousel/assets/owl.theme.green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/owlcarousel/assets/owl.theme.green.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/owlcarousel/assets/owl.video.play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/owlcarousel/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/owlcarousel/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work-single.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/works.html" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -10,6 +98,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="fangcaojushi.github.io" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
@@ -38,8 +129,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="fangcaojushi.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fangcaojushi.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -80,14 +181,18 @@
       <updated>1582773876794</updated>
       <workItem from="1582773877941" duration="2648000" />
       <workItem from="1582785828092" duration="6093000" />
-      <workItem from="1583573027341" duration="311000" />
+      <workItem from="1583573027341" duration="765000" />
+      <workItem from="1583633677773" duration="2622000" />
+      <workItem from="1583711102756" duration="1232000" />
+      <workItem from="1583736365499" duration="32000" />
+      <workItem from="1584612286095" duration="1038000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9052000" />
+    <option name="totallyTimeSpent" value="14430000" />
   </component>
-  <component name="TodoView" selected-index="1">
+  <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -99,9 +204,9 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49867022" visible="true" weight="0.12592202" />
+      <window_info id="Structure" order="1" sideWeight="0.5013298" side_tool="true" weight="0.12592202" />
+      <window_info id="Favorites" order="2" sideWeight="0.5013298" side_tool="true" weight="0.12592202" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -111,7 +216,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="找到" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.18851571" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.18526544" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -123,23 +228,23 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/yqqy.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/slider_background2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json/product.json">
+    <entry file="file://$PROJECT_DIR$/images/yqqy.jpg" />
+    <entry file="file://$PROJECT_DIR$/images/slider_background2.jpg" />
+    <entry file="file://$PROJECT_DIR$/json/product.json" />
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="125">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/services.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/works.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
         </state>
       </provider>
     </entry>
