@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员列表</title>
+<link href="css/Content.css" rel="stylesheet" type="text/css" />
+<link href="css/frame.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/common.js"></script>
+<script language="javascript" src="js/show.js"></script>
+
+
+</head>
+
+<body>
+<div class="box_wai">
+<div class="box_nei">
+	<div class="box_top">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="12" height="30"><img src="images/tab_03.gif" width="12" height="30" /></td>
+        <td>
+			<div class="position l">
+				<b>您当前的位置：</b>
+				<a href="#">[首页]</a>><a href="#">[积分管理]</a>><a href="#">[礼品列表]</a>
+			</div>
+			
+		<table  border="0" cellpadding="0" cellspacing="0" class="tools r">
+                  <tr>
+				    <!--<td ><input type="checkbox" name="checkbox62" value="checkbox" /></td>
+				  	<td >全选</td>-->
+                    <td ><img src="images/22.gif" width="14" height="14" /></td>
+                    <td ><a href="#" onclick="show('quanxian','show')">增加权限</a></td>
+					
+					
+                  </tr>
+                </table>
+		</td>
+        <td width="16"><img src="images/tab_07.gif" width="16" height="30" /></td>
+      </tr>
+    </table>
+	</div>
+	<div class="bai">
+	    <div id="quanxian" class="mt8" >
+		<div class="search p8">管理员权限类别名称：<input name="" type="text" /></div>
+		<table  cellpadding="0" cellspacing="0" class="quanxian"  >
+			<tr class="quanxian_th">
+				<td ><input name="all" type="checkbox" value="all" class="chk" onclick="doAllChecked(this,'Jurisdiction');" />
+					权限名称</td>
+				<td ><input name="Jurisdiction" type="checkbox" value="" class="chk" onclick="Jurisdiction_col(this,'c1');" />
+					查看权限</td>
+				<td><input name="Jurisdiction" type="checkbox" value="" class="chk"  onclick="Jurisdiction_col(this,'c2');"/>
+					新增权限</td>
+				<td ><input name="Jurisdiction" type="checkbox" value="" class="chk" onclick="Jurisdiction_col(this,'c3');"/>
+					修改权限</td>
+				<td ><input name="Jurisdiction" type="checkbox" value="" class="chk" onclick="Jurisdiction_col(this,'c4');"/>
+					删除权限</td>
+			</tr>
+			<tr>
+				<td width="30%" ><input name="Jurisdiction" type="checkbox" value="r1" class="chk" onclick="Jurisdiction_row(this,'r1');" />				
+				    会员管理</td>	
+				
+				<td ><input name="Jurisdiction" type="checkbox" value="r1-c1" /></td>
+				<td ><input name="Jurisdiction" type="checkbox" value="r1-c2" /></td>
+				<td ><input name="Jurisdiction" type="checkbox" value="r1-c3" /></td>
+				<td ><input name="Jurisdiction" type="checkbox" value="r1-c4" /></td>
+			</tr>
+			<tr>
+				<td width="30%" ><input name="Jurisdiction" type="checkbox" value="r2" class="chk" onclick="Jurisdiction_row(this,'r2');" />				
+				    积分管理</td>	
+				
+				<td ><input name="Jurisdiction" type="checkbox" value="r2-c1" /></td>
+				<td ><input name="Jurisdiction" type="checkbox" value="r2-c2" /></td>
+				<td ><input name="Jurisdiction" type="checkbox" value="r2-c3" /></td>
+				<td ><input name="Jurisdiction" type="checkbox" value="r2-c4" /></td>
+			</tr>
+			<tr>
+				<td width="30%" ><input name="Jurisdiction" type="checkbox" value="r3" class="chk" onclick="Jurisdiction_row(this,'r3');" />
+				    储值管理</td>	
+				
+				<td ><input name="Jurisdiction" type="checkbox" value="r3-c1" /></td>
+				<td ><input name="Jurisdiction" type="checkbox" value="r3-c2" /></td>
+				<td ><input name="Jurisdiction" type="checkbox" value="r3-c3" /></td>
+				<td ><input name="Jurisdiction" type="checkbox" value="r3-c4" /></td>
+			</tr>
+			<tr>
+				<td width="30%" ><input name="Jurisdiction" type="checkbox" value="r4" class="chk" onclick="Jurisdiction_row(this,'r4');" />
+				    统计分析</td>	
+				
+				<td ><input name="Jurisdiction" type="checkbox" value="r4-c1" /></td>
+				<td ><input name="Jurisdiction" type="checkbox" value="r4-c2" /></td>
+				<td ><input name="Jurisdiction" type="checkbox" value="r4-c3" /></td>
+				<td ><input name="Jurisdiction" type="checkbox" value="r4-c4" /></td>
+			</tr>
+			<tr>
+				<td width="30%" ><input name="Jurisdiction" type="checkbox" value="r5" class="chk" onclick="Jurisdiction_row(this,'r5');" />
+				    系统管理</td>	
+				
+				<td ><input name="Jurisdiction" type="checkbox" value="r5-c1" /></td>
+				<td ><input name="Jurisdiction" type="checkbox" value="r5-c2" /></td>
+				<td ><input name="Jurisdiction" type="checkbox" value="r5-c3" /></td>
+				<td ><input name="Jurisdiction" type="checkbox" value="r5-c4" /></td>
+			</tr>
+			
+			 <tr>
+          <TD  class="td_btm"  colspan="5"      >
+		  
+		  <INPUT  class=ButtonLong value=保存 type=button onclick="show('quanxian','hidden')" /> 
+		  <INPUT  class=ButtonLong value=关闭 type=button onclick="show('quanxian','hidden')" />         </TD>
+		 </TR>
+		</table>
+		
+		 </div>
+		  <table width="100%" border="0" cellpadding="0" cellspacing="1" class="list_user p8_bian">
+          <tr>
+            <th >权限名称</th>
+            <th>操作选项</th>
+          </tr>
+		  <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            
+			<td >超级管理员</td>
+			<td align="center"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('quanxian','show')" class="cur">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" /><span class="cur">删除</span></td>
+          </tr>
+		   <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            
+			<td >店长 </td>
+			<td align="center"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('quanxian','show')" class="cur">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" /><span class="cur">删除</span></td>
+          </tr>
+		   <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            
+			<td >店员</td>
+			<td align="center"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('quanxian','show')" class="cur">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" /><span class="cur">删除</span></td>
+          </tr>
+		   <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            
+			<td >会员管理员 </td>
+			<td align="center"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('quanxian','show')" class="cur">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" /><span class="cur">删除</span></td>
+          </tr>
+		  </table>
+		
+	</div>
+	<div class="box_bottom">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td width="12" height="35"><img src="images/tab_18.gif" width="12" height="35" /></td>
+			<td>&nbsp;
+				
+			</td>        
+			<td width="16"><img src="images/tab_20.gif" width="16" height="35" /></td>
+		  </tr>
+		</table>
+	</div>
+</div>
+</div>
+
+</body>
+</html>

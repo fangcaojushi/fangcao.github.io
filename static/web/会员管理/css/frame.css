@@ -1,0 +1,10 @@
+*{ margin:0; padding:0; font-size:12px; cursor:default}
+.bai{ width:100%; overflow:hidden; clear:both;}
+.p8{ padding:8px;}
+.p10{ padding:10px; }
+.mt8{ margin-top:8px;}
+a{ text-decoration:none; cursor:pointer; color:#000;}
+.l{ float:left}
+.r{ float:right}
+img{ border:0;}
+.red{ color:#ff0000}

@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员列表</title>
+<link href="css/Content.css" rel="stylesheet" type="text/css" />
+<link href="css/frame.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/common.js"></script>
+<script language="javascript" src="js/show.js"></script>
+
+
+</head>
+
+<body>
+<div class="box_wai">
+<div class="box_nei">
+	<div class="box_top">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="12" height="30"><img src="images/tab_03.gif" width="12" height="30" /></td>
+        <td>
+			<div class="position l">
+				<b>您当前的位置：</b>
+				<a href="#">[首页]</a>><a href="#">[积分管理]</a>><a href="#">[礼品列表]</a>
+			</div>
+			
+		
+		</td>
+        <td width="16"><img src="images/tab_07.gif" width="16" height="30" /></td>
+      </tr>
+    </table>
+	</div>
+	<div class="bai">
+	
+	
+	
+	<div class="p8_bian">
+			<b>请输入卡号：</b>&nbsp;&nbsp;
+			<input name="" type="text" />&nbsp;&nbsp;			   
+			  <input type="button" value="搜索" class="ButtonLong"  > 
+			<input type="button" value="读卡" class="ButtonLong">
+			<span class="p_ts">输入卡号或者手机号码，按回车即可定位到此会员!</span>
+	</div>
+	<div class="p8_bian" Id="change_gift_def">
+姓名：<i>大富豪</i>   &nbsp;会员等级：<i>金卡(0.8)</i>   &nbsp;余额：<i>1200</i>  &nbsp; 积分数量：<i>450</i> &nbsp;手机号码：<i>13213543545</i>  会员状态：<i>正常</i>&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" onclick="show_user('change_gift','0')" class="colr_o_c">↓显示会员详细资料↓</a>
+	</div>
+	    <div id="change_gift" >
+	
+		 <TABLE         class="adduser p8_bian" border=0 cellSpacing=1 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD  class="td_txt">会员卡号： </TD>
+          <TD colSpan=3>
+          
+			<INPUT class="wd140"  value="111111111"      type=text  > 
+		</TD></TR>
+        <TR>
+          <TD class="td_txt">会员姓名： </TD>
+          <TD><INPUT class="wd140"  type=text  value="大富豪"           >
+		</TD>
+          <TD class="td_txt">手机号码： </TD>
+          <TD><INPUT class="wd140"  type=text value="12345678911"></TD></TR>
+        
+        <TR>
+          <TD class="td_txt">店铺： </TD>
+          <TD> <input type="text" value="苏果超市太平鸟女装" /></TD>
+          <TD class="td_txt">会员生日： </TD>
+          <TD><INPUT class="wd140"  type=text  
+           > </TD></TR>
+        <TR>
+          <TD class="td_txt">过期时间： </TD>
+          <TD colSpan=3><INPUT class="wd140" id=MemReg_PastDate 
+            type=text name=MemReg_PastDate> <LABEL><INPUT id=MemReg_IsPast 
+            type=checkbox name=MemReg_IsPast>永久有效（不设置过期时间）</LABEL> </TD></TR>
+        <TR>
+          <TD class="td_txt">会员状态： </TD>
+          <TD><input type="text" style="WIDTH: 100px" value="正常" /> 
+            </TD>
+          <TD class="td_txt">账户余额： </TD>
+          <TD><INPUT style="WIDTH: 60px" 
+            onclick=javascript:this.select(); value=133 type=text 
+           > </TD></TR>
+        <TR>
+          <TD class="td_txt">会员等级： </TD>
+          <TD><input style="WIDTH: 100px" value="金钻卡" type="text" /> 
+               </TD>
+          <TD class="td_txt">账户积分： </TD>
+          <TD><INPUT style="WIDTH: 60px" 
+            onclick=javascript:this.select(); value=222 type=text 
+            > </TD></TR>
+        <TR>
+          <TD class="td_txt">电子邮箱： </TD>
+          <TD><INPUT class="wd140" id=MemReg_Email type=text 
+            name=MemReg_Email> </TD>
+          <TD class="td_txt">联系地址： </TD>
+          <TD><INPUT class="wd140"  type=text 
+           > </TD></TR>
+        <TR>
+          <TD class="td_txt">会员付费： </TD>
+          <TD><INPUT style="WIDTH: 60px" 
+            onclick=javascript:this.select(); value=0 type=text> 
+          </TD>
+          <TD class="td_txt">推荐人卡号： </TD>
+          <TD><INPUT class="wd140" 
+            title=输入“推荐人”卡号，按回车键，可自定提取到推荐人信息； type=text > 
+           </TD></TR>
+        
+       
+        <TR>
+          <TD  class="td_btm" colSpan=4 >
+		  
+		 <a href="#" onclick="show_user('change_gift','1')" class="colr_o_c">↑收起会员资料↑</a>
+          </TD>
+		 </TR>
+		 </TBODY>
+		 </TABLE>
+		 </div>
+		 
+		 <TABLE         class="adduser p8_bian" border=0 cellSpacing=1 cellPadding=0>
+        <TBODY>
+		 <TR>
+          <TD  class="td_txt2">充值金额： </TD>
+          <TD>
+          
+			<INPUT class="wd140"       type=text  ><span class="p_ts"><i>*</i>请正确填写充值金额</span>
+			
+			
+			</TD>
+		</TR>
+        <TR>
+          <TD  class="td_txt2">赠送金额： </TD>
+          <TD>
+          
+			<INPUT class="wd140"       type=text  >
+			<span class="p_ts">请正确填写赠送金额</span>	
+		</TD>
+		</TR>
+		<TR>
+          <TD  class="td_txt2">合计： </TD>
+          <TD>
+          
+			<INPUT class="wd140"       type=text  >
+			<span class="p_ts">充值金额＋赠送金额的合计</span>	
+		</TD>
+		</TR>
+		<TR>
+          <TD  class="td_txt2">备注： </TD>
+          <TD >
+              
+                  <textarea name="textarea" style="width:60%; margin:8px 0; padding:8px; height:50px;" ></textarea>
+      
+          </TD>
+		</TR>
+       
+       
+        <TR>
+          <TD  class="td_btm"        colSpan=2>
+		  
+		  <INPUT  class=ButtonLong value=保存 type=button />          </TD>
+		 </TR>
+		 </TABLE>
+		
+	 	</div>
+	<div class="box_bottom">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td width="12" height="35"><img src="images/tab_18.gif" width="12" height="35" /></td>
+			<td>&nbsp;
+				
+			</td>        
+			<td width="16"><img src="images/tab_20.gif" width="16" height="35" /></td>
+		  </tr>
+		</table>
+	</div>
+</div>
+</div>
+
+</body>
+</html>

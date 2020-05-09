@@ -1,0 +1,8 @@
+body{ background:url(../images/lg.jpg) center center no-repeat #0d1f65;}
+html,body{ margin:0; padding:0; width:100%; height:100%}
+input{ margin:0; padding:0;}
+#center{ width:340px; height:160px; margin:auto; position:absolute;  top:50%;  left:50%;
+   margin-top:-196px;   margin-left:-432px;  }
+.login{ margin:164px 0 0 300px; width:270px; height:130px;  text-align:left}
+.txt1{width:180px; height:18px; border:#899eb5 1px solid; background:#f0f2f3; line-height:18px; padding-left:5px; }
+.btn{ width:80px; height:30px;  border:0; float:left; margin:20px 0 0 20px; background:url(../images/lg_3.jpg) no-repeat ; color:#fff;}

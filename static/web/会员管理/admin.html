@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员列表</title>
+<link href="css/Content.css" rel="stylesheet" type="text/css" />
+<link href="css/frame.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/common.js"></script>
+<script language="javascript" src="js/show.js"></script>
+
+
+</head>
+
+<body>
+<div class="box_wai">
+<div class="box_nei">
+	<div class="box_top">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="12" height="30"><img src="images/tab_03.gif" width="12" height="30" /></td>
+        <td>
+			<div class="position l">
+				<b>您当前的位置：</b>
+				<a href="#">[首页]</a>><a href="#">[积分管理]</a>><a href="#">[礼品列表]</a>
+			</div>
+				<table  border="0" cellpadding="0" cellspacing="0" class="tools r">
+                  <tr>
+				    <!--<td ><input type="checkbox" name="checkbox62" value="checkbox" /></td>
+				  	<td >全选</td>-->
+                    <td ><img src="images/22.gif" width="14" height="14" /></td>
+                    <td ><a href="#">新增</a></td>
+					<td ><img src="images/33.gif" width="14" height="14" /></td>
+                    <td ><a href="#">修改</a></td>
+					<td ><img src="images/11.gif" width="14" height="14" /></td>
+                    <td ><a href="#">删除</a></td>
+					
+                  </tr>
+                </table>
+		
+		</td>
+        <td width="16"><img src="images/tab_07.gif" width="16" height="30" /></td>
+      </tr>
+    </table>
+	</div>
+	<div class="bai">
+	
+	
+	
+	<div class="p8_bian">
+			员工编号&nbsp;&nbsp;<input name="" type="text" />&nbsp;&nbsp;
+			员工姓名&nbsp;&nbsp;<input name="" type="text" />&nbsp;&nbsp;
+			按店铺查看&nbsp;&nbsp;
+			 <select name="">
+			     <option>利郎专卖店</option>
+				 <option>秋水伊人专卖店</option>
+				 <option>纳 紋 专 卖 店</option>
+				 <option>纳 紋 专 卖 店</option>
+				 <option>雅名格裤装专卖</option>
+				 <option>以 纯 同 顺 店</option>
+				 
+				
+
+			 </select>&nbsp;&nbsp;			  
+			  <input type="button" value="增加员工" class="ButtonLong" onclick="show('add_gift','show')"> 
+			   <input type="button" value="导出Excel" class="ButtonLong">
+			
+	</div>
+	    <div id="add_gift">
+		 <TABLE         class="adduser p8_bian" border=0 cellSpacing=1 cellPadding=0  >
+        <TBODY>
+		 <tr>
+          <TD  class="td_txt">员工编号： </TD>
+          <TD>
+          
+			<INPUT class="wd140"       type=text  > 
+			
+			</TD>
+		
+          <TD  class="td_txt">员工姓名： </TD>
+          <TD>
+          
+			<INPUT class="wd140"       type=text  > 
+		
+			</TD>
+		</tr>
+		<tr>
+		
+          <TD  class="td_txt">登录密码： </TD>
+          <TD>
+          
+			<INPUT class="wd140"       type=password  > 
+			
+			</TD>
+		
+          <TD  class="td_txt">确认密码： </TD>
+          <TD>
+          
+			<INPUT class="wd140"       type=password  > 
+			
+			</TD>
+		</TR>
+		<tr>
+		
+          <TD  class="td_txt">联系电话： </TD>
+          <TD>
+          
+			<INPUT class="wd140"       type=text  > 
+			
+			</TD>
+		
+          <TD  class="td_txt">性别： </TD>
+          <TD>
+          
+			<INPUT class="wd140"       type=text  > 
+			
+			</TD>
+		</TR>
+		<tr>
+		
+          <TD  class="td_txt">职称： </TD>
+          <TD>
+          
+			<INPUT class="wd140"       type=text  > 
+			
+			</TD>
+		
+          <TD  class="td_txt">生日： </TD>
+          <TD>
+          
+				<input name="xb" type="radio" value="" checked="checked"  />
+				男 &nbsp;  &nbsp;
+			    <input name="xb" type="radio" value="" />女 
+			
+			</TD>
+		</TR>
+       <tr>
+		
+          <TD  class="td_txt">店铺名称： </TD>
+          <TD>
+          
+			<select name="">
+			     <option>利郎专卖店</option>
+				 <option>秋水伊人专卖店</option>
+				 <option>纳 紋 专 卖 店</option>
+				 <option>纳 紋 专 卖 店</option>
+				 <option>雅名格裤装专卖</option>
+				 <option>以 纯 同 顺 店</option>
+				 
+				
+
+			 </select> 
+			
+			</TD>
+		
+          <TD  class="td_txt">管理权限： </TD>
+          <TD>
+          
+			<select name="">
+			     <option>超级管理员</option>
+				 <option>操作员</option>
+				 <option>店长</option>
+			 </select>
+			  <A href="jurisdiction.html" class="colr_o_c">权限设置</A>
+			
+			</TD>
+		</TR>
+       <tr>
+		
+          <TD  class="td_txt">是否冻结： </TD>
+          <TD colspan="3">
+          
+			<input name="dj" type="radio" value="" checked="checked"  />
+			暂时冻结 &nbsp;  &nbsp;
+			<input name="dj" type="radio" value="" />不冻结 &nbsp;  &nbsp;
+			<span class="red">   (冻结则该员工不能登录)</span>
+			
+			</TD>
+		
+         
+		</TR>
+       
+        <tr>
+          <TD  class="td_btm"        colSpan=4>
+		  
+		  <INPUT  class=ButtonLong value=保存 type=button onclick="show('add_gift','hidden')" />
+		      <INPUT  class=ButtonLong value=关闭 type=button onclick="show('add_gift','hidden')" />        </TD>
+		 </TR>
+		 </TBODY>
+		 </TABLE>   
+		 </div>
+		  <table width="100%" border="0" cellpadding="0" cellspacing="1" class="list_user p8_bian">
+          <tr>
+            <th >员工编号</th>
+            <th >员工姓名</th>
+            <th >联系方式</th>
+            <th >性别</th>
+            <th > 管理权限</th> 
+			<th>店铺名称</th>
+			<th>操作选项</th>    
+          </tr>
+		  <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            
+			<td >11111111111</td>
+			<td >张胡仍</td>
+			<td >13235463453</td>
+			<td >男</td>
+			<td >超级管理员</td>
+			<td >利郎专卖店</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('add_gift','show')">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		   <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            
+			<td >2222222222 </td>
+			<td >李膛代</td>
+			<td >13543657542</td>
+			<td >女</td>
+			<td >普通员工</td>
+			<td >雅名格裤装专卖</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('add_gift','show')">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		    <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            
+			<td >11111111111</td>
+			<td >张胡仍</td>
+			<td >13235463453</td>
+			<td >男</td>
+			<td >超级管理员</td>
+			<td >利郎专卖店</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('add_gift','show')">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		   <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            
+			<td >2222222222 </td>
+			<td >李膛代</td>
+			<td >13543657542</td>
+			<td >女</td>
+			<td >普通员工</td>
+			<td >雅名格裤装专卖</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('add_gift','show')">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		    <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            
+			<td >11111111111</td>
+			<td >张胡仍</td>
+			<td >13235463453</td>
+			<td >男</td>
+			<td >超级管理员</td>
+			<td >利郎专卖店</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('add_gift','show')">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		   <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            
+			<td >2222222222 </td>
+			<td >李膛代</td>
+			<td >13543657542</td>
+			<td >女</td>
+			<td >普通员工</td>
+			<td >雅名格裤装专卖</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('add_gift','show')">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		    <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            
+			<td >11111111111</td>
+			<td >张胡仍</td>
+			<td >13235463453</td>
+			<td >男</td>
+			<td >超级管理员</td>
+			<td >利郎专卖店</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('add_gift','show')">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		   <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            
+			<td >2222222222 </td>
+			<td >李膛代</td>
+			<td >13543657542</td>
+			<td >女</td>
+			<td >普通员工</td>
+			<td >雅名格裤装专卖</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('add_gift','show')">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		    <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            
+			<td >11111111111</td>
+			<td >张胡仍</td>
+			<td >13235463453</td>
+			<td >男</td>
+			<td >超级管理员</td>
+			<td >利郎专卖店</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('add_gift','show')">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		   <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            
+			<td >2222222222 </td>
+			<td >李膛代</td>
+			<td >13543657542</td>
+			<td >女</td>
+			<td >普通员工</td>
+			<td >雅名格裤装专卖</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('add_gift','show')">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		    <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            
+			<td >11111111111</td>
+			<td >张胡仍</td>
+			<td >13235463453</td>
+			<td >男</td>
+			<td >超级管理员</td>
+			<td >利郎专卖店</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('add_gift','show')">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		   <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            
+			<td >2222222222 </td>
+			<td >李膛代</td>
+			<td >13543657542</td>
+			<td >女</td>
+			<td >普通员工</td>
+			<td >雅名格裤装专卖</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('add_gift','show')">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		    <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            
+			<td >11111111111</td>
+			<td >张胡仍</td>
+			<td >13235463453</td>
+			<td >男</td>
+			<td >超级管理员</td>
+			<td >利郎专卖店</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('add_gift','show')">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		   <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            
+			<td >2222222222 </td>
+			<td >李膛代</td>
+			<td >13543657542</td>
+			<td >女</td>
+			<td >普通员工</td>
+			<td >雅名格裤装专卖</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('add_gift','show')">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		    <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            
+			<td >11111111111</td>
+			<td >张胡仍</td>
+			<td >13235463453</td>
+			<td >男</td>
+			<td >超级管理员</td>
+			<td >利郎专卖店</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('add_gift','show')">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		   <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            
+			<td >2222222222 </td>
+			<td >李膛代</td>
+			<td >13543657542</td>
+			<td >女</td>
+			<td >普通员工</td>
+			<td >雅名格裤装专卖</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" /><span onclick="show('add_gift','show')">编辑</span>&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  </table>
+		
+	</div>
+	<div class="box_bottom">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td width="12" height="35"><img src="images/tab_18.gif" width="12" height="35" /></td>
+			<td><span class="colr1 l">共有 120 条记录，当前第 1/10 页</span>
+				<table border="0" align="right" cellpadding="0" cellspacing="0">
+					<tr>
+					  <td width="40"><img src="images/first.gif" width="37" height="15" /></td>
+					  <td width="45"><img src="images/back.gif" width="43" height="15" /></td>
+					  <td width="45"><img src="images/next.gif" width="43" height="15" /></td>
+					  <td width="40"><img src="images/last.gif" width="37" height="15" /></td>
+					  <td width="100">转到第
+						<input name="textfield" type="text" size="4" style="height:12px; width:20px; border:1px solid #999999;" /> 
+						页</td>
+					  <td width="40"><img src="images/go.gif" width="37" height="15" /></td>
+					</tr>
+				</table>
+			</td>        
+			<td width="16"><img src="images/tab_20.gif" width="16" height="35" /></td>
+		  </tr>
+		</table>
+	</div>
+</div>
+</div>
+
+</body>
+</html>

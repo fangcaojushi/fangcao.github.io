@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>供应列表</title>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/indx.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript" language="javascript">
+<!-- 
+
+	function ShowType(obj){
+		
+		if(obj.className!='type_list_Curr')
+			
+			obj.className = "type_list_Curr";			
+		else
+		obj.className = "type_list";
+		
+	}
+
+  
+	
+
+//--> 
+</script>
+</head>
+
+<body>
+<div class="w960 clr">
+	<div class="top1 bk clr">
+	<div class="wauto l">
+	帐号<input name="" type="text" class="name" />密码<input name="" type="text" class="name" />
+<input name="" type="button" value="登录" class="login hidefocus"  hidefocus  /> <input name="" type="button" value="注册" onClick="location.href='注册.html'" class="register hidefocus"  hidefocus /><a href="#" onblur="this.blur();">忘记密码</a>
+	</div>
+	<div class="wauto r zi_r">
+		<a href="论坛.html"  onfocus="this.blur();" class="mlr8">论坛交流</a><a href="#"  onfocus="this.blur();">设为首页</a>
+	</div>
+	</div>
+	
+	
+	<div class="top2">
+		<a href="index.html" onfocus="this.blur();"><img src="images/logo.jpg" class="logo l" /></a>
+		<div id="menu" >
+			 <div id="type1" class="type_list" onmouseover="javascript:ShowType(this);" onmouseout="javascript:ShowType(this);"> 
+			 	<b><a href="资讯.html" onfocus="this.blur();">行业资讯</a></b>
+				<p>
+					<a href="文字列表.html">行业动态</a>
+					<a href="#">通知公告</a>
+					<a href="#">会展信息</a>
+					<a href="#">各地综合</a>
+					<a href="#">行业规范</a>
+					<a href="#">会展信息</a>
+					<a href="#">各地综合</a>
+					<a href="#">行业规范</a>
+
+				</p>
+				
+			 </div>
+			 <div id="type2" class="type_list" > 
+			 	<b><a href="项目.html" onfocus="this.blur();">项目信息</a></b>
+				<p>
+					<a href="#">投资合作</a>
+					<a href="#">项目动态</a>
+					<a href="#">招标信息</a>
+					<a href="#">会展信息</a>
+				
+
+				</p>
+			 </div>
+			 <div id="type3" class="type_list" > 
+			 	<b><a href="#" onfocus="this.blur();">供求合作</a></b>
+				<p>
+					<a href="供应列表.html">供应信息</a>
+					<a href="#">求购信息</a>
+					<a href="#">合作代理</a>
+					<a href="#">人才招聘</a>
+				</p>
+			 </div>
+			 <div id="type4" class="type_list" onmouseover="javascript:ShowType(this);" onmouseout="javascript:ShowType(this);" > 
+			 	<b><a href="#" onfocus="this.blur();">产品资讯</a></b>
+				<p>
+					<a href="#">锅炉资讯</a>
+					<a href="#">散热产品</a>
+					<a href="#">泵阀管材</a>
+					<a href="#">热水器</a>
+					<a href="#">行业动态</a>
+					<a href="#">通知公告</a>
+					<a href="#">会展信息</a>
+					<a href="#">各地综合</a>
+				
+
+				</p>
+			 </div>
+			  <div id="type5" class="type_list" > 
+			 	<b><a href="#" onfocus="this.blur();">热计量表</a></b>
+				<p>
+					<a href="#">热表动态</a>
+					<a href="#">技术论文</a>
+					<a href="#">供暖常识</a>
+					<a href="#">供热管理</a>
+				
+
+				</p>
+			 </div>
+			  <div id="type6" class="type_list" > 
+			 	<b><a href="#" onfocus="this.blur();">法规条例</a></b>
+				<p>
+					<a href="#">通知公告</a>
+					<a href="#">供热条例</a>
+					<a href="#">政策法规</a>
+					<a href="#">节能减排</a>
+				
+
+				</p>
+			 </div>
+			  <div id="type7" class="type_list" > 
+			 	<b><a href="#" onfocus="this.blur();">能源动态</a></b>
+				<p>
+					<a href="#">能源资讯</a>
+					<a href="#">能源常识</a>
+					<a href="#">能源论文</a>
+					<a href="#">焦点导读</a>
+
+				</p>
+			 </div>
+			  <div id="type8" class="type_list" > 
+			 	<b><a href="#" onfocus="this.blur();">企业推荐</a></b>
+				<p>
+					<a href="#">供热企业</a>
+					<a href="#">热电企业</a>
+					<a href="#">机构推荐</a>
+					<a href="#">人物热点</a>
+
+
+
+
+				
+
+				</p>
+			 </div>
+		</div>
+	</div>
+	<div class="clr">
+	<img src="images/list2.jpg" class="adv5 l" />
+	<img src="images/list3.jpg" class="adv5 r" />
+	</div>
+	<div class="clr"></div>
+	
+	<div class="top1 bk clr mt8">
+		<div class="tianqi l">
+			<img src="images/tianqi.jpg" />
+		</div>
+		
+		<div class="scrh r ">
+			站内搜索<input name="" type="text" class="scrh_txt"  />
+			<select name="" class="scrh_slct">
+			    <option>行业资讯</option>
+				<option>项目信息</option>
+			</select>
+		<input name="" type="button" value="搜索" class="login hidefocus mlr8"  hidefocus  />
+		</div>
+	
+	</div>
+	<div class="clr mt8"></div>
+	<div class="w960">
+		<div class="w685 l bk hdn H_proj">
+			<div class="daohang">
+			<h2 >供应信息</h2>
+			<p><a href="index.html">首页</a>  >  <a href="项目.html">供求合作</a>    >  <a href="文字列表.html">供应信息</a></p>
+			</div>
+			<div class="pdg25">
+				<ul class="pic_list">
+					<li>
+					<div class="imgbox"><a href="#"><img src="images/list5.jpg" /></a></div>
+					<div class="nr">
+						<div class="nrbt">
+							<b>【供应】</b>
+							<a href="供求明细.html">全焊封钢质球阀 钢质全焊接球阀</a>
+							<i>2012-02-18</i>						</div>
+						<h6>上海波昂阀门流体设备有限公司</h6>
+						<p>全焊封钢质球阀产品简介：<br />
+“波昂”牌全焊接球阀产品由全焊接的阀体和碳增强氟隆密封垫组成，可以在频繁操作，有杂质及化学物质的情况下长寿命运行。研磨精细的不锈钢球体可</p>
+					</div>
+					
+					</li>
+					<li>
+					<div class="imgbox"><a href="#"><img src="images/list6.jpg" width="150" height="90" /></a></div>
+					<div class="nr">
+						<div class="nrbt">
+							<b>【供应】</b>
+							<a href="供求明细.html">暖通放散球阀┃波昂放散暖通球阀</a>
+							<i>2012-02-18</i>
+						</div>
+						<h6>上海波昂阀门流体设备有限公司</h6>
+						<p>
+					放散球阀产品特点：<br />
+    “波昂”牌放散球阀采用碳钢无缝钢管压制而成，不会有外部泄漏等现象，对压力和温度的变化适应能力强，在标注压力和温度范围内不会产生任何泄滑。
+
+						</p>
+					</div>
+					
+					</li>
+					<li>
+					<div class="imgbox"><a href="#"><img src="images/list7.jpg" width="150" height="90" /></a></div>
+					<div class="nr">
+						<div class="nrbt">
+							<b>【供应】</b>
+							<a href="供求明细.html">大口径钢质全焊接球阀</a>
+							<i>2012-02-18</i>						</div>
+						<h6>上海波昂阀门流体设备有限公司</h6>
+						<p>
+					放散球阀产品特点：<br />
+    “波昂”牌放散球阀采用碳钢无缝钢管压制而成，不会有外部泄漏等现象，对压力和温度的变化适应能力强，在标注压力和温度范围内不会产生任何泄滑。
+
+						</p>
+					</div>
+					
+					</li>
+					<li>
+					<div class="imgbox"><a href="#"><img src="images/list8.jpg" width="150" height="90" /></a></div>
+					<div class="nr">
+						<div class="nrbt">
+							<b>【供应】</b>
+							<a href="供求明细.html">全焊接球阀┃全焊封球阀</a>
+							<i>2012-02-18</i>						</div>
+						<h6>上海波昂阀门流体设备有限公司</h6>
+						<p>
+					放散球阀产品特点：<br />
+    “波昂”牌放散球阀采用碳钢无缝钢管压制而成，不会有外部泄漏等现象，对压力和温度的变化适应能力强，在标注压力和温度范围内不会产生任何泄滑。
+
+						</p>
+					</div>
+					
+					</li>
+					<li>
+					<div class="imgbox"><a href="#"><img src="images/list9.jpg" width="150" height="90" /></a></div>
+					<div class="nr">
+						<div class="nrbt">
+							<b>【供应】</b>
+							<a href="供求明细.html">暖通放散球阀┃波昂放散暖通球阀</a>
+							<i>2012-02-18</i>
+						</div>
+						<h6>上海波昂阀门流体设备有限公司</h6>
+						<p>
+					放散球阀产品特点：<br />
+    “波昂”牌放散球阀采用碳钢无缝钢管压制而成，不会有外部泄漏等现象，对压力和温度的变化适应能力强，在标注压力和温度范围内不会产生任何泄滑。
+
+						</p>
+					</div>
+					
+					</li>
+					<li>
+					<div class="imgbox"><a href="#"><img src="images/list10.jpg" width="150" height="90" /></a></div>
+					<div class="nr">
+						<div class="nrbt">
+							<b>【供应】</b>
+							<a href="供求明细.html">暖通放散球阀┃波昂放散暖通球阀</a>
+							<i>2012-02-18</i>
+						</div>
+						<h6>上海波昂阀门流体设备有限公司</h6>
+						<p>
+					放散球阀产品特点：<br />
+    “波昂”牌放散球阀采用碳钢无缝钢管压制而成，不会有外部泄漏等现象，对压力和温度的变化适应能力强，在标注压力和温度范围内不会产生任何泄滑。
+
+						</p>
+					</div>
+					
+					</li>
+					<li>
+					<div class="imgbox"><a href="#"><img src="images/list11.jpg" width="150" height="90" /></a></div>
+					<div class="nr">
+						<div class="nrbt">
+							<b>【供应】</b>
+							<a href="供求明细.html">暖通放散球阀┃波昂放散暖通球阀</a>
+							<i>2012-02-18</i>
+						</div>
+						<h6>上海波昂阀门流体设备有限公司</h6>
+						<p>
+					放散球阀产品特点：<br />
+    “波昂”牌放散球阀采用碳钢无缝钢管压制而成，不会有外部泄漏等现象，对压力和温度的变化适应能力强，在标注压力和温度范围内不会产生任何泄滑。
+
+						</p>
+					</div>
+					
+					</li>
+					<li>
+					<div class="imgbox"><a href="#"><img src="images/list12.jpg" width="150" height="90" /></a></div>
+					<div class="nr">
+						<div class="nrbt">
+							<b>【供应】</b>
+							<a href="供求明细.html">暖通放散球阀┃波昂放散暖通球阀</a>
+							<i>2012-02-18</i>
+						</div>
+						<h6>上海波昂阀门流体设备有限公司</h6>
+						<p>
+					放散球阀产品特点：<br />
+    “波昂”牌放散球阀采用碳钢无缝钢管压制而成，不会有外部泄漏等现象，对压力和温度的变化适应能力强，在标注压力和温度范围内不会产生任何泄滑。
+
+						</p>
+					</div>
+					
+					</li>
+					
+				
+				</ul>
+				
+				<div class="page">
+				<a href="">首页</a>
+				<a href="">上一页</a>
+				<a href="">1</a>
+				<a href="">2</a>
+				<a href="">3</a>
+				<a href="">下一页</a>
+				<a href="">末页</a>
+				<a href="">页次1/16</a>
+				<a href="">共计：35</a>
+				<a href="">1</a>
+				<a href="">转到</a>
+				
+			</div>
+			</div>
+		</div>
+		
+		<div class="w266 r hdn H_proj">
+			<img src="images/list4.jpg" class="adv22" />
+			<div class="w264 levl2 bk hdn  mt8">
+			<div class="h3bt"><b>能源动态</b><a href="#" class="hidefocus"  hidefocus >+更多</a></div>
+			<div class="list" >
+				<a href="#" onfocus="this.blur();">我国将建立能源消费总量预测预警制度</a>
+				<a href="#" onfocus="this.blur();">页岩气资源量丰富 或改变整个能源结构</a>
+				<a href="#" onfocus="this.blur();">12年煤炭消费淡季价格走势预测分析</a>
+				<a href="#" onfocus="this.blur();">电力市场约束制约风电健康发展的大障碍</a>
+				<a href="#" onfocus="this.blur();">风电之后光伏发电也列入国家统一规划</a>
+				<a href="#" onfocus="this.blur();">煤炭库存爆满 煤价相继下调 煤市低迷</a>
+				<a href="#" onfocus="this.blur();">能源局计划建立统一的风电监测体系</a>
+				<a href="#" onfocus="this.blur();">能源体制改革有望取得实质突破</a>
+				<a href="#" onfocus="this.blur();">负离子加湿型远红外电采暖器 </a>
+				
+				
+			</div>
+		</div>
+			<div class="w264 levl2 bk hdn  mt8">
+			<div class="h3bt"><b>产品资讯</b><a href="#" class="hidefocus"  hidefocus >+更多</a></div>
+			<div class="list" >
+				<a href="#" onfocus="this.blur();">新界屏蔽泵 壁挂炉-中国驰名... </a>
+				<a href="#" onfocus="this.blur();">捷森平板太阳能回馈顾客 快来... </a>
+				<a href="#" onfocus="this.blur();">鸿途壁挂炉专用清洗设备 </a>
+				<a href="#" onfocus="this.blur();">青岛君瑞华博碳晶取暖器 </a>
+				<a href="#" onfocus="this.blur();">家庭冬季供暖节能新产品 </a>
+				<a href="#" onfocus="this.blur();">“AMITIME.热立方”节... </a>
+				<a href="#" onfocus="this.blur();">真空超导取暖采暖技术的投资与... </a>
+				<a href="#" onfocus="this.blur();">商用热水工程选择西莱克包你一... </a>
+				<a href="#" onfocus="this.blur();">负离子加湿型远红外电采暖器 </a>
+				
+				
+			</div>
+		</div>
+		<img src="images/mx2.jpg" class="adv23 mt8" />
+		<img src="images/list13.jpg" width="260" height="115" class="adv23 mt8"/>		</div>
+		
+	</div>
+	<div class="clr"></div>
+	<div class="h3bt_link mt8 bk"><b>友情链接</b>
+	<a href="#" class="hidefocus"  hidefocus >节能产品网</a>
+	<a href="#" class="hidefocus"  hidefocus >搜房采暖</a>
+	<a href="#" class="hidefocus"  hidefocus >中国建材网</a>
+	<a href="#" class="hidefocus"  hidefocus >中国地暖网</a>
+	<a href="#" class="hidefocus"  hidefocus >节能环保网</a>
+	<a href="#" class="hidefocus"  hidefocus >中国炉具网</a>
+	<a href="#" class="hidefocus"  hidefocus >中国热工</a>
+	<a href="#" class="hidefocus"  hidefocus >供热软件</a>
+	<a href="#" class="hidefocus"  hidefocus >信息投稿</a>
+	
+	</div>
+	
+	<div class="ft">
+		<a href="#" class="hidefocus"  hidefocus >关于我们</a>|
+				<a href="#" class="hidefocus"  hidefocus >广告服务</a>|
+						<a href="#" class="hidefocus"  hidefocus >联系方式</a>
+		<p>Copyringt @ 2012 Northem.com Inc All Rights Reserved.</p>
+	</div>
+</div>
+</body>
+</html>

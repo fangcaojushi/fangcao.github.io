@@ -1,0 +1,45 @@
+*{ margin:0px; padding:0px; }
+.pt10{ padding-top:30px;}
+.ml10{ margin-left:10px;}
+.l{ float:left}
+.r{ float:right;}
+.hdn{ overflow:hidden}
+img{ border:0;}
+.clr{  clear:both;}
+li,ul{ list-style:none;}
+a{ text-decoration:none;}
+a,input{blr:expression(this.onFocus=this.blur());}
+a:hover{ text-decoration:underline;}
+html,body{ font: 12px/1.5 宋体b8b\4f53,Arial,sans-serif; color:#fbebb3; cursor:default; background:#000;}
+.top{ height:39px; background:#212121; border-bottom:#2e2e2e; text-align:right;color:#7c7c7c;}
+.top a{ color:#7c7c7c; line-height:39px; padding:0 8px;}
+.top a:hover{ color:#FFFFCC}
+.w1000{ width:1000px; margin:0 auto; position:relative}
+.w203{ width:203px;}
+.box{ width:1406px; margin:0 auto;}
+.ft{ height:164px; background:url(../images/ft_bg.jpg) 0 bottom repeat-x; color:#3c3931; line-height:22px;}
+.ft_menu{ width:auto; padding-top:20px}
+.ft_menu a{ color:#cdad3f; font-size:14px; line-height:50px; height:50px; padding:0 15px;}
+.search{ position:absolute; top:35px; right:0; width:202px; height:20px; background:url(../images/sch_bg.jpg) no-repeat; z-index:1000}
+.sch_txt{ position:absolute; width:145px; height:18px; top:2px; left:8px; background:none; border:none; color:#f9e59e}
+.sch_btn{ position:absolute; width:37px; height:20px; top:0; right:0; border:none; background:none; cursor:pointer;}
+
+
+/*导航标题*/
+.dhbt{ color:#fbebb3; height:38px; width:auto;}
+.dhbt b{ width:35px; font-size:48px; float:left; height:38px; padding-right:5px; line-height:38px}
+.dhbt p{ float:left; height:20px; line-height:20px}
+a.dh_more{ width:auto; color:#fbebb3; float:right; padding-top:30px;}
+a.dh_more:hover{ color:#fff;}
+/*主导航菜单*/
+.menu_box{height:83px; background:url(../images/menu_bg.jpg) no-repeat;}
+.menu{height:63px; width:auto; padding-left:10px;  }
+.menu a{ width:auto; padding:16px 35px; text-align:center; display:block; float:left; overflow:hidden; height:31px }
+.menu a:hover{ background:#000; text-decoration:none}
+.menu a h3{ line-height:20px; font-size:14px; color:#fff;/*font-family: "黑体", "宋体", Arial;*/ font-weight: 600;  }
+.menu a p{ line-height:18px;  color:#72bc0c;}
+.menu a:hover{ background:#000;}
+.jiao{ position:relative; margin-left:-47px;}
+.h112{ height:110px;}
+
+

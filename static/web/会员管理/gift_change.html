@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员列表</title>
+<link href="css/Content.css" rel="stylesheet" type="text/css" />
+<link href="css/frame.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/common.js"></script>
+<script language="javascript" src="js/show.js"></script>
+
+
+</head>
+
+<body>
+<div class="box_wai">
+<div class="box_nei">
+	<div class="box_top">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="12" height="30"><img src="images/tab_03.gif" width="12" height="30" /></td>
+        <td>
+			<div class="position l">
+				<b>您当前的位置：</b>
+				<a href="#">[首页]</a>><a href="#">[积分管理]</a>><a href="#">[礼品列表]</a>
+			</div>
+			
+		
+		</td>
+        <td width="16"><img src="images/tab_07.gif" width="16" height="30" /></td>
+      </tr>
+    </table>
+	</div>
+	<div class="bai">
+	
+	
+	
+	<div class="p8_bian">
+			<b>请输入卡号：</b>&nbsp;&nbsp;
+			<input name="" type="text" />&nbsp;&nbsp;			   
+			  <input type="button" value="搜索" class="ButtonLong"  > 
+			<input type="button" value="读卡" class="ButtonLong"> 
+			<span class="p_ts">输入卡号或者手机号码，按回车即可定位到此会员!</span>
+	</div>
+	<div class="p8_bian" Id="change_gift_def">
+姓名：<i>大富豪</i>   &nbsp;会员等级：<i>金卡(0.8)</i>   &nbsp;余额：<i>1200</i>  &nbsp; 积分数量：<i>450</i> &nbsp;手机号码：<i>13213543545</i>  会员状态：<i>正常</i> <a href="#" onclick="show_user('change_gift','0')" class="colr_o_c">↓显示会员详细资料↓</a>
+	</div>
+	    <div id="change_gift" >
+	
+		 <TABLE         class="adduser p8_bian" border=0 cellSpacing=1 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD  class="td_txt">会员卡号： </TD>
+          <TD colSpan=3>
+          
+			<INPUT class="wd140"  value="111111111"      type=text  > 
+		</TD></TR>
+        <TR>
+          <TD class="td_txt">会员姓名： </TD>
+          <TD><INPUT class="wd140"  type=text  value="大富豪"           >
+		</TD>
+          <TD class="td_txt">手机号码： </TD>
+          <TD><INPUT class="wd140"  type=text value="12345678911"></TD></TR>
+        
+        <TR>
+          <TD class="td_txt">店铺： </TD>
+          <TD> <input type="text" value="苏果超市太平鸟女装" /></TD>
+          <TD class="td_txt">会员生日： </TD>
+          <TD><INPUT class="wd140"  type=text  
+           > </TD></TR>
+        <TR>
+          <TD class="td_txt">过期时间： </TD>
+          <TD colSpan=3><INPUT class="wd140" id=MemReg_PastDate 
+            type=text name=MemReg_PastDate> <LABEL><INPUT id=MemReg_IsPast 
+            type=checkbox name=MemReg_IsPast>永久有效（不设置过期时间）</LABEL> </TD></TR>
+        <TR>
+          <TD class="td_txt">会员状态： </TD>
+          <TD><input type="text" style="WIDTH: 100px" value="正常" /> 
+            </TD>
+          <TD class="td_txt">账户余额： </TD>
+          <TD><INPUT style="WIDTH: 60px" 
+            onclick=javascript:this.select(); value=133 type=text 
+           > </TD></TR>
+        <TR>
+          <TD class="td_txt">会员等级： </TD>
+          <TD><input style="WIDTH: 100px" value="金钻卡" type="text" /> 
+               </TD>
+          <TD class="td_txt">账户积分： </TD>
+          <TD><INPUT style="WIDTH: 60px" 
+            onclick=javascript:this.select(); value=222 type=text 
+            > </TD></TR>
+        <TR>
+          <TD class="td_txt">电子邮箱： </TD>
+          <TD><INPUT class="wd140" id=MemReg_Email type=text 
+            name=MemReg_Email> </TD>
+          <TD class="td_txt">联系地址： </TD>
+          <TD><INPUT class="wd140"  type=text 
+           > </TD></TR>
+        <TR>
+          <TD class="td_txt">会员付费： </TD>
+          <TD><INPUT style="WIDTH: 60px" 
+            onclick=javascript:this.select(); value=0 type=text> 
+          </TD>
+          <TD class="td_txt">推荐人卡号： </TD>
+          <TD><INPUT class="wd140" 
+            title=输入“推荐人”卡号，按回车键，可自定提取到推荐人信息； type=text > 
+           </TD></TR>
+        
+       
+        <TR>
+          <TD  class="td_btm" colSpan=4 >
+		  
+		 <a href="#" onclick="show_user('change_gift','1')" class="colr_o_c">↑收起会员资料↑</a>
+          </TD>
+		 </TR>
+		 </TBODY>
+		 </TABLE>
+		 </div>
+		 	<div class="p8_bian">
+			<div class="p8 search">
+				礼品简码：&nbsp;&nbsp;
+			<input name="" type="text" />&nbsp;&nbsp;	
+			店铺名称:&nbsp;&nbsp;<select name="">
+			     <option>利郎专卖店</option>
+				 <option>秋水伊人专卖店</option>
+				 <option>纳 紋 专 卖 店</option>
+				 <option>纳 紋 专 卖 店</option>
+				 <option>雅名格裤装专卖</option>
+				 <option>以 纯 同 顺 店</option>
+				 
+				
+
+			 </select>	&nbsp;	   
+			  <input type="button" value="搜索" class="ButtonLong"  > 
+			<input type="button" value="马上兑换" class="ButtonLong r"> 
+		
+			</div>
+		</div>
+	    <table width="100%" border="0" cellpadding="0" cellspacing="1" class="list_user p8_bian">
+		
+            <tr>
+                <th style="text-align:left; padding-left:5px; width:30px;">
+				<input type="checkbox" name="allbox" id="allbox" title="全选/取消" onClick="doAllChecked(this,'chkElement')">
+				</th>
+                <th >礼品名称</th>
+                <th >礼品简码</th>
+                <th >所需积分</th>
+                <th >库存数量</th>
+                <th > 兑换数量</th>
+                <th>扣除积分</th>
+                <th>店铺名称</th>
+                <th>操作选项</th>
+            </tr>
+            <tr class="datalist_j" onmouseover="onRowFocus(this)" onmouseout="onRowUnfocused(this,'j')">
+                <td><input type="checkbox" name="chkElement" onclick="onRowChecked(this);" value="1" /></td>
+                <td >楠竹通络磁疗席 </td>
+                <td >5000</td>
+                <td >1000</td>
+                <td >20</td>
+                <td >3</td>
+                <td>10</td>
+                <td >利郎专卖店</td>
+                <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/dui.gif" width="16" height="16" />兑换</span></div></td>
+            </tr>
+            <tr class="datalist_o" onmouseover="onRowFocus(this)" onmouseout="onRowUnfocused(this,'o')">
+                <td><input type="checkbox" name="chkElement" onclick="onRowChecked(this);" value="1" /></td>
+                <td >楠竹通络磁疗席 </td>
+                <td >3536324</td>
+                <td >300</td>
+                <td >50</td>
+                <td >23</td>
+                <td>10</td>
+                <td >雅名格裤装专卖</td>
+                <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/dui.gif" width="16" height="16" />兑换</span></div></td>
+            </tr>
+            <tr class="datalist_j" onmouseover="onRowFocus(this)" onmouseout="onRowUnfocused(this,'j')">
+                <td><input type="checkbox" name="chkElement" onclick="onRowChecked(this);" value="1" /></td>
+                <td >楠竹通络磁疗席 </td>
+                <td >5000</td>
+                <td >1000</td>
+                <td >20</td>
+                <td >3</td>
+                <td>13</td>
+                <td >利郎专卖店</td>
+                <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/dui.gif" width="16" height="16" />兑换</span></div></td>
+            </tr>
+            <tr class="datalist_o" onmouseover="onRowFocus(this)" onmouseout="onRowUnfocused(this,'o')">
+                <td><input type="checkbox" name="chkElement" onclick="onRowChecked(this);" value="1" /></td>
+                <td >楠竹通络磁疗席 </td>
+                <td >3536324</td>
+                <td >300</td>
+                <td >50</td>
+                <td >23</td>
+                <td>130</td>
+                <td >雅名格裤装专卖</td>
+                <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/dui.gif" width="16" height="16" />兑换</span></div></td>
+            </tr>
+            <tr class="datalist_j" onmouseover="onRowFocus(this)" onmouseout="onRowUnfocused(this,'j')">
+                <td><input type="checkbox" name="chkElement" onclick="onRowChecked(this);" value="1" /></td>
+                <td >楠竹通络磁疗席 </td>
+                <td >5000</td>
+                <td >1000</td>
+                <td >20</td>
+                <td >3</td>
+                <td>30</td>
+                <td >利郎专卖店</td>
+                <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/dui.gif" width="16" height="16" />兑换</span></div></td>
+            </tr>
+            <tr class="datalist_o" onmouseover="onRowFocus(this)" onmouseout="onRowUnfocused(this,'o')">
+                <td><input type="checkbox" name="chkElement" onclick="onRowChecked(this);" value="1" /></td>
+                <td >楠竹通络磁疗席 </td>
+                <td >3536324</td>
+                <td >300</td>
+                <td >50</td>
+                <td >23</td>
+                <td>320</td>
+                <td >雅名格裤装专卖</td>
+                <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/dui.gif" width="16" height="16" />兑换</span></div></td>
+            </tr>
+            <tr class="datalist_j" onmouseover="onRowFocus(this)" onmouseout="onRowUnfocused(this,'j')">
+                <td><input type="checkbox" name="chkElement" onclick="onRowChecked(this);" value="1" /></td>
+                <td >楠竹通络磁疗席 </td>
+                <td >5000</td>
+                <td >1000</td>
+                <td >20</td>
+                <td >3</td>
+                <td>102</td>
+                <td >利郎专卖店</td>
+                <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/dui.gif" width="16" height="16" />兑换</span></div></td>
+            </tr>
+            <tr class="datalist_o" onmouseover="onRowFocus(this)" onmouseout="onRowUnfocused(this,'o')">
+                <td><input type="checkbox" name="chkElement" onclick="onRowChecked(this);" value="1" /></td>
+                <td >楠竹通络磁疗席 </td>
+                <td >3536324</td>
+                <td >300</td>
+                <td >50</td>
+                <td >23</td>
+                <td>22</td>
+                <td >雅名格裤装专卖</td>
+                <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/dui.gif" width="16" height="16" />兑换</span></div></td>
+            </tr>
+        </table>
+		
+	</div>
+	<div class="box_bottom">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td width="12" height="35"><img src="images/tab_18.gif" width="12" height="35" /></td>
+			<td>&nbsp;
+				
+			</td>        
+			<td width="16"><img src="images/tab_20.gif" width="16" height="35" /></td>
+		  </tr>
+		</table>
+	</div>
+</div>
+</div>
+
+</body>
+</html>

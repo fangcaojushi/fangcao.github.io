@@ -1,0 +1,48 @@
+*{margin:0; padding:0;}
+body{ font-size:12px; margin:0 auto; font-family:"ÀŒÃÂ"; cursor:default; color:#222f43;}
+ul,li{ list-style:none}
+button.hidefocus::-moz-focus-inner {  border:none; }
+img { border:0; vertical-align:middle;}
+.l{ float:left;}
+.r{ float:right;}
+.clr{ clear:both;}
+.mt8{ margin-top:8px;}
+.mlr8{ margin:0 8px;}
+.ml8{ margin-left: 8px;}
+.bk{ border:#929dae 1px solid;}
+.bk2{ border:#d0d9e0 1px solid;}
+.w960{ width:960px; margin:0 auto; }
+.w690{width:690px;}
+.w260{ width:260px;}
+.w685{width:685px;}
+.w266{ width:266px;}
+.wmax266{max-width:266px;}
+.wauto{ width:auto;}
+.hdn{ overflow:hidden;}
+.pdg5{ padding:5px;}
+.pdg8{ padding:8px;}
+.pdg08{ padding:0 8px;}
+.pdg25{ padding:25px;}
+.zi_r{ text-align:right}
+.zi_c{ text-align:center;}
+.cur{ cursor:default;}
+.wbai{ width:100%}
+.ln24{ line-height:24px;}
+.ln20{ line-height:20px;}
+.logo{ width:210px; height:70px; margin:0 20px; }
+.h_fg{ border:0px;border-bottom:#ccc 1px solid; height:1px;}
+h1{ font-size:23px}
+h2{ font-size:20px}
+h3{ font-size:16px;}
+h4{ font-size:14px;}
+h5{ font-size:12px;}
+/*∑÷“≥*/
+.page{ clear:both; text-align:center; margin-top:18px; height:28px; padding-left:50px; }
+.page a,.page span{ padding:3px 5px; border:#f0f0f0 1px solid; width:auto; background:#fff; display:block; float:left;font-family:Arial, Helvetica, sans-serif; margin:0 2px;}
+.page a:hover{ background:#f6feef;padding:5px;}
+
+/*ft*/
+.ft{ padding:20px; text-align:center;   }
+.ft a{ display:inline; padding:10px; font-size:14px; font-weitght:500; color:#222f43; text-decoration:none;}
+.ft a:hover{ text-decoration:underline}
+.ft p{ padding-top:15px;}

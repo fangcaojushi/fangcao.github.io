@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+html{ font-size:12px; margin:0 auto;}
+ul,li{ list-style:none}
+a{ color:#555; text-decoration:none; }
+a:hover{ color:#417dc5;}
+img { border:0; vertical-align:middle;}
+ul,li,img,p,html,body,h4,h2,h6{ margin:0; padding:0;}
+.l{ float:left;}
+.r{ float:right;}
+.clr{ clear:both;}
+.mt8{ margin-top:8px;}
+.mlr8{ margin:0 8px;}
+.h426{ height:426px;}
+.h428{ height:428px;}
+.h347{ height:347px;}
+.h349{ height:349px;}
+.bk{ border:#b1c8d6 1px solid;}
+.w200{ width:200px;}
+.w560{ width:564px;}
+.w980{ width:980px; margin:0 auto; background:#fff;}
+.w768{ width:768px;}
+.hdn{ overflow:hidden;}
+.bluebg{ background:#f3f8fb}
+.pdg5{ padding:5px;}
+.pdg10{ padding:10px;}
+.lnh27{ line-height:27px;}
+.zisize{ font-size:13px;}
+/*head*/
+#head{ margin:0 auto;}
+#head .hd1{ background:#edf5fd; height:30px; line-height:30px; padding:0 10px;}
+#head .hd1 .txt{ height:18px; width:95px; border:#babcbc 1px solid; margin:0 10px; }
+#head .hd1 .delu{  background:#f6f7f7; border:#babcbc 1px solid;  text-align:center; padding:1px 10px;}
+#head .hd1 .star{  background:url(../images/idxjp.gif) -483px 0 no-repeat;   padding:0 5px 0 20px; }
+#head .hd1 a{ margin:0 10px; }
+#head .hd1 a:hover{ text-decoration:underline}
+#head .hd2{ background:url(../images/idxbg.gif) repeat-x; height:80px; padding:0 10px;}
+#head .hd2 .logo{ width:504px; height:52px; padding-top:14px;}
+#head .hd2 .zongzhi{ background:url(../images/idxjp.gif) -442px -90px no-repeat;  padding-top:10px; width:230px; height:65px; color:#0762b1; font-size:13px; font-weight:500; line-height:20px; letter-spacing:0.5mm; font-family:"黑体", "宋体", Arial}
+#head .hd2 .zongzhi b{ width:80px; padding-top:38px; display:block; float:left; font-family:"黑体", "宋体", Arial; font-weight:500;}
+/*hwhzmenu*/
+#menu { display:block; background:url(../images/idxbg.gif) 0 -81px repeat-x; height:47px; font-size:16px;}
+#menu .jquery {margin-right:1px;padding:0 2em;}
+#menu .mainlevel { float:left; width:110px; background:url(../images/idxjp.gif) -499px -34px no-repeat;/*IE6 only*/}
+#menu .mainlevel a {color:#fff; text-decoration:none; line-height:47px; display:block;  width:108px; text-align:center}
+#menu .mainlevel a:hover{color:#fff; text-decoration:none; background:url(../images/bg_4.gif) center top no-repeat;   }
+#menu .mainlevel a.select{ background:url(../images/idxjp.gif) 12px -34px no-repeat;}
+#menu .mainlevel ul {display:none; position:absolute;}
+#menu .mainlevel li {border-top:1px solid #fff; background:#2c9ff4;  filter:alpha(opacity=80);width:110px;/*IE6 only*/}
+.log {text-align:center; color:skyblue; line-height:24px; text-transform:capitalize; margin:50px auto;}
+#menu .mainlevel li a:hover{ background:#000; }
+/*footer*/
+#ft{clear:both; margin-top:8px; text-align:center; }
+#ft .ft_menu{ height:28px; line-height:28px; font-size:14px; }
+#ft .ft_menu a{ padding:5px 10px; }
+#ft p{ padding-top:5px;}
+

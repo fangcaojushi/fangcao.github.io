@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员列表</title>
+<link href="css/Content.css" rel="stylesheet" type="text/css" />
+<link href="css/frame.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/common.js"></script>
+<script language="javascript" src="js/show.js"></script>
+
+
+</head>
+
+<body>
+<div class="box_wai">
+<div class="box_nei">
+	<div class="box_top">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="12" height="30"><img src="images/tab_03.gif" width="12" height="30" /></td>
+        <td>
+			<div class="position l">
+				<b>您当前的位置：</b>
+				<a href="#">[首页]</a>><a href="#">[积分管理]</a>><a href="#">[礼品列表]</a>
+			</div>
+			
+		
+		</td>
+        <td width="16"><img src="images/tab_07.gif" width="16" height="30" /></td>
+      </tr>
+    </table>
+	</div>
+	<div class="bai">
+	
+	
+	
+	<div class="p8_bian">
+			<b>按店铺查看</b>&nbsp;&nbsp;
+			 <select name="">
+			     <option>利郎专卖店</option>
+				 <option>秋水伊人专卖店</option>
+				 <option>纳 紋 专 卖 店</option>
+				 <option>纳 紋 专 卖 店</option>
+				 <option>雅名格裤装专卖</option>
+				 <option>以 纯 同 顺 店</option>
+				 
+				
+
+			 </select>&nbsp;&nbsp;			  
+			  <input type="button" value="增加礼品" class="ButtonLong" onclick="show('add_gift','show')">
+			   <input type="button" value="导出Excel" class="ButtonLong"> 
+			
+	</div>
+	    <div id="add_gift">
+		 <TABLE         class="adduser p8_bian" border=0 cellSpacing=1 cellPadding=0  >
+        <TBODY>
+		 <tr>
+          <TD  class="td_txt">礼品名称： </TD>
+          <TD>
+          
+			<INPUT class="wd140"       type=text  > 
+			
+			</TD>
+		
+          <TD  class="td_txt">礼品简码： </TD>
+          <TD>
+          
+			<INPUT class="wd140"       type=text  > 
+		
+			</TD>
+		</tr>
+		<tr>
+		
+          <TD  class="td_txt">库存数量： </TD>
+          <TD>
+          
+			<INPUT class="wd140"       type=text  > 
+			
+			</TD>
+		
+          <TD  class="td_txt">所需积分： </TD>
+          <TD>
+          
+			<INPUT class="wd140"       type=text  > 
+			
+			</TD>
+		</TR>
+       
+       
+        <tr>
+          <TD  class="td_btm"        colSpan=4>
+		  
+		  <INPUT  class=ButtonLong value=保存 type=button onclick="show('add_gift','hidden')" />   
+		  <INPUT  class=ButtonLong value=关闭 type=button onclick="show('add_gift','hidden')" /> 
+		  </TD>
+		 </TR>
+		 </TBODY>
+		 </TABLE>   
+		 </div>
+		  <table width="100%" border="0" cellpadding="0" cellspacing="1" class="list_user p8_bian">
+          <tr>
+            <th >礼品名称</th>
+            <th >礼品简码</th>
+            <th >所需积分</th>
+            <th >库存数量</th>
+            <th > 兑换数量</th> 
+			<th>店铺名称</th>
+			<th>操作选项</th>
+		
+          </tr>
+		  <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            
+			<td >楠竹通络磁疗席 </td>
+			<td >5000</td>
+			<td >1000</td>
+			<td >20</td>
+			<td >3</td>
+			<td >利郎专卖店</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		   <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            
+			<td >楠竹通络磁疗席 </td>
+			<td >3536324</td>
+			<td >300</td>
+			<td >50</td>
+			<td >23</td>
+			<td >雅名格裤装专卖</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		   <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            
+			<td >楠竹通络磁疗席 </td>
+			<td >5000</td>
+			<td >1000</td>
+			<td >20</td>
+			<td >3</td>
+			<td >利郎专卖店</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		   <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            
+			<td >楠竹通络磁疗席 </td>
+			<td >3536324</td>
+			<td >300</td>
+			<td >50</td>
+			<td >23</td>
+			<td >雅名格裤装专卖</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		   <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            
+			<td >楠竹通络磁疗席 </td>
+			<td >5000</td>
+			<td >1000</td>
+			<td >20</td>
+			<td >3</td>
+			<td >利郎专卖店</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		   <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            
+			<td >楠竹通络磁疗席 </td>
+			<td >3536324</td>
+			<td >300</td>
+			<td >50</td>
+			<td >23</td>
+			<td >雅名格裤装专卖</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		   <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            
+			<td >楠竹通络磁疗席 </td>
+			<td >5000</td>
+			<td >1000</td>
+			<td >20</td>
+			<td >3</td>
+			<td >利郎专卖店</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		   <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            
+			<td >楠竹通络磁疗席 </td>
+			<td >3536324</td>
+			<td >300</td>
+			<td >50</td>
+			<td >23</td>
+			<td >雅名格裤装专卖</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  </table>
+		
+	</div>
+	<div class="box_bottom">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td width="12" height="35"><img src="images/tab_18.gif" width="12" height="35" /></td>
+			<td>&nbsp;
+				
+			</td>        
+			<td width="16"><img src="images/tab_20.gif" width="16" height="35" /></td>
+		  </tr>
+		</table>
+	</div>
+</div>
+</div>
+
+</body>
+</html>

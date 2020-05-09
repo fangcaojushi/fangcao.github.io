@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员列表</title>
+<link href="css/Content.css" rel="stylesheet" type="text/css" />
+<link href="css/frame.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/common.js"></script>
+
+</head>
+
+<body>
+<div class="box_wai">
+<div class="box_nei">
+	<div class="box_top">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="12" height="30"><img src="images/tab_03.gif" width="12" height="30" /></td>
+        <td>
+			<div class="position l">
+				<b>您当前的位置：</b>
+				<a href="#">[首页]</a>><a href="#">[会员管理]</a>><a href="#">[会员查询]</a>
+			</div>
+			<table  border="0" cellpadding="0" cellspacing="0" class="tools r">
+                  <tr>
+				    <!--<td ><input type="checkbox" name="checkbox62" value="checkbox" /></td>
+				  	<td >全选</td>-->
+                    <td ><img src="images/22.gif" width="14" height="14" /></td>
+                    <td ><a href="#">增加会员</a></td>
+					<td ><img src="images/33.gif" width="14" height="14" /></td>
+                    <td ><a href="#">修改</a></td>
+					<td ><img src="images/11.gif" width="14" height="14" /></td>
+                    <td ><a href="#">删除</a></td>
+					
+                  </tr>
+                </table>
+		
+		</td>
+        <td width="16"><img src="images/tab_07.gif" width="16" height="30" /></td>
+      </tr>
+    </table>
+	</div>
+	<div class="bai">	
+		<div class="p8_bian">
+		<div class="search">
+		<b>会员卡号/手机号码：</b>
+			  <input name="text" type="text" />
+			  &nbsp;
+			  店铺名称  &nbsp;
+			  <select name="">
+			     <option>利郎专卖店</option>
+				 <option>秋水伊人专卖店</option>
+				 <option>纳 紋 专 卖 店</option>
+				 <option>纳 紋 专 卖 店</option>
+				 <option>雅名格裤装专卖</option>
+				 <option>以 纯 同 顺 店</option>
+				 
+				
+
+			 </select>
+			  &nbsp;
+			   会员等级  &nbsp;
+			   <select name="">
+			     <option>贵宾卡</option>
+				 <option>金钻卡</option>
+				 <option>银钻卡</option>
+				 <option>铜钻卡</option>
+				
+				 
+				
+
+			 </select>
+			   <input type="button" value="查询" class="ButtonLong"><!--<input type="button" value="高级查询" class="ButtonLong" title="按会员姓名、店铺、会员等级、会员状态、积分数量、账户金额、累计消费金额高级查询会员信息">-->
+			  <input name="Input"  type="button" class="ButtonLong"  value="导出Excel" />
+		</div>
+		  </div> 
+		  <table width="100%" border="0" cellpadding="0" cellspacing="1" class="list_user p8_bian">
+          <tr>
+            <th width="3%" align="left" style="padding-left:5px; text-align:left">              
+			  <input type="checkbox" name="allbox" id="allbox" title="全选/取消" onClick="doAllChecked(this,'chkElement')">			</th>
+            <th width="8%">卡号</th>
+            <th width="5%">姓名</th>
+            <th width="8%">手机号码</th>
+            <th width="5%">等级</th>
+            <th width="5%">余额</th>
+			<th width="5%">累计消费</th>
+			<th width="5%">帐户积分</th>
+			<th width="10%">店铺</th>
+			<th width="15%">电子邮箱</th>
+			<th width="10%">办卡时间</th>			
+            <th width="15%" >基本操作</th>
+          </tr>
+          <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            <td ><input type="checkbox" name="chkElement" onclick="onRowChecked(this);" value="1" /></td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            <td >
+				<input type="checkbox" name="chkElement" onClick="onRowChecked(this);" value="2">			</td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            <td ><input type="checkbox" name="chkElement" onclick="onRowChecked(this);" value="3" /></td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            <td >
+				<input type="checkbox" name="chkElement" onClick="onRowChecked(this);" value="4">			</td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            <td ><input type="checkbox" name="chkElement" onclick="onRowChecked(this);" value="5" /></td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            <td >
+				<input type="checkbox" name="chkElement" onClick="onRowChecked(this);" value="6">			</td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            <td >
+				<input type="checkbox" name="chkElement" onClick="onRowChecked(this);" value="7">			</td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            <td >
+				<input type="checkbox" name="chkElement" onClick="onRowChecked(this);" value="8">			</td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            <td >
+				<input type="checkbox" name="chkElement" onClick="onRowChecked(this);" value="9">			</td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            <td >
+				<input type="checkbox" name="chkElement" onClick="onRowChecked(this);" value="10">			</td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            <td >
+				<input type="checkbox" name="chkElement" onClick="onRowChecked(this);" value="11">			</td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            <td >
+				<input type="checkbox" name="chkElement" onClick="onRowChecked(this);" value="12">			</td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            <td >
+				<input type="checkbox" name="chkElement" onClick="onRowChecked(this);" value="13">			</td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            <td >
+				<input type="checkbox" name="chkElement" onClick="onRowChecked(this);" value="14">			</td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            <td >
+				<input type="checkbox" name="chkElement" onClick="onRowChecked(this);" value="15">			</td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            <td >
+				<input type="checkbox" name="chkElement" onClick="onRowChecked(this);" value="16">			</td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            <td >
+				<input type="checkbox" name="chkElement" onClick="onRowChecked(this);" value="17">			</td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            <td >
+				<input type="checkbox" name="chkElement" onClick="onRowChecked(this);" value="18">			</td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_j" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'j')">
+            <td >
+				<input type="checkbox" name="chkElement" onClick="onRowChecked(this);" value="19">			</td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+		  <tr class="datalist_o" onMouseOver="onRowFocus(this)" onMouseOut="onRowUnfocused(this,'o')">
+            <td >
+				<input type="checkbox" name="chkElement" onClick="onRowChecked(this);" value="20">			</td>
+            <td >888888888</td>
+            <td >大富豪</td>
+            <td >13335035888</td>
+            <td>金卡</td>
+            <td >130</td>
+			<td >1000</td>
+			<td >300</td>
+			<td >总店</td>
+			<td >dafuhaofushi@163.com</td>
+			<td >2012年10月21日</td>
+            <td ><div align="center"><span class="STYLE4"><img src="images/44.gif" width="16" height="16" />充值&nbsp; &nbsp;<img src="images/edt.gif" width="16" height="16" />编辑&nbsp; &nbsp;<img src="images/del.gif" width="16" height="16" />删除</span></div></td>
+          </tr>
+        </table>
+	</div>
+	<div class="box_bottom">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td width="12" height="35"><img src="images/tab_18.gif" width="12" height="35" /></td>
+			<td>
+				<span class="colr1 l">共有 120 条记录，当前第 1/10 页</span>
+				<table border="0" align="right" cellpadding="0" cellspacing="0">
+					<tr>
+					  <td width="40"><img src="images/first.gif" width="37" height="15" /></td>
+					  <td width="45"><img src="images/back.gif" width="43" height="15" /></td>
+					  <td width="45"><img src="images/next.gif" width="43" height="15" /></td>
+					  <td width="40"><img src="images/last.gif" width="37" height="15" /></td>
+					  <td width="100">转到第
+						<input name="textfield" type="text" size="4" style="height:12px; width:20px; border:1px solid #999999;" /> 
+						页</td>
+					  <td width="40"><img src="images/go.gif" width="37" height="15" /></td>
+					</tr>
+				</table>
+			</td>        
+			<td width="16"><img src="images/tab_20.gif" width="16" height="35" /></td>
+		  </tr>
+		</table>
+	</div>
+</div>
+</div>
+
+</body>
+</html>

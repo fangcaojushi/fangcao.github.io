@@ -1,0 +1,125 @@
+﻿
+
+
+#sidebar{width: 172px;height:auto;border-top:#c1ccda 1px solid;}
+
+#container {width: 172px; background-color:#dae5f5;}
+.content{width: 172px;height: 26px;}
+#contentframe{margin: 0 8px 0 205px !important;height:auto;}
+
+
+
+
+H1 {
+	font-size: 14px;
+	margin: 0px;
+	width: 172px;
+	cursor: pointer;
+	height: 30px;
+	line-height: 20px;	
+	border-bottom:#c1ccda 1px solid;
+	font-weight:normal;
+	text-align:left;
+}
+
+H1 a {
+	display: block;
+	width: 152px;
+	color: #30435b;
+	height: 30px;
+	text-decoration: none;
+	moz-outline-style: none;
+	line-height: 30px;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+	padding-left:20px;
+}
+H1 a:hover{background:#f5f9fe;border-bottom:#c1ccda 1px solid; text-decoration:none;}
+
+.MM ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	
+}
+.MM li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 26px;
+	color: #333333;
+	list-style-type: none;
+	display: block;
+	text-decoration: none;
+	height: 26px;
+	width: 172px;
+	padding-left: 0px;
+	background:url(../images/huiyan10.jpg) 20% center no-repeat;
+}
+.MM {
+	width: 172px;
+	margin: 0px;
+	padding: 0px;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	clip: rect(0px,0px,0px,0px);
+	border-bottom:#c1ccda 1px solid;
+}
+.MM a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 26px;
+	color: #333333;	
+	height: 26px;
+	width: 172px;
+	display: block;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	text-decoration: none;
+}
+.MM a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 26px;
+	color: #333333;	
+	display: block;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	height: 26px;
+	width: 172px;
+	text-decoration: none;
+}
+.MM a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 26px;
+	color: #333333;
+	height: 26px;
+	width: 172px;
+	display: block;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	text-decoration: none;
+}
+.MM a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #084797;
+	text-align: center;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	height: 26px;
+	width: 172px;
+	text-decoration: none;
+}

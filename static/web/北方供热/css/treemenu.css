@@ -1,0 +1,64 @@
+#con {
+	 WIDTH: 172px; height:161px; float:left;
+}
+#tags {
+	WIDTH: 31px;  float:left; height:161px;
+}
+#tags LI {
+	 height:52px; display:block; width:31px; margin-top:2px;
+}
+#tags LI A {
+	 BACKGROUND: url(../images/idx4.jpg)  0 -54px no-repeat ; height:38px;  color:#fff; width:21px; display:block;  padding:10px 10px 0 5px;
+}
+#tags LI A:hover{ text-decoration:none;}
+#tags LI.emptyTag {
+	BACKGROUND: none transparent scroll repeat 0% 0%; WIDTH: 4px
+}
+#tags LI.selectTag {
+   background:url(../images/idx4.jpg) no-repeat;
+}
+#tags LI.selectTag A {
+	background:url(../images/idx4.jpg) no-repeat; color:#222f43;
+}
+#tagContent {
+	float:right; width:136px; height:161px;
+}
+.tagContent {
+	DISPLAY: none;  WIDTH: 136px; COLOR: #474747;  HEIGHT: 161px; line-height:27px; *line-height:22px;
+}
+#tagContent DIV.selectTag {
+	DISPLAY: block
+}
+
+#con_right {
+	 WIDTH: 170px; height:161px;  float:right;
+}
+#tags_right {
+	WIDTH: 31px;  float:right; height:161px;
+}
+#tags_right LI {
+	 height:52px; display:block; width:31px; margin-top:2px;
+}
+#tags_right LI A {
+	 BACKGROUND: url(../images/idx4_right.jpg)  0 -54px no-repeat ; height:38px;  color:#fff; width:16px; display:block;  padding:10px 5px 0 10px; text-align:center;
+}
+#tags_right LI A:hover{ text-decoration:none;}
+#tags_right LI.emptyTag {
+	BACKGROUND: none transparent scroll repeat 0% 0%; WIDTH: 4px
+}
+#tags_right LI.selectTag {
+   background:url(../images/idx4_right.jpg) no-repeat;
+}
+#tags_right LI.selectTag A {
+	background:url(../images/idx4_right.jpg) no-repeat; color:#222f43;
+}
+#tagCont {
+	float:left; width:136px; height:161px;
+}
+.tagCont {
+	DISPLAY: none;  WIDTH: 136px; COLOR: #474747;  HEIGHT: 161px; line-height:27px; *line-height:22px;
+}
+
+#tagCont_right DIV.selectTag {
+	DISPLAY: block
+}

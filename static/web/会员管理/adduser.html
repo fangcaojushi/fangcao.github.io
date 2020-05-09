@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员列表</title>
+<link href="css/Content.css" rel="stylesheet" type="text/css" />
+<link href="css/frame.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<div class="box_wai">
+<div class="box_nei">
+	<div class="box_top">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="12" height="30"><img src="images/tab_03.gif" width="12" height="30" /></td>
+        <td>
+			<div class="position l">
+				<b>您当前的位置：</b>
+				<a href="#">[首页]</a>><a href="#">[会员管理]</a>><a href="#">[会员信息登记]</a>
+			</div>
+			<table  border="0" cellpadding="0" cellspacing="0" class="tools r">
+                  <tr>
+				    <!--<td ><input type="checkbox" name="checkbox62" value="checkbox" /></td>
+				  	<td >全选</td>-->
+                    <td ><img src="images/22.gif" width="14" height="14" /></td>
+                    <td ><a href="#">新增</a></td>
+					<td ><img src="images/33.gif" width="14" height="14" /></td>
+                    <td ><a href="#">修改</a></td>
+					<td ><img src="images/11.gif" width="14" height="14" /></td>
+                    <td ><a href="#">删除</a></td>
+					
+                  </tr>
+                </table>
+		
+		</td>
+        <td width="16"><img src="images/tab_07.gif" width="16" height="30" /></td>
+      </tr>
+    </table>
+	</div>
+	<div class="bai">
+		
+	    <TABLE         class="adduser p8_bian" border=0 cellSpacing=1 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD  class="td_txt">会员卡号： </TD>
+          <TD colSpan=3>
+            <DIV style="FLOAT: left">
+			<INPUT class="wd140"       type=text  > 
+			<INPUT  type=hidden >
+			<INPUT  class=ButtonLong title=此按钮用于IC卡发卡，将IC卡放在感应刷卡器上方，然后点击此发卡按钮！！发卡前请先在【全局参数设置】进行IC卡初始化才可发卡。 value=发卡 type=button> 
+            </DIV>
+            <DIV style="FLOAT: left"><SPAN style="COLOR: red; FONT-SIZE: 13px">&nbsp;&nbsp;(使用IC卡，请输入卡面号后,点击发卡按钮)</SPAN></DIV></TD></TR>
+        <TR>
+          <TD class="td_txt">会员姓名： </TD>
+          <TD><INPUT class="wd140"  type=text             >
+		  <FONT             color=#ff0000><STRONG>&nbsp;*</STRONG></FONT> </TD>
+          <TD class="td_txt">手机号码： </TD>
+          <TD><INPUT class="wd140"  type=text ></TD></TR>
+        <TR id=MemReg_Tr_Pwd>
+          <TD class="td_txt">会员密码： </TD>
+          <TD><INPUT class="wd140"  
+            title=在系统设置中，可以开启或者关闭“会员密码”功能 type=password> </TD>
+          <TD class="td_txt">确认密码： </TD>
+          <TD><INPUT class="wd140" type=password 
+            > </TD></TR>
+        <TR>
+          <TD class="td_txt">店铺： </TD>
+          <TD><SELECT class="wd140"
+             > <OPTION selected value=1>总店</OPTION> <OPTION 
+              value=54>东方商厦太平鸟</OPTION> <OPTION value=55>苏果超市太平鸟女装</OPTION> 
+              <OPTION value=56>高邮市府前街太平鸟女装</OPTION> <OPTION 
+              value=57>123</OPTION> <OPTION value=58>2222222</OPTION> <OPTION 
+              value=59>深圳沙井</OPTION> <OPTION value=61>随州康辉</OPTION> <OPTION 
+              value=60>祎凡女装</OPTION> <OPTION value=62>000009</OPTION></SELECT> 
+            <INPUT style="WIDTH: 33px; DISPLAY: none"
+            value=总店 type=text> </TD>
+          <TD class="td_txt">会员生日： </TD>
+          <TD><INPUT class="wd140"  type=text 
+           > </TD></TR>
+        <TR>
+          <TD class="td_txt">过期时间： </TD>
+          <TD colSpan=3><INPUT class="wd140" id=MemReg_PastDate 
+            type=text name=MemReg_PastDate> <LABEL><INPUT id=MemReg_IsPast 
+            type=checkbox name=MemReg_IsPast>永久有效（不设置过期时间）</LABEL> </TD></TR>
+        <TR>
+          <TD class="td_txt">会员状态： </TD>
+          <TD><SELECT style="WIDTH: 100px" > 
+              <OPTION selected value=0>正常</OPTION> <OPTION value=1>锁定</OPTION> 
+              <OPTION value=2>挂失</OPTION></SELECT> </TD>
+          <TD class="td_txt">账户余额： </TD>
+          <TD><INPUT style="WIDTH: 60px" 
+            onclick=javascript:this.select(); value=0 type=text 
+           > </TD></TR>
+        <TR>
+          <TD class="td_txt">会员等级： </TD>
+          <TD><SELECT style="WIDTH: 100px" > 
+              <OPTION selected value="">请选择</OPTION> <OPTION 
+              value=34>金卡</OPTION> <OPTION value=35>银卡</OPTION> <OPTION 
+              value=38>普通卡</OPTION> <OPTION value=37>积分卡</OPTION> <OPTION 
+              value=39>黄河卡</OPTION> <OPTION value=40>12121</OPTION></SELECT> <FONT 
+            color=#ff0000><STRONG>&nbsp;*</STRONG></FONT> <A 
+            style="MARGIN-LEFT: 20px" 
+            href="level.html">等级设置</A> </TD>
+          <TD class="td_txt">账户积分： </TD>
+          <TD><INPUT style="WIDTH: 60px" 
+            onclick=javascript:this.select(); value=0 type=text 
+            > </TD></TR>
+        <TR>
+          <TD class="td_txt">电子邮箱： </TD>
+          <TD><INPUT class="wd140" id=MemReg_Email type=text 
+            name=MemReg_Email> </TD>
+          <TD class="td_txt">联系地址： </TD>
+          <TD><INPUT class="wd140"  type=text 
+           > </TD></TR>
+        <TR>
+          <TD class="td_txt">会员付费： </TD>
+          <TD><INPUT style="WIDTH: 60px" 
+            onclick=javascript:this.select(); value=0 type=text> 
+          </TD>
+          <TD class="td_txt">推荐人卡号： </TD>
+          <TD><INPUT class="wd140" 
+            title=输入“推荐人”卡号，按回车键，可自定提取到推荐人信息； type=text > 
+            <SPAN id=MemReg_Referer_Msg></SPAN><INPUT 
+            type=hidden > <INPUT 
+            type=hidden > </TD></TR>
+        
+       
+        <TR>
+          <TD  class="td_btm"        colSpan=4>
+		  
+		  <INPUT  class=ButtonLong value=保存 type=button />
+          </TD>
+		 </TR>
+		 </TBODY>
+		 </TABLE>
+		  <div class="beizhu p8_bian">
+		  	<p class="p8">
+				■&nbsp;&nbsp;在系统设置中，可以开启或者关闭“会员密码”功能；<br />
+				■&nbsp;&nbsp;在自定义属性设置中，可以设置任何的、不限数量的自定义扩展属性；<br />
+				■&nbsp;&nbsp;输入“推荐人”卡号，按回车键，可自定提取到推荐人信息；<br />
+
+			</p>
+		  </div>
+		
+		 
+	</div>
+	<div class="box_bottom">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td width="12" height="35"><img src="images/tab_18.gif" width="12" height="35" /></td>
+			<td>&nbsp;
+				
+			</td>        
+			<td width="16"><img src="images/tab_20.gif" width="16" height="35" /></td>
+		  </tr>
+		</table>
+	</div>
+</div>
+</div>
+
+</body>
+</html>
