@@ -1,0 +1,60 @@
+$(function() {
+	var congestrend = echarts.init(document.getElementById("congestrend")),
+	congestrendopt = {
+	    title: {
+	        text: ''
+	    },
+	    color:['#fe9900','#fe9900','#fe9900','#fe9900','#fe0000','#fe0000'],
+	    tooltip : {
+	        trigger: 'axis',
+	        axisPointer: {
+	            type: 'cross',
+	            label: {
+	                backgroundColor: '#6a7985'
+	            }
+	        }
+	    },
+	    legend: {
+	        data:[]
+	    },
+	    toolbox: {
+	        feature: {
+	            magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+	            restore : {show: true},
+	            saveAsImage : {show: true}
+	        }
+	    },
+	    grid: {
+	        left: '3%',
+	        right: '4%',
+	        bottom: '3%',
+	        containLabel: true
+	    },
+	    xAxis : [
+	        {
+	            type : 'category',
+//	            boundaryGap : false,      //数值轴两端的空白策略  
+	            data : ['星期一','星期二','星期三','星期四','星期五','星期六','星期日']
+	        }
+	    ],
+	    yAxis : [
+	        {
+	            type : 'value'
+	        }
+	    ],
+	    series : [
+	        {
+	            name:'',
+	            type:'bar',
+	            smooth:true,
+	            barWidth:34,//设置柱子的宽度
+//	            stack: '总量',
+	            areaStyle: {normal: {}},
+	            data:[6.8,6.1,6.6,8.9,9.4,6.9,8.3]
+	        }
+	       
+	    ]
+	};
+
+	congestrend.setOption(congestrendopt), $(window).resize(congestrend.resize);
+})

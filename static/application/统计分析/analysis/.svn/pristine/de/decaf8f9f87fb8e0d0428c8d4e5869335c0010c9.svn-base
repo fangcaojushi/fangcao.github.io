@@ -1,0 +1,20 @@
+.hsave{
+	position: fixed;
+	bottom: 50px;
+	right: 26px;
+	z-index: 100;
+}
+.hsave a{
+	height: 38px;
+	width: 38px;
+	display: block;
+	padding: 9px 8px;
+	margin: 0 10px;
+	text-align: center;
+	border-radius: 50%;
+	transition: all .5s;
+}
+.hsave a:hover{
+	color: #fff;
+	background-color: #006621;
+}

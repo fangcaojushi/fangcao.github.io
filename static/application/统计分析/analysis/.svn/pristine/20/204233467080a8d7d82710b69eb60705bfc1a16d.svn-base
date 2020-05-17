@@ -1,0 +1,139 @@
+.follow-search{
+	overflow: hidden;
+	padding-top: 20px;
+	background-color:#f9f9f9;
+}
+.follow-search label{
+	line-height: 34px;
+}
+.follow-search .col-sm-7{
+	padding-left: 0;
+	padding-right: 0;
+}
+.follow-search .follow-search-btn button{
+	margin-left: 15px;
+}
+/*跟车列表模块*/
+.ibox-title{
+	border-bottom:2px solid #ddd;
+	padding-left:20px;
+}
+.follow-list{
+	padding-left:20px;
+	padding-right: 20px;
+}
+.follow-list-part{
+	border:1px solid #ddd;
+	border-radius: 6px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.follow-list ul,li{
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+.follow-list-part-title{
+	line-height: 40px;
+	font-size: 17px;
+	color:#333;
+	border-bottom: 1px solid #ddd;
+	padding-left: 20px;	
+	background-color: #f9f9f9;
+}
+.glyphicon{
+	top:3px;
+}
+.glyphicon-chevron-down, .glyphicon-picture, .glyphicon-chevron-up{
+	color:#1ab394;
+}
+.glyphicon-picture{
+	margin-left: 10px;
+	cursor: pointer;
+}
+.glyphicon-exclamation-sign{
+	color:#ed5565;
+}
+.follow-red{
+	color:#ed5565;
+	display:inline-block;
+	margin-left: 20px;
+	font-size: 14px;
+}
+.follow-attention{
+	display: inline-block;
+	float:right;
+	margin-right: 20px;;
+}
+.follow-list-part li{
+	line-height: 40px;
+	font-size: 16px;
+	color:#646464;
+	border-bottom: 1px solid #ddd;
+	padding-left: 20px;
+	overflow: hidden;
+}
+.follow-second-title{
+	font-weight: bold;
+	
+}
+.follow-list-part ul{
+	display:none;
+}
+.follow-list-part .follow-l1{
+	display:block;
+}
+/*弹窗样式*/
+.follow-alert{
+	position:fixed;
+	left:50%;
+	top:50%;
+	width:600px;
+	height:400px;
+	margin-left:-300px;
+	margin-top: -200px;
+	z-index: 1000;
+	background-color: #f5f5f5;
+	border:1px solid #bbb;
+	border-radius:6px;
+	display: none;
+}
+.follow-alert-title{	
+	background-color:#1ab394;
+	color:#fff;
+	line-height: 40px;
+	font-size:16px;
+	padding-left: 20px;
+	overflow: hidden;
+	padding-right:20px;
+}
+.follow-alert-title i{
+	float:right;
+	line-height: 40px;
+	cursor: pointer;
+}
+.follow-alert-wrap{
+	overflow: hidden;
+}
+.alert-imgbox{
+	padding-top: 20px;
+}
+.alert-imgbox img{
+	width:100%;
+}
+.alert-detail{
+	border-left:1px solid #ddd;
+	height:360px;
+}
+.alert-detail ul{
+	padding:0;
+	padding-top: 10px;
+}
+.alert-detail li{
+	line-height: 40px;
+	font-size: 16px;
+	border-bottom: 1px solid #ddd;
+}
+.alert-detail .alert-last{
+	border:none;
+}

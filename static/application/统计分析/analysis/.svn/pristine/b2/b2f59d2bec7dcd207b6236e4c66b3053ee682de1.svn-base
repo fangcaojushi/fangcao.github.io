@@ -1,0 +1,45 @@
+$(function() {
+	var hwf_city = echarts.init(document.getElementById("serv_qual")),
+	failopt = {
+		    tooltip : {
+		        trigger: 'axis'
+		    },
+		    legend: {
+		        data:['服务质量排名']
+		    },
+		   color:['#1ab394'],
+		    toolbox: {
+		        show : true,
+		        feature : {
+		            mark : {show: true},
+		            dataView : {show: true, readOnly: false},
+		            magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+		            restore : {show: true},
+		            saveAsImage : {show: true}
+		        }
+		    },
+		    calculable : true,
+		    xAxis : [
+		        {
+		            type : 'category',
+		            
+		            data : ['大兴项目','秦皇岛项目','合川项目','万盛项目','乌鲁木齐项目','昆明项目','苏州项目']
+		        }
+		    ],
+		    yAxis : [
+		        {
+		            type : 'value'
+		        }
+		    ],
+		    series : [
+		       {
+		            name:'服务质量排名',
+		            type:'bar',
+		            stack: '总量',
+		            barWidth:28,
+		            data:[98, 95, 92, 88, 86, 84, 82]
+		        }
+		    ]
+		};                    
+	hwf_city.setOption(failopt), $(window).resize(hwf_city.resize);
+})

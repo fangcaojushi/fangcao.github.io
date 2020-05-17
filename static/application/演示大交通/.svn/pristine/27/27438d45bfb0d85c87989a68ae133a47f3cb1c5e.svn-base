@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>道路交通指数</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/public.css" rel="stylesheet">
+<link href="css/daolu.css" rel="stylesheet">
+<!--navbar-->
+<!--<link href="fonts/FontAwesome/font-awesome.css" rel="stylesheet"/>-->
+<link href="css/bootsnav.css" rel="stylesheet"/>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.2.min.js"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--导航菜单-->
+<script src="js/menu.js"></script>
+<!--正文-->
+<div class="bodycon">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 fen-title">
+      <h2 class="text-center gj_title">道路交通指数</h2>
+		  <div class="lg-txt">
+		      <div class="light">
+		          <img class="faguang" src="images/shanliang.png"/>
+		      </div>
+		  </div>
+    </div>
+  </div>
+
+</div>
+<div class="fen"></div>
+<div class="container-fluid high_wai">
+  
+  <div class="row high_nei">
+    <div class="col-sm-6 bg6 high_con"> 
+    	<div id="canvas_round" class="canvas_round"  ></div>
+    </div>
+    <div class="col-sm-6 high_con">
+    	<div class="col-sm-12  bg6 high_con">
+            <row class="high_con  bg6">
+                <h5 class="dhbt_lvl">主要交通指标<em class="text-right" id='time'></em></h5>
+            <br/>
+                <div class="col-md-6 text-left high_con">
+                 
+                      <div class="basic_title">
+                          <span class="pull-right"><number  class="ssjk-fcgreen ssjk-fz18">2.3</number>  基本畅通</span>
+                          <span class="pull-left">交通拥堵指数</span>
+                          <span class="clearfix"></span>
+                      </div>
+                      <div class="progress">
+                          <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                              <span class="sr-only">80% Complete (success)</span>
+                          </div>
+                      </div>
+                      <div class="basic_title">
+                          <span class="pull-right"><number  class="ssjk-fcyellow ssjk-fz18">41.6</number> km/h</span>
+                          <span class="pull-left">全市主干网平均速度</span>
+                          <span class="clearfix"></span>
+                      </div>
+                      <div class="progress">
+                          <div  class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                              <span class="sr-only">20% Complete (success)</span>
+                          </div>
+                      </div>
+                      <div class="basic_title">
+                          <span class="pull-right"><number id="ssjk-opr-num-online" class="ssjk-fcgreen ssjk-fz18">62.5</number> km/h</span>
+                          <span class="pull-left">中心城市平均速度</span>
+                          <span class="clearfix"></span>
+                      </div>
+                      <div class="progress">
+                          <div id="ssjk-progress-parking-online" class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                              <span class="sr-only">80% Complete (success)</span>
+                          </div>
+                      </div>
+                      <div class="basic_title">
+                          <span class="pull-right"><number id="ssjk-opr-num-offline" class="ssjk-fcyellow ssjk-fz18">15</number> %</span>
+                          <span class="pull-left">拥堵里程比例</span>
+                          <span class="clearfix"></span>
+                      </div>
+                      <div class="progress">
+                          <div id="ssjk-progress-parking-offline" class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:15%">
+                              <span class="sr-only">20% Complete (success)</span>
+                          </div>
+                      </div>
+                 
+              </div>
+              <div class="col-md-6 text-center high_con"> 
+                    <!--<img src="images/shanxing.png" width="auto"  class="high_wai" style="min-width:170px; min-height:170px"/>-->
+                    <svg id="clockyd" viewBox="0 0 150 150" width="70%" height="70%" >  
+					    <animate attributeName="width" attributeType="XML" begin="0s" dur="1s" from="50%" to="70%" /> 
+					    <animate attributeName="height" attributeType="XML" begin="0s" dur="1s"  from="50%" to="70%" /> 
+				        <!-- clock face   -->
+				        <circle id="face" cx="76" cy="76" r="62" />  
+						<!--yongdu-->
+						<g id="ydzs">  
+				          <!--<line x1="76" y1="76" x2="76" y2="14" />-->  
+							<path id="shanxing1"  d="" class="zs4"/>
+							<path id="shanxing2"  d="" class="zs5"/>
+							<path id="shanxing3"  d="" class="zs3"/>
+							<path id="shanxing4"  d="" class="zs2"/>
+							<path id="shanxing5"  d="" class="zs4"/>
+							<path id="shanxing6"  d="" class="zs4"/>
+							<path id="shanxing7"  d="" class="zs3"/>
+							<path id="shanxing8"  d="" class="zs2"/>
+							<path id="shanxing9"  d="" class="zs4"/>
+							<path id="shanxing10"  d="" class="zs5"/>
+						</g>
+				        <!-- mark time lines -->  
+				        <g id="ticks">  
+				            <!--1到12-->
+				            <line x1="76" y1="14" x2="76" y2="22" />
+							<line x1="108.67" y1="23.17" x2="103.5" y2="30" />
+							<line x1="130" y1="45" x2="122.5" y2="49.49" />
+							<line x1="137" y1="76" x2="130" y2="76" />
+							<line x1="130.5" y1="107.5" x2="122.5" y2="102.5" />
+							<line x1="107.8" y1="128.39" x2="103.5" y2="121" />
+							<line x1="76" y1="137" x2="76" y2="129" />
+							<line x1="44.90" y1="129.02" x2="50" y2="122.5" />
+							<line x1="22" y1="107" x2="30.1" y2="102.09" />
+							<line x1="14" y1="76" x2="22" y2="76" />
+							<line x1="22" y1="44" x2="30" y2="48.97" />
+							<line x1="46" y1="23" x2="50.5" y2="29.5" />  
+				            <!--0到1-->
+				            <line x1="82.52" y1="15" x2="81.98" y2="19.98" />
+							<line x1="88.52" y1="16" x2="87.66" y2="21.03" />
+							<line x1="94.96" y1="17.95" x2="93.5" y2="22.37" />
+							<line x1="102" y1="19.98" x2="99.57" y2="24.45" />
+				            <!--1到2-->
+				            <line x1="113.63" y1="25.97" x2="109.2" y2="31" />
+							<line x1="118" y1="29.47" x2="113.5" y2="34.47" />
+							<line x1="122" y1="34.38" x2="117.5" y2="38.99" />
+							<line x1="127.59" y1="38.97" x2="121.38" y2="43.38" />
+							<!--2到3-->
+				            <line x1="132.44" y1="50.81" x2="126.97" y2="53.25" />
+							<line x1="134.56" y1="57" x2="128.81" y2="58.97" />
+							<line x1="136.63" y1="63" x2="130.97" y2="64.16" />
+							<line x1="138" y1="69.47" x2="131.97" y2="70.06" />
+							<!--3到4-->
+				            <line x1="138" y1="82.69" x2="132.22" y2="81.72" />
+				            <line x1="136.53" y1="88.97" x2="131" y2="87.75" />
+				            <line x1="135.98" y1="95.59" x2="130" y2="93.8" />
+				            <line x1="133.4" y1="101.95" x2="127.97" y2="99.09" />
+							<!--4到5-->
+				            <line x1="127" y1="113" x2="122.88" y2="109.91" />
+				            <line x1="123.44" y1="118.97" x2="118.94" y2="115" />
+				            <line x1="118.56" y1="123" x2="114.99" y2="118.47" />
+				            <line x1="114.78" y1="127.47" x2="110.99" y2="122.47" />
+							<!--5到6-->
+				            <line x1="103" y1="132" x2="100.5" y2="127" />
+				            <line x1="96.5" y1="134" x2="94.99" y2="130" />
+				            <line x1="90" y1="136" x2="89" y2="132" />
+				            <line x1="83" y1="136.5" x2="82.5" y2="133" />
+							<!--6到7-->
+				            <line x1="69.09" y1="140.03" x2="70.4" y2="132.9" />
+				            <line x1="62.51" y1="139.02" x2="64.06" y2="132.04" />
+				            <line x1="56" y1="137.01" x2="58.99" y2="130.53" />
+				            <line x1="49.49" y1="134.25" x2="53.04" y2="127.98" />
+							<!--7到8-->
+				            <line x1="38.72" y1="127" x2="42.75" y2="121.97" />
+				            <line x1="33" y1="123.56" x2="38.22" y2="118.88" />
+				            <line x1="28.97" y1="118.44" x2="34.53" y2="113.97" />
+				            <line x1="24.5" y1="113.09" x2="30.5" y2="109.00" />
+							<!--8到9-->
+				            <line x1="18.94" y1="101.53" x2="23.97" y2="99.23" />
+				            <line x1="15.97" y1="95.22" x2="22" y2="93.31" />
+				            <line x1="14.22" y1="89" x2="20.88" y2="87.53" />
+				            <line x1="13.97" y1="82.5" x2="19.91" y2="82" />
+							<!--9到10-->
+				            <line x1="14.97" y1="69.53" x2="20" y2="70.19" />
+				            <line x1="15.94" y1="63.06" x2="21" y2="64.06" />
+				            <line x1="17.66" y1="56.97" x2="22" y2="58.47" />
+				            <line x1="19.91" y1="50.97" x2="25" y2="53.25" />
+							<!--10到11-->
+				            <line x1="26.03" y1="39.81" x2="29.91" y2="42.9" />
+				            <line x1="30.44" y1="34.94" x2="34.64" y2="38.77" />
+				            <line x1="35.32" y1="31.12" x2="39.00" y2="34.6" />
+				            <line x1="40.15" y1="26.98" x2="43.47" y2="30.61" />
+							<!--11到12-->
+				            <line x1="51" y1="19" x2="53.5" y2="25.01" />
+				            <line x1="57" y1="17" x2="58.50" y2="23.44" />
+				            <line x1="63" y1="15" x2="64.14" y2="21.51" />
+				            <line x1="69.5" y1="14" x2="70" y2="20" />
+				           
+				            
+				        </g>  
+						
+				        <!-- mark some important numbers -->  
+				        <g id="numbers">   
+				            <text x="76" y="10">0</text>
+							<text x="111" y="20">2</text>    
+				            <text x="135.5" y="45">4</text>                
+				            <text x="144" y="78">6</text>                
+				            <text x="135" y="112">8</text>                
+				            <text x="112" y="140">10</text>                
+				            <text x="76" y="150">12</text>                
+				            <text x="38" y="140">14</text>                
+				            <text x="12" y="113">16</text>                
+				            <text x="4" y="78">18</text>                
+				            <text x="15" y="42">20</text>                
+				            <text x="39.95" y="18.01">22</text>                    
+				        </g>  
+				        <!-- show hands -->  
+				        <g id="hands" filter="url(#shadow)">  
+				            <line id="hourhand" x1="50" y1="50" x2="50" y2="24" />  
+				            <line id="minutehand" x1="50" y1="50" x2="50" y2="20" />  
+				            <line id="secondhand" x1="50" y1="50" x2="50" y2="16" />  
+				        </g>          
+				    </svg>
+                </div>
+            </row>
+        </div>
+    	
+    </div>
+    
+  </div>
+<div class="fen bg6"></div>
+  <div class="row high_nei bg6">
+  	<div class="fen"></div>
+        <div class="col-xs-12 col-sm-6 col-md-3 list_data">
+          <h5>动态停车位<a href="jianshezhong.html"  >更多 »</a></h5>
+        <div class="list_lh high_wai">
+			<ul>
+				<li>
+					
+					<p><a href=""  class="a_blue">中山路购物一条街</a><span class="btn_lh bg5">300</span></p>
+				</li>
+				<li>
+					
+					<p><a href=""  class="a_blue">南禅寺商贸区</a><span class="btn_lh bg5">10</span></p>
+				</li>
+				<li>
+					
+					<p><a href=""  class="a_blue">湖滨商业街</a><span class="btn_lh bg5">44</span></p>
+				</li>
+				<li>
+					
+					<p><a href=""  class="a_blue">灵山假日广场</a><span class="btn_lh bg5">154</span></p>
+				</li>
+				<li>
+					
+					<p><a href=""  class="a_blue">三凤桥肉庄</a><span class="btn_lh bg5">32</span></p>
+				</li>
+				<li>
+					
+					<p><a href=""  class="a_blue">无锡八佰伴</a><span class="btn_lh bg5">66</span></p>
+				</li>
+				<li>
+					
+					<p><a href=""  class="a_blue">恒隆广场</a><span class="btn_lh bg5">26</span></p>
+				</li>
+				<li>
+					
+					<p><a href=""  class="a_blue">鼋头渚</a><span class="btn_lh bg5">26</span></p>
+				</li>
+				<li>
+					
+					<p><a href=""  class="a_blue">锡惠公园</a><span class="btn_lh bg5">26</span></p>
+				</li>
+				<li>
+					
+					<p><a href=""  class="a_blue">灵山小镇拈花湾</a><span class="btn_lh bg5">26</span></p>
+				</li>
+				<li>
+					
+					<p><a href=""  class="a_blue">灵山大佛</a><span class="btn_lh bg5">26</span></p>
+				</li>
+				<li>
+					
+					<p><a href=""  class="a_blue">中视无锡影视基地</a><span class="btn_lh bg5">26</span></p>
+				</li>
+			</ul>
+		</div>
+          
+        </div>
+       <div class="col-xs-12 col-sm-6 col-md-3 list_data">
+          <h5>城市快速路<a href="jianshezhong.html"  >更多 »</a></h5>
+          
+              <div class="list_lh">
+			<ul>
+				<li>
+					<p><span>17:50:05</span><span class="btn_lh bg3">缓行</span><em>江海路</em></p>
+                    <p><a href="" >江海路（钱荣路高架到胜星路）&nbsp;&nbsp;&nbsp;阻塞</a></p>
+				</li>
+				<li>
+					<p><span>17:48:03</span><span class="btn_lh bg5">畅通</span><em>凤翔路</em></p>
+					<p><a href=""  > 凤翔路（青山支路到梁溪路路段）&nbsp;&nbsp;&nbsp;畅通</a></p>
+				</li>
+                <li>
+					<p><span>17:41:18</span><span class="btn_lh bg1">拥挤</span><em>蠡湖大道</em></p>
+					<p><a href=""  >蠡湖大道（金城西路到太湖西大道）&nbsp;&nbsp;&nbsp;拥挤</a></p>
+				</li>
+				<li>
+					<p><span>17:40:03</span><span class="btn_lh bg5">缓行</span><em>机场路</em></p>
+					<p><a href=""  > 机场路（沪霍线到新梅路）&nbsp;&nbsp;&nbsp;拥挤</a></p>
+				</li>
+                <li>
+					
+					<p><span>17:50:05</span><span class="btn_lh bg1">拥挤</span><em>太湖大道</em></p>
+                    <p><a href="" >太湖大道（太湖大道跟湖滨路的交界口）&nbsp;&nbsp;&nbsp;阻塞...</a></p>
+				</li>
+				<li>
+					<p><span>17:48:03</span><span class="btn_lh bg5">畅通</span><em>通江大道</em></p>
+					<p><a href=""  > 通江大道（兴源北路到兴昌南路路段）&nbsp;&nbsp;&nbsp;畅通</a></p>
+				</li>
+                <li>
+					<p><span>17:41:18</span><span class="btn_lh bg3">缓行</span><em>高浪路</em></p>
+					<p><a href=""  >高浪路（贡湖大道到五湖大道路段）&nbsp;&nbsp;&nbsp;拥挤</a></p>
+				</li>
+				<li>
+					<p><span>17:40:03</span><span class="btn_lh bg5">缓行</span><em>金城高架</em></p>
+					<p><a href=""  > 金城高架（纺成大道段、清扬路出口）&nbsp;&nbsp;&nbsp;拥挤</a></p>
+				</li>
+                
+                
+				
+			</ul>
+		</div>
+           
+          
+       </div>
+       <div class="col-xs-12 col-sm-6 col-md-3 list_data">
+          <h5>干线公路<a href="jianshezhong.html"  >更多 »</a></h5>
+         <div class="list_lh">
+			<ul>
+				<li>
+					
+					<p><span>17:50:05</span><span class="btn_lh bg3">缓行</span><em>运河西路</em></p>
+                    <p><a href="" >运河西路（扬盛桥到兆祥桥路段）&nbsp;&nbsp;阻塞...</a></p>
+				</li>
+				<li>
+					<p><span>17:48:03</span><span class="btn_lh bg5">畅通</span><em>运河东路</em></p>
+					<p><a href=""  >运河东路（锡山大桥到梁溪大桥路段）&nbsp;&nbsp;畅通</a></p>
+				</li>
+                <li>
+					<p><span>17:41:18</span><span class="btn_lh bg1">拥挤</span><em>解放西路</em></p>
+					<p><a href=""  >解放西路（人民中路到复兴路段）&nbsp;&nbsp;拥挤</a></p>
+				</li>
+				<li>
+					<p><span>17:40:03</span><span class="btn_lh bg5">缓行</span><em>新生路</em></p>
+					<p><a href=""  >新生路（人民中路到崇宁路段）&nbsp;&nbsp;拥挤</a></p>
+				</li>
+                <li>
+					
+					<p><span>17:50:05</span><span class="btn_lh bg1">拥挤</span><em>贡湖大道</em></p>
+                    <p><a href="" >贡湖大道（隐秀路到金城路路段）&nbsp;&nbsp;阻塞...</a></p>
+				</li>
+				<li>
+					<p><span>17:48:03</span><span class="btn_lh bg5">畅通</span><em>大通路</em></p>
+					<p><a href=""  > 大通路（万顺路到五湖大道路段）&nbsp;&nbsp;畅通</a></p>
+				</li>
+                <li>
+					<p><span>17:41:18</span><span class="btn_lh bg3">缓行</span><em>高浪路</em></p>
+					<p><a href=""  >高浪路（立新大道到五湖大道路段）&nbsp;&nbsp;拥挤</a></p>
+				</li>
+				<li>
+					<p><span>17:40:03</span><span class="btn_lh bg5">缓行</span><em>贡湖大道</em></p>
+					<p><a href=""  >贡湖大道（贡湖大道与大通路交叉口）&nbsp;&nbsp;拥挤</a></p>
+				</li>
+                
+                
+				
+			</ul>
+		</div>
+          
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 list_data">
+          <h5>地面道路<a href="jianshezhong.html"  >更多 »</a></h5>
+          <div class="list_lh">
+			<ul>
+				<li>
+					
+					<p><span>17:50:05</span><span class="btn_lh bg1">拥挤</span><em>锦旺路</em></p>
+                    <p><a href="" >锦旺路（228省道至芙蓉四路）&nbsp;&nbsp;&nbsp;拥挤</a></p>
+				</li>
+				<li>
+					<p><span>17:48:03</span><span class="btn_lh bg5">畅通</span><em>稻香路</em></p>
+					<p><a href=""  > 稻香路（青祁路至湖滨路路段）&nbsp;&nbsp;&nbsp;畅通</a></p>
+				</li>
+                <li>
+					<p><span>17:41:18</span><span class="btn_lh bg3">缓行</span><em>工艺路</em></p>
+					<p><a href=""  >工艺路（亭子桥下方段）半幅封闭&nbsp;&nbsp;&nbsp; 拥挤</a></p>
+				</li>
+				<li>
+					<p><span>17:40:03</span><span class="btn_lh bg5">缓行</span><em>扬工路</em></p>
+					<p><a href=""  > 扬工路（南湖大道至芦中路路段）&nbsp;&nbsp;&nbsp;拥挤</a></p>
+				</li>
+                <li>
+					
+					<p><span>17:50:05</span><span class="btn_lh bg1">拥挤</span><em>新生路</em></p>
+                    <p><a href="" >新生路（县前街至人民路路段）&nbsp;&nbsp;&nbsp;阻塞...</a></p>
+				</li>
+				<li>
+					<p><span>17:48:03</span><span class="btn_lh bg5">畅通</span><em>人民中路</em></p>
+					<p><a href=""  > 人民中路（解放东路至新生路路段）&nbsp;&nbsp;&nbsp;畅通</a></p>
+				</li>
+                <li>
+					<p><span>17:41:18</span><span class="btn_lh bg3">缓行</span><em>鼋头渚</em></p>
+					<p><a href=""  >鼋头渚十里芳堤（充山大门至犊山大门）&nbsp;&nbsp;&nbsp;拥挤</a></p>
+				</li>
+				<li>
+					<p><span>17:40:03</span><span class="btn_lh bg5">缓行</span><em>建筑路</em></p>
+					<p><a href=""  > 建筑路（环湖路至梁湖路路段）&nbsp;&nbsp;&nbsp;拥挤</a></p>
+				</li>
+                
+                
+				
+			</ul>
+		</div>
+          
+        </div>
+      </div>
+  
+</div>
+</div>
+<script src="js/bootsnav.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script><!--向上滚动-->
+<script src="js/highcharts.js"></script><!--highcharts图表-->
+<script type="text/javascript" src="js/zhishu.js"></script><!--交通指数-->
+<script type="text/javascript" src="js/yongdushijian.js"></script><!--交通指数-->
+</body>
+</html>

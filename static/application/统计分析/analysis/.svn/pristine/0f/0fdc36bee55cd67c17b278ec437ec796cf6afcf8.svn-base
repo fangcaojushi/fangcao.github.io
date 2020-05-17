@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>套牌车详情</title>
+		<!--bootstrap框架-->
+		<link href="/analysis/static/css/bootstrap.min.css" rel="stylesheet" />
+		<!--框架样式-->
+		<link href="/analysis/static/css/style.min.css" rel="stylesheet" />
+		<link href="/analysis/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+		<!--详情样式-->
+		<link href="/analysis/static/modules/judge/css/fake_detail.css" rel="stylesheet" />
+	</head>
+	<body>
+		<body class="gray-bg">
+		<div class="wrapper wrapper-content">
+			<div class="row fake-detail-pic">
+				<div class="fake-vs">
+					<div class="vs-opac"></div>
+					<div class="txt">套牌</div>
+				</div>
+				
+        			<div class="col-md-6">
+          		  <div class="ibox float-e-margins">
+            		    <div class="ibox-title">
+                   		 <h5>嫌疑车辆</h5>
+               		</div>
+                    <div class="ibox-content">
+	                		<div class="fake-pic-box fake-pic-box1  col-md-12">
+	                			<img id="fake-img-1" src="/analysis/static/modules/judge/img/kakou5.jpg"/>
+	                		</div>
+                	    </div>
+                  </div>
+        			</div>
+        			
+        			<div class="col-md-6">
+          		  <div class="ibox float-e-margins">
+            		    <div class="ibox-title">
+                   		 <h5>存档车辆</h5>
+               		</div>
+                    <div class="ibox-content ">
+	                		<div class="fake-pic-box fake-pic-box2 col-md-12">
+	                			<img id="fake-img-2" src="/analysis/static/modules/judge/img/kakou4.jpg"/>
+	                		</div>
+                	    </div>
+                  </div>
+        			</div>
+    			</div>
+    			
+    			<div class="row fake-detail-content">
+        			<div class="col-md-6">
+          		  <div class="ibox float-e-margins">
+            		    <div class="ibox-title">
+                   		 <h5>嫌疑车辆信息</h5>
+               		</div>
+                    <div class="ibox-content">
+	                		<div class="fake-detail-list col-md-12">
+							<ul>
+								<li>
+									<span class="alert-detail-title">车牌号码:  </span>
+									<span class="alert-detail-content"> 鲁B 76587</span>
+								</li>
+								<li> 
+									<span class="alert-detail-title">号牌类型:  </span>
+									<span class="alert-detail-content">蓝牌车</span>
+								</li>
+								<li> 
+									<span class="alert-detail-title">车辆类型:  </span>
+									<span class="alert-detail-content">小型车</span>
+								</li>
+								<li> 
+									<span class="alert-detail-title">车身颜色:  </span>
+									<span class="alert-detail-content">蓝色</span>
+								</li>
+								<li> 
+									<span class="alert-detail-title">上传时间:  </span>
+									<span class="alert-detail-content">2017.09.09-10:09:09</span>
+								</li>
+								<li class="alert-last">
+									<span class="alert-detail-title alert-position">发现地点:  </span>
+									<span class="alert-detail-content">香港中路与山东路交叉口香港中路与山东路交叉口</span>
+								</li>
+							</ul>
+						</div>
+                	    </div>
+                  </div>
+        			</div>
+        			
+        			<div class="col-md-6">
+          		  <div class="ibox float-e-margins">
+            		    <div class="ibox-title">
+                   		 <h5>存档车辆信息</h5>
+               		</div>
+                    <div class="ibox-content ">
+	                		<div class="fake-detail-list col-md-12">
+							<ul>
+								<li>
+									<span class="alert-detail-title">车牌号码:  </span>
+									<span class="alert-detail-content"> 鲁B 76587</span>
+								</li>
+								<li> 
+									<span class="alert-detail-title">号牌类型:  </span>
+									<span class="alert-detail-content">蓝牌车</span>
+								</li>
+								<li> 
+									<span class="alert-detail-title">车辆类型:  </span>
+									<span class="alert-detail-content">小型车</span>
+								</li>
+								<li> 
+									<span class="alert-detail-title">车身颜色:  </span>
+									<span class="alert-detail-content">蓝色</span>
+								</li>
+								<li> 
+									<span class="alert-detail-title">上传时间:  </span>
+									<span class="alert-detail-content">2017.09.09-10:09:09</span>
+								</li>
+								<li class="alert-last">
+									<span class="alert-detail-title alert-position">发现地点:  </span>
+									<span class="alert-detail-content">香港中路与山东路交叉口香港中路与山东路交叉口</span>
+								</li>
+							</ul>
+						</div>
+                	    </div>
+                  </div>
+        			</div>
+    			</div>
+		</div>
+		<!--引入jquery-->
+		<script src="/analysis/static/js/jquery.min.js"></script>
+		<!--Bootstrap-->
+		<script src="/analysis/static/js/bootstrap.min.js"></script>
+		<!--跟车关联-->
+		<script src="/analysis/static/modules/judge/js/pic.js"></script>
+	</body>
+</html>

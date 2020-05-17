@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>套牌车</title>
+		<!--bootstrap框架-->
+		<link href="/analysis/static/css/bootstrap.min.css" rel="stylesheet" />
+		<!--框架样式-->
+		<link href="/analysis/static/css/style.min.css" rel="stylesheet" />
+		<link href="/analysis/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+		<!--频繁过车样式-->
+		<link href="/analysis/static/modules/judge/css/frequency.css" rel="stylesheet" />
+	</head>
+
+	<body class="gray-bg">
+		<div class="wrapper wrapper-content">
+			<div class="row search-for-high">
+				<div class="col-sm-12">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h5>查询条件</h5>
+							<div class="ibox-tools">
+								<a class="collapse-link">
+									<i class="fa fa-chevron-up"></i>
+								</a>
+							</div>
+						</div>
+						<div class="ibox-content">
+							<div class="hcondition">
+								<!--描述：基本查询条件-->
+								<div class="row form-horizontal">
+									<div class="col-md-10">							
+									<div class="col-md-4">
+										<label class="control-label col-md-4 frequency-label">开始时间:</label>
+										<div class="col-md-8 frequency-input">
+											<input type="text" name="" class="form-control frequency-input frequency-inpput-word" placeholder="请选择结束时间" id='followstart'>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<label class="control-label col-md-4 frequency-label">结束时间:</label>
+										<div class="col-md-8 frequency-input">
+											<input type="text" name="" class="form-control frequency-input frequency-inpput-word" placeholder="请选择开始时间" id='followend'>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<label class="control-label col-md-4 frequency-label">车牌号码:</label>
+										<div class="col-md-8 frequency-input">
+											<input type="text" class="form-control frequency-input frequency-inpput-word" placeholder="可选择性输入">
+										</div>										
+									</div>
+									</div>									
+									<div class="col-md-2">
+										<button type="button" class="btn btn-primary col-md-8">查询</button>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="row">
+        			<div class="col-sm-12">
+          		  <div class="ibox float-e-margins">
+            		    <div class="ibox-title">
+                   		 <h5>查询结果，共有<b class="text-danger schlr">4辆</b>车符合上述查询条件</h5>
+               		</div>
+                    <div class="ibox-content ">
+	                		<div class="fake-list">
+							<ul>
+								<li class="fake-list-title">
+									<span class="col-md-1">序号</span>
+									<span class="col-md-3 fake-list-number">车牌号码</span>
+									<span class="col-md-3">出现卡口</span>
+									<span class="col-md-3">出现时间</span>
+									<span class="col-md-2">详情</span>
+								</li>
+							</ul>
+							<ul class="fake-list-body pre-scrollable">
+								<li class="fake-list-item">		
+									<div class="col-md-1">
+										<div class="zs_color">
+                                        	<span class="yd_bdorgan1"></span>
+                                        	<span class="yd_bgorgan1">1</span>				                                        		
+                                   		</div>
+									</div>
+									<span class="col-md-3 fake-list-number"><b>鲁B 77657</b></span>
+									<span class="col-md-3">香港中路与山东路交叉口</span>
+									<span class="col-md-3">2017.10.07-12:04:09</span>
+									<span class="col-md-2 fake-item-right">
+										<div class="btn btn-outline btn-warning ">
+			                					<a href="fake_detail.html"><i class="fa fa-paste schlr"></i>查看详情</a>
+			                				</div>
+									</span>
+								</li>	
+								<li class="frequency-list-item">
+									<div class="col-md-1">
+										<div class="zs_color">
+                                        	<span class="yd_bdorgan1"></span>
+                                        	<span class="yd_bgorgan1">2</span>				                                        		
+                                   		</div>
+									</div>
+									<span class="col-md-3 fake-list-number"><b>鲁B 77657</b></span>
+									<span class="col-md-3">香港中路</span>
+									<span class="col-md-3">2017.10.07-12:04:09</span>
+									<span class="col-md-2 fake-item-right">
+										<div class="btn btn-outline btn-warning ">
+			                					<a href="fake_detail.html"><i class="fa fa-paste schlr"></i>查看详情</a>
+			                				</div>
+									</span>
+								</li>	
+								<li class="frequency-list-item">
+									<div class="col-md-1">
+										<div class="zs_color">
+                                        	<span class="yd_bdorgan1"></span>
+                                        	<span class="yd_bgorgan1">3</span>				                                        		
+                                   		</div>
+									</div>
+									<span class="col-md-3 fake-list-number"><b>鲁B 77657</b></span>
+									<span class="col-md-3">香港中路</span>
+									<span class="col-md-3">2017.10.07-12:04:09</span>
+									<span class="col-md-2 fake-item-right">
+										<div class="btn btn-outline btn-warning ">
+			                					<a href="fake_detail.html"><i class="fa fa-paste schlr"></i>查看详情</a>
+			                				</div>
+									</span>
+								</li>	
+								<li class="frequency-list-item">
+									<div class="col-md-1">
+										<div class="zs_color">
+                                        	<span class="yd_bdorgan1"></span>
+                                        	<span class="yd_bgorgan1">4</span>				                                        		
+                                   		</div>
+									</div>
+									<span class="col-md-3 fake-list-number"><b>鲁B 77657</b></span>
+									<span class="col-md-3">香港中路</span>
+									<span class="col-md-3">2017.10.07-12:04:09</span>
+									<span class="col-md-2 fake-item-right">
+										<div class="btn btn-outline btn-warning ">
+			                					<a href="fake_detail.html"><i class="fa fa-paste schlr"></i>查看详情</a>
+			                				</div>
+									</span>
+								</li>	
+								<li class="frequency-list-item">
+									<div class="col-md-1">
+										<div class="zs_color">
+                                        	<span class="yd_bdorgan1"></span>
+                                        	<span class="yd_bgorgan1">5</span>				                                        		
+                                   		</div>
+									</div>
+									<span class="col-md-3 fake-list-number"><b>鲁B 77657</b></span>
+									<span class="col-md-3">香港中路</span>
+									<span class="col-md-3">2017.10.07-12:04:09</span>
+									<span class="col-md-2 fake-item-right">
+										<div class="btn btn-outline btn-warning ">
+			                					<a href="fake_detail.html"><i class="fa fa-paste schlr"></i>查看详情</a>
+			                				</div>
+									</span>
+								</li>	
+								<li class="frequency-list-item">
+									<div class="col-md-1">
+										<div class="zs_color">
+                                        	<span class="yd_bdorgan1"></span>
+                                        	<span class="yd_bgorgan1">6</span>				                                        		
+                                   		</div>
+									</div>
+									<span class="col-md-3 fake-list-number"><b>鲁B 77657</b></span>
+									<span class="col-md-3">香港中路</span>
+									<span class="col-md-3">2017.10.07-12:04:09</span>
+									<span class="col-md-2 fake-item-right">
+										<div class="btn btn-outline btn-warning ">
+			                					<a href="fake_detail.html"><i class="fa fa-paste schlr"></i>查看详情</a>
+			                				</div>
+									</span>
+								</li>	
+								<li class="frequency-list-item">
+									<div class="col-md-1">
+										<div class="zs_color">
+                                        	<span class="yd_bdorgan1"></span>
+                                        	<span class="yd_bgorgan1">7</span>				                                        		
+                                   		</div>
+									</div>
+									<span class="col-md-3 fake-list-number"><b>鲁B 77657</b></span>
+									<span class="col-md-3">香港中路</span>
+									<span class="col-md-3">2017.10.07-12:04:09</span>
+									<span class="col-md-2 fake-item-right">
+										<div class="btn btn-outline btn-warning ">
+			                					<a href="fake_detail.html"><i class="fa fa-paste schlr"></i>查看详情</a>
+			                				</div>
+									</span>
+								</li>
+								<li class="frequency-list-item">
+									<div class="col-md-1">
+										<div class="zs_color">
+                                        	<span class="yd_bdorgan1"></span>
+                                        	<span class="yd_bgorgan1">8</span>				                                        		
+                                   		</div>
+									</div>
+									<span class="col-md-3 fake-list-number"><b>鲁B 77657</b></span>
+									<span class="col-md-3">香港中路</span>
+									<span class="col-md-3">2017.10.07-12:04:09</span>
+									<span class="col-md-2 fake-item-right">
+										<div class="btn btn-outline btn-warning ">
+			                					<a href="fake_detail.html"><i class="fa fa-paste schlr"></i>查看详情</a>
+			                				</div>
+									</span>
+								</li>
+								<li class="frequency-list-item">
+									<div class="col-md-1">
+										<div class="zs_color">
+                                        	<span class="yd_bdorgan1"></span>
+                                        	<span class="yd_bgorgan1">9</span>				                                        		
+                                   		</div>
+									</div>
+									<span class="col-md-3 fake-list-number"><b>鲁B 77657</b></span>
+									<span class="col-md-3">香港中路</span>
+									<span class="col-md-3">2017.10.07-12:04:09</span>
+									<span class="col-md-2 fake-item-right">
+										<div class="btn btn-outline btn-warning ">
+			                					<a href="fake_detail.html"><i class="fa fa-paste schlr"></i>查看详情</a>
+			                				</div>
+									</span>
+								</li>
+								<li class="frequency-list-item">
+									<div class="col-md-1">
+										<div class="zs_color">
+                                        	<span class="yd_bdorgan1"></span>
+                                        	<span class="yd_bgorgan1">10</span>				                                        		
+                                   		</div>
+									</div>
+									<span class="col-md-3 fake-list-number"><b>鲁B 77657</b></span>
+									<span class="col-md-3">香港中路</span>
+									<span class="col-md-3">2017.10.07-12:04:09</span>
+									<span class="col-md-2 fake-item-right">
+										<div class="btn btn-outline btn-warning ">
+			                					<a href="fake_detail.html"><i class="fa fa-paste schlr"></i>查看详情</a>
+			                				</div>
+									</span>
+								</li>
+								<li class="frequency-list-item">
+									<div class="col-md-1">
+										<div class="zs_color">
+                                        	<span class="yd_bdorgan1"></span>
+                                        	<span class="yd_bgorgan1">11</span>				                                        		
+                                   		</div>
+									</div>
+									<span class="col-md-3 fake-list-number"><b>鲁B 77657</b></span>
+									<span class="col-md-3">香港中路</span>
+									<span class="col-md-3">2017.10.07-12:04:09</span>
+									<span class="col-md-2 fake-item-right">
+										<div class="btn btn-outline btn-warning ">
+			                					<a href="fake_detail.html"><i class="fa fa-paste schlr"></i>查看详情</a>
+			                				</div>
+									</span>
+								</li>
+								<li class="frequency-list-item">
+									<div class="col-md-1">
+										<div class="zs_color">
+                                        	<span class="yd_bdorgan1"></span>
+                                        	<span class="yd_bgorgan1">12</span>				                                        		
+                                   		</div>
+									</div>
+									<span class="col-md-3 fake-list-number"><b>鲁B 77657</b></span>
+									<span class="col-md-3">香港中路</span>
+									<span class="col-md-3">2017.10.07-12:04:09</span>
+									<span class="col-md-2 fake-item-right">
+										<div class="btn btn-outline btn-warning ">
+			                					<a href="fake_detail.html"><i class="fa fa-paste schlr"></i>查看详情</a>
+			                				</div>
+									</span>
+								</li>
+								<li class="frequency-list-item">
+									<div class="col-md-1">
+										<div class="zs_color">
+                                        	<span class="yd_bdorgan1"></span>
+                                        	<span class="yd_bgorgan1">13</span>				                                        		
+                                   		</div>
+									</div>
+									<span class="col-md-3 fake-list-number"><b>鲁B 77657</b></span>
+									<span class="col-md-3">香港中路</span>
+									<span class="col-md-3">2017.10.07-12:04:09</span>
+									<span class="col-md-2 fake-item-right">
+										<div class="btn btn-outline btn-warning ">
+			                					<a href="fake_detail.html"><i class="fa fa-paste schlr"></i>查看详情</a>
+			                				</div>
+									</span>
+								</li>
+								<li class="frequency-list-item">
+									<div class="col-md-1">
+										<div class="zs_color">
+                                        	<span class="yd_bdorgan1"></span>
+                                        	<span class="yd_bgorgan1">14</span>				                                        		
+                                   		</div>
+									</div>
+									<span class="col-md-3 fake-list-number"><b>鲁B 77657</b></span>
+									<span class="col-md-3">香港中路</span>
+									<span class="col-md-3">2017.10.07-12:04:09</span>
+									<span class="col-md-2 fake-item-right">
+										<div class="btn btn-outline btn-warning ">									
+			                				<a href="fake_detail.html"><i class="fa fa-paste schlr"></i>查看详情</a>
+			                				</div>
+									</span>
+								</li>
+							</ul>
+						</div>
+                	    </div>
+                  </div>
+        			</div>
+    			</div>
+		</div>
+		
+		<!--引入jquery-->
+		<script src="/analysis/static/js/jquery.min.js"></script>
+		<!--Bootstrap-->
+		<script src="/analysis/static/js/bootstrap.min.js"></script>
+		<!--laydate时间包v5.0.5-->
+		<script src="/analysis/static/js/plugins/laydate/laydate.js"></script>
+		<!--跟车关联-->
+		<script src="/analysis/static/modules/judge/js/follow.js"></script>
+		<script src="/analysis/static/js/content.min.js?v=1.0.0"></script>
+	</body>
+
+</html>

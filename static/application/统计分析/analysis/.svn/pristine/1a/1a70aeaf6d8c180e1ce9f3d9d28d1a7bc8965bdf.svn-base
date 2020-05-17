@@ -1,0 +1,52 @@
+$(function() {
+	var hwf_city = echarts.init(document.getElementById("fail_num")),
+	option = {
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['设备故障','设备总数']
+    },
+   color:['#1ab394','#ed5565'],
+    toolbox: {
+        show : true,
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            magicType : {show: true, type: [ 'bar','line', 'stack', 'tiled']},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            
+            data : ['大兴项目','秦皇岛项目','合川项目','万盛项目','乌鲁木齐项目','昆明项目','苏州项目']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+       {
+            name:'设备总数',
+            type:'bar',
+            stack: '总量',
+            data:[260, 192, 191, 234, 290, 330, 310]
+        },
+        {
+            name:'设备故障',
+            type:'bar',
+            stack: '总量',
+            barMaxWidth:34,
+            data:[20, 32, 30, 34, 50, 30, 20]
+        }
+       
+    ]
+};                                   
+	hwf_city.setOption(option), $(window).resize(hwf_city.resize);
+})

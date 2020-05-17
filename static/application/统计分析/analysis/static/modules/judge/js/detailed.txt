@@ -1,0 +1,50 @@
+<div class="item high100">
+				<div class="col-md-9 high100 mtlclear mtrclear bg_qiangray cardad">
+					<img  id="kakou3" src="/bigtraffic/static/modules/tgs/images/kakou3.jpg" class="carwh" />
+				</div>
+				<div class="col-md-3 high100 bg_gray infor">
+						<table class="datamx">
+							<tr>
+								<td width="40%">采集地点:</td>
+								<td width="60%">市南区栈桥附近十字路口探头</td>
+							</tr>
+							<tr>
+								<td>采集时间：</td>
+								<td>2017-05-01  00:01:09</td>
+							</tr>
+							<tr>
+								<td>号牌号码：</td>
+								<td>新A7C641</td>
+							</tr>
+							<tr>
+								<td>号码种类：</td>
+								<td>小型汽车</td>
+							</tr>
+							<tr>
+								<td>行驶方向：</td>
+								<td>南→北</td>
+							</tr>
+							<tr>
+								<td>通行速度：</td>
+								<td>68KM/s</td>
+							</tr>
+							<tr>
+								<td>车身颜色：</td>
+								<td>银色</td>
+							</tr>
+							<tr>
+								<td>超速状态：</td>
+								<td><font class="txt">正常</font></td>
+							</tr>
+							<tr>
+								<td>车辆长度：</td>
+								<td>0 </td>
+							</tr>
+							<tr>
+								<td>红 名 单 ：</td>
+								<td>否</td>    
+							</tr>
+						</table>
+						
+				</div>
+			</div>

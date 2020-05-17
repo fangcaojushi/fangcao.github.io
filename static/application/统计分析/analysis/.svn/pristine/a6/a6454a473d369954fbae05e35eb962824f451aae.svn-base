@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>故障类型统计</title>
+    <link rel="shortcut icon" href="favicon.ico"> 
+    	<link href="/analysis/static/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="/analysis/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+	<link href="/analysis/static/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <link href="/analysis/static/css/animate.min.css" rel="stylesheet">
+    <link href="/analysis/static/css/style.min.css?v=4.0.0" rel="stylesheet">
+    <base target="_blank">
+	<link href="/analysis/static/modules/analysis/css/navhfix.css" rel="stylesheet"/>
+	<link href="/analysis/static/modules/analysis/css/analysis.css" rel="stylesheet"/>
+	<link href="/analysis/static/modules/device/css/device.css" rel="stylesheet"/>
+</head>
+
+<body class="gray-bg">
+	
+ <div class="row  border-bottom white-bg dashboard-header">
+    <div class="col-sm-12">
+      <h4>设备整体运行情况良好，根据故障记录累计故障总数3000起，其中视频设备故障1700起，诱导屏故障660起，信号灯故障320起，设备完好率=（设备总台数*月工作天数-∑故障台数*故障天数）/（设备总台数*月工作天数）=90.73%。针对故障的类型，列出不同设备，常见的故障类型top10，目的在于：</h4>
+       <small>
+	       	<ol>
+		       	<li>为故障的维修做出快速的判断，定位故障点。</li>
+		       	<li>为定期巡检提供支持，能够将常发生的故障，做出提前的防范。</li>
+		    </ol>
+       </small>
+      
+    </div>
+</div>
+<div class="wrapper wrapper-content">
+	<div class="hnav hnavfixbox">  
+	    <div class="hnavfixbt"> 
+	        <a href="#001" class="hcur" target="_self"><i class="fa fa-info-circle"></i>视频监控设备</a>
+	        <a href="#002"  target="_self"><i class="glyphicon glyphicon-list-alt"></i>诱导屏设备</a>
+	        <a href="#003" target="_self"><i class="fa fa-unlink"></i>信号灯设备</a>
+	        <a href="#004"  target="_self"><i class="fa fa-pie-chart"></i>故障趋势</a> 
+	        <a href="#005" target="_self"><i class="fa fa-area-chart"></i>高发故障解决</a>
+	        <a href="#006"  target="_self"><i class="glyphicon glyphicon-book"></i>结论</a> 
+	    </div>  
+	</div>
+	<br/>
+	<div class="hcontext">
+		<div class="row active">
+			<a name="001"></a>
+			 <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>视频监控设备</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                    		<div id="movieerror" class="echarts high500"></div>
+                    	</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+       	 	<a name="002"></a>
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>诱导屏设备</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                       <div id="induceerror" class="echarts high500"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        	<a name="003"></a>
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>信息灯设备</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div  id="lamperror" class="echarts high500"></div>
+                    </div>
+                </div>
+            </div>
+           
+       </div>
+        <div class="row">
+        	<a name="004"></a>
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>故障趋势</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                         <div class="echarts" id="actrend" style="height: 420px;"></div>
+                    </div>
+                </div>
+            </div>
+           
+       </div>
+        <div class="row">
+        	<a name="005"></a>
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>高发故障解决方法</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th width="20%">故障现象</th>
+                                    <th width="40%">故障原因</th>
+                                    <th width="45%">故障分析处理</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>诱导屏整屏不亮或出现方格</td>
+                                    <td>
+                                    		1.控制主机是否开启<br>
+                                    		2.通讯线是否插好<br>
+                                    		3.发送卡是否已插好<br>
+                                    		4.多媒体卡与采集卡,发送卡之间的数据线是否连好<br>
+                                    		5.接收卡JP1或JP2开关位置不对<br>
+                                    </td>
+                                    <td>
+                                    	•打开主机
+                                    	•把通讯线插好
+                                    	•把发送卡重插
+                                    	•连好多媒体卡与采集卡,发送卡之间数据线.
+                                    	•调整好JP1，JP2开关位置
+                                    </td>
+                                    
+                                </tr>
+                               <tr>
+                                    <td>每次启动提示找不到控制系统</td>
+                                    <td>
+                                    		COM口至数据发送卡之间的信号采集线没有连接或电脑本身COM口已坏。
+                                    </td>
+                                    <td>
+                                    	连接好该数据线
+                                    </td>
+                                    
+                                </tr>
+                                 <tr>
+                                    <td>整屏画面晃动或重影</td>
+                                    <td>
+                                    		1、检查主机与诱导屏之间的通讯线<br>2、检查多媒体卡与发送卡的DVI线。<br>3、发送卡坏
+                                    </td>
+                                    <td>
+                                    •把通讯线重插或更换<br>•把DVI线冲插加固<br>•更换发送卡
+                                    </td>
+                                    
+                                </tr>
+                                 <tr>
+                                    <td>诱导屏整屏不亮或出现方格</td>
+                                    <td>
+                                    		1.控制主机是否开启<br>
+                                    		2.通讯线是否插好<br>
+                                    		3.发送卡是否已插好<br>
+                                    		4.多媒体卡与采集卡,发送卡之间的数据线是否连好<br>
+                                    		5.接收卡JP1或JP2开关位置不对<br>
+                                    </td>
+                                    <td>
+                                    	•打开主机
+                                    	•把通讯线插好
+                                    	•把发送卡重插
+                                    	•连好多媒体卡与采集卡,发送卡之间数据线.
+                                    	•调整好JP1，JP2开关位置
+                                    </td>
+                                    
+                                </tr>
+                               <tr>
+                                    <td>每次启动提示找不到控制系统</td>
+                                    <td>
+                                    		COM口至数据发送卡之间的信号采集线没有连接或电脑本身COM口已坏。
+                                    </td>
+                                    <td>
+                                    	连接好该数据线
+                                    </td>
+                                    
+                                </tr>
+                                 <tr>
+                                    <td>整屏画面晃动或重影</td>
+                                    <td>
+                                    		1、检查主机与诱导屏之间的通讯线<br>2、检查多媒体卡与发送卡的DVI线。<br>3、发送卡坏
+                                    </td>
+                                    <td>
+                                    •把通讯线重插或更换<br>•把DVI线冲插加固<br>•更换发送卡
+                                    </td>
+                                    
+                                </tr>
+                                 <tr>
+                                    <td>诱导屏整屏不亮或出现方格</td>
+                                    <td>
+                                    		1.控制主机是否开启<br>
+                                    		2.通讯线是否插好<br>
+                                    		3.发送卡是否已插好<br>
+                                    		4.多媒体卡与采集卡,发送卡之间的数据线是否连好<br>
+                                    		5.接收卡JP1或JP2开关位置不对<br>
+                                    </td>
+                                    <td>
+                                    	•打开主机
+                                    	•把通讯线插好
+                                    	•把发送卡重插
+                                    	•连好多媒体卡与采集卡,发送卡之间数据线.
+                                    	•调整好JP1，JP2开关位置
+                                    </td>
+                                    
+                                </tr>
+                               <tr>
+                                    <td>每次启动提示找不到控制系统</td>
+                                    <td>
+                                    		COM口至数据发送卡之间的信号采集线没有连接或电脑本身COM口已坏。
+                                    </td>
+                                    <td>
+                                    	连接好该数据线
+                                    </td>
+                                    
+                                </tr>
+                                 <tr>
+                                    <td>整屏画面晃动或重影</td>
+                                    <td>
+                                    		1、检查主机与诱导屏之间的通讯线<br>2、检查多媒体卡与发送卡的DVI线。<br>3、发送卡坏
+                                    </td>
+                                    <td>
+                                    •把通讯线重插或更换<br>•把DVI线冲插加固<br>•更换发送卡
+                                    </td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+           
+       </div>
+       <div class="row">
+        		<a name="006"></a>
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                     <div class="ibox-title">
+                        <h5>结论/建议</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content hid">
+                    		<div class="col-md-5">
+                    			<h3>故障类型分析</h3>
+                    			<h4>
+                    				<blockquote>
+                    					<li>视频传输中，最常见的故障现象表现在监视器的画面上出现一条黑杠或白杠，并且或向上或向下慢慢滚动。</li>
+                    				</blockquote>
+                    			</h4>
+                    		</div>
+                    		<div class="col-md-4 hjy improving">
+                    			<h3>故障防范</h3>
+                    			<h4>
+                    				<blockquote>
+                    					<li>加大<b>设备巡检</b>的力度，重点做好线路的设备的连结</li>
+                    					<li>在旅游旺季，做好维修工作的保障工作</li>
+                    					<li>做好备件的储备</li>
+                    				</blockquote>
+                    			</h4>
+                    		</div>
+                    		<div class="col-md-3 hjy">
+                    			<h3>改进措施</h3>
+                    			<h4>
+                    				<blockquote>
+                    					<li></li>
+	                    				<li>采购质量好的设备传输线，连接的线路定期做巡检。</li>
+	                    				<li>立即修复振石路与312国道路口的红绿灯</li>	
+                    				</blockquote>
+                    			</h4>
+                    		</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-warning">
+            信息统计时间：2017年5月8日0时 至 5月14日24时
+        </div>
+        <br/> <br/>
+        <div class="hsave">
+	        <a class="badge-info backToTop" title="返回顶部" style="display: none;">
+                <i class="glyphicon glyphicon-eject"></i>
+            </a>
+            <a class="badge-warning" title="导出">
+                <i class="glyphicon glyphicon-share"></i>
+            </a>
+             <a class="badge-success" title="打印">
+                <i class="glyphicon glyphicon-print"></i>
+
+            </a>
+        </div>
+	</div>
+</div>
+	<script src="/analysis/static/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/analysis/static/js/bootstrap.min.js?v=3.3.5"></script>
+    <script src="/analysis/static/js/plugins/echarts/echarts.js"></script>
+    <script src="/analysis/static/js/content.min.js?v=1.0.0"></script>
+    <!--设备故障类型图表-->
+    <script src="/analysis/static/modules/device/js/movieerror.js"></script>
+    <!--诱导屏故障类型图表-->
+    <script src="/analysis/static/modules/device/js/induceerror.js"></script>
+    <!--信号灯故障类型图表-->
+    <script src="/analysis/static/modules/device/js/lamperror.js"></script>
+    <!--趋势-->
+    <script src="/analysis/static/modules/analysis/js/accident/actrend.js"></script>
+    <!--自适应的滚动条-->
+    <script src="/analysis/static/modules/analysis/js/navhfix.js"></script>
+    <!--本周与同期数据显示位置设置-->
+</body>
+
+</html>

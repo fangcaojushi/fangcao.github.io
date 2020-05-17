@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>交通总体监控</title>
+<link href="http://api.map.baidu.com/library/TrafficControl/1.4/src/TrafficControl_min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Kc50NR2vnseUm3o4DFmoYij2ELNudI8q"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/TrafficControl/1.4/src/TrafficControl_min.js"></script>   
+    <!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet"/>
+<link href="css/public.css" rel="stylesheet"/>
+<!--navbar-->
+<link href="fonts/FontAwesome/font-awesome.css" rel="stylesheet"/>
+<link href="css/bootsnav.css" rel="stylesheet"/>
+<link href="css/daolu.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootsnav.js"></script>
+<!--<script src="js/echarts.js"></script>--><!--echarts图表-->
+<script src="js/highcharts.js"></script><!--highcharts图表-->
+<script src="js/highcharts-more.js"></script>
+
+
+</head>
+<body>
+	<!--导航菜单-->
+	<script src="js/menu.js"></script>
+	<!--正文-->
+		<div class="title_sub">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12 fen-title">
+						<h2 class="text-center gj_title">交通总体监控</h2>
+						<div class="lg-txt">
+			            	<p class="light">
+			            		<img class="faguang" src="images/shanliang.png"/>
+			            	</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="zt_left bodycon jw">
+		<div class=" high_95 zd">
+<!-------------------------------总体概况--------------------------------->
+						<div class="high_33 bg11 mk bg13">
+							<div class="ts_title">
+								<a href="#">
+									<h5>总体概况</h5>
+								</a>
+							</div>
+        				    <div id="zongtigaikuang" class="chartwh"></div>
+			           		<script src="js/zongtigaikuang.js"></script>
+						</div>
+<!-------------------------------模块二--------------------------------->					
+						<div class="high_33 bg11 mk bg13">
+<!-------------------------------违法数据--------------------------------->							
+							<div class="fmk_left pull-left">
+								<div class="ts_title">
+									<h5 class="pull-left">违法数据</h5>
+									<a href="jtyxts.html" class="pull-right">
+										<p title="详情"></p>
+									</a>
+								</div>
+								<div class="sjzs">
+									<p class="pull-left sec_title">违法数据:</p>
+									<p  class="pull-right sec_res">
+		                        		<number class=" timer count-number" data-to="68" data-speed="2500">							                        
+		                        		</number>
+		                        		件
+		                        	</p>				
+								</div>
+								<div id="myCarousel" class="carousel slide high_80" data-ride="carousel">
+								      <ol class="carousel-indicators">
+								        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+								        <li data-target="#myCarousel" data-slide-to="2" class=""></li>        
+								      </ol>
+								      <div class="carousel-inner high_100" role="listbox">
+								        <div class="item active high_100">
+								          	<div id="weifaqushi" class="chartcol2_90" ></div>
+			           						<script src="js/weifaqushi.js"></script>
+								        </div>
+								        <div class="item  high_100">
+											<div class="chartcol2_90 shuoming" >
+												<li><i class="bg1"></i><p>异常停车:</p><em class="se1">868</em></li>
+												<li><i class="bg2"></i><p>超速行驶:</p><em class="se2">88</em></li>
+												<li><i class="bg3"></i><p>闯红灯:</p><em class="se3">68</em></li>
+												<li><i class="bg4"></i><p>不按导向:</p><em class="se4">318</em></li>
+												<li><i class="bg5"></i><p>其它:</p><em class="se5">78</em></li>
+											</div>
+			           						
+			           					</div>
+			           					 <div class="item  high_100 paiming">
+			           					 	<ul>
+			           					 		 <!--违法top-->
+											<li class="tushi">
+												<span class="tuli_ti">
+													环比
+												</span>
+												<div class="tuli bg1"  style=" background-color: #f7b516;">
+													
+												</div>
+												
+												<span class="tuli_ti">
+													实时
+												</span>
+												<div class="tuli bg2">
+													
+												</div>
+											</li>	
+											
+											<!--图表-->
+											<li>
+												<span style=" width: 26%;">梁溪路</span>
+												<em style=" width: 37%;">
+													<p>868</p>
+													<i style="width: 90%;"></i>													
+			           							</em>
+												<div style="width: 35%;">
+													<p>860</p>										
+												</div>
+											<li>
+												<span style=" width: 26%;">建筑路</span>
+												<em style=" width: 37%;">
+													<p>822</p>
+													<i style="width: 85%;"></i>													
+												</em>
+												<div style="width: 32%;">
+													<p>800</p>										
+												</div>
+											</li>	
+											
+											<li>
+												<span style=" width: 26%;">中山路</span>
+												<em style=" width: 37%;">
+													<p>752</p>
+													<i style="width: 73%;"></i>													
+												</em>
+												<div style="width: 30%;">
+													<p>762</p>									
+												</div>
+											</li>	
+											
+											<li>
+												<span style=" width: 26%;">槐古桥</span>
+												<em style=" width: 37%;">
+													<p>712</p>
+													<i style="width: 70%;"></i>													
+												</em>
+												<div style="width: 25%;">
+													<p>700</p>										
+												</div>
+											</li>	
+											
+											<li>
+												<span style=" width: 26%;">太湖道</span>
+												<em style=" width: 37%;">
+													<p>640</p>
+													<i style="width: 65%;"></i>													
+												</em>
+												<div style="width: 20%;">
+													<p>622</p>											
+												</div>
+											</li>	
+			           					
+			           					 	</ul>
+											</div>
+			           				 </div>
+			           		  </div>
+								
+							</div>
+<!-------------------------------事故分布--------------------------------->								
+							<div class="fmk_right pull-right">
+								<div class="ts_title">
+									<h5 class="pull-left">事故分布</h5>
+									<a href="jtyxts.html" class="pull-right">
+										<p title="详情"> <!--<img src="images/xiangqing1.png"/>--> </p>
+									</a>
+								</div>
+								<div class="sjzs">
+									<p class="pull-left sec_title">事故总数:</p>
+									<p  class="pull-right sec_res">
+		                        		<number class=" timer count-number" data-to="82" data-speed="2500">							                        
+		                        		</number>
+		                        		件
+		                        	</p>				
+								</div>									
+								<div id="myCarousel2" class="carousel slide high_80" data-ride="carousel">
+								      <ol class="carousel-indicators">
+								        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+								        <li data-target="#myCarousel2" data-slide-to="1" class=""></li>
+								        <li data-target="#myCarousel2" data-slide-to="2" class=""></li>        
+								      </ol>
+								      <div class="carousel-inner high_100" role="listbox">
+								        <div class="item active high_100">
+								          	<div id="bianhua" class="chartcol2_90"></div>
+			           						<script src="js/bianhua.js"></script>
+								        </div>
+								        <div class="item  high_100">
+											<div class="chartcol2_90 shuoming" >
+												<li><i class="bg1"></i><p>异常停车:</p><em class="se1">868</em></li>
+												<li><i class="bg2"></i><p>超速行驶:</p><em class="se2">88</em></li>
+												<li><i class="bg3"></i><p>闯红灯:</p><em class="se3">68</em></li>
+												<li><i class="bg4"></i><p>不按导向:</p><em class="se4">318</em></li>
+												<li><i class="bg5"></i><p>其它:</p><em class="se5">78</em></li>
+											</div>
+			           					</div>
+			           					  <div class="item  high_100 paiming">
+			           					  	<ul>
+											 <!--违法top-->
+											<li class="tushi">
+												<span class="tuli_ti">
+													环比
+												</span>
+												<div class="tuli bg1"  style=" background-color: #f7b516;">
+													
+												</div>
+												
+												<span class="tuli_ti">
+													实时
+												</span>
+												<div class="tuli bg2">
+													
+												</div>
+											</li>	
+											
+											<!--图表-->
+											<li>
+												<span style=" width: 26%;">梁溪路</span>
+												<em style=" width: 37%;">
+													<p>868</p>
+													<i style="width: 90%;"></i>													
+												</em>
+												<div style="width: 37%;">
+													<p>868</P>											
+												</div>
+											</li>			
+											
+											<li>
+												<span style=" width: 26%;">建筑路</span>
+												<em style=" width: 37%;">
+													<p>822</p>
+													<i style="width: 85%;"></i>													
+												</em>
+												<div style="width: 35%;">
+													<p>800</p>										
+												</div>
+											</li>	
+											
+											<li>
+												<span style=" width: 26%;">中山路</span>
+												<em style=" width: 37%;">
+													<p>752</p>
+													<i style="width: 80%;"></i>													
+												</em>
+												<div style="width: 30%;">
+													<p>762</p>									
+												</div>
+											</li>	
+											
+											<li>
+												<span style=" width: 26%;">槐古桥</span>
+												<em style=" width: 37%;">
+													<p>712</p>
+													<i style="width: 72%;"></i>													
+												</em>
+												<div style="width: 25%;">
+													<p>700</p>										
+												</div>
+											</li>	
+											
+											<li>
+												<span style=" width: 26%;">太湖道</span>
+												<em style=" width: 37%;">
+													<p>640</p>
+													<i style="width: 70%;"></i>													
+												</em>
+												<div style="width: 20%;">
+													<p>622</p>											
+												</div>
+											</li>	
+											</ul>
+			           					</div>
+			           				
+			           				 </div>
+			           		  </div>
+							</div>	 
+						</div>
+<!-------------------------------模块三--------------------------------->							
+						<div class="high_33 bg11 mk bg13">
+<!-------------------------------进出城车辆--------------------------------->							
+							<div class="fmk_left pull-left">
+								<div class="ts_title">
+									<h5 class="pull-left">进出城车辆</h5>
+									<a href="jtyxts.html" class="pull-right">
+										<p title="详情"> <!--<img src="images/xiangqing1.png"/>--> </p>
+									</a>
+								</div>
+								<div class="jczs pull-left">
+									<p class="">进城车辆</p>
+									<p  class="">
+		                        		<number class=" timer count-number" data-to="648" data-speed="2500">							                        
+		                        		</number>
+		                        		辆
+		                        	</p>				
+								</div>
+								<div class="cczs pull-right">
+									<p class="">出城车辆</p>
+									<p  class="">
+		                        		<number class=" timer count-number" data-to="848" data-speed="2500">							                        
+		                        		</number>
+		                        		辆
+		                        	</p>				
+								</div>
+								<div class="col-md-12 part2">
+									<div id="cheliuliang" class="chartmy"></div>
+									<script src="js/cheliuliang.js"></script>
+								</div>
+							</div>
+<!-------------------------------设备状态--------------------------------->							
+							<div class="fmk_right pull-right">
+								<div class="ts_title">
+									<h5 class="pull-left">设备状态</h5>
+									<a href="dlsbjk.html" class="pull-right">
+										<p title="详情"> <!--<img src="images/xiangqing1.png"/>--> </p>
+									</a>
+								</div>
+								<div class="jczs pull-left">
+									<p class="">设备故障数</p>
+									<p  class="">
+		                        		<number class=" timer count-number" data-to="88" data-speed="2500">							                        
+		                        		</number>
+		                        		件
+		                        	</p>				
+								</div>
+								<div class="cczs pull-right">
+									<p class="">设备故障率</p>
+									<p  class="">
+		                        		<number class=" timer count-number" data-to="6" data-speed="2500">							                        
+		                        		</number>
+		                        		%
+		                        	</p>				
+								</div>
+								<div class="part3">
+									<div class="shebei_title">
+						                  <span class="pull-right">
+						                  	<number class="timer count-number"  data-to="268" data-speed="2500">
+						                  		
+						                  	</number>
+						                  	
+						                  </span>
+						                  <span class="pull-left">正常</span>
+						                  <span class="clearfix"></span>
+						            </div>
+								    <div class="progress">
+							                <div id="ssjk-progress-parking-online" class="progress-bar " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%; border-radius: 0;">
+							                </div>
+							           </div>  
+							        <div class="shebei_title">
+							                  <span class="pull-right"><number class="timer count-number"  data-to="26" data-speed="2500"></number></span>
+							                  <span class="pull-left">离线</span>
+							                  <span class="clearfix"></span>
+							            </div>
+							        <div class="progress">
+							                <div id="ssjk-progress-parking-online" class="progress-bar " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:42%">
+							                </div>
+							            </div>
+									<div class="shebei_title">
+							                  <span class="pull-right"><number class="timer count-number"  data-to="42" data-speed="2500"></number></span>
+							                  <span class="pull-left">故障</span>
+							                  <span class="clearfix"></span>
+							            </div>
+							        <div class="progress">
+							                <div id="ssjk-progress-parking-online" class="progress-bar " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+							                </div>
+							           </div>
+								</div>
+							</div>	 
+						</div>
+						
+					</div>
+				</div>
+		<div class="fenxiang bg13 jw">
+  			<table>
+				<tbody>
+					<tr>
+					    <td >
+					        <h5>车流量总数</h5>
+					        <p  class="se9">
+					            <number class="font_big timer count-number h2" data-to="268" data-speed="2500">							                        
+					            </number>
+					                               万辆
+					        </p>							                        							                      
+					    </td>              
+					    <td >
+					        <h5>违法事件数</h5>
+					        <div class="par">
+					        	<p  class="se1">
+					                <number class="font_big timer count-number h2" data-to="68" data-speed="2500">							                        
+					                </number>
+					                                          件
+					            </p>
+					            <div class="tongbi">
+					            	<img src="images/weifa.png" alt="" />
+					            </div>
+					        </div>      
+					    </td>
+					    <td >
+					        <h5>设备故障率</h5>
+					        <div class="par">
+					        	<p  class="se8">
+					                <number class="font_big timer count-number h2" data-to="3" data-speed="500">							                        
+					                </number>
+					                                          %
+					            </p>
+					            <div class="tongbi">
+					            	<img src="images/guzhang.png" alt="" />
+					            </div>
+					        </div>  
+					    </td>
+						<td >
+						    <h5>警务执勤率</h5>
+						    <div class="par">
+					        	<p  class="se2">
+					                <number class="font_big timer count-number h2" data-to="99" data-speed="2500">							                        
+					                </number>
+					                                          %
+					            </p>
+					            <div class="tongbi">
+					            	<img src="images/zhiqin.png" alt="" />
+					            </div>
+					        </div>  
+						</td>
+						 <td >
+					        <h5>交通事故数</h5>
+					        <div class="par">
+					        	<p  class="se10">
+					                <number   class="font_big timer count-number h2" data-to="58" data-speed="2500">							                        
+					                </number>
+					                                          件
+					            </p>
+					            <div class="tongbi">
+					            	<img src="images/shigu.png" alt="" />
+					            </div>
+					        </div>  
+					    </td>
+					</tr>
+	 			</tbody>
+			</table>
+  		</div>
+		<div class="zt_right bodycon jw">
+			<div class="high_95 bg6">
+<!-------------------------------模块一    右--------------------------------->							
+<!-------------------------------交通指数--------------------------------->
+						<div class="high_33 bg11 mk bg13" style="position: relative;">
+							<table class="datediv">
+								<tr>
+									<td id="nowDateTime">当前时间</td>
+									<td>
+										<iframe allowtransparency="true" frameborder="0"  width="250" height="75" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=1&v=0&d=1&bd=0&k=000000&f=c0c0c0&q=1&e=0&a=0&c=58354&w=250&h=75&align=right"></iframe>
+									</td>
+								</tr>	
+							</table>
+								<div id="canvas_round" class="canvas_round_zkjk"></div>
+								<script type="text/javascript" src="js/zhishu.js"></script><!--交通指数-->
+        				    
+						</div>
+<!-------------------------------模块二     右--------------------------------->							
+						<div class="high_33 bg11 mk bg13">
+<!-------------------------------卡口车流量--------------------------------->								
+							<div class="fmk_left pull-left">
+								<div class="ts_title">
+									<h5 class="pull-left">主要交通指标</h5>
+									<a href="dljtzs.html" class="pull-right">
+										<p title="详情"> <!--<img src="images/xiangqing1.png"/>--> </p>
+									</a>
+								</div>
+							
+								<div class="part2_right zkjk_progress">
+									<div class="shebei_title">
+						                  <span class="pull-right">
+						                  	<number class="timer count-number"  data-to="6" data-speed="2500">
+						                  		
+						                  	</number>
+						                  	缓行
+						                  </span>
+						                  <span class="pull-left">拥堵指数</span>
+						                  <span class="clearfix"></span>
+						            </div>
+								    <div class="progress">
+							                <div id="ssjk-progress-parking-online" class="progress-bar " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%; border-radius: 0;">
+							                </div>
+							           </div>  
+							        <div class="shebei_title">
+							                  <span class="pull-right"><number class="timer count-number"  data-to="42" data-speed="2500"></number>km/h</span>
+							                  <span class="pull-left">主干网平均速度</span>
+							                  <span class="clearfix"></span>
+							            </div>
+							        <div class="progress">
+							                <div id="ssjk-progress-parking-online" class="progress-bar " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:84%">
+							                </div>
+							            </div>
+									<div class="shebei_title">
+							                  <span class="pull-right"><number class="timer count-number"  data-to="60" data-speed="2500"></number>km/h</span>
+							                  <span class="pull-left">中心城区平均速度</span>
+							                  <span class="clearfix"></span>
+							            </div>
+							        <div class="progress">
+							                <div id="ssjk-progress-parking-online" class="progress-bar " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:94%">
+							                </div>
+							           </div>
+									<div class="shebei_title">
+											                  <span class="pull-right"><number class="timer count-number"  data-to="42" data-speed="2500"></number>%</span>
+											                  <span class="pull-left">拥堵里程比例</span>
+											                  <span class="clearfix"></span>
+											            </div>
+									<div class="progress">
+							                <div id="ssjk-progress-parking-online" class="progress-bar " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:62%">
+							                </div>
+							           </div>
+								</div>
+								
+							</div>
+<!-------------------------------警力执勤--------------------------------->								
+							<div class="fmk_right pull-right">
+								<div class="ts_title">
+									<h5 class="pull-left">警力执勤</h5>
+									<a href="jwzq.html" class="pull-right">
+										<p title="详情"> <!--<img src="images/xiangqing1.png"/>--> </p>
+									</a>
+								</div>
+								<div class="sjzs">
+									<p class="pull-left sec_title">执勤率:</p>
+									<p  class="pull-right sec_res">
+		                        		<number class=" timer count-number" data-to="96" data-speed="2500">							                        
+		                        		</number>
+		                        		%
+		                        	</p>				
+								</div>
+								<div class="col-md-12 part3_right">
+									<table>
+										<tbody>
+											<tr>
+											    <td >
+											        <h5>南长区</h5>
+											        <p  class="se9">
+											            <number class="font_big timer count-number h2" data-to="96" data-speed="2500">							                        
+											            </number>
+											           	 %
+											        </p>							                        							                      
+											    </td>              
+												<td >
+											        <h5>崇安区</h5>
+											        <p  class="se1">
+											            <number class="font_big timer count-number h2" data-to="92" data-speed="2500">							                        
+											            </number>
+											                               %
+											        </p>							                        							                      
+											   </td>              
+											</tr>
+											<tr>
+											    <td >
+											        <h5>北塘区</h5>
+											        <p  class="se8">
+											            <number class="font_big timer count-number h2" data-to="89" data-speed="2500">							                        
+											            </number>
+											                               %
+											        </p>							                        							                      
+											    </td>              
+												<td >
+											        <h5>锡山区</h5>
+											        <p  class="se2">
+											            <number class="font_big timer count-number h2" data-to="86" data-speed="2500">							                        
+											            </number>
+											                               %
+											        </p>							                        							                      
+											   </td>              
+											</tr>
+											<tr>
+											    <td >
+											        <h5>湖滨区</h5>
+											        <p  class="se10">
+											            <number class="font_big timer count-number h2" data-to="82" data-speed="2500">							                        
+											            </number>
+											                               %
+											        </p>							                        							                      
+											    </td>              
+												<td >
+											        <h5>无锡站</h5>
+											        <p  class="se9">
+											            <number class="font_big timer count-number h2" data-to="78" data-speed="2500">							                        
+											            </number>
+											                               %
+											        </p>							                        							                      
+											   </td>              
+											</tr>
+							 			</tbody>
+									</table>
+								</div>
+							</div>	 
+						</div>
+<!-------------------------------模块三     右--------------------------------->							
+						<div class="high_33 bg11 mk bg13">
+<!-------------------------------拥堵排名--------------------------------->	
+							<div class="fmk_left pull-left">
+								<div class="ts_title">
+									<h5 class="pull-left">拥堵路段排名 </h5>
+									<a href="dljtzs.html" class="pull-right">
+										<p title="详情"> <!--<img src="images/xiangqing1.png"/>--> </p>
+									</a>
+								</div>							
+								<div class="part3_right1">
+									<div class="shebei_title">
+						                  <span class="pull-right">
+						                  	<number class="timer count-number"  data-to="9" data-speed="2500">
+						                  		
+						                  	</number>
+						                  	拥堵
+						                  </span>
+						                  <span class="pull-left">槐古大桥</span>
+						                  <span class="clearfix"></span>
+						            </div>
+								    <div class="progress">
+							                <div id="ssjk-progress-parking-online" class="progress-bar " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:94%; border-radius: 0;">
+							                </div>
+							           </div>  
+							        <div class="shebei_title">
+							                  <span class="pull-right"><number class="timer count-number"  data-to="8" data-speed="2500"></number>较拥堵</span>
+							                  <span class="pull-left">中山路</span>
+							                  <span class="clearfix"></span>
+							            </div>
+							        <div class="progress">
+							                <div id="ssjk-progress-parking-online" class="progress-bar " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:84%">
+							                </div>
+							            </div>
+									<div class="shebei_title">
+							                  <span class="pull-right"><number class="timer count-number"  data-to="7" data-speed="2500"></number>缓行</span>
+							                  <span class="pull-left">梁溪路</span>
+							                  <span class="clearfix"></span>
+							            </div>
+							        <div class="progress">
+							                <div id="ssjk-progress-parking-online" class="progress-bar " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:76%">
+							                </div>
+							           </div>
+									<div class="shebei_title">
+											                  <span class="pull-right"><number class="timer count-number"  data-to="6" data-speed="2500"></number>缓行</span>
+											                  <span class="pull-left">建筑路</span>
+											                  <span class="clearfix"></span>
+											            </div>
+									<div class="progress">
+							                <div id="ssjk-progress-parking-online" class="progress-bar " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:62%">
+							                </div>
+							           </div>
+									<div class="shebei_title">
+							                  <span class="pull-right"><number class="timer count-number"  data-to="4" data-speed="2500"></number>基本畅通</span>
+							                  <span class="pull-left">太湖大道</span>
+							                  <span class="clearfix"></span>
+							            </div>
+							        <div class="progress">
+							                <div id="ssjk-progress-parking-online" class="progress-bar " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+							                </div>
+							         </div>										
+								</div>
+								
+							</div>
+
+<!-------------------------------静态停车--------------------------------->								
+							<div class="fmk_right pull-right">
+								<div class="ts_title">
+									<h5 class="pull-left">静态停车</h5>
+									<a href="zhongdianjk.html" class="pull-right">
+										<p title="详情"> <!--<img src="images/xiangqing1.png"/>--> </p>
+									</a>
+								</div>
+								<div class="sjzs">
+									<p class="pull-left sec_title">停车位数:</p>
+									<p  class="pull-right sec_res">
+		                        		<number class=" timer count-number" data-to="648" data-speed="2500">							                        
+		                        		</number>
+		                        		个
+		                        	</p>				
+								</div>
+								<div class="col-md-12 part2">
+									<div id="jttc" class="chartmy"></div>
+									<script src="js/jttc.js"></script>
+								</div>
+							</div>	 
+						</div>
+					
+					</div>
+		
+		</div>
+		<!--地图-->
+		<div id="allmap"></div>
+		<div class="ztjk_tool">
+			<a href="jtyxts.html" title="交通管制区域" target="_self"><img src="images/guanzhi.png" /></a>
+			<a href="jtyxts.html" title="事故多发区域" target="_self"><img src="images/shiguduofa.png" /></a>
+			<a href="jwzq.html" title="警务执勤分布"  target="_self"><img src="images/police.png" /></a>
+		</div>
+</body>
+<script src="js/bootstrap.js"></script>
+<script src="js/highcharts.js"></script>
+<script type="text/javascript" src="js/number.js"></script><!--交通指数-->
+<script src="js/currentdatetime.js"></script>
+<!--路况地图-->
+	<script type="text/javascript" src="js/map_lk.js"></script>
+</html>

@@ -1,0 +1,65 @@
+.hnavfixbox{
+	width:100%;     
+	clear: both; 
+	border-bottom: #e7eaec 1px solid;
+	overflow: hidden;
+}
+.hnavfixbt{  
+    width:100%;     
+    margin:0 auto; 
+}  
+.hnavfixbt a{  
+    width:120px;  
+    height:50px;  
+    line-height:50px;  
+    float:left;  
+    border-right:2px solid #eee;  
+    text-align:center;  
+    cursor:pointer; 
+    color:#505050; 
+}
+.hnavfixbt a i{
+	padding-right: 5px;
+}  
+.hnav{  
+    height:52px;  
+    width:100%;  
+    background:#f5f5f5;  
+}  
+.hnav .hcur{  
+    background:#fff;  
+    border-top:2px solid #1a92cf;  
+    color:#1a92cf;  
+    margin-top: 2px;
+}  
+.hfixed{  
+    position:fixed;  
+    bottom:0;  
+    left:0; 
+    z-index: 999999; 
+}  
+.hsave{
+	position: fixed;
+	bottom: 30px;
+	right: 26px;
+	z-index:999999;
+}
+.hsave a{
+	height: 38px;
+	width: 38px;
+	display: block;
+	padding: 9px 8px;
+	margin: 0 10px;
+	text-align: center;
+	border-radius: 50%;
+	transition: all .5s;
+	cursor: pointer;
+}
+/*.hsave a.backToTop{
+	display: none;
+	opacity: 0;
+}*/
+.hsave a:hover{
+	color: #fff;
+	background-color: #006621;
+}    

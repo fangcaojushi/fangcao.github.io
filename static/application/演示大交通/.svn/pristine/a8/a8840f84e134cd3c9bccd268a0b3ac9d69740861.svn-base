@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<title>警务执勤</title>
+		<!--地图-->
+		<link href="http://api.map.baidu.com/library/TrafficControl/1.4/src/TrafficControl_min.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Kc50NR2vnseUm3o4DFmoYij2ELNudI8q"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/library/TrafficControl/1.4/src/TrafficControl_min.js"></script>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.css" rel="stylesheet" />
+		<link href="css/public.css" rel="stylesheet" />
+		<link href="css/daolu.css" rel="stylesheet" type="text/css" />
+		<link href="css/jgfw.css" rel="stylesheet" />
+		<link href="css/animate.css" rel="stylesheet" />
+		<!--navbar-->
+		<link href="fonts/FontAwesome/font-awesome.css" rel="stylesheet" />
+		<link href="css/bootsnav.css" rel="stylesheet" />
+		<script src="js/jquery-1.11.2.min.js"></script>
+	</head>
+
+	<body>
+
+		<!--导航菜单-->
+		<script src="js/menu.js"></script>
+		<div id="allmap" style="z-index: -1; "></div>
+		<!--地图-->
+
+		<div class="centerbox jw">
+			<table class="quyuxinxi">
+				<tr>
+					<td align="center" width="150" class="bg7">
+						<h2 class="se8">警务执勤</h2></td>
+					<td class="bg1">
+						<p>执勤人数</p><b class="se2 timer count-number" data-to="1828" data-speed="2500">1828</b>
+					</td>
+					<td class="bg2">
+						<p>到岗人数</p><b class="se7 timer count-number" data-to="1128" data-speed="2500">1128</b></td>
+					<td class="bg3">
+						<p>执勤车数</p><b class="se4 timer count-number" data-to="312" data-speed="2500">312</b></td>
+					<td class="bg4">
+						<p>交通指数</p><b class="se3 timer count-number" data-to="5.2" data-speed="2500">5.2</b></td>
+					<td class="bg5">
+						<p>交通事件</p><b class="se1 timer count-number" data-to="36" data-speed="2500">36</b></td>
+
+					<td>
+						<iframe allowtransparency="true" frameborder="0" width="250" height="75" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=1&v=0&d=1&bd=0&k=000000&f=c0c0c0&q=1&e=0&a=0&c=58354&w=250&h=75&align=right"></iframe>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-md-4 high_100 bodycon quyuleft jw">
+			<!--<svg class="huxian">
+				  <path d="M 600 50 q -300 350 0 750" stroke="#02c9ff" stroke-width="5" fill="none" class="huxian"/>
+		</svg>-->
+			<div class="quyubox  r1_qy animated bounceInUp">
+				<div class="circle_zs circle_wz7 bg5"><b>1.2</b>
+					<p>拥堵指数</p>
+					<div class="zhezhao_left">
+						<img src="images/zhezhao1.png" />
+					</div>
+				</div>
+				<div class="bg-img">
+					<img src="images/litiqiu.png" />
+				</div>
+				<table class="quyuxinxi">
+					<tr>
+						<td class="qy_name">
+							鼋头渚
+						</td>
+						<td class="qy_car_liuliang">
+							<p>车流量</p>
+							<b timer count-number " data-to="3828 " data-speed="2500 ">3828</b>
+					</td>
+					<td class="qy_num "><p>人数</p><b>8</b></td>
+					<td class="qy_num "><p>车数</p><b>3</b></td>
+					<td class="qy_num "><p>到岗数</p><b>8</b></td>
+				</tr>
+			</table>
+			
+		</div>
+		<div class="quyubox r2_qy animated bounceInUp delay1 ">
+			<div class="circle_zs circle_wz5 bg4 "><b>3.8</b><p>拥堵指数</p>
+				<div class="zhezhao_left ">
+					<img src="images/zhezhao1.png "/>
+				</div>
+			</div>
+			<div class="bg-img ">
+					<img src="images/litiqiu.png "/>
+			</div>
+			<table class="quyuxinxi ">
+				<tr>
+					<td class="qy_name ">
+						三凤桥
+					</td>
+					<td class="qy_car_liuliang ">
+						<p>车流量</p><b>2138</b>
+					</td>
+					<td class="qy_num "><p>人数</p><b>5</b></td>
+					<td class="qy_num "><p>车数</p><b>2</b></td>
+					<td class="qy_num "><p>到岗数</p><b>4</b></td>
+				</tr>
+			</table>
+		</div>
+		<div class="quyubox r3_qy animated bounceInUp delay2 ">
+			<div class="circle_zs circle_wz3 bg3 "><b>6.1</b><p>拥堵指数</p>
+				<div class="zhezhao_left ">
+					<img src="images/zhezhao1.png "/>
+				</div>
+			</div>
+			<div class="bg-img ">
+					<img src="images/litiqiu.png "/>
+			</div>
+			<table class="quyuxinxi ">
+				<tr>
+					<td class="qy_name ">
+						八佰伴
+					</td>
+					<td class="qy_car_liuliang ">
+						<p>车流量</p><b>6399</b>
+					</td>
+					<td class="qy_num "><p>人数</p><b>25</b></td>
+					<td class="qy_num "><p>车数</p><b>12</b></td>
+					<td class="qy_num "><p>到岗数</p><b>24</b></td>
+				</tr>
+			</table>
+		</div>
+		<div class="quyubox r2_qy animated bounceInUp delay3 ">
+			<div class="circle_zs circle_wz4 bg2 "><b>5.6</b><p>拥堵指数</p>
+				<div class="zhezhao_left ">
+					<img src="images/zhezhao1.png "/>
+				</div>
+			</div>
+			<div class="bg-img ">
+					<img src="images/litiqiu.png "/>
+			</div>
+			<table class="quyuxinxi ">
+				<tr>
+					<td class="qy_name ">
+						蠡湖大道
+					</td>
+					<td class="qy_car_liuliang ">
+						<p>车流量</p><b>2328</b>
+					</td>
+					<td class="qy_num "><p>人数</p><b>13</b></td>
+					<td class="qy_num "><p>车数</p><b>3</b></td>
+					<td class="qy_num "><p>到岗数</p><b>13</b></td>
+				</tr>
+			</table>
+		</div>
+		<div class="quyubox r1_qy animated bounceInUp delay4 ">
+			<div class="circle_zs circle_wz2 bg1 "><b>8.8</b><p>拥堵指数</p>
+				<div class="zhezhao_left ">
+					<img src="images/zhezhao1.png "/>
+				</div>
+			</div>
+			<div class="bg-img ">
+					<img src="images/litiqiu.png "/>
+			</div>
+			<table class="quyuxinxi ">
+				<tr>
+					<td class="qy_name ">
+						机场路
+					</td>
+					<td class="qy_car_liuliang ">
+						<p>车流量</p><b>1328</b>
+					</td>
+					<td class="qy_num "><p>人数</p><b>7</b></td>
+					<td class="qy_num "><p>车数</p><b>2</b></td>
+					<td class="qy_num "><p>到岗数</p><b>7</b></td>
+				</tr>
+			</table>
+		</div>
+			    
+
+	</div>
+	<div class="col-md-4 high_100 bodycon quyuright jw ">
+				<!--<svg class="huxian ">
+					<path d="M 0 50 q 300 350 0 750 " stroke="#02c9ff " stroke-width="5 " fill="none " />
+				</svg>-->
+			<div class="quyubox r1_qy animated bounceInUp delay ">
+			<div class="circle_zs circle_wz7 bg5 "><b>1.2</b><p>拥堵指数</p>
+				<div class="zhezhao ">
+					<img src="images/zhezhao1.png "/>
+				</div>
+			</div>
+			<div class="bg-img ">
+					<img src="images/litiqiu.png "/>
+			</div>
+			<table class="quyuxinxi ">
+				<tr>
+					<td class="qy_name ">
+						太湖大道
+					</td>
+					<td class="qy_car_liuliang ">
+						<p>车流量</p><b>3828</b>
+					</td>
+					<td class="qy_num "><p>人数</p><b>8</b></td>
+					<td class="qy_num "><p>车数</p><b>3</b></td>
+					<td class="qy_num "><p>到岗数</p><b>8</b></td>
+				</tr>
+			</table>
+		</div>
+		<div class="quyubox r2_qy animated bounceInUp delay1 ">
+			<div class="circle_zs circle_wz5 bg4 "><b>3.8</b><p>拥堵指数</p>
+				<div class="zhezhao ">
+					<img src="images/zhezhao1.png "/>
+				</div>
+			</div>
+			<div class="bg-img ">
+					<img src="images/litiqiu.png "/>
+			</div>
+			<table class="quyuxinxi ">
+				<tr>
+					<td class="qy_name ">
+						金城高架
+					</td>
+					<td class="qy_car_liuliang ">
+						<p>车流量</p><b>2138</b>
+					</td>
+					<td class="qy_num "><p>人数</p><b>5</b></td>
+					<td class="qy_num "><p>车数</p><b>2</b></td>
+					<td class="qy_num "><p>到岗数</p><b>4</b></td>
+				</tr>
+			</table>
+		</div>
+		<div class="quyubox r3_qy animated bounceInUp delay2 ">
+			<div class="circle_zs circle_wz3 bg3 "><b>6.1</b><p>拥堵指数</p>
+				<div class="zhezhao ">
+					<img src="images/zhezhao1.png "/>
+				</div>
+			</div>
+			<div class="bg-img ">
+					<img src="images/litiqiu.png "/>
+			</div>
+			<table class="quyuxinxi ">
+				<tr>
+					<td class="qy_name ">
+						解放西路
+					</td>
+					<td class="qy_car_liuliang ">
+						<p>车流量</p><b>6399</b>
+					</td>
+					<td class="qy_num "><p>人数</p><b>25</b></td>
+					<td class="qy_num "><p>车数</p><b>12</b></td>
+					<td class="qy_num "><p>到岗数</p><b>24</b></td>
+				</tr>
+			</table>
+		</div>
+		<div class="quyubox r2_qy animated bounceInUp delay3 ">
+			<div class="circle_zs circle_wz4 bg2 "><b>5.6</b><p>拥堵指数</p>
+				<div class="zhezhao ">
+					<img src="images/zhezhao1.png "/>
+				</div>
+			</div>
+			<div class="bg-img ">
+					<img src="images/litiqiu.png "/>
+			</div>
+			<table class="quyuxinxi ">
+				<tr>
+					<td class="qy_name ">
+						新生路
+					</td>
+					<td class="qy_car_liuliang ">
+						<p>车流量</p><b>2328</b>
+					</td>
+					<td class="qy_num "><p>人数</p><b>13</b></td>
+					<td class="qy_num "><p>车数</p><b>3</b></td>
+					<td class="qy_num "><p>到岗数</p><b>13</b></td>
+				</tr>
+			</table>
+		</div>
+		<div class="quyubox r1_qy animated bounceInUp delay4 ">
+			<div class="circle_zs circle_wz2 bg1 "><b>8.8</b><p>拥堵指数</p>
+				<div class="zhezhao ">
+					<img src="images/zhezhao1.png "/>
+				</div>
+			</div>
+			<div class="bg-img ">
+					<img src="images/litiqiu.png "/>
+			</div>
+			<table class="quyuxinxi ">
+				<tr>
+					<td class="qy_name ">
+						稻香路
+					</td>
+					<td class="qy_car_liuliang ">
+						<p>车流量</p><b>1328</b>
+					</td>
+					<td class="qy_num "><p>人数</p><b>7</b></td>
+					<td class="qy_num "><p>车数</p><b>2</b></td>
+					<td class="qy_num "><p>到岗数</p><b>7</b></td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
+	<div class="container-fluid history_win bg7 history_win_hidden jwzqwz ">
+		<button id="bottom_win "  class="glyphicon glyphicon-chevron-down bg7 "><b class="jwzqwz_xlb ">区域选择</b></button>
+		<div class="col-md-4 col-lg-3 col-hg-2 ">
+			<div class="jwzqqy ">
+				<div class="kaiguan-wrap ">
+					    <div class="kaiguan-bg ">
+					      <div class="kaiguan-out "></div>
+					      <div class="kaiguan-in "></div>
+					      <div class="kaiguan-switch "></div>
+				    </div>
+				 </div>
+				 <div class="jwzqqy_txt ">
+				 	<h4>东城区交警大队</h4>
+					<p>张宪昌<i>呼叫</i></p>
+				 </div>
+			</div>
+			
+		</div>
+		<div class="col-md-4 col-lg-3 col-hg-2 ">
+			<div class="jwzqqy ">
+				<div class="kaiguan-wrap ">
+					    <div class="kaiguan-bg ">
+					      <div class="kaiguan-out "></div>
+					      <div class="kaiguan-in "></div>
+					      <div class="kaiguan-switch "></div>
+				    </div>
+				 </div>
+				 <div class="jwzqqy_txt ">
+				 	<h4>西城区交警大队</h4>
+					<p>张宪昌<i>呼叫</i></p>
+				 </div>
+			</div>
+			
+		</div>
+		<div class="col-md-4 col-lg-3 col-hg-2 ">
+			<div class="jwzqqy ">
+				<div class="kaiguan-wrap ">
+					    <div class="kaiguan-bg ">
+					      <div class="kaiguan-out "></div>
+					      <div class="kaiguan-in "></div>
+					      <div class="kaiguan-switch "></div>
+				    </div>
+				 </div>
+				 <div class="jwzqqy_txt ">
+				 	<h4>朝阳区交警大队</h4>
+					<p>张宪昌<i>呼叫</i></p>
+				 </div>
+			</div>
+			
+		</div>
+		<div class="col-md-4 col-lg-3 col-hg-2 ">
+			<div class="jwzqqy ">
+				<div class="kaiguan-wrap ">
+					    <div class="kaiguan-bg ">
+					      <div class="kaiguan-out "></div>
+					      <div class="kaiguan-in "></div>
+					      <div class="kaiguan-switch "></div>
+				    </div>
+				 </div>
+				 <div class="jwzqqy_txt ">
+				 	<h4>海淀区交警大队</h4>
+					<p>张宪昌<i>呼叫</i></p>
+				 </div>
+			</div>
+			
+		</div>
+		<div class="col-md-4 col-lg-3 col-hg-2 ">
+			<div class="jwzqqy ">
+				<div class="kaiguan-wrap kaiguan-active ">
+					    <div class="kaiguan-bg ">
+					      <div class="kaiguan-out "></div>
+					      <div class="kaiguan-in "></div>
+					      <div class="kaiguan-switch "></div>
+				    </div>
+				 </div>
+				 <div class="jwzqqy_txt ">
+				 	<h4>石景山区交警大队</h4>
+					<p>张宪昌<i>呼叫</i></p>
+				 </div>
+			</div>
+			
+		</div>
+		<div class="col-md-4 col-lg-3 col-hg-2 ">
+			<div class="jwzqqy ">
+				<div class="kaiguan-wrap ">
+					    <div class="kaiguan-bg ">
+					      <div class="kaiguan-out "></div>
+					      <div class="kaiguan-in "></div>
+					      <div class="kaiguan-switch "></div>
+				    </div>
+				 </div>
+				 <div class="jwzqqy_txt ">
+				 	<h4>门头沟区交警大队</h4>
+					<p>张宪昌<i>呼叫</i></p>
+				 </div>
+			</div>
+			
+		</div>
+		<div class="col-md-4 col-lg-3 col-hg-2 ">
+			<div class="jwzqqy ">
+				<div class="kaiguan-wrap ">
+					    <div class="kaiguan-bg ">
+					      <div class="kaiguan-out "></div>
+					      <div class="kaiguan-in "></div>
+					      <div class="kaiguan-switch "></div>
+				    </div>
+				 </div>
+				 <div class="jwzqqy_txt ">
+				 	<h4>房山区交警大队</h4>
+					<p>张宪昌<i>呼叫</i></p>
+				 </div>
+			</div>
+			
+		</div>
+		<div class="col-md-4 col-lg-3 col-hg-2 ">
+			<div class="jwzqqy ">
+				<div class="kaiguan-wrap ">
+					    <div class="kaiguan-bg ">
+					      <div class="kaiguan-out "></div>
+					      <div class="kaiguan-in "></div>
+					      <div class="kaiguan-switch "></div>
+				    </div>
+				 </div>
+				 <div class="jwzqqy_txt ">
+				 	<h4>昌平区交警大队</h4>
+					<p>张宪昌<i>呼叫</i></p>
+				 </div>
+			</div>
+			
+		</div>
+		<div class="col-md-4 col-lg-3 col-hg-2 ">
+			<div class="jwzqqy ">
+				<div class="kaiguan-wrap ">
+					    <div class="kaiguan-bg ">
+					      <div class="kaiguan-out "></div>
+					      <div class="kaiguan-in "></div>
+					      <div class="kaiguan-switch "></div>
+				    </div>
+				 </div>
+				 <div class="jwzqqy_txt ">
+				 	<h4>顺义区交警大队</h4>
+					<p>张宪昌<i>呼叫</i></p>
+				 </div>
+			</div>
+			
+		</div>
+		<div class="col-md-4 col-lg-3 col-hg-2 ">
+			<div class="jwzqqy ">
+				<div class="kaiguan-wrap ">
+					    <div class="kaiguan-bg ">
+					      <div class="kaiguan-out "></div>
+					      <div class="kaiguan-in "></div>
+					      <div class="kaiguan-switch "></div>
+				    </div>
+				 </div>
+				 <div class="jwzqqy_txt ">
+				 	<h4>平台区交警大队</h4>
+					<p>张宪昌<i>呼叫</i></p>
+				 </div>
+			</div>
+			
+		</div>
+		<div class="col-md-4 col-lg-3 col-hg-2 ">
+			<div class="jwzqqy ">
+				<div class="kaiguan-wrap ">
+					    <div class="kaiguan-bg ">
+					      <div class="kaiguan-out "></div>
+					      <div class="kaiguan-in "></div>
+					      <div class="kaiguan-switch "></div>
+				    </div>
+				 </div>
+				 <div class="jwzqqy_txt ">
+				 	<h4>密云区交警大队</h4>
+					<p>张宪昌<i>呼叫</i></p>
+				 </div>
+			</div>
+			
+		</div>
+	</div>
+<script src="js/bootsnav.js "></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.js "></script>
+<script src="js/jwzq.js "type="text/javascript "></script>
+<script type="text/javascript " src="js/number.js "></script>
+<script type="text/javascript " src="js/yanshi.js "></script>
+<script>
+	$(function(){
+		$('.kaiguan-wrap').on("click ", function(){
+			$('.kaiguan-wrap').removeClass('kaiguan-active');
+			$(this).toggleClass('kaiguan-active');
+		});
+	})
+</script>
+</body>
+</html>

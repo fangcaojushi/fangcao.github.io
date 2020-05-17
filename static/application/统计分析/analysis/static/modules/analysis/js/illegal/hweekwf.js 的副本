@@ -1,0 +1,148 @@
+
+
+$(function() {
+	var hweekwf = echarts.init(document.getElementById("hweekwf"));
+	var hourData = [];
+	for (var i = 0; i < 24; i++) {
+	   hourData[i]=i;
+	};
+	hweekwfopt = {
+	    backgroundColor: "#fff",
+	    color: ['#a6cb5f', '#ED5565','#5facdb', '#F7B516', '#24CBE5', '#6AF9C4'],
+	    "title": {
+	       text:""
+	    },
+	    grid: {
+			x: 40,
+			x2: 40,
+			y2: 24
+		},
+	    "tooltip": {
+	        "trigger": "axis",
+	        "axisPointer": {
+	            "type": "shadow",
+	            textStyle: {
+	                color: "#fff"
+	            }
+	
+	        },
+	    },
+	    "legend": {
+	        "data": ['闯红灯', '违法停车','超速', '逆行','两客一危','其它']
+	    },
+	     
+	
+	    "calculable": false,
+	    "xAxis": [{
+	        "type": "category",
+	       
+	        "data":hourData,
+	    }],
+	    "yAxis": [{
+	        "type": "value",
+	        "splitLine": {
+	            "show": false
+	        },
+	        "axisLine": {
+	            lineStyle: {
+	                color: '#90979c'
+	            }
+	        },
+	        "axisTick": {
+	            "show": false
+	        },
+	        "axisLabel": {
+	            "interval": 0,
+	
+	        },
+	        "splitArea": {
+	            "show": false
+	        },
+	
+	    }],
+	    
+	    "series": [
+	        {
+	            "name": "闯红灯",
+	            "type": "bar",
+	            "stack": "总量",
+	            "barMaxWidth": 40,
+	            
+	            "data": [27,5,15,18,45,15,48,150,180,218,25,48,18,328,192,18,12,191,2,12,10,10,1,3]
+	        },
+	
+	        {
+	            "name": "违法停车",
+	            "type": "bar",
+	            "stack": "总量",
+ 				"barMaxWidth": 40,
+ 				
+	            "data": [3,1,3,8,45,35,128,150,280,328,25,48,18,28,392,18,12,109,2,12,10,10,5,2]
+	        },
+	        {
+	            "name": "超速",
+	            "type": "bar",
+	            "stack": "总量",
+ 				"barMaxWidth": 40,
+ 				
+	            "data": [6,5,13,18,45,15,48,150,180,218,25,48,18,28,192,18,12,91,2,12,10,10,4,3]
+	        },
+	        {
+	            "name": "逆行",
+	            "type": "bar",
+	            "stack": "总量",
+ 				"barMaxWidth": 40,
+ 				
+	            "data": [27,5,15,18,45,15,48,150,180,218,25,48,18,28,92,18,12,19,2,12,10,10,9,3]
+	        },
+	        {
+	            "name": "查处危险品",
+	            "type": "bar",
+	            "stack": "总量",
+ 				"barMaxWidth": 40,
+ 				
+	            "data": [27,5,15,18,45,15,48,150,180,218,25,48,18,28,32,18,12,39,2,12,10,10,12,2]
+	        },
+	        {
+	            "name": "其它",
+	            "type": "bar",
+	            "stack": "总量",
+ 				"barMaxWidth": 40,
+ 				
+	            "data": [27,5,15,18,45,15,48,150,18,18,25,48,18,28,19,18,12,19,2,12,10,10,3,5]
+	        }, 
+//	        {
+//	            "name": "违法总数",
+//	            "type": "line",
+//	            "stack": "总量",
+//	            symbolSize:10,
+//	            symbol:'circle',
+////	            smooth:true,
+//	            "itemStyle": {
+//	                "normal": {
+//	                    "color": "#ccc",
+//	                    "barBorderRadius": 0,
+//	                    "label": {
+//	                        "show": true,
+//	                        "position": "top",
+//	                        formatter: function(p) {
+//	                            return p.value > 0 ? (p.value) : '';
+//	                        }
+//	                    }
+//	                }
+//	            },
+//	            "data": [
+//	                4036,
+//	                3669,
+//	                2962,
+//	                1530,
+//	                3519,
+//	                1915,
+//	                1748
+//	            ]
+//	        },
+	    ]
+	};
+
+	hweekwf.setOption(hweekwfopt), $(window).resize(hweekwf.resize);
+})

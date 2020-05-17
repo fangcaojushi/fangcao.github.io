@@ -1,0 +1,60 @@
+$(function() {
+ // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('hwf_team')),
+
+        // 指定图表的配置项和数据
+        option = {
+            title: {
+                text: ''
+            },
+            tooltip: {},
+            legend: {
+                data:['本周','上周']
+            },
+            grid: {
+				x: 40,
+				x2: 40,
+				y2: 24
+			},
+		calculable: !0,
+            xAxis: {
+                data: ["崇安区","梁溪区","滨湖区","北塘区","南长区","惠山区","锡山区"]
+            },
+            yAxis: {},
+            series: [{
+                name: '本周',
+                type: 'bar',
+                label: {
+	                normal: {
+	                    show: true,
+	                    position:"top"
+	                }
+	            },
+                itemStyle: {
+			      normal: {
+			        color: '#a8c95f'
+			      }
+			    },
+                data: [1290, 1200, 851, 796, 656, 732, 541]
+            },
+            {
+                name: '上周',
+                type: 'bar',
+                label: {
+	                normal: {
+	                    show: true,
+	                    position:"top"
+	                }
+	            },
+                itemStyle: {
+			      normal: {
+			        color: '#58b4ef'
+			      }
+			    },
+                data: [1102, 1390, 969, 696, 766, 726, 530]
+            }]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option), $(window).resize(myChart.resize);
+ })

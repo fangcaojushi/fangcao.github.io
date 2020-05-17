@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<title>公交分担率分析</title>
+		<!--bootstrap框架css-->
+		<link href="../../static/common/css/bootstrap.css" rel="stylesheet" />
+		<!--导航菜单和兼容手机端导航菜单-->
+		<link href="../../static/default_theme/bootsnav.css" rel="stylesheet" />
+		<link href="../../static/common/fonts/FontAwesome/font-awesome.css" rel="stylesheet" />
+		<!--public为公用的样式-->
+		<link href="../../static/default_theme/public.css" rel="stylesheet" />
+		<link href="../../static/modules/analysis/css/analysis.css" rel="stylesheet" />
+		
+	</head>
+
+	<body>
+		<!--导航菜单-->
+		<script src="../../static/common/js/menu.js"></script>
+		<!--正文区域-->
+		<div class="bodycon">
+			<!--该页的标题区域-->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 fen-title">
+						<h2 class="text-center gj_title">公交分担率分析</h2>
+						<div class="lg-txt">
+							<div class="light">
+								<img class="faguang" src="../../static/common/images/shanliang.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid high_95">
+				<div class="high_10 screening">
+					<p class="pull-left selection_title">当前显示分担率的时间:</p>
+					<div class="pull-left">
+						<!--筛选条件显示-->
+						<div class="screening_condition" id="selected_time" >
+							<div class="screening_content">
+								<span class="pull-left condition">近6年</span>
+								<span class="clearfix"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid high_50">
+					<!--分担率的div-->
+					<div id="sharing_rate" class="chartmy"></div>
+				</div>
+				<div class="fen"></div>
+				<div class="container-fluid offset_table high_33">
+					
+						<table class="sharing_table text-center">
+							<tr class="headtr">
+								<th>年份</th>
+								<th>分担率</th>
+								<th>客运量</th>
+							</tr>
+							<tr>
+								<td>2017</td>
+								<td>56%</td>
+								<td>387,834</td>
+							</tr>
+							<tr>
+								<td>2017</td>
+								<td>56%</td>
+								<td>387,834</td>
+							</tr>
+							<tr>
+								<td>2017</td>
+								<td>56%</td>
+								<td>387,834</td>
+							</tr>
+							<tr>
+								<td>2017</td>
+								<td>56%</td>
+								<td>387,834</td>
+							</tr>
+							<tr>
+								<td>2017</td>
+								<td>56%</td>
+								<td>387,834</td>
+							</tr>
+							<tr>
+								<td>2017</td>
+								<td>56%</td>
+								<td>387,834</td>
+							</tr>
+						</table>
+				
+					
+				</div>
+
+			</div>
+		</div>
+		<!--引入jquery包，进行异步加载-->
+		<script src="../../static/common/js/jquery-1.11.2.min.js"></script>
+		<!--bootstrap包，请勿修改-->
+		<script src="../../static/common/js/bootstrap.js"></script>
+		<!--导航菜单，请勿修改-->
+		<script src="../../static/common/js/bootsnav.js"></script>
+		<!--highcharts图表-->
+		<script src="../../static/common/js/highcharts.js"></script>
+		<!--highcharts图表3d图-->
+		<script src="../../static/common/js/highcharts-3d.js"></script>
+		<!--分担率的图表-->
+		<script src="../../static/modules/analysis/js/sharing_rate.js"></script>
+	</body>
+
+</html>

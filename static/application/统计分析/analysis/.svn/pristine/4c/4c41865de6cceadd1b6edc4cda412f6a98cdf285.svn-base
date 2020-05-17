@@ -1,0 +1,248 @@
+/* 重置文本格式元素 */
+ul,li,ol {
+	list-style: none;
+}
+.clearfix::after {
+	display: block;
+	content: '';
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+*{
+	font-size: 14px;
+}
+p{
+	line-height: 25px;
+}
+.hid{
+	overflow: hidden;
+}
+.hsg{
+	font-weight: bold;
+	font-size: 60px;
+}
+.pb15{
+	padding-bottom: 15px;
+}
+.mb0{
+	margin-bottom: 0;
+}
+.minhigh{
+	min-height: 200px;
+}
+.high100{
+	height: 100%;
+}
+.width100{
+	width: 100%;
+}
+.pdlr0{
+	padding-left: 0;
+	padding-right: 0;
+}
+.mglr0{
+	margin-left: 0;
+	margin-right: 0;
+}
+.se1{ 
+	color:#fe0000;
+	}/*红 */
+.se2{ 
+	color:#fe9900
+	}/*橙 */
+.se5{  
+	color:#008000
+	}/*绿*/
+.se6{  
+	color: #959595;
+	}/*浅灰色*/
+/*********************建设单位分析   开始*******************/
+/*右侧管理单位推荐    开始*/
+.constnit_alysis .right_panel{
+	padding: 0px 0px 10px 10px;
+}
+.constnit_alysis .right_panel .recmend{
+	text-align: center;
+	padding-bottom: 25px;
+	font-size: 20px;
+	color: #959595;
+	border-bottom: #ccc dashed 1px;
+}
+.right_panel .unit_list{
+	margin-bottom: 15px;
+	border-bottom: #ccc dashed 1px;
+}
+.right_panel .unit_list .compy_name{
+	margin-left: 15px;
+	font-size: 19px;
+}
+.right_panel .unit_list .compy_name span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background: #aaa;
+	margin-right: 5px;
+}
+.right_panel .unit_list table .specf_num{
+	margin-top: 0px;
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+/*右侧管理单位推荐    结束*/
+.const_analysis .ser_box{
+	width: 22%;
+	margin-right: 22px;
+    margin-top: -7px;
+	float: right;
+}
+.const_analysis .right_tool {
+    margin-top: -2px;
+}
+.consnit_content,.unit_detail {
+    overflow: hidden;
+}
+.consnit_content h5 {
+    margin: 0;
+    padding: 10px;
+}
+.consnit_content .nuit_box {
+    width: 47.8%;
+    margin: 15px 1%;
+    display: inline-block;
+}
+.unit_detail .spec_index span:first-child{
+    font-size: 18px;
+    margin-right: 12px;
+}
+.unit_detail .dev_num{
+	font-size: 15px;
+	margin-left: 12px;
+	font-weight: bold;
+}
+.unit_detail .dev_numtxt{
+	font-size: 15px;
+	margin-left: 12px;
+}
+.unit_detail .dimens{
+	margin-bottom: 10px;
+}
+/*彩色序号样式  开始*/
+/*颜色*/
+
+.yd_bggreen{	
+		background-color: #1ab394;
+}
+.yd_bdgreen{	
+		border: 9px solid #1ab394;
+}
+.yd_bgred{	
+		background-color:#ed5565;
+}
+.yd_bdred{	
+		border: 9px solid #ed5565;
+}
+/*颜色*/
+.unit_detail .zs_color{
+	display: inline-block;
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+    position: relative;
+    margin-top: -4px;
+}
+.unit_detail .zs_color span{
+	width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 20px;
+    position: absolute;
+}
+.unit_detail .zs_color span:first-child{
+    opacity: 0.4;
+    left: -4px;
+    top: -4px;
+}
+.unit_detail .zs_color span:nth-child(2){
+	left: 0;
+    top: 0;
+}
+/*彩色序号样式  结束*/
+
+/*评分星星显示  开始*/
+.show_number {
+	padding-left: 0;
+	padding-top: 20px;
+}
+
+.show_number li {
+	width: 100%;
+	/*border: 1px solid #ccc;*/
+	padding: 10px;
+	margin-right: 5px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.show_number li .nuit_name {
+	float: left;
+	min-width: 120px;
+	font-size: 16px;
+	margin-right: 16px;
+}
+
+.atar_Show {
+	background: url(/analysis/static/modules/device/img/stark2.png);
+	width: 500px;
+	height: 21px;
+	position: relative;
+	float: left;
+}
+
+.atar_Show p {
+	background: url(/analysis/static/modules/device/img/stars2.png);
+	left: 0;
+	height: 21px;
+	width: 134px;
+}
+
+.show_number li span {
+	display: inline-block;
+	line-height: 21px;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 16px;
+}
+/*评分星星显示  结束*/
+
+.prompt_box {
+	background: rgba(186,218,153,0.3);
+	border: #bada99 solid 1px;
+}
+.prompt_box .prompt_con{
+	margin-top: 10px;
+	line-height: 36px;
+}
+.hpicon{
+	position: absolute;
+	display: inline-block;
+	top: 4px;
+	width: 28px;
+    height: 28px;
+    background-size: 100%;
+    background-image: url(/analysis/static/modules/device/img/help.png);
+}
+.hpnam{
+	padding-left: 36px;
+	display: inline-block;
+	font-size: 22px;
+	color: #2a8027;
+	font-family: "微软雅黑";
+}
+/*********************建设单位分析   结束********************/
+@media only screen and (max-width:1440px ) {
+	.consnit_content .nuit_box{
+		width: 45.8%;
+	}
+}

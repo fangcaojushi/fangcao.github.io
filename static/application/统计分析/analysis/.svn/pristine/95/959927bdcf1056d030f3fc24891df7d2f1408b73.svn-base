@@ -1,0 +1,198 @@
+/* ========================================================================
+ * detailed.css  
+ * 针对区域信息碰撞研判，频繁过车研判
+ * by wh 20170912
+ * ========================================================================*/
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+/*html,
+body {
+	width: 100%;
+	height: 100%;
+}*/
+
+/*a {
+	color: #ffffcc;
+	text-decoration: none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+a:hover,
+a.selected {
+	color: #ffcc00;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+	text-align: center;
+	color: #ccc;
+	text-shadow: #000 1px 1px 2px;
+	margin-bottom: 5px;
+}
+
+h1 {
+	font-size: 18px;
+}
+
+h2 {
+	font-size: 14px;
+}
+*/
+
+/* timeline */
+
+#timeline {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.hdetailtitle{
+	background: #1AB394;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	padding: 10px 0;
+}
+#dates {
+	width: 20%;
+	height: 100%;
+	padding: 30px 0;
+	box-sizing: border-box;
+	float: left;
+	margin-right:5%;
+	border-right: 2px #1AB394 solid;
+}
+
+#dates li {
+	width: 100%;
+	position: relative;
+	height: 80px;
+	text-align: right;
+	padding-right: 30px;
+	cursor: pointer;
+}
+#dates li:hover{
+	font-weight: bold;
+}
+#dates li i{
+	width: 20px;
+	height: 20px;
+	background: #1AB394;
+	position: absolute;
+	right: -10px;
+	text-align: center;
+	line-height: 18px;
+	top:20px;
+	z-index: 9999;
+	display: block;
+	border-radius: 10px;
+	border:1px double #0B997C;
+	color: #fff;
+	box-shadow: 1px 1px 5px rgba(20,177,145,.8);
+	cursor: pointer;
+}
+#dates a {
+	padding-top: 10px;
+}
+#dates a h3{
+	color: #1AB394;
+	padding-top: 10px;
+}
+#dates a p{
+	color: #C0C0C0;
+}
+#dates .selected {
+}
+
+#issues {
+	width: 400px;
+	height: 600px;
+	overflow: hidden;
+	float: left;
+}
+
+#issues li {
+	width: 400px;
+	height: 600px;
+}
+
+#issues li img {
+	margin: 60px 0 0 70px;
+}
+
+#issues li h1 {
+	color: #ffcc00;
+	font-size: 48px;
+	text-align: center;
+	text-shadow: #000 1px 1px 2px;
+}
+
+#issues li p {
+	font-size: 14px;
+	margin: 10px 20px;
+	font-weight: normal;
+	line-height: 22px;
+	text-shadow: #000 1px 1px 2px;
+}
+
+#grad_top,
+#grad_bottom {
+	width: 20%;
+	height: 50px;
+	position: absolute;
+}
+
+#grad_top {
+	top: 0;
+	background: url('../images/grad_top.png') repeat-x;
+}
+
+#grad_bottom {
+	bottom: 0;
+	background: url('../images/grad_bottom.png') repeat-x;
+}
+
+#next,
+#prev {
+	position: absolute;
+	left: 55%;
+	font-size: 70px;
+	width: 38px;
+	height: 22px;
+	background-position: 0 -44px;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+#next:hover,
+#prev:hover {
+	background-position: 0 0;
+}
+
+#next {
+	bottom: 0;
+	background-image: url('../images/next_v.png');
+}
+
+#prev {
+	top: 0;
+	background-image: url('../images/prev_v.png');
+}
+
+#next.disabled,
+#prev.disabled {
+	opacity: 0.2;
+}

@@ -1,0 +1,128 @@
+/***********************登录页****************************************/
+
+
+.ditu {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+
+.lg_box {
+	width: 900px;
+	height: 610px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -450px;
+	margin-top: -335px;
+	z-index: 500;
+}
+
+
+
+
+.lg_box .lg_txt {
+	position: absolute;
+	width: 580px;
+	height: 160px;
+	top: 0;
+	left: 50%;
+	margin-left: -290px;
+	z-index:555;
+}
+.lg_box .lg_txt img{
+	width:586px;
+	height:143px 
+}
+
+.lg_box .lg_ldoor{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	right: 0;
+	z-index:555;
+}
+.lg_box .lg_ldoor img{
+	width: 100%;
+	height: 418px;
+}
+.flipx {
+    -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+    /*IE*/
+    filter:FlipH;
+}
+
+
+.lg_box .lg_wnd {
+	position: absolute;
+	left: 50%;
+	bottom: 39px;
+	width: 338px;
+	height: 336px;
+	margin-left: -169px;
+	background: rgba(255, 255, 255, .12);
+	box-shadow:  0px 10px 20px rgba(0,38,84,.72);
+	z-index: 555;
+	border-radius: 8px;
+}
+
+.lg_box .lg_wnd input {
+	width: 100%;
+	height: 96%;
+	border: rgba(79, 164, 255, 0.8) 1px solid;
+	border-radius: 5px;
+	padding-left: 30px;
+	box-sizing: border-box;
+	background: rgba(229, 229, 229, .90);
+	font-size: 14px;
+	color: #333 ;
+}
+
+.lg_box .lg_wnd input:focus {
+	box-shadow: 0 0 0 1px rgba(79, 164, 255, 1);
+	background: rgba(255, 255, 255, 1);
+	color: #000 ;
+}
+
+.lg_box .lg_wnd .lg_user {
+	width: 70%;
+	height: 40px;
+	position: relative;
+	margin-top: 50px;
+}
+
+.lg_box .lg_wnd .ico {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 8px;
+	top: 10px;
+	opacity: 0.8;
+}
+
+.lg_box .lg_wnd .lg_password {
+	width: 70%;
+	height: 40px;
+	position: relative;
+	margin-top: 50px;
+}
+
+.lg_box .lg_wnd .lg_btn {
+	width: 240px;
+	height: 37px;
+	border: 0;
+	cursor: pointer;
+	background: url(../images/login_btn.png) no-repeat;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.lg_box .lg_wnd .lg_btn:hover {
+	background: url(../images/login_btn_hover.png) no-repeat;
+}

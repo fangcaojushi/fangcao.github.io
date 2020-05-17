@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>跟车关联</title>
+		<!--bootstrap框架-->
+		<link href="/analysis/static/css/bootstrap.min.css" rel="stylesheet" />
+		<!--框架样式-->
+		<link href="/analysis/static/css/style.min.css" rel="stylesheet" />
+		<!--时间控件-->
+		<script src="/analysis/static/modules/judge/js/My97DatePicker/WdatePicker.js"></script>
+		<!--滚动条-->
+		<link href="/analysis/static/modules/judge/css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+		<!--跟车关联-->
+		<link href="/analysis/static/modules/judge/css/follow.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="follow-alert">
+			<div class="follow-alert-title">
+				跟车关联车辆详情
+				<i class="glyphicon glyphicon-remove"></i>
+			</div>
+			<div class="follow-alert-wrap">
+				<div class="alert-imgbox col-md-7">
+					<img src="/analysis/static/modules/judge/img/kakou4.jpg">
+				</div>
+				<div class="alert-detail col-md-5">
+					<ul>
+						<li>车牌号码： 鲁B 76587</li>
+						<li>号牌类型： 蓝牌车</li>
+						<li>车辆类型： 小型车</li>
+						<li>车身颜色： 蓝色</li>
+						<li>上传时间： 2017.09.09-10:09:09</li>
+						<li class="alert-last">发现地点： 香港中路与山东路交叉口</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="follow-search">
+			<div class="col-md-12">
+				<div class="form-group col-md-3">
+					<label class="col-sm-5 control-label">车牌号码：</label>
+					<div class="col-sm-7">
+						<input type="text" name="" class="form-control" placeholder="请输入车牌号">
+					</div>
+				</div>
+				<div class="form-group col-md-3">
+					<label class="col-sm-5 control-label">号牌类型：</label>
+					<div class="col-sm-7">
+						<select class="form-control" name="">
+							<option>蓝牌车</option>
+							<option>黄牌车</option>
+							<option>黑牌车</option>
+						</select>
+
+					</div>
+				</div>
+				<div class="form-group col-md-3">
+					<label class="col-sm-5 control-label">时间间隔：</label>
+					<div class="col-sm-7">
+						<input type="text" name="" class="form-control" placeholder="请输入时间间隔">
+					</div>
+				</div>
+				<div class="form-group col-md-3">
+					<label class="col-sm-5 control-label" >开始时间：</label>
+					<div class="col-sm-7">
+						<input type="text" name="" class="form-control Wdate" onfocus="WdatePicker({dateFmt:'MM-dd HH:mm:ss'})" placeholder="请选择结束时间" style="background-image: none;">
+					</div>
+				</div>				
+			</div>
+			<div class="col-md-12">
+				<div class="form-group col-md-3">
+					<label class="col-sm-5 control-label">结束时间：</label>
+					<div class="col-sm-7">
+						<input type="text" name="" class="form-control Wdate" onfocus="WdatePicker({dateFmt:'MM-dd HH:mm:ss'})" placeholder="请选择开始时间" style="background-image: none;">
+					</div>
+				</div>
+				<div class="form-group col-md-3">
+					<label class="col-sm-5 control-label">卡口名称：</label>
+					<div class="col-sm-7">
+						<select class="form-control" name="" disabled="disabled">
+							<option>请选择卡口</option>
+							<option>山东路</option>
+							<option>辽宁路</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group col-md-3">
+					<label class="col-sm-5 control-label">车道数：</label>
+					<div class="col-sm-7">
+						<select class="form-control" name="" disabled="disabled">
+							<option>请选择车道</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+
+					</div>
+				</div>
+				<div class="form-group col-md-3 follow-search-btn">
+					<button type="button" class="btn btn-w-m btn-primary">查询</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="ibox-title">
+			<h5>跟车列表</h5>
+		</div>
+		<div class="follow-list flowScrollbar">
+			<div class="follow-list-part">
+				<div class="follow-list-part-title" value="1">				
+					<span>鲁B 12987</span>
+					<span class="follow-red">(共发现4次跟车)</span>
+					<span class="follow-attention">
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+						</span>
+				</div>
+				<ul class="follow-l1">
+					<li class="follow-second-title">
+						<span class="col-md-4">卡口</span>
+						<span class="col-md-4">时间差</span>
+						<span class="col-md-4">具体时间</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="follow-list-part">
+				<div class="follow-list-part-title" value="2">
+					<span>鲁B 12987</span>
+					<span class="follow-red">(共发现3次跟车)</span>
+					<span class="follow-attention">							
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+						</span>
+				</div>
+				<ul class="follow-l2">
+					<li class="follow-second-title">
+						<span class="col-md-4">卡口</span>
+						<span class="col-md-4">时间差</span>
+						<span class="col-md-4">具体时间</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="follow-list-part">
+				<div class="follow-list-part-title" value="3">
+					<span>鲁B 12987</span>
+					<span class="follow-red">(共发现3次跟车)</span>
+					<span class="follow-attention">							
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+						</span>
+				</div>
+				<ul class="follow-l3">
+					<li class="follow-second-title">
+						<span class="col-md-4">卡口</span>
+						<span class="col-md-4">时间差</span>
+						<span class="col-md-4">具体时间</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="follow-list-part">
+				<div class="follow-list-part-title" value="4">
+					<span>鲁B 12987</span>
+					<span class="follow-red">(共发现3次跟车)</span>
+					<span class="follow-attention">							
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+						</span>
+				</div>
+				<ul class="follow-l4">
+					<li class="follow-second-title">
+						<span class="col-md-4">卡口</span>
+						<span class="col-md-4">时间差</span>
+						<span class="col-md-4">具体时间</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="follow-list-part">
+				<div class="follow-list-part-title" value="5">
+					<span>鲁B 12987</span>
+					<span class="follow-red">(共发现3次跟车)</span>
+					<span class="follow-attention">							
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+						</span>
+				</div>
+				<ul class="follow-l5">
+					<li class="follow-second-title">
+						<span class="col-md-4">卡口</span>
+						<span class="col-md-4">时间差</span>
+						<span class="col-md-4">具体时间</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="follow-list-part">
+				<div class="follow-list-part-title" value="6">		
+					<span>鲁B 12987</span>
+					<span class="follow-red">(共发现3次跟车)</span>
+					<span class="follow-attention">							
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+							<i class="glyphicon glyphicon-exclamation-sign"></i>
+						</span>
+				</div>
+				<ul class="follow-l6">
+					<li class="follow-second-title">
+						<span class="col-md-4">卡口</span>
+						<span class="col-md-4">时间差</span>
+						<span class="col-md-4">具体时间</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+					<li>
+						<span class="col-md-4">香港中路与山东路交叉口<i class="glyphicon glyphicon-picture"></i></span>
+						<span class="col-md-4">6s</span>
+						<span class="col-md-4">2017.09.02-11:14:54</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--引入jquery-->
+		<script src="/analysis/static/js/jquery.min.js"></script>
+		<!--Bootstrap-->
+		<script src="/analysis/static/js/bootstrap.min.js"></script>
+		<!--跟车关联-->
+		<script src="/analysis/static/modules/judge/js/follow.js"></script>
+		<!--设置滚动条样式-->
+		<script src="/analysis/static/modules/judge/js/jquery.mousewheel.min.js"></script>
+		<script src="/analysis/static/modules/judge/js/jquery.mCustomScrollbar.min.js"></script>
+		<script type='text/javascript'>
+			(function($) {
+				$(window).load(function() {
+					$(".flowScrollbar").mCustomScrollbar();
+				});
+			})(jQuery);
+		</script>
+	</body>
+
+</html>

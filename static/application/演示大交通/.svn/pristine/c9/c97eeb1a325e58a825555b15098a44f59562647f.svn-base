@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Kc50NR2vnseUm3o4DFmoYij2ELNudI8q"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/Heatmap/2.0/src/Heatmap_min.js"></script>
+    <title>交通运行态势</title>
+    
+    <!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet"/>
+<link href="css/public.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+<!--navbar-->
+<link href="fonts/FontAwesome/font-awesome.css" rel="stylesheet"/>
+<link href="css/bootsnav.css" rel="stylesheet"/>
+<link href="css/daolu.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootsnav.js"></script>
+
+
+   
+</head>
+<body>
+	<!--导航菜单-->
+	<script src="js/menu.js"></script>
+	<!--地图-->
+	<!--<div id="hot_pic"></div>-->
+	<!--正文-->
+	<div class="bodycon">
+		<div class="container-fluid">
+		  <div class="row">
+		    <div class="col-md-6 col-md-offset-3 fen-title">
+		      	<h2 class="text-center gj_title"> 交通运行态势</h2>
+		      	<div class="lg-txt">
+		            <div class="light">
+		            	<img class="faguang" src="images/shanliang.png"/>
+		            </div>
+	          	</div>
+		    </div>
+		  </div>
+		</div>
+	
+		<div class="container-fluid high_95">
+			<div class="row high_100">
+				<div class="col-md-3 col-sm-3 high_100">
+					<div class=" high_95">
+<!-------------------------------违法数据--------------------------------->
+						<div class="high_33 bg11 fmk">
+							<div class="ts_title">
+								<h5>违法数据</h5>
+							</div>
+        				    <div id="weifashuju" class="chartwh90"></div>
+           					<script src="js/weifashuju.js"></script>
+						</div>
+<!-------------------------------进出城车流量--------------------------------->					
+						<div class="high_33 bg11 fmk">
+							<div class="ts_title">
+								<h5>进出城车流量</h5>
+							</div>
+							<div class="col-md-10 col-md-offset-1 high_mt_80 mk2">
+								<div class="cheliang_title">
+					                  <span class="pull-right">
+					                  	<number class="timer count-number"  data-to="42610" data-speed="2500">
+					                  		42610
+					                  	</number>
+					                  	辆
+					                  </span>
+					                  <span class="pull-left">进城车辆：</span>
+					                  <span class="clearfix"></span>
+					            </div>
+					        <div class="progress">
+					                <div id="ssjk-progress-parking-online" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+					                </div>
+					           </div>  
+					        <div class="cheliang_title">
+					                  <span class="pull-right"><number class="timer count-number"  data-to="36200" data-speed="2500">36200</number>辆 </span>
+					                  <span class="pull-left">出城车辆：</span>
+					                  <span class="clearfix"></span>
+					            </div>
+					        <div class="progress">
+					                <div id="ssjk-progress-parking-online" class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+					                </div>
+					            </div>
+						</div>
+							 
+						</div>
+<!-------------------------------交通事件统计--------------------------------->							
+						<div class="high_33 bg11 fmk">
+							<div class="ts_title">
+								<h5>交通事件统计</h5>
+							</div>
+							<div id="jiaotongshijian" class="chartwh90"></div>
+        					<script src="js/jiaotongshijian.js"></script>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 high_100">
+					<div class=" high_95">
+						<div class="high_18 bg11">
+							<div class="ts_title">
+								<h5>分项数据总量</h5>
+							</div>
+							<div class="gexiangzongshu" >
+              					  <table>
+          						   	   <tbody>
+            						  	 	 <tr>
+							              		  <td >
+							                        	<h5>当天违法总数</h5>
+							                        	<p  class="text-center se9">
+							                        		<number class="font_big timer count-number h2"  																data-to="2748" data-speed="2500">							                        
+							                        		</number>
+							                        		件
+							                        	</p>							                        							                      
+							                     </td>              
+							                      <td >
+							                        	<h5>当天外地车总数</h5>
+							                       	 	<p  class="text-center se1">
+							                        		<number class="font_big timer count-number h2"  																data-to="8261" data-speed="2500">							                        
+							                        		</number>
+							                        		辆
+							                        	</p>	
+							                      </td>
+							                      <td >
+							                        	<h5>当天事件总数</h5>
+							                        	<p  class="text-center se8">
+							                        		<number class="font_big timer count-number h2"  																data-to="2027" data-speed="2500">							                        
+							                        		</number>
+							                        		件
+							                        	</p>	
+							                      </td>
+							                 </tr>
+             						   </tbody>
+            					  </table>
+            				</div>
+						</div>	
+						<div class="high_60 bg11" style="overflow: hidden;">
+							<div class="ts_title">
+								<h5>违法多发地分布</h5>
+							</div>
+							<div id="hot_pic"></div>
+						</div>	
+						<div class="high_22 bg11 cll">
+							<div class="ts_title">
+								<h5>热点地区车流量</h5>
+							</div>
+							<div class="rediancheliu">
+								<div class="col-md-3 gaishu">
+									<p>     对
+										<span style="color: #3485ff;">五道口、西二环、西三环</span>
+										
+										等
+
+										地区车流量较大的地方进行车流量
+									
+										统计，为交通出行提供依据。
+									</p>
+								</div>
+								<div class="col-md-3 pq1" >
+											<!--<h4>五道口</h4>-->
+											<div id="pianqu1" class="chartwh" style="width:75%; height: 100%;"></div>
+       									    <script src="js/pianqu1.js"></script>
+										
+								</div>
+								
+								<div class="col-md-3 pq2" >
+											<!--<h4>西二环</h4>-->
+											<div id="pianqu2" class="chartwh" style="width:75%;"></div>
+       									    <script src="js/pianqu2.js"></script>
+										
+								</div>
+								
+								<div class="col-md-3 pq3">
+											<!--<h4>西三环</h4>-->
+											<div id="pianqu3" class="chartwh" style="width:75%;"></div>
+       									    <script src="js/pianqu3.js"></script>
+										
+								</div>
+							</div>
+						</div>	
+					
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 high_100">
+				
+					<div class="high_95 bg6">
+<!-------------------------------违法总数趋势--------------------------------->							
+						<div class="high_33 bg11 fmk">
+							<div class="ts_title">
+								<h5>违法总数趋势</h5>
+							</div>
+        				    <div id="weifaqushi" class="chartwh90"></div>
+        					<script src="js/weifaqushi.js"></script>
+						</div>
+<!-------------------------------进出城车流量变化--------------------------------->							
+						<div class="high_33 bg11 fmk">
+							<div class="ts_title">
+								<h5>进出城车流量变化</h5>
+							</div>
+        				    <div id="cheliuliang" class="chartwh90"></div>
+        					<script src="js/cheliuliang.js"></script>
+						</div>
+<!-------------------------------交通事件变化趋势--------------------------------->							
+						<div class="high_33 bg11 fmk">
+							<div class="ts_title">
+								<h5>交通事件变化趋势</h5>
+							</div>
+        				    <div id="bianhua" class="chartwh90"></div>
+        					<script src="js/bianhua.js"></script>
+						</div>
+					
+					</div>
+			</div>
+			</div>
+				</div>	
+	</div>
+</body>
+<!--地图-->
+<!--<script src="js/hotpic.js"></script>-->
+<script src="js/bootstrap.js"></script>
+<script src="js/highcharts.js"><!--highcharts图表--></script>
+<script src="js/highcharts-3d.js"><!--highcharts图表3d图--></script>
+<script type="text/javascript" src="js/number.js"><!--交通指数--></script>
+<script src="js/hotpic.js"></script>
+</html>

@@ -1,0 +1,37 @@
+/* ========================================================================
+ * judgeheight.js 
+ * judgetop研判的顶部——搜索版块,
+ * judgebottom研判的底部——列表版块
+ * 搜过条件的伸展hlistshow，改变列表版块的高度
+ * by wh 20170914
+ * ========================================================================*/
+var searchhigh;
+function getHeight(name,searchname){
+	var offsetHigh=20*3+48+15*2+20;
+	var winhigh = $(window).height();
+	searchhigh = $(searchname).height();
+	var bthigh=winhigh - searchhigh - offsetHigh;
+	alert(bthigh);
+	if(bthigh<150){
+		bthigh=150;
+	}
+	$(name).height(bthigh);
+	
+}
+
+$(function(){
+	//碰撞页的下端高度
+	getHeight(".judgebottom",".judgetop");
+	$(".hlistshow").click(function(){
+		var hobjbt=$('.judgebottom');
+		var hobjH=hobjbt.height();
+		var judgestatus=$(this).hasClass("fa-chevron-up");
+		if(judgestatus){
+			hobjbt.height(hobjH+searchhigh-48);
+			
+		}else{
+			hobjbt.height(hobjH-searchhigh+48);
+		}
+	});
+	
+});

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>H+ 后台主题UI框架 - 百度ECHarts</title>
+    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="/analysis/static/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="/analysis/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+
+    <link href="/analysis/static/css/animate.min.css" rel="stylesheet">
+    <link href="/analysis/static/css/style.min.css?v=4.0.0" rel="stylesheet">
+    <base target="_blank">
+	<link href="/analysis/static/modules/analysis/css/navhfix.css" rel="stylesheet"/>
+	<link href="/analysis/static/modules/analysis/css/analysis.css" rel="stylesheet"/>
+</head>
+
+<body class="gray-bg">
+ <div class="row  border-bottom white-bg dashboard-header">
+	    <div class="col-sm-12">
+            <p>通过对交通事故的分析，根据掌握的信息，运用数学、力学、工程学的基本方法，进行事故再现，找出事故发生的现场情况，为<b>分析和判断事故原因</b>提供依据；再通过对大量已经发生的交通事故原因统计、分析，从中<b>得出趋势性的结论</b>，以便为采取决策提供依据和基础。同时也可以对现在采取的行政政策和措施进行分析，即对所采取政策和措施的有效程度和道路安全设施的<b>投资效率等进行分析</b>。
+            </p>
+            
+        </div>
+    </div>
+<div class="wrapper wrapper-content">
+	<div class="hnav hnavfixbox">  
+	    <div class="hnavfixbt"> 
+	        <a href="#001" class="hcur" target="_self"><i class="glyphicon glyphicon-list-alt"></i>类型描述</a>
+	        <a href="#002"  target="_self"><i class="fa fa-area-chart"></i>事故数据统计</a>
+	        <a href="#003"  target="_self"><i class="fa fa-pie-chart"></i>事故原因分析</a> 
+	        <a href="#004" target="_self"><i class="glyphicon glyphicon-book"></i>结论</a>
+	    </div>  
+	</div>
+	<br/>
+	<div class="hcontext">
+		<div class="row">
+			<a name="001"></a>
+            <div class="col-sm-3">
+                <div class="ibox">
+                    <div class="ibox-content htjbox">
+                        <h5 class="m-b-md">本周事故</h5>
+                        <div class="col-md-6">
+                    			<h1 class="text-navy">133</h1>
+                    		</div>
+                    		<div class="col-md-6">
+                    			<h2 class="text-navy">
+                               <i class="fa fa-play fa-rotate-270"></i> 上升
+                            </h2>
+                    			<small>增加18起，增加12%<i class="fa fa-level-up"></i></small>
+                    		</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="ibox">
+                    <div class="ibox-content htjbox">
+                        <h5 class="m-b-md">本月事故</h5>
+                        <div class="col-md-6">
+                    			<h1 class="text-navy">293</h1>
+                    		</div>
+                    		<div class="col-md-6">
+                    			<h2 class="text-navy">
+                               <i class="fa fa-play fa-rotate-270"></i> 上升
+                            </h2>
+                    			<small>增加38起，增加12%<i class="fa fa-level-up"></i></small>
+                    		</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="ibox">
+                    <div class="ibox-content htjbox">
+                        <h5 class="m-b-md">本季事故</h5>
+                        <div class="col-md-6">
+                    			<h1 class="text-danger">933</h1>
+                    		</div>
+                    		<div class="col-md-6">
+                    			<h2 class="text-danger">
+                                <i class="fa fa-play fa-rotate-90"></i> 下降
+                            </h2>
+                    			<small>减少78起，减少20%<i class="fa fa-level-down"></i></small>
+                    		</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="ibox">
+                    <div class="ibox-content htjbox">
+                        <h5 class="m-b-md">本年累积事故</h5>
+                        		<div class="col-md-6">
+                        			<h1 class="text-danger">6233</h1>
+                        		</div>
+                        		<div class="col-md-6">
+                        			<h2 class="text-danger">
+                                    <i class="fa fa-play fa-rotate-90"></i> 下降
+                                </h2>
+                        			<small>减少210起，减少20%<i class="fa fa-level-down"></i></small>
+                        		</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+       	 	<a name="002"></a>
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>事故信息</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="graph_flot.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="graph_flot.html#">选项1</a>
+                                </li>
+                                <li><a href="graph_flot.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                       <table class="table table-hover table-bordered">
+                       		<thead class="hsgthead">
+                       			<tr>
+                                    <th>大队</th>
+                                    <th>事故/起</th>
+                                    <th>同比事故增长率</th>
+                                    <th>伤人事故/起</th>
+                                    <th>受伤/人</th>
+                                    <th>同比伤人增长率</th>
+                                    <th>死亡事故/起</th>
+                                    <th>死亡/人</th>
+                                    <th>同比死亡增长率</th>
+                                    <th>直接财产损失/万元</th>
+                                </tr>
+                       		</thead>
+                            <tbody>
+                                <tr>
+                                    <td width="20%">市南区交警大队文登路中队</td>
+                                    <td>102</td>
+                                    <td class="text-navy"> <i class="fa fa-level-up"></i> 40%</td>
+                                    <td>42</td>
+                                    <td>26</td>
+                                     <td class="text-navy"> <i class="fa fa-level-up"></i> 40%</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                     <td class="text-navy"> <i class="fa fa-level-up"></i> 40%</td>
+                                    <td>12.32</td>
+                                </tr>
+                                <tr>
+                                    <td>开发区交警大队车管所 </td>
+                                    <td>132</td>
+                                    <td class="text-warning"> <i class="fa fa-level-down"></i> -12%</td>
+                                    <td>32</td>
+                                    <td>12</td>
+                                     <td class="text-warning"> <i class="fa fa-level-down"></i> -12%</td>
+                                    <td>2</td>
+                                    <td>5</td>
+                                     <td class="text-warning"> <i class="fa fa-level-down"></i> -12%</td>
+                                    <td>11.62</td>
+                                </tr>
+                                <tr>
+                                    <td>李沧区交警大队四流中路中队</td>
+                                    <td>382</td>
+                                    <td class="text-navy"> <i class="fa fa-level-up"></i> 30%</td>
+                                    <td>212</td>
+                                    <td>72</td>
+                                     <td class="text-warning"> <i class="fa fa-level-down"></i> -12%</td>
+                                    <td>5</td>
+                                    <td>1</td>
+                                     <td class="text-warning"> <i class="fa fa-level-down"></i> -12%</td>
+                                    <td>25.29</td>
+                                </tr>
+                                <tr>
+                                    <td>城阳区交警大队棘洪滩中队</td>
+                                    <td>382</td>
+                                    <td class="text-warning"> <i class="fa fa-level-down"></i> -23%</td>
+                                    <td>112</td>
+                                    <td>12</td>
+                                     <td class="text-warning"> <i class="fa fa-level-down"></i> -12%</td>
+                                    <td>5</td>
+                                    <td>1</td>
+                                     <td class="text-warning"> <i class="fa fa-level-down"></i> -12%</td>
+                                    <td>8.32</td>
+                                </tr>
+                                <tr>
+                                    <td>崂山交警大队景区中队</td>
+                                    <td>382</td>
+                                    <td class="text-warning"> <i class="fa fa-level-down"></i> -11%</td>
+                                    <td>62</td>
+                                    <td>12</td>
+                                     <td class="text-warning"> <i class="fa fa-level-down"></i> -11%</td>
+                                    <td>5</td>
+                                    <td>1</td>
+                                     <td class="text-warning"> <i class="fa fa-level-down"></i> -11%</td>
+                                    <td>6.32</td>
+                                </tr>
+                                <tr>
+                                    <td>市北区交警大队停车场</td>
+                                    <td>382</td>
+                                    <td class="text-warning"> <i class="fa fa-level-down"></i> -13%</td>
+                                    <td>562</td>
+                                    <td>2</td>
+                                     <td class="text-warning"> <i class="fa fa-level-down"></i> -11%</td>
+                                    <td>2</td>
+                                    <td>1</td> 
+                                    <td class="text-warning"> <i class="fa fa-level-down"></i> -11%</td>
+                                    <td>8.32</td>
+                                </tr>
+                                <tr>
+                                    <td>四方区交警大队巡逻疏导中队</td>
+                                    <td>382</td>
+                                    <td class="text-navy"> <i class="fa fa-level-up"></i> 4%</td>
+                                    <td>122</td>
+                                    <td>28</td>
+                                    <td class="text-navy"> <i class="fa fa-level-up"></i> 4%</td>
+                                    <td>5</td>
+                                    <td>1</td>
+                                    <td class="text-navy"> <i class="fa fa-level-up"></i> 4%</td>
+                                    <td>21.38</td>
+                                </tr>
+                                <tr>
+                                    <td>全市</td>
+                                    <td>882</td>
+                                    <td class="text-navy"> <i class="fa fa-level-up"></i> 13%</td>
+                                    <td>212</td>
+                                    <td>89</td>
+                                    <td class="text-navy"> <i class="fa fa-level-up"></i> 16%</td>
+                                    <td>5</td>
+                                    <td>1</td>
+                                    <td class="text-navy"> <i class="fa fa-level-up"></i> 24%</td>
+                                    <td>112.32</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>柱状图</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="graph_flot.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="graph_flot.html#">选项1</a>
+                                </li>
+                                <li><a href="graph_flot.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+
+                        <div class="echarts" id="echarts-bar-chart"></div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+        <div class="row">
+        	<a name="003"></a>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>全市事故分析</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="graph_flot.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="graph_flot.html#">选项1</a>
+                                </li>
+                                <li><a href="graph_flot.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="echarts" id="hcity"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>各大队事故分析</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="graph_flot.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="graph_flot.html#">选项1</a>
+                                </li>
+                                <li><a href="graph_flot.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="echarts" id="hteam"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>饼状图</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="graph_flot.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="graph_flot.html#">选项1</a>
+                                </li>
+                                <li><a href="graph_flot.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="echarts" id="echarts-pie-chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>雷达图</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="graph_flot.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="graph_flot.html#">选项1</a>
+                                </li>
+                                <li><a href="graph_flot.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="echarts" id="echarts-radar-chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>和弦图</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="graph_flot.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="graph_flot.html#">选项1</a>
+                                </li>
+                                <li><a href="graph_flot.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="echarts" id="echarts-chord-chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>仪表盘</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="graph_flot.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="graph_flot.html#">选项1</a>
+                                </li>
+                                <li><a href="graph_flot.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="echarts" id="echarts-gauge-chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>漏斗图</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="graph_flot.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="graph_flot.html#">选项1</a>
+                                </li>
+                                <li><a href="graph_flot.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="echarts" id="echarts-funnel-chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>力导向布局图</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="graph_flot.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="graph_flot.html#">选项1</a>
+                                </li>
+                                <li><a href="graph_flot.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="echarts" id="echarts-force-chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        		<a name="004"></a>
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>中国地图</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="graph_flot.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="graph_flot.html#">选项1</a>
+                                </li>
+                                <li><a href="graph_flot.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div style="height:600px" id="echarts-map-chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-warning">
+            信息统计时间：2017年5月8日0时 至 5月14日24时
+        </div>
+	</div>
+</div>
+    <script src="/analysis/static/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/analysis/static/js/bootstrap.min.js?v=3.3.5"></script>
+    <script src="/analysis/static/js/plugins/echarts/echarts.js"></script>
+    <script src="/analysis/static/js/content.min.js?v=1.0.0"></script>
+     <script src="/analysis/static/js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="/analysis/static/js/plugins/morris/morris.js"></script>
+    <!--全市事故分析-->
+    <script src="/analysis/static/modules/analysis/js/accident/hcity.js"></script>
+     <!--大队事故分析-->
+    <script src="/analysis/static/modules/analysis/js/accident/hteam.js"></script>
+    <!--<script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>-->
+    <script src="/analysis/static/modules/analysis/js/navhfix.js"></script>
+</body>
+
+</html>

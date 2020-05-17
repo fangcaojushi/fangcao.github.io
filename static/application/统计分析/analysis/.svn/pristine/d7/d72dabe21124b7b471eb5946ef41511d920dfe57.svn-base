@@ -1,0 +1,262 @@
+.frequency-label{
+	padding-left: 0;
+	padding-right: 0;
+}
+.frequency-input{
+	padding-right: 0;
+}
+.frequency-inpput-word{
+	padding-left: 6px;
+}
+.frequency-list{
+	overflow: hidden;
+}
+.frequency-list ul,li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.frequency-list-title{
+	text-align: left;
+	overflow: hidden;
+	line-height: 60px;
+	font-size: 18px;
+	border: 1px solid #ddd;
+	font-weight: bold;
+}
+.frequency-list-item{
+	text-align: left;
+	overflow: hidden;
+	line-height: 60px;
+	font-size: 16px;
+	border-bottom: 1px solid #eee;
+}
+.frequency-item-li{
+	padding-left: 60px;
+	font-size: 22px;
+	border-left:1px solid #eee;
+}
+.frequency-item-li i{
+	display: inline-block;
+    font-style: normal;
+    width: 36px;
+    height: 35px;
+    line-height: 36px;
+    background-color: #ed5565;
+    text-align: center;
+    border-radius: 18px;
+    color:#fff;
+}
+.frequency-list-title-li{
+	padding-left: 60px;
+}
+.frequency-item-num{
+	font-size: 22px;
+	padding-left: 50px;
+}
+.frequency-list-title-num{
+	padding-left: 50px;
+}
+.frequency-item-n{
+	font-size: 18px;
+}
+.frequency-item-detail{	
+	border-right:1px solid #eee;
+}
+
+.pre-scrollable{
+	max-height: 2000px;
+}
+.frequency-list-body li:hover{
+	background-color:#f3f3f4;
+}
+/*套牌车列表*/
+.fake-list-title{
+	text-align: left;
+	overflow: hidden;
+	line-height: 60px;
+	font-size: 18px;
+	border: 1px solid #eee;
+	font-weight: bold;
+}
+.fake-list ul,li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.fake-list-item{
+	text-align: left;
+	overflow: hidden;
+	line-height: 60px;
+	font-size: 16px;
+	border-bottom: 1px solid #eee;
+}
+.fake-list-body li:hover{
+	background-color:#f3f3f4;
+}
+.fake-item-left{
+	border-left:1px solid #eee;
+}
+.fake-item-left i{
+	display: inline-block;
+    font-style: normal;
+    width: 36px;
+    height: 35px;
+    line-height: 36px;
+    background-color: #ed5565;
+    text-align: center;
+    border-radius: 18px;
+    color:#fff;
+}
+.fake-item-right{
+	border-right:1px solid #eee;
+}
+.fake-item-right .btn a{
+	color:#f8ac59;
+}
+.fake-item-right .btn:hover a{
+	color:#fff;
+}
+.fake-list-number{
+	padding-left: 60px;
+}
+/****初次入城研判******/
+.mgt12{
+	margin-top: 12px;
+}
+.pdlr0{
+	padding-left: 0;
+	padding-right: 0;
+}
+.pdl60{
+	padding-left: 60px;
+}
+.form-horizontal .control-label input{
+	vertical-align: text-bottom;
+	margin-right: 3px;
+	margin-left: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.yd_bgorgan1{	
+		background-color:#1AB394;
+}
+.yd_bdorgan1{	
+		border: 19px solid #1AB394;
+}
+
+.zs_color{
+	display: inline-block;
+    width: 30px;
+    height: 30px;    
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+.zs_color span{
+	width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 20px;
+    position: absolute;
+}
+.zs_color span:first-child{
+    opacity: 0.4;
+    left: -4px;
+    top: -4px;
+}
+.zs_color span:nth-child(2){
+	left: 0;
+    top: 0;
+}
+.schlr{
+	padding: 0 5px;
+}
+/*弹窗样式*/
+.alert-bg{
+	position: fixed;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 999;
+	display: none;
+}
+.follow-alert{
+	position:fixed;
+	width:70%;
+	height:70%;
+	top:15%;
+	left:15%;
+	z-index: 1000;
+	background-color: #f5f5f5;
+	border-radius:6px;
+	display: none;
+}
+.follow-alert-title{	
+	background-color:#1ab394;
+	color:#fff;
+	line-height: 40px;
+	font-size:16px;
+	padding-left: 20px;
+	overflow: hidden;
+	padding-right:20px;
+}
+.follow-alert-title i{
+	float:right;
+	line-height: 40px;
+	cursor: pointer;
+}
+.follow-alert-wrap{
+	overflow: hidden;
+}
+.alert-imgbox{
+	padding-top: 20px;
+}
+.alert-imgbox img{
+	width:100%;
+	max-height: 96%;
+}
+.alert-detail{
+	border-left:1px solid #ddd;
+}
+.alert-detail span{
+	display: inline-block;
+}
+.alert-detail ul{
+	padding:0;
+	padding-top: 10px;
+}
+.alert-detail-title{
+	width:30%;
+	text-align: center;
+}
+.alert-detail-content{
+	width:60%;
+}
+.alert-detail li{
+	vertical-align: top;
+	line-height: 50px;
+	font-size: 16px;
+	border-bottom: 1px solid #ddd;
+}
+.alert-detail .alert-position{
+	vertical-align: top;
+}
+.alert-detail .alert-last{
+	border:none;
+}
+.pre-scrollable {
+	max-height: 2000px;
+}
+@media only screen and (max-width: 1440px) {
+	.form-horizontal .carentercy-label .control-label{
+		font-size: 12px;
+		padding-top: 8px;
+	}
+	.form-horizontal .carentercy-label .frequency-input{
+		padding-left: 6px;
+	}
+}

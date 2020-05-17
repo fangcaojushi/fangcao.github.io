@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>道路设备监控</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.css" rel="stylesheet" />
+		<link href="css/public.css" rel="stylesheet" />
+		<!--navbar-->
+		<link href="fonts/FontAwesome/font-awesome.css" rel="stylesheet" />
+		<link href="css/bootsnav.css" rel="stylesheet" />
+		<link href="css/shebei.css" rel="stylesheet" type="text/css" />
+		<link href="css/daolu.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/bootsnav.js"></script>
+	</head>
+
+	<body>
+		<!--导航菜单-->
+		<script src="js/menu.js"></script>
+		<!--正文-->
+		<div class="bodycon">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 fen-title">
+						<h2 class="text-center gj_title">道路设备监控</h2>
+						<div class="lg-txt">
+							<div class="light">
+								<img class="faguang" src="images/shanliang.png" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid high_95">
+				<div class="col-md-4 high_100">
+					<h5>设备总体运行状态</h5>
+					<div class=" high_95   bg6">
+						<div class="high_60">
+							<div id="zongshebei" class="high_mt_80"></div>
+							<script src="js/zongshebei.js"></script>
+						</div>
+						<div class="high_33">
+							<div class="fen"></div>
+							<div class="col-md-10 col-md-offset-1 high_mt_80">
+								<div class="basic_title">
+									<span class="pull-right"><number class="font_big timer count-number"  data-to="3251" data-speed="2500">3251</number>台 </span>
+									<span class="pull-left">正常设备：</span>
+									<span class="clearfix"></span>
+								</div>
+								<div class="progress">
+									<div id="ssjk-progress-parking-online" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+									</div>
+								</div>
+
+								<div class="basic_title">
+									<span class="pull-right"><number class="font_big timer count-number"  data-to="300" data-speed="2500">300</number>台 </span>
+									<span class="pull-left">不正常设备：</span>
+									<span class="clearfix"></span>
+								</div>
+								<div class="progress">
+									<div id="ssjk-progress-parking-online" class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 high_100">
+					<h5>分项设备运行状态</h5>
+					<div class=" high_95   bg6">
+						<div class="high_20">
+							<div class="col-md-6 high_100 ">
+
+								<div class="shebei_sm">
+									<b class="bg7">监控设备</b>
+									<table>
+										<tr>
+											<td>在线</td>
+											<td>离线</td>
+											<td>故障</td>
+											<td>总数</td>
+										</tr>
+										<tr>
+											<td>
+												<button class="timer count-number se7" type="text" data-to="600" data-speed="2500">600</button>
+											</td>
+											<td>
+												<button class="timer count-number se6" type="text" data-to="32" data-speed="2500">32</button>
+											</td>
+											<td>
+												<button class="timer count-number se1" type="text" data-to="68" data-speed="2500">68</button>
+											</td>
+											<td>
+												<button class="timer count-number se8" type="text" data-to="700" data-speed="2500">700</button>
+											</td>
+										</tr>
+									</table>
+
+								</div>
+
+							</div>
+							<div class="col-md-6 high_100">
+								<div id="jkshebei" class="fensb"></div>
+								<script src="js/jiankongshebei.js"></script>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="high_20">
+							<div class="col-md-6 high_100 ">
+
+								<div class="shebei_sm">
+									<b class="bg7">信号设备</b>
+									<table>
+										<tr>
+											<td>在线</td>
+											<td>离线</td>
+											<td>故障</td>
+											<td>总数</td>
+										</tr>
+										<tr>
+											<td>
+												<button class="timer count-number se7" type="text" data-to="550" data-speed="2500">550</button>
+											</td>
+											<td>
+												<button class="timer count-number se6" type="text" data-to="132" data-speed="2500">132</button>
+											</td>
+											<td>
+												<button class="timer count-number se1" type="text" data-to="168" data-speed="2500">168</button>
+											</td>
+											<td>
+												<button class="timer count-number se8" type="text" data-to="750" data-speed="2500">750</button>
+											</td>
+										</tr>
+									</table>
+
+								</div>
+
+							</div>
+
+							<div class="col-md-6 high_100">
+								<div id="xinhaoshebei" class="fensb"></div>
+								<script src="js/xinhaoshebei.js"></script>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="high_20">
+							<div class="col-md-6 high_100 ">
+
+								<div class="shebei_sm">
+									<b class="bg7">诱导设备</b>
+									<table>
+										<tr>
+											<td>在线</td>
+											<td>离线</td>
+											<td>故障</td>
+											<td>总数</td>
+										</tr>
+										<tr>
+											<td>
+												<button class="timer count-number se7" type="text" data-to="500" data-speed="2500">500</button>
+											</td>
+											<td>
+												<button class="timer count-number se6" type="text" data-to="13" data-speed="2500">13</button>
+											</td>
+											<td>
+												<button class="timer count-number se1" type="text" data-to="16" data-speed="2500">16</button>
+											</td>
+											<td>
+												<button class="timer count-number se8" type="text" data-to="529" data-speed="2500">529</button>
+											</td>
+										</tr>
+									</table>
+
+								</div>
+
+							</div>
+							<div class="col-md-6 high_100">
+								<div id="youdaoshebei" class="fensb"></div>
+								<script src="js/youdaoshebei.js"></script>
+							</div>
+
+						</div>
+						<div class="clearfix"></div>
+						<div class="high_20">
+							<div class="col-md-6 high_100 ">
+
+								<div class="shebei_sm">
+									<b class="bg7">卡口设备</b>
+									<table>
+										<tr>
+											<td>在线</td>
+											<td>离线</td>
+											<td>故障</td>
+											<td>总数</td>
+										</tr>
+										<tr>
+											<td>
+												<button class="timer count-number se7" type="text" data-to="1100" data-speed="2500">1100</button>
+											</td>
+											<td>
+												<button class="timer count-number se6" type="text" data-to="32" data-speed="2500">32</button>
+											</td>
+											<td>
+												<button class="timer count-number se1" type="text" data-to="68" data-speed="2500">68</button>
+											</td>
+											<td>
+												<button class="timer count-number se8" type="text" data-to="1200" data-speed="2500">1200</button>
+											</td>
+										</tr>
+									</table>
+
+								</div>
+
+							</div>
+							<div class="col-md-6 high_100">
+								<div id="kakoushebei" class="fensb"></div>
+								<script src="js/kakoushebei.js"></script>
+							</div>
+
+						</div>
+						<div class="clearfix"></div>
+						<div class="high_20">
+							<div class="col-md-6 high_100 ">
+
+								<div class="shebei_sm">
+									<b class="bg7">电警设备</b>
+									<table>
+										<tr>
+											<td>在线</td>
+											<td>离线</td>
+											<td>故障</td>
+											<td>总数</td>
+										</tr>
+										<tr>
+											<td>
+												<button class="timer count-number se7" type="text" data-to="1200" data-speed="2500">1200</button>
+											</td>
+											<td>
+												<button class="timer count-number se6" type="text" data-to="168" data-speed="2500">168</button>
+											</td>
+											<td>
+												<button class="timer count-number se1" type="text" data-to="132" data-speed="2500">132</button>
+											</td>
+											<td>
+												<button class="timer count-number se8" type="text" data-to="1500" data-speed="2500">1500</button>
+											</td>
+										</tr>
+									</table>
+
+								</div>
+
+							</div>
+							<div class="col-md-6 high_100">
+								<div id="dianjingshebei" class="fensb"></div>
+								<script src="js/dianjingshebei.js"></script>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-md-4 high_100">
+
+					<h5>设备故障率</h5>
+					<div class="high_95 bg6">
+						<div class="high9_nei">
+							<div id="sebeiguzhanglv" class="high_95"></div>
+							<script src="js/sebeiguzhanglv.js"></script>
+						</div>
+						<h5>运营状况</h5>
+						<div class="high9_nei bg6">
+							<div class="high_100">
+								<div id="yydw" class="high_95"></div>
+								<script src="js/yydw.js"></script>
+							</div>
+						</div>
+						<h5>设备报修</h5>
+						<div class="high9_nei bg6 list_data">
+							<div class="list_lh baoxiu">
+								<ul>
+									<li>
+										<p><span class="btn_rh bg1">未处理</span>
+											<a href="">杭鞍高架南北高架西侧中环共和立交入口匝道<b class="se2">信号灯损坏</b>造成大面积阻塞...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg2">己上报</span>
+											<a href="">山东路与延吉路交汇处<b class="se2">诱导屏的支架被风刮倒</b>造成大面积阻塞...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg4">处理中</span>
+											<a href="">山东路与延吉路交汇处<b class="se2">球形监控设备异常</b>无监控数据...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg1">未处理</span>
+											<a href="">杭鞍高架南北高架西侧中环共和立交入口匝道<b class="se2">信号灯损坏</b>造成大面积阻塞...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg2">己上报</span>
+											<a href="">山东路与延吉路交汇处<b class="se2">诱导屏的支架被风刮倒</b>造成大面积阻塞...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg4">处理中</span>
+											<a href="">山东路与延吉路交汇处<b class="se2">球形监控设备异常</b>无监控数据...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg1">未处理</span>
+											<a href="">杭鞍高架南北高架西侧中环共和立交入口匝道<b class="se2">信号灯损坏</b>造成大面积阻塞...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg2">己上报</span>
+											<a href="">山东路与延吉路交汇处<b class="se2">诱导屏的支架被风刮倒</b>造成大面积阻塞...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg4">处理中</span>
+											<a href="">山东路与延吉路交汇处<b class="se2">球形监控设备异常</b>无监控数据...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg1">未处理</span>
+											<a href="">杭鞍高架南北高架西侧中环共和立交入口匝道<b class="se2">信号灯损坏</b>造成大面积阻塞...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg2">己上报</span>
+											<a href="">山东路与延吉路交汇处<b class="se2">诱导屏的支架被风刮倒</b>造成大面积阻塞...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg4">处理中</span>
+											<a href="">山东路与延吉路交汇处<b class="se2">球形监控设备异常</b>无监控数据...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg1">未处理</span>
+											<a href="">杭鞍高架南北高架西侧中环共和立交入口匝道<b class="se2">信号灯损坏</b>造成大面积阻塞...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg2">己上报</span>
+											<a href="">山东路与延吉路交汇处<b class="se2">诱导屏的支架被风刮倒</b>造成大面积阻塞...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg4">处理中</span>
+											<a href="">山东路与延吉路交汇处<b class="se2">球形监控设备异常</b>无监控数据...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg1">未处理</span>
+											<a href="">杭鞍高架南北高架西侧中环共和立交入口匝道<b class="se2">信号灯损坏</b>造成大面积阻塞...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg2">己上报</span>
+											<a href="">山东路与延吉路交汇处<b class="se2">诱导屏的支架被风刮倒</b>造成大面积阻塞...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg4">处理中</span>
+											<a href="">山东路与延吉路交汇处<b class="se2">球形监控设备异常</b>无监控数据...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg1">未处理</span>
+											<a href="">杭鞍高架南北高架西侧中环共和立交入口匝道<b class="se2">信号灯损坏</b>造成大面积阻塞...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg2">己上报</span>
+											<a href="">山东路与延吉路交汇处<b class="se2">诱导屏的支架被风刮倒</b>造成大面积阻塞...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg4">处理中</span>
+											<a href="">山东路与延吉路交汇处<b class="se2">球形监控设备异常</b>无监控数据...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg1">未处理</span>
+											<a href="">杭鞍高架南北高架西侧中环共和立交入口匝道<b class="se2">信号灯损坏</b>造成大面积阻塞...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg2">己上报</span>
+											<a href="">山东路与延吉路交汇处<b class="se2">诱导屏的支架被风刮倒</b>造成大面积阻塞...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+									<li>
+										<p><span class="btn_rh bg2">处理中</span>
+											<a href="">山东路与延吉路交汇处<b class="se2">球形监控设备异常</b>无监控数据...</a><span>2016.12.17 17:50:05</span></p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/highcharts.js">
+			<!--highcharts图表-->
+		</script>
+		<script src="js/highcharts-3d.js">
+			<!--highcharts图表3d图-->
+		</script>
+		<script type="text/javascript" src="js/number.js">
+			<!--交通指数-->
+		</script>
+		<script type="text/javascript" src="js/scroll.js"></script>
+	</body>
+
+</html>

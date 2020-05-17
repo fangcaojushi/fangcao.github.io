@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico"> <link href="/analysis/static/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    		<link href="/analysis/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+		<link href="/analysis/static/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    		<link href="/analysis/static/css/animate.min.css" rel="stylesheet">
+    		<link href="/analysis/static/css/style.min.css?v=4.0.0" rel="stylesheet">
+    		<link href="/analysis/static/css/plugins/iCheck/custom.css" rel="stylesheet">
+    		<base target="_blank">
+    		<link href="/analysis/static/modules/device/css/statistics.css" rel="stylesheet"/>
+    		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=lqTWtmnoNOlMK110635l4RvGaEGvkv7P">
+		//v2.0版本的引用方式：src="http://api.map.baidu.com/api?v=2.0&ak=您的密钥"
+		//v1.4版本及以前版本的引用方式：src="http://api.map.baidu.com/api?v=1.4&key=您的密钥&callback=initialize"
+		</script>
+		<title>设备分布</title>
+	</head>
+	<body class="gray-bg distribution">
+		<div class="wrapper wrapper-content">
+			<div class="row">
+				<div class="disort">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<div class="disleft">
+								<h3>设备分布</h3>
+							</div>
+							<div class="disright">
+								<h3>设备巡检</h3>
+							</div>
+						</div>
+						<div class="ibox-content ibox-content1">
+							<div>
+								<h3>
+									<input type='checkbox' class="i-checks" checked />
+									卡口设备
+									<div class="stat-percent">
+										200
+									</div>
+								</h3>
+							</div>
+							<div>
+								<h3>
+									<input type='checkbox' class="i-checks" checked />
+									诱导设备
+									<div class="stat-percent">
+										987
+									</div>
+								</h3>				
+							</div>
+							<div>
+								<h3>
+									<input type='checkbox' class="i-checks" checked />
+									信号设备
+									<div class="stat-percent">
+										678
+									</div>
+								</h3>															
+							</div>
+							<div>
+								<h3>
+									<input type='checkbox' class="i-checks" checked />
+									监控设备
+									<div class="stat-percent">
+										1500
+									</div>
+								</h3>							
+							</div>
+							<div>
+								<h3>
+									<input type='checkbox' class="i-checks" checked />
+									电警设备
+									<div class="stat-percent">
+										1288
+									</div>
+								</h3>														
+							</div>
+							<div>
+								<h3>
+									<input type='checkbox' class="i-checks" checked />
+									事件采集器
+									<div class="stat-percent">
+										2200
+									</div>
+								</h3>							
+							</div>
+						</div>
+						
+						<div class="ibox-content ibox-content2">
+							<div>
+								<h3>
+									<input type='checkbox' class="i-checks" checked />
+									卡口设备
+									<div class="stat-percent">
+										10
+									</div>
+								</h3>
+							</div>
+							<div>
+								<h3>
+									<input type='checkbox' class="i-checks" checked />
+									诱导设备
+									<div class="stat-percent">
+										12
+									</div>
+								</h3>				
+							</div>
+							<div>
+								<h3>
+									<input type='checkbox' class="i-checks" checked />
+									信号设备
+									<div class="stat-percent">
+										8
+									</div>
+								</h3>															
+							</div>
+							<div>
+								<h3>
+									<input type='checkbox' class="i-checks" checked />
+									监控设备
+									<div class="stat-percent">
+										5
+									</div>
+								</h3>							
+							</div>
+							<div>
+								<h3>
+									<input type='checkbox' class="i-checks" checked />
+									电警设备
+									<div class="stat-percent">
+										7
+									</div>
+								</h3>														
+							</div>
+							<div>
+								<h3>
+									<input type='checkbox' class="i-checks" checked />
+									事件采集器
+									<div class="stat-percent">
+										2
+									</div>
+								</h3>							
+							</div>
+						</div>
+					</div>							
+				</div>
+				<div class="col-sm-12">
+					<div id="baidumap"></div>
+				</div>
+			</div>
+		</div>
+		
+	<script src="/analysis/static/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/analysis/static/js/bootstrap.min.js?v=3.3.5"></script>
+    <script src="/analysis/static/js/plugins/echarts/echarts.js"></script>
+    <script src="/analysis/static/js/plugins/iCheck/icheck.min.js"></script>
+    <script src="/analysis/static/js/content.min.js?v=1.0.0"></script>
+    <script type="text/javascript">
+	    	var winheight = $(window).height();
+	    	$("#baidumap").height(winheight-40);
+    </script>
+    <script type="text/javascript">
+		var map = new BMap.Map("baidumap");          // 创建地图实例
+		var point = new BMap.Point(120.306, 31.525);  // 创建点坐标
+		map.centerAndZoom(point, 15);                 // 初始化地图，设置中心点坐标和地图级别
+		map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+		map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+		
+		// 编写自定义函数,创建标注
+			function addMarker(point){
+			  var myIcon = new BMap.Icon("/analysis/static/modules/device/img/point1.png", new BMap.Size(24,24));
+			  var marker = new BMap.Marker(point,{icon:myIcon});
+			  map.addOverlay(marker);
+			}
+			function addMarker2(point){
+			  var myIcon = new BMap.Icon("/analysis/static/modules/device/img/point2.png", new BMap.Size(24,24));
+			  var marker = new BMap.Marker(point,{icon:myIcon});
+			  map.addOverlay(marker);
+			}
+			function addMarker3(point){
+			  var myIcon = new BMap.Icon("/analysis/static/modules/device/img/point3.png", new BMap.Size(24,24));
+			  var marker = new BMap.Marker(point,{icon:myIcon});
+			  map.addOverlay(marker);
+			}
+			
+			// 随机向地图添加25个标注
+	var bounds = map.getBounds();
+	var sw = bounds.getSouthWest();
+	var ne = bounds.getNorthEast();
+	var lngSpan = Math.abs(sw.lng - ne.lng);
+	var latSpan = Math.abs(ne.lat - sw.lat);
+	for (var i = 0; i < 25; i ++) {
+		var point = new BMap.Point(sw.lng + lngSpan * (Math.random() * 0.7), ne.lat - latSpan * (Math.random() * 0.7));
+		addMarker(point);
+	}
+			
+			
+			// 随机向地图添加10个标注
+			var bounds = map.getBounds();
+			var sw = bounds.getSouthWest();
+			var ne = bounds.getNorthEast();
+			var lngSpan = Math.abs(sw.lng - ne.lng);
+			var latSpan = Math.abs(ne.lat - sw.lat);
+			for (var i = 0; i < 10; i ++) {
+				var point = new BMap.Point(sw.lng + lngSpan * (Math.random() * 0.7), ne.lat - latSpan * (Math.random() * 0.7));
+				addMarker(point);
+			}
+			for (var i = 0; i < 10; i ++) {
+				var point = new BMap.Point(sw.lng + lngSpan * (Math.random() * 0.7), ne.lat - latSpan * (Math.random() * 0.7));
+				addMarker2(point);
+			}
+			for (var i = 0; i < 10; i ++) {
+				var point = new BMap.Point(sw.lng + lngSpan * (Math.random() * 0.7), ne.lat - latSpan * (Math.random() * 0.7));
+				addMarker3(point);
+			}
+			//信息窗口
+			var data_info = [[120.306, 31.525,"巡检时间：2017-09-18 18:09:17 <br /> 设备类型：卡口设备 <br /> 设备IP:19.45.98.02  <br /> 设备位置：建设大街-迎宾路"],
+					 [120.300, 31.520,"巡检时间：2017-09-18 18:09:17 <br /> 设备类型：卡口设备 <br /> 设备IP:19.45.98.02  <br /> 设备位置：建设大街-迎宾路"],
+					 [120.309, 31.529,"巡检时间：2017-09-18 18:09:17 <br /> 设备类型：卡口设备 <br /> 设备IP:19.45.98.02  <br /> 设备位置：建设大街-迎宾路"],
+					 [120.314, 31.534,"巡检时间：2017-09-18 18:09:17 <br /> 设备类型：卡口设备 <br /> 设备IP:19.45.98.02  <br /> 设备位置：建设大街-迎宾路"],
+					 [120.296, 31.529,"巡检时间：2017-09-18 18:09:17 <br /> 设备类型：卡口设备 <br /> 设备IP:19.45.98.02  <br /> 设备位置：建设大街-迎宾路"],
+					 [120.314, 31.529,"巡检时间：2017-09-18 18:09:17 <br /> 设备类型：卡口设备 <br /> 设备IP:19.45.98.02  <br /> 设备位置：建设大街-迎宾路"],
+					 [120.309, 31.519,"巡检时间：2017-09-18 18:09:17 <br /> 设备类型：卡口设备 <br /> 设备IP:19.45.98.02  <br /> 设备位置：建设大街-迎宾路"]
+					];
+			var opts = {
+						width : 220,     // 信息窗口宽度
+						height: 100,     // 信息窗口高度
+						title : "故障设备" , // 信息窗口标题
+						enableMessage:true//设置允许信息窗发送短息
+					   };
+			for(var i=0;i<data_info.length;i++){
+				var marker = new BMap.Marker(new BMap.Point(data_info[i][0],data_info[i][1]));  // 创建标注
+				var content = data_info[i][2];
+				map.addOverlay(marker);               // 将标注添加到地图中
+				addClickHandler(content,marker);
+			}
+			function addClickHandler(content,marker){
+				marker.addEventListener("click",function(e){
+					openInfo(content,e)}
+				);
+			}
+			function openInfo(content,e){
+				var p = e.target;
+				var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
+				var infoWindow = new BMap.InfoWindow(content,opts);  // 创建信息窗口对象 
+				map.openInfoWindow(infoWindow,point); //开启信息窗口
+			}
+	</script>
+	<script type="text/javascript">		
+	    $(document).ready(function () {
+	        $(".i-checks").iCheck({checkboxClass: "icheckbox_square-green", radioClass: "iradio_square-green",})
+	    });
+	</script>
+	<script type="text/javascript">
+		$(".disleft").click(function(){
+			$(".ibox-content1").slideDown();
+			$(".ibox-content2").slideUp();
+		})
+		$(".disright").click(function(){
+			$(".ibox-content2").slideDown();
+			$(".ibox-content1").slideUp();
+		})
+	</script>
+	</body>
+</html>

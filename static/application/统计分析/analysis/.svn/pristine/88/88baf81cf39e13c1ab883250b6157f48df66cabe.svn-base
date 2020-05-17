@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>H+ 后台主题UI框架 - 百度ECHarts</title>
+    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="/analysis/static/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="/analysis/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+	<link href="/analysis/static/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <link href="/analysis/static/css/animate.min.css" rel="stylesheet">
+    <link href="/analysis/static/css/style.min.css?v=4.0.0" rel="stylesheet">
+    <base target="_blank">
+	<link href="/analysis/static/modules/analysis/css/navhfix.css" rel="stylesheet"/>
+	<link href="/analysis/static/modules/analysis/css/analysis.css" rel="stylesheet"/>
+</head>
+
+<body class="gray-bg">
+ <div class="row  border-bottom white-bg dashboard-header">
+	    <div class="col-sm-12">
+            <p>通过对交通事故的分析，根据掌握的信息，运用数学、力学、工程学的基本方法，进行事故再现，找出事故发生的现场情况，为<b>分析和判断事故原因</b>提供依据；再通过对大量已经发生的交通事故原因统计、分析，从中<b>得出趋势性的结论</b>，以便为采取决策提供依据和基础。同时也可以对现在采取的行政政策和措施进行分析，即对所采取政策和措施的有效程度和道路安全设施的<b>投资效率等进行分析</b>。
+            </p>
+            
+        </div>
+    </div>
+<div class="wrapper wrapper-content">
+	<div class="hnav hnavfixbox">  
+	    <div class="hnavfixbt"> 
+	        <a href="#001" class="hcur" target="_self"><i class="fa fa-info-circle"></i>事故概要</a>
+	        <a href="#002"  target="_self"><i class="glyphicon glyphicon-list-alt"></i>事故数据统计</a>
+	        <a href="#003" target="_self"><i class="fa fa-unlink"></i>高发路段</a>
+	        <a href="#004"  target="_self"><i class="fa fa-pie-chart"></i>事故原因分析</a> 
+	        <a href="#005" target="_self"><i class="fa fa-area-chart"></i>事故趋势</a>
+	        <a href="#006"  target="_self"><i class="glyphicon glyphicon-book"></i>结论</a> 
+	    </div>  
+	</div>
+	<br/>
+	<div class="hcontext">
+		<div class="row active">
+			<a name="001"></a>
+            <div class="col-sm-3">
+                <div class="ibox">
+                    <div class="ibox-content hid">
+                        <h5 class="m-b-md">本周事故</h5>
+                        <div class="col-md-6">
+                    			<h1 class="text-danger hsg">133</h1>
+                    		</div>
+                    		<div class="col-md-6">
+                    			<h2 class="text-danger">
+                               <i class="fa fa-play fa-rotate-270"></i> 上升
+                            </h2>
+                    			<small>增加18起，增加12%<i class="fa fa-level-up"></i></small>
+                    		</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="ibox">
+                    <div class="ibox-content hid">
+                        <h5 class="m-b-md">本月事故</h5>
+                        <div class="col-md-6">
+                    			<h1 class="text-danger hsg">293</h1>
+                    		</div>
+                    		<div class="col-md-6">
+                    			<h2 class="text-danger">
+                               <i class="fa fa-play fa-rotate-270"></i> 上升
+                            </h2>
+                    			<small>增加38起，增加12%<i class="fa fa-level-up"></i></small>
+                    		</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="ibox">
+                    <div class="ibox-content hid">
+                        <h5 class="m-b-md">本季事故</h5>
+                        <div class="col-md-6">
+                    			<h1 class="text-navy hsg">933</h1>
+                    		</div>
+                    		<div class="col-md-6">
+                    			<h2 class="text-navy">
+                                <i class="fa fa-play fa-rotate-90"></i> 下降
+                            </h2>
+                    			<small>减少78起，减少20%<i class="fa fa-level-down"></i></small>
+                    		</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="ibox">
+                    <div class="ibox-content hid">
+                        <h5 class="m-b-md">本年累积事故</h5>
+                        		<div class="col-md-6">
+                        			<h1 class="text-navy hsg">6233</h1>
+                        		</div>
+                        		<div class="col-md-6">
+                        			<h2 class="text-navy">
+                                    <i class="fa fa-play fa-rotate-90"></i> 下降
+                                </h2>
+                        			<small>减少210起，减少20%<i class="fa fa-level-down"></i></small>
+                        		</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+       	 	<a name="002"></a>
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>事故信息</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                       <table class="table table-hover table-bordered table-striped haccident">
+                       		<thead>
+                       			<tr>
+                                    <th>大队</th>
+                                    <th>事故/起</th>
+                                    <th>事故增长率</th>
+                                    <th>伤人事故/起</th>
+                                    <th>受伤/人</th>
+                                    <th>伤人增长率</th>
+                                    <th>死亡事故/起</th>
+                                    <th>死亡/人</th>
+                                    <th>死亡增长率</th>
+                                    <th>直接财产损失/万元</th>
+                                </tr>
+                       		</thead>
+                            <tbody>
+                                <tr>
+                                    <td width="20%">市南区交警大队文登路中队</td>
+                                    <td>102</td>
+                                    <td class="text-danger"> <i class="fa fa-level-up"></i> 40%</td>
+                                    <td>42</td>
+                                    <td>26</td>
+                                     <td class="text-danger"> <i class="fa fa-level-up"></i> 40%</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                     <td class="text-danger"> <i class="fa fa-level-up"></i> 40%</td>
+                                    <td>12.32</td>
+                                </tr>
+                                <tr>
+                                    <td>开发区交警大队车管所 </td>
+                                    <td>132</td>
+                                    <td class="text-navy"> <i class="fa fa-level-down"></i> -12%</td>
+                                    <td>32</td>
+                                    <td>12</td>
+                                     <td class="text-navy"> <i class="fa fa-level-down"></i> -12%</td>
+                                    <td>2</td>
+                                    <td>5</td>
+                                     <td class="text-navy"> <i class="fa fa-level-down"></i> -12%</td>
+                                    <td>11.62</td>
+                                </tr>
+                                <tr>
+                                    <td>李沧区交警大队四流中路中队</td>
+                                    <td>382</td>
+                                    <td class="text-danger"> <i class="fa fa-level-up"></i> 30%</td>
+                                    <td>212</td>
+                                    <td>72</td>
+                                     <td class="text-navy"> <i class="fa fa-level-down"></i> -12%</td>
+                                    <td>5</td>
+                                    <td>1</td>
+                                     <td class="text-navy"> <i class="fa fa-level-down"></i> -12%</td>
+                                    <td>25.29</td>
+                                </tr>
+                                <tr>
+                                    <td>城阳区交警大队棘洪滩中队</td>
+                                    <td>382</td>
+                                    <td class="text-navy"> <i class="fa fa-level-down"></i> -23%</td>
+                                    <td>112</td>
+                                    <td>12</td>
+                                     <td class="text-navy"> <i class="fa fa-level-down"></i> -12%</td>
+                                    <td>5</td>
+                                    <td>1</td>
+                                     <td class="text-navy"> <i class="fa fa-level-down"></i> -12%</td>
+                                    <td>8.32</td>
+                                </tr>
+                                <tr>
+                                    <td>崂山交警大队景区中队</td>
+                                    <td>382</td>
+                                    <td class="text-navy"> <i class="fa fa-level-down"></i> -11%</td>
+                                    <td>62</td>
+                                    <td>12</td>
+                                     <td class="text-navy"> <i class="fa fa-level-down"></i> -11%</td>
+                                    <td>5</td>
+                                    <td>1</td>
+                                     <td class="text-navy"> <i class="fa fa-level-down"></i> -11%</td>
+                                    <td>6.32</td>
+                                </tr>
+                                <tr>
+                                    <td>市北区交警大队停车场</td>
+                                    <td>382</td>
+                                    <td class="text-navy"> <i class="fa fa-level-down"></i> -13%</td>
+                                    <td>562</td>
+                                    <td>2</td>
+                                     <td class="text-navy"> <i class="fa fa-level-down"></i> -11%</td>
+                                    <td>2</td>
+                                    <td>1</td> 
+                                    <td class="text-navy"> <i class="fa fa-level-down"></i> -11%</td>
+                                    <td>8.32</td>
+                                </tr>
+                                <tr>
+                                    <td>四方区交警大队巡逻疏导中队</td>
+                                    <td>382</td>
+                                    <td class="text-danger"> <i class="fa fa-level-up"></i> 4%</td>
+                                    <td>122</td>
+                                    <td>28</td>
+                                    <td class="text-danger"> <i class="fa fa-level-up"></i> 4%</td>
+                                    <td>5</td>
+                                    <td>1</td>
+                                    <td class="text-danger"> <i class="fa fa-level-up"></i> 4%</td>
+                                    <td>21.38</td>
+                                </tr>
+                                <tr>
+                                    <td>全市</td>
+                                    <td>882</td>
+                                    <td class="text-danger"> <i class="fa fa-level-up"></i> 13%</td>
+                                    <td>212</td>
+                                    <td>89</td>
+                                    <td class="text-danger"> <i class="fa fa-level-up"></i> 16%</td>
+                                    <td>5</td>
+                                    <td>1</td>
+                                    <td class="text-danger"> <i class="fa fa-level-up"></i> 24%</td>
+                                    <td>112.32</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        	<a name="003"></a>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>全市事故分析</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="echarts" id="hcity"></div>
+                        <!--<div class="alert alert-success">
+                            <p>全市总体分析</p>
+                            <small>与上周同比，本周全市事故总数增加12起，<strong>增加2%</strong>其中伤人事故<strong>与上周持平</strong>-<cite title="" data-original-title="">《寄扬州韩绰判官》</cite></small>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>各大队事故分析</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="echarts" id="hteam"></div>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <div class="row">
+        	<a name="004"></a>   
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>事故高发路段TOP10</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content  hid">
+                    	<div class="col-sm-6">
+                    		 <div class="sgdiudie"  id="highroad"></div>
+                    	</div>
+                    	<div class="col-md-6">
+                    		<table class="table table-hover table-bordered table-striped haccident hroadmx">
+                       		<thead>
+                       			<tr>
+                       				<th>排名</th>
+                                    <th>高发路段名</th>
+                                    <th>事故/起</th>
+                                    <th>受伤/人</th>
+                                    <th>死亡/人</th>
+                                    <th>高发频率</th>
+                                </tr>
+                       		</thead>
+                            <tbody>
+                                <tr>
+                                	    <td>1</td>
+                                    <td width="30%">中山路栈桥片区</td>
+                                    <td>102</td>
+                                    <td>31</td>
+                                    <td>13</td>
+                                    <td>1132</td>
+                                </tr>
+                                 <tr>
+                                 	<td>2</td>
+                                    <td width="30%">大连路与黄台路交汇</td>
+                                    <td>96</td>
+                                    <td>29</td>
+                                    <td>11</td>
+                                    <td>1096</td>
+                                </tr>
+                                <tr>
+                                 	<td>3</td>
+                                    <td width="30%">大连路与黄台路交汇</td>
+                                    <td>96</td>
+                                    <td>29</td>
+                                    <td>11</td>
+                                    <td>1096</td>
+                                </tr>
+                                <tr>
+                                 	<td>4</td>
+                                    <td width="30%">大连路与黄台路交汇</td>
+                                    <td>96</td>
+                                    <td>29</td>
+                                    <td>11</td>
+                                    <td>1096</td>
+                                </tr>
+                                <tr>
+                                 	<td>5</td>
+                                    <td width="30%">大连路与黄台路交汇</td>
+                                    <td>96</td>
+                                    <td>29</td>
+                                    <td>11</td>
+                                    <td>1096</td>
+                                </tr>
+                                <tr>
+                                 	<td>6</td>
+                                    <td width="30%">大连路与黄台路交汇</td>
+                                    <td>96</td>
+                                    <td>29</td>
+                                    <td>11</td>
+                                    <td>1096</td>
+                                </tr>
+                                <tr>
+                                 	<td>7</td>
+                                    <td width="30%">大连路与黄台路交汇</td>
+                                    <td>96</td>
+                                    <td>29</td>
+                                    <td>11</td>
+                                    <td>1096</td>
+                                </tr>
+                                <tr>
+                                 	<td>8</td>
+                                    <td width="30%">大连路与黄台路交汇</td>
+                                    <td>96</td>
+                                    <td>29</td>
+                                    <td>11</td>
+                                    <td>1096</td>
+                                </tr>
+                                <tr>
+                                 	<td>9</td>
+                                    <td width="30%">大连路与黄台路交汇</td>
+                                    <td>96</td>
+                                    <td>29</td>
+                                    <td>11</td>
+                                    <td>1096</td>
+                                </tr>
+                                <tr>
+                                 	<td>10</td>
+                                    <td width="30%">大连路与黄台路交汇</td>
+                                    <td>96</td>
+                                    <td>29</td>
+                                    <td>11</td>
+                                    <td>1096</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    	</div>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <div class="row">
+        	<a name="005"></a>      
+           <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>综合事故原因分析</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="echarts" id="hreason"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>事故级别分析</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="echarts" id="htype"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="row">
+        	<a name="006"></a>      
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>事故趋势分析</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="echarts" id="htrend"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        		<a name="006"></a>
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                     <div class="ibox-title">
+                        <h5>结论</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content hid">
+                    		<div class="col-md-7">
+                    			<table class="hvs">
+                    				<tr>
+                    					<td>
+                    						<h3>本周</h3>
+                    					</td>
+                    					<td>
+                    						<h1>PK</h1>
+                    					</td>
+                    					<td>
+                    						<h3>同期</h3>
+                    					</td>
+                    				</tr>
+                    				<tr>
+                    					<td>
+                    						<span style="width: 70%;"></span>
+                    						<b>5896起</b>
+                    					</td>
+                    					<td>累计事故数</td>
+                    					<td>
+                    						<span style="width: 95%;"></span>
+                    						<b>6396起</b>
+                    					</td>
+                    				</tr>
+                    				<tr>
+                    					<td>
+                    						<span style="width:58%;"></span>
+                    						<b>46.96万元</b>
+                    					</td>
+                    					<td>累计财产损失</td>
+                    					<td>
+                    						<span style="width: 78%;"></span>
+                    						<b>53.26万元</b>
+                    					</td>
+                    				</tr>
+                    				<tr>
+                    					<td>
+                    						<span style="width:30%;"></span>
+                    						<b>2696人</b>
+                    					</td>
+                    					<td>累计伤人数</td>
+                    					<td>
+                    						<span style="width: 55%;"></span>
+                    						<b>3326人</b>
+                    					</td>
+                    				</tr>
+                    				<tr>
+                    					<td>
+                    						<span style="width:10%;"></span>
+                    						<b>396人</b>
+                    					</td>
+                    					<td>累计死亡人数</td>
+                    					<td>
+                    						<span style="width: 19%;"></span>
+                    						<b>426人</b>
+                    					</td>
+                    				</tr>
+                    			</table>
+                    		</div>
+                    		<div class="col-md-4 col-lg-offset-1 hjy">
+                    			<h1>事故与同期相比</h1>
+                    			<h4>
+                    				<p>全市事故总数增加12起，<span class=" text-danger">增加<i class="fa fa-long-arrow-up"></i>  2%</span>。</p>
+                    				<p>伤人事故与同期<span class=" text-success">持平</span>,  受伤人数减少1人,  <span class=" text-info">减少<i class="fa fa-long-arrow-down"> 0.6%</i> </p>
+                    				<p>死亡事故减少2起，<span class=" text-info">减少<i class="fa fa-long-arrow-down"> 50%</i></span>,   死亡人数减少3人，<span class=" text-info">减少<i class="fa fa-long-arrow-down"> 60%</i> </p>
+                    				<p>
+                    					李沧区支队事故总数，<span class=" text-danger">增加<i class="fa fa-long-arrow-up"></i>  12%</span>;  
+                    					市北区支队事故总数，<span class=" text-info">减少<i class="fa fa-long-arrow-down"></i>  50%</span>;  
+                    					市南支队事故总数，<span class=" text-danger">增加<i class="fa fa-long-arrow-up"></i>  26%</span>;  
+                    					崂山支队事故总数，<span class=" text-danger">增加<i class="fa fa-long-arrow-up"></i>  19%</span>;  
+                    					黄岛支队事故总数，<span class=" text-danger">增加<i class="fa fa-long-arrow-up"></i>  35%</span>;  
+                    				</p>
+                    			</h4>
+                    		</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-warning">
+            信息统计时间：2017年5月8日0时 至 5月14日24时
+        </div>
+        <br/> <br/>
+        <div class="hsave">
+	        <a class="badge-info backToTop" title="返回顶部" style="display: none;">
+                <i class="glyphicon glyphicon-eject"></i>
+            </a>
+            <a class="badge-warning" title="导出">
+                <i class="glyphicon glyphicon-share"></i>
+            </a>
+             <a class="badge-success" title="打印">
+                <i class="glyphicon glyphicon-print"></i>
+
+            </a>
+        </div>
+	</div>
+</div>
+    <script src="/analysis/static/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/analysis/static/js/bootstrap.min.js?v=3.3.5"></script>
+    <script src="/analysis/static/js/plugins/echarts/echarts.js"></script>
+    <script src="/analysis/static/js/content.min.js?v=1.0.0"></script>
+     <script src="/analysis/static/js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="/analysis/static/js/plugins/morris/morris.js"></script>
+    <!--全市事故分析-->
+    <script src="/analysis/static/modules/analysis/js/accident/hcity.js"></script>
+    <!--大队事故分析-->
+    <script src="/analysis/static/modules/analysis/js/accident/hteam.js"></script>
+    <!--高发路段分析-->
+    <script src="/analysis/static/modules/analysis/js/accident/highroad.js"></script>
+     <!--原因分析-->
+    <script src="/analysis/static/modules/analysis/js/accident/hreason.js"></script>
+    <!--类型分析-->
+    <script src="/analysis/static/modules/analysis/js/accident/htype.js"></script>
+     <!--趋势-->
+    <script src="/analysis/static/modules/analysis/js/accident/htrend.js"></script>
+    <script src="/analysis/static/modules/analysis/js/navhfix.js"></script>
+</body>
+
+</html>

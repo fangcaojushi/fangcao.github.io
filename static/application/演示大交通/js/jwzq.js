@@ -1,0 +1,334 @@
+// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	var  mapStyle ={ 
+        features: ["road", "building","water","land"],//隐藏地图上的poi
+        style : "midnight",  //设置地图风格为高端黑
+        styleJson:[
+   	        {
+                   "featureType": "poi",
+                   "elementType": "all",
+                   "stylers": {
+                             "color": "#091a52",
+                             "visibility": "off"
+                   }
+		         },
+		         {
+		                   "featureType": "road",
+		                   "elementType": "all",
+		                   "stylers": {
+		                             "color": "#091a52",
+		                             "visibility": "off"
+		                   }
+		         },
+		         {
+		                   "featureType": "background",
+		                   "elementType": "all",
+		                   "stylers": {
+		                             "color": "#091a52"
+		                   }
+		         },
+		         {
+		                   "featureType": "administrative",
+		                   "elementType": "all",
+		                   "stylers": {
+		                             "color": "#091a52",
+		                             "visibility": "off"
+		                   }
+		         }
+			]
+    }
+	
+	map.setMapStyle(mapStyle);
+	map.centerAndZoom(new BMap.Point(120.153205,31.554733), 11);
+//	map.centerAndZoom(new BMap.Point(118.941402,42.269849), 11); //赤峰
+	map.enableScrollWheelZoom();
+	madeBoundary();
+	//区域图
+    function madeBoundary() {
+    var datas = new Array("梁溪区","锡山区","惠山区","滨湖区","新吴区","江阴市","宜兴市");
+//  var datas = new Array("元宝山区");
+    var pointxys= [
+	      new BMap.Point(120.298292,31.593127),                          //梁溪区
+	      new BMap.Point(120.466168,31.631505),                         //锡山区
+	      new BMap.Point(120.201707,31.673801),                         //惠山区
+	      new BMap.Point(120.208606,31.473955),                         //滨湖区
+	      new BMap.Point(120.417875,31.525188),                         //新吴区
+	      new BMap.Point(120.362683,31.798607),                         //江阴市
+	      new BMap.Point(119.829161,31.371404)                          //宜兴市
+	     
+    ];
+//  var colordata=["'rgba(255,0,0,.3)'","'rgba(25,149,255,.3)'","'rgba(176,14,182,.3)'","'rgba(232,31,30,.3)'"];
+        var bdary = new BMap.Boundary();
+        for(var i=0;i<datas.length;i++){
+        		getBoundary(datas[i],bdary);
+        		var opts= {
+			  position : pointxys[i],    // 指定文本标注所在的地理位置
+			  offset   : new BMap.Size(-30, -10)    //设置文本偏移量
+			}
+			var label = new BMap.Label(datas[i]+"大队", opts);  // 创建文本标注对象
+				label.setStyle({
+					 color : "#c0d1fa",
+					 fontSize : "12px",
+					 height : "20px",
+					 lineHeight : "20px",
+					 fontFamily:"微软雅黑",
+		          	borderWidth:"0px",
+		          background:"rgba(255,255,255,0)"
+				 });
+		  map.addOverlay(label); 
+        } 
+    } 
+//设置区域图
+
+//  function getBoundary(data,bdary,colordata){  
+    function getBoundary(data,bdary){  
+      data = data.split("-"); 
+//    colordata=colordata.split("-"); 
+        bdary.get(data[0], function(rs){       //获取行政区域
+            var count = rs.boundaries.length; //行政区域的点有多少个
+              var pointArray = [];
+            for (var j = 0; j < count; j++) {
+//          		console.log(rs.boundaries[j]);
+                var ply = new BMap.Polygon(rs.boundaries[j], {strokeWeight: 2, strokeColor: "#0152c5",fillOpacity:0.2,fillColor:"#044cc2"}); //建立多边形覆盖物
+                map.addOverlay(ply);  //添加覆盖物
+            } 
+        });
+ }
+   /****************单击获取点击的经纬度*******************************/
+	map.addEventListener("click",function(e){
+		alert(e.point.lng + "," + e.point.lat);
+	});
+/*****************************************闪烁的星星*****************************************************/
+if (document.createElement('canvas').getContext) {
+			var BW            = 0,    //canvas width
+				BH            = 0,    //canvas height
+				ctx           = null,
+				stars         = [],   //存储所有星星对象的数组
+				timer         = null, //定时器
+				timeLine      = null, //时间轴对象
+				rsdata            = [],   //最新的结果
+				isNowTimeData = false, //是否显示当前时间的定位情况
+				py            = null, //偏移
+				gridWidth     = 10000,//网格的大小
+				isOverlay     = false,//是否叠加
+				//gridWidth   = 1,//网格的大小
+				canvas        = null; //偏移
+
+			function Star(options){
+				this.init(options);
+			}
+
+			Star.prototype.init = function(options) {
+				this.x   = ~~(options.x);
+				this.y   = ~~(options.y);
+				this.initSize(options.size);
+				if (~~(0.5 + Math.random() * 7) == 1) {
+					this.size = 0;
+				} else {
+					this.size = this.maxSize;
+				}
+			}
+
+			Star.prototype.initSize = function(size) {
+				var size = ~~(size);
+				this.maxSize = size > 6 ? 6 : size;
+			}
+
+			Star.prototype.render = function(i) {
+					var p = this;
+
+					if(p.x < 0 || p.y <0 || p.x > BW || p.y > BH) {
+						return;
+					}
+
+					ctx.beginPath();
+					var gradient = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.size);
+					gradient.addColorStop(0, "rgba(0,254,246,1)");
+					gradient.addColorStop(1, "rgba(0,254,246,0.3)");
+					ctx.fillStyle = gradient;
+					ctx.arc(p.x, p.y, p.size, Math.PI*2, false);
+					ctx.fill();
+					if (~~(0.5 + Math.random() * 7) == 1) {
+						p.size = 0;
+					} else {
+						p.size = p.maxSize;
+					}
+			}
+
+			function render(){
+				renderAction();
+				setTimeout(render, 180);
+			}
+
+			function renderAction() {
+				ctx.clearRect(0, 0, BW, BH);
+				ctx.globalCompositeOperation = "lighter";
+				for(var i = 0, len = stars.length; i < len; ++i){
+					if (stars[i]) {
+						stars[i].render(i);
+					}
+				}
+			}
+
+
+			// 复杂的自定义覆盖物
+			function ComplexCustomOverlay(point){
+			  this._point = point;
+			}
+			ComplexCustomOverlay.prototype = new BMap.Overlay();
+			ComplexCustomOverlay.prototype.initialize = function(map){
+			  this._map = map;
+			  canvas = this.canvas = document.createElement("canvas");
+			  canvas.style.cssText = "position:absolute;left:0;top:0;";
+			  ctx = canvas.getContext("2d");
+			  var size = map.getSize();
+			  canvas.width = BW = size.width;
+			  canvas.height = BH = size.height;
+			  map.getPanes().labelPane.appendChild(canvas);
+			  //map.getContainer().appendChild(canvas);
+			  return this.canvas;
+			}
+			ComplexCustomOverlay.prototype.draw = function(){
+				var map = this._map;
+				var bounds = map.getBounds();
+				var sw = bounds.getSouthWest();
+				var ne = bounds.getNorthEast();
+				var pixel = map.pointToOverlayPixel(new BMap.Point(sw.lng, ne.lat));
+				py = pixel;
+				if (rsdata.length > 0) {
+					showStars(rsdata);
+				}
+			}
+			var myCompOverlay = new ComplexCustomOverlay(new BMap.Point(116.407845,39.914101));
+			map.addOverlay(myCompOverlay);
+
+			var project = map.getMapType().getProjection();
+			var bounds = map.getBounds();
+			var sw = bounds.getSouthWest();
+			var ne = bounds.getNorthEast();
+			sw = project.lngLatToPoint(new BMap.Point(sw.lng, sw.lat));
+			ne = project.lngLatToPoint(new BMap.Point(ne.lng, ne.lat));
+
+			//左上角墨卡托坐标点
+			var original = {
+				x : sw.x,
+				y : ne.y
+			}
+
+			/**
+			 * 请求定位数据,并在地图上绘制出
+			 * @param 请求的时间
+			 * @param 成功后执行的回调函数
+			 * 
+			 */
+			var requestMgr = {
+				request: function (time, successCbk) {
+					if (document.location.host === 'developer.baidu.com') {
+						var url = "images/data.xml";
+					} else {
+						var url = "images/data.xml";
+					}
+					var xhr = new XMLHttpRequest();
+					xhr.onreadystatechange = function() {
+						if( xhr.readyState == 4  && xhr.status == 200 ) {
+							if (!isOverlay) {
+								rsdata = JSON.parse(xhr.responseText);
+							} else {
+								rsdata = rsdata.concat(JSON.parse(xhr.responseText));
+								if (rsdata.length > 10000) {
+									rsdata.splice(0, rsdata.length - 10000);
+								}
+							}
+							showStars(rsdata);
+							if (successCbk) {
+								successCbk();
+							}
+						}
+					}
+					xhr.open( "GET", url, true );
+					xhr.send( null );
+				}
+			}
+/*********************************showpolice显示交警名***********************************************************************/
+	var police;
+	function showpolice(){
+		var opts = {
+			  position : p,    // 指定文本标注所在的地理位置
+			  offset   : new BMap.Size(30, -30)    //设置文本偏移量
+			}
+			police = new BMap.Label("李易峰：13184728473", opts);  // 创建文本标注对象
+				police.setStyle({
+					 color : "red",
+					 fontSize : "12px",
+					 height : "20px",
+					 lineHeight : "20px",
+					 fontFamily:"微软雅黑"
+				 });
+			map.addOverlay(police); 
+	}
+	function removepolice(){
+	  	map.removeOverlay(police);
+	  }
+/*********************************显示星星***********************************************************************/
+			function showStars(rsdata) {
+				stars.length = 0;
+				var temp = {};
+				for (var i = 0, len = rsdata.length; i < len; i++) {
+					var item = rsdata[i];
+					//alert(item);
+//					var addNum = gridWidth / 2;
+//					var x = item[0] * gridWidth + addNum;
+//					var y = item[1] * gridWidth + addNum;
+					var addNum = gridWidth / 2;
+					var x = item[0];
+					var y = item[1];
+//					var point = project.pointToLngLat(new BMap.Pixel(x, y));
+					var point = new BMap.Point(x,y);
+					var px = map.pointToOverlayPixel(point);
+						//create all stars
+						var s = new Star({
+							x: px.x - py.x, 
+							y: px.y - py.y,
+							size: item[2]
+						});
+//						s.onmouseover=function(){alert(1)};
+						stars.push(s);
+//						alert(s);
+//						s.addEventListener("mouseover",showpolice);
+//						s.addEventListener("mouseout",removepolice);
+						
+					//}
+				}
+				canvas.style.left = py.x + "px";
+				canvas.style.top = py.y + "px";
+				renderAction();
+			}
+
+			render();
+
+			function nowTimeCbk (time) {
+				requestMgr.request(time, function(){
+					if (isNowTimeData) {
+						setTimeout(function(){
+							if (isNowTimeData) {
+								startCbk(nowTimeCbk);
+							}
+						}, 1000);
+					}
+				});
+			}
+			function startCbk(cbk){
+				var now = new Date();
+				var time = {
+					hour   : now.getHours(),
+					minute : now.getMinutes(),
+					second : now.getSeconds()
+				};
+				if (cbk) {
+					cbk(time);
+				}
+			};
+			startCbk(nowTimeCbk);
+		} else {
+			alert('请在chrome、safari、IE8+以上浏览器查看本示例');
+		}

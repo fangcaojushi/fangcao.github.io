@@ -1,0 +1,30 @@
+var searchhigh;
+function getHeight(name,searchname){
+	var offsetHigh=20*3+48+15*2+20;
+	var winhigh = $(window).height();
+	searchhigh = $(searchname).height();
+	if(winhigh>768){
+		$(name).height(winhigh - searchhigh - offsetHigh);
+	}
+	else{
+		$(name).height(260);
+	}
+	
+}
+
+$(function(){
+	//碰撞页的下端高度
+	getHeight(".judgebottom",".judgetop");
+	$(".hlistshow").click(function(){
+		var hobjbt=$('.judgebottom');
+		var hobjH=hobjbt.height();
+		var judgestatus=$(this).hasClass("fa-chevron-up");
+		if(judgestatus){
+			hobjbt.height(hobjH+searchhigh-48);
+			
+		}else{
+			hobjbt.height(hobjH-searchhigh+48);
+		}
+	});
+	
+});

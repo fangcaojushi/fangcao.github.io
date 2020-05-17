@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>重点区域监控</title>
+    
+    <!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet"/>
+<link href="css/public.css" rel="stylesheet"/>
+<!--navbar-->
+<link href="fonts/FontAwesome/font-awesome.css" rel="stylesheet"/>
+<link href="css/bootsnav.css" rel="stylesheet"/>
+<link href="css/zdqy.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootsnav.js"></script>
+<script src="js/echarts.js"><!--echarts图表--></script>
+
+
+   
+</head>
+<body>
+	<!--导航菜单-->
+	<script src="js/menu.js"></script>
+	
+	<!--正文-->
+		<div class="title_sub">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12 fen-title">
+						<h2 class="text-center gj_title">重点区域监控</h2>
+						<div class="lg-txt">
+			            	<p class="light">
+			            		<img class="faguang" src="images/shanliang.png"/>
+			            	</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="col-md-3 col-sm-3  zdsj_left">
+		    	<!--<div  class="window_title bg8">
+		        	各项指标
+		       </div>-->
+			<div class=" high_95 zd">
+<!-------------------------------平均速度--------------------------------->
+				<div class="high_33 bg12 fmk">
+					<div class="ts_title">
+						<h5>平均速度</h5>
+					</div>
+					<div class="zsj pull-left">
+						<div class="vertical">
+							<p class="text-center sj_title">实时平均<br>速度</p>
+							<h1 class="text-center sj">
+								<span id="zdyq_data0" class="sudu1">16</span>
+								km/h
+							</h1>
+						</div>
+						</div>
+					<div class="zsj_tub pull-right">
+						<div id="pjsd" class="pjsd"></div>
+   						<script type="text/javascript" src="js/pjsd.js"></script>
+					</div>        				   
+				</div>
+<!-------------------------------交通指数--------------------------------->					
+				<div class="high_33 bg12 fmk">
+					<div class="ts_title">
+						<h5>交通指数</h5>
+					</div>
+					<div class="zsj pull-left">
+						<div class="vertical">
+							<p class="text-center sj_title">实时交通<br>指数</p>
+							<h1 class="text-center sj">
+								<span id="zdyq_data1" class="sudu1">3.2</span>
+							</h1>
+						</div>
+					</div>
+					<div class="zsj_tub pull-right">
+						<div id="jtzs" class="jtzs"></div>
+						<script src="js/jtzs.js"></script>
+					</div>        	
+				</div>
+<!-------------------------------静态停车位--------------------------------->							
+				<div class="high_33 bg12 fmk">
+					<div class="ts_title">
+						<h5>静态停车</h5>
+					</div>
+					<div class="zsj pull-left">
+						<div class="vertical">
+							<p class="text-center sj_title">停车剩余<br>车位</p>
+							<h1 class="text-center sj">
+								<span id="zdyq_data2" class="sudu1">86</span>
+								个
+							</h1>
+						</div>	
+					</div>
+					<div class="zsj_tub pull-right">
+						<div id="jttc" class="jttc"></div>
+   						<script src="js/jttc.js"></script>
+					</div>        	
+				</div>
+				
+			</div>
+		</div>
+		<div class="ztgk col-md-6 col-sm-6" >
+			<div class="qyxz">
+				<div class="leida">
+					<img  src="images/le_top.png"/>						
+				</div>
+				<img class="gps" src="images/gps.png"/>
+				<div class="qy">
+						    <div class="td">
+						    	<img src="images/quyu.png"/>
+						    	<h6 id='zdyq_name0' class="h6clr" onclick="zhongdianqy_select(0)">崇安区</h6>					                        							                      
+						    </div>  
+						    <div class="td">
+						    	<img src="images/quyu.png"/>
+						        <h6 class="h6clr activ" id='zdyq_name1' onclick="zhongdianqy_select(1)">无锡火车站</h6>								           								        	
+						    </div>
+							<div class="td">								
+								<img src="images/quyu.png"/>
+						        <h6 id='zdyq_name2' class="h6clr" onclick="zhongdianqy_select(2)">北塘区</h6>								 
+							</div>
+                            <div class="td">
+                            	<img src="images/quyu.png"/>
+							    <h6 id='zdyq_name3' class="h6clr" onclick="zhongdianqy_select(3)">锡山区</h6>									       
+							</div>
+	
+			</div>
+      	</div>	
+      	</div>
+      	<div class="fenxiang bg12">
+  			<table>
+				<tbody>
+					<tr>
+					    <td >
+					        <h5>车流量总数</h5>
+					        <p  class="se9">
+					            <number id="zdyq_data5" class="font_big timer count-number h2" data-to="2748" data-speed="2500">							                        
+					            </number>
+					                               辆
+					        </p>							                        							                      
+					    </td>              
+					    <td >
+					        <h5>违法事件数</h5>
+					        <div class="p">
+					        	<p  class="se1">
+					                <number id="zdyq_data6" class="font_big timer count-number h2" data-to="68" data-speed="2500">							                        
+					                </number>
+					                                          件
+					            </p>
+					            <div class="tongbi">
+					            	<img src="images/weifa.png" alt="" />
+					            </div>
+					        </div>      
+					    </td>
+					    <td >
+					        <h5>设备故障率</h5>
+					        <div class="p">
+					        	<p  class="se8">
+					                <number id="zdyq_data7"  class="font_big timer count-number h2" data-to="3" data-speed="500">							                        
+					                </number>
+					                                          %
+					            </p>
+					            <div class="tongbi">
+					            	<img src="images/guzhang.png" alt="" />
+					            </div>
+					        </div>  
+					    </td>
+						<td >
+						    <h5>警务执勤率</h5>
+						    <div class="p">
+					        	<p  class="se2">
+					                <number id="zdyq_data8" class="font_big timer count-number h2" data-to="99" data-speed="2500">							                        
+					                </number>
+					                                          %
+					            </p>
+					            <div class="tongbi">
+					            	<img src="images/zhiqin.png" alt="" />
+					            </div>
+					        </div>  
+						    </td>
+					</tr>
+	 			</tbody>
+			</table>
+  		</div>
+		<div class="col-md-3 col-sm-3  zdsj_right">
+			
+		    	<!--<div  class="window_title1 bg8">
+		        	各项指标
+		        </div>-->
+		    
+			<div class="high_95 bg6">
+<!-------------------------------设备状态--------------------------------->							
+				<div class="high_33 bg12 fmk">
+					<div class="ts_title">
+						<h5>设备状态</h5>
+					</div>
+				    <div class="zsj pull-left">
+				    	<div class="vertical">
+							<p class="text-center sj_title">故障设备<br>总数</p>
+							<h1 class="text-center sj">
+								<span id="zdyq_data3" class="sudu1">12</span>
+								台
+							</h1>
+						</div>	
+					</div>
+					<div class="zsj_tub pull-right">
+						<div id="sbzt" class="sbzt"></div>
+   						<script src="js/sbzt.js"></script>
+					</div>        	
+				</div>
+<!-------------------------------警务执勤--------------------------------->							
+				<div class="high_33 bg12 fmk">
+					<div class="ts_title">
+						<h5>警务执勤</h5>
+					</div>
+				   <div class="zsj pull-left">
+				   		<div class="vertical">
+							<p class="text-center sj_title">在线执勤<br>人数</p>
+							<h1 class="text-center sj">
+								<span id="zdyq_data4" class="sudu1">98</span>
+								人
+							</h1>
+						</div>	
+					</div>
+					<div class="zsj_tub pull-right">
+						<!--<div id="jw" class="jw"></div>
+   						<script src="js/jw.js"></script>-->
+   						<div class="col-md-12 high_mt_80 mk2">
+							<div class="cheliang_title">
+				                  <span class="pull-right">
+				                  	<number class="timer count-number"  data-to="98" data-speed="2500">
+				                  		
+				                  	</number>
+				                  	人 
+				                  </span>
+				                  <span class="pull-left">执勤人数：</span>
+				                  <span class="clearfix"></span>
+				            </div>
+						    <div class="progress">
+					                <div id="ssjk-progress-parking-online" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:75%; border-radius: 0;">
+					                </div>
+					           </div>  
+					        <div class="cheliang_title">
+					                  <span class="pull-right"><number class="timer count-number"  data-to="56" data-speed="2500"></number>辆 </span>
+					                  <span class="pull-left">执勤车辆：</span>
+					                  <span class="clearfix"></span>
+					            </div>
+					        <div class="progress">
+					                <div id="ssjk-progress-parking-online" class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+					                </div>
+					            </div>
+							<div class="cheliang_title">
+					                  <span class="pull-right"><number class="timer count-number"  data-to="98" data-speed="2500">95%</number>% </span>
+					                  <span class="pull-left">执勤率：</span>
+					                  <span class="clearfix"></span>
+					            </div>
+					        <div class="progress">
+					                <div id="ssjk-progress-parking-online" class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+					                </div>
+					            </div>
+						
+   						</div>
+							 
+					</div>        	
+				</div>
+<!-------------------------------监控视频--------------------------------->							
+				<div class="high_33 bg12 fmk">
+					<div class="ts_title">
+						<h5>监控视频</h5>
+					</div>
+					<div class="spjk">
+						<img src="images/sp1.png"/>
+					</div>
+				</div>
+			
+			</div>
+	</div>
+	<!--地图-->
+	<div id="allmap"></div>
+    <canvas id="canvas"></canvas>
+
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Kc50NR2vnseUm3o4DFmoYij2ELNudI8q"></script>
+    <script type="text/javascript" src="js/mapv.js"></script>
+    <script type="text/javascript"  src="js/mapvdata.js"></script>
+</body>
+<script src="js/bootstrap.js"></script>
+<script src="js/highcharts.js"></script>
+<script type="text/javascript" src="js/number.js"><!--交通指数--></script>
+<script type="text/javascript" src="js/toggle.js"></script>
+</html>

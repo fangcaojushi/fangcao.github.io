@@ -1,0 +1,32 @@
+$(function() {
+	var hwf_city = echarts.init(document.getElementById("protgood_rate")),
+	
+	option = {
+    angleAxis: {
+        type: 'category',
+         data : ['大兴项目','秦皇岛项目','合川项目','万盛项目','乌鲁木齐项目','昆明项目','苏州项目'],
+        z: 10
+    },
+    tooltip : {
+		        trigger: 'item',
+		        formatter: "{b} <br/>设备完好率 : {c}%"
+	},
+	color:['#1ab394'],
+    radiusAxis: {
+    },
+    polar: {
+    },
+    series: [{
+        type: 'bar',
+        data: [98, 95, 93, 92, 88, 84, 81],
+        coordinateSystem: 'polar',
+        barWidth:28,
+        name: '',
+        stack: ''
+    }],
+    legend: {
+        show: false,
+    }
+};                   
+	hwf_city.setOption(option), $(window).resize(hwf_city.resize);
+})

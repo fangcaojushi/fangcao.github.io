@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目建设分析</title>
+    <link rel="shortcut icon" href="favicon.ico"> <link href="/analysis/static/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="/analysis/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+	<link href="/analysis/static/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+	<link href="/analysis/static/css/plugins/footable/footable.core.css" rel="stylesheet">
+    <link href="/analysis/static/css/animate.min.css" rel="stylesheet">
+    <link href="/analysis/static/css/style.min.css?v=4.0.0" rel="stylesheet">
+    <base target="_blank">
+	<!--服务统计分析 css-->
+	<link href="/analysis/static/modules/device/css/device.css" rel="stylesheet"/>
+    <!--滚动监听 css-->
+	<link href="/analysis/static/modules/analysis/css/navhfix.css" rel="stylesheet"/>
+</head>
+
+<body class="gray-bg sidebar-content constnit_alysis">
+    <div class="sidebard-panel right_panel">
+        <div>
+            <!--<div class="ibox-title">
+                <h5>管理单位推荐</h5>
+            </div>-->
+            <div class="feed-element">
+            	<h3 class="recmend">建设单位推荐</h3>
+            	<div class="unit_list">
+            		<h3 class="compy_name">
+            			<span></span>
+            			乌鲁木齐建设单位
+            		</h3>
+            		<div class="width100">
+            			<table class="width100">     
+			              <tbody>
+			              	    <tr>
+				              		<td class="text-center">
+				                        <h5 class="se6">设备总数</h5>
+				                        <h2 class="se2 specf_num">265</h2>
+				                   </td>
+				                
+				                    <td class="text-center">
+				                        <h5 class="se6">故障数</h5>
+				                        <h2 class="se1 specf_num">26</h2>
+				                    </td>
+			                    </tr>
+			                    <tr>
+			                        <td class="text-center">
+			                            <h5 class="se6">故障率</h5>
+			                            <h2 class="se1 specf_num">6%</h2>
+			                        </td>
+			                  
+			                        <td class="text-center">
+			                            <h5 class="se6">服务质量</h5>
+			                            <h2 class="se5 specf_num">96</h2>
+			                        </td>
+			                    </tr>
+			              </tbody>
+			            </table>
+            		</div>
+            	</div>
+            	<div class="unit_list">
+            		<h3 class="compy_name">
+            			<span></span>
+            			乌鲁木齐建设单位
+            		</h3>
+            		<div class="width100">
+            			<table class="width100">     
+			              <tbody>
+			              	    <tr>
+				              		<td class="text-center">
+				                        <h5 class="se6">设备总数</h5>
+				                        <h2 class="se2 specf_num">265</h2>
+				                   </td>
+				                
+				                    <td class="text-center">
+				                        <h5 class="se6">故障数</h5>
+				                        <h2 class="se1 specf_num">26</h2>
+				                    </td>
+			                    </tr>
+			                    <tr>
+			                        <td class="text-center">
+			                            <h5 class="se6">故障率</h5>
+			                            <h2 class="se1 specf_num">6%</h2>
+			                        </td>
+			                  
+			                        <td class="text-center">
+			                            <h5 class="se6">服务质量</h5>
+			                            <h2 class="se5 specf_num">96</h2>
+			                        </td>
+			                    </tr>
+			              </tbody>
+			            </table>
+            		</div>
+            	</div>           	
+            </div>
+            <div class="feed-element unit_god">
+            	<h3 class="recmend">运维单位推荐</h3>           	
+            	<div class="unit_list">
+            		<h3 class="compy_name">
+            			<span></span>
+            			乌鲁木齐运维单位
+            		</h3>
+            		<div class="width100">
+            			<table class="width100">     
+			              <tbody>
+			              	    <tr>
+				              		<td class="text-center">
+				                        <h5 class="se6">设备总数</h5>
+				                        <h2 class="se2 specf_num">265</h2>
+				                   </td>
+				                
+				                    <td class="text-center">
+				                        <h5 class="se6">故障数</h5>
+				                        <h2 class="se1 specf_num">26</h2>
+				                    </td>
+			                    </tr>
+			                    <tr>
+			                        <td class="text-center">
+			                            <h5 class="se6">故障率</h5>
+			                            <h2 class="se1 specf_num">6%</h2>
+			                        </td>
+			                  
+			                        <td class="text-center">
+			                            <h5 class="se6">服务质量</h5>
+			                            <h2 class="se5 specf_num">96</h2>
+			                        </td>
+			                    </tr>
+			              </tbody>
+			            </table>
+            		</div>
+            	</div>
+            	<div class="unit_list">
+            		<h3 class="compy_name">
+            			<span></span>
+            			乌鲁木齐运维单位
+            		</h3>
+            		<div class="width100">
+            			<table class="width100">     
+			              <tbody>
+			              	    <tr>
+				              		<td class="text-center">
+				                        <h5 class="se6">设备总数</h5>
+				                        <h2 class="se2 specf_num">265</h2>
+				                   </td>
+				                
+				                    <td class="text-center">
+				                        <h5 class="se6">故障数</h5>
+				                        <h2 class="se1 specf_num">26</h2>
+				                    </td>
+			                    </tr>
+			                    <tr>
+			                        <td class="text-center">
+			                            <h5 class="se6">故障率</h5>
+			                            <h2 class="se1 specf_num">6%</h2>
+			                        </td>
+			                  
+			                        <td class="text-center">
+			                            <h5 class="se6">服务质量</h5>
+			                            <h2 class="se5 specf_num">96</h2>
+			                        </td>
+			                    </tr>
+			              </tbody>
+			            </table>
+            		</div>
+            	</div>
+            </div>
+        </div>       
+    </div>
+	<div class="wrapper wrapper-content">
+		<div class="row  border-bottom white-bg dashboard-header mglr0">
+			<div class="col-sm-12">
+				<p>
+					根据建设单位设备总数、故障设备数、设备故障率、设备完好率、维修频率、服务质量，平均故障间隔期、对建设单位按优劣进行排序
+				</p>
+
+			</div>
+		</div>
+		<div class="hnav hnavfixbox">  
+		    <div class="hnavfixbt"> 
+		        <a href="#001" class="hcur" target="_self"><i class="fa fa-info-circle"></i>综合概要</a>
+		        <a href="#002"  target="_self"><i class="glyphicon glyphicon-list-alt"></i>建设单位详情</a>
+		        <a href="#003" target="_self"><i class="fa fa-unlink"></i>数据图表</a>
+		        <a href="#004"  target="_self"><i class="fa fa-pie-chart"></i>综合排名  TOP3</a> 
+		        <!--<a href="#004" target="_self"><i class="fa fa-area-chart"></i>结论分析</a>-->
+		    </div>  
+		</div>
+		<br/>
+		<div class="hcontext const_analysis">
+			<div class="row active">
+				<a name="001"></a>
+	            <div class="col-sm-3">
+	                <div class="ibox">
+	                    <div class="ibox-content hid">
+	                        <h5 class="m-b-md">设备总数</h5>
+	                        <div class="col-md-6 col-md-offset-3">
+		            			<h1 class="text-navy text-center hsg spec_val">252</h1>
+		            		</div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-sm-3">
+	                <div class="ibox">                	
+	                    <div class="ibox-content hid">
+	                        <h5 class="m-b-md">运行中设备数</h5>
+	                        <div class="col-md-6 col-md-offset-3">
+	                			<h1 class="text-success text-center hsg spec_val">186</h1>
+	                		</div>               		
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-sm-3">
+	                <div class="ibox">
+	                    <div class="ibox-content hid">
+	                        <h5 class="m-b-md">已过期设备数</h5>
+	                        <div class="col-md-6 col-md-offset-3">
+	                			<h1 class="text-danger text-center hsg spec_val">26</h1>
+	                		</div>                   		
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-sm-3">
+	                <div class="ibox">
+	                    <div class="ibox-content hid">
+	                        <h5 class="m-b-md">即将过期设备数</h5>
+	                		<div class="col-md-6 col-md-offset-3">
+	                			<h1 class="text-danger text-center hsg spec_val">2</h1>
+	                		</div>                       		
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="row">
+	        	<a name="002"></a>
+	        		<div class="col-sm-12">
+	                <div class="ibox float-e-margins">
+	                    <div class="ibox-title">
+	                        <h5>建设单位详情</h5>	                        
+	                        <div class="ibox-tools right_tool">
+	                            <a class="collapse-link">
+	                                <i class="fa fa-chevron-up"></i>
+	                            </a>
+	                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+	                                <i class="fa fa-wrench"></i>
+	                            </a>
+	                            <ul class="dropdown-menu dropdown-user">
+	                                <li><a href="accident.html#">选项1</a>
+	                                </li>
+	                                <li><a href="accident.html#">选项2</a>
+	                                </li>
+	                            </ul>
+	                            <a class="close-link">
+	                                <i class="fa fa-times"></i>
+	                            </a>
+	                        </div>
+                        	<div class="input-group ser_box">
+                            	<input type="text" placeholder="搜索" class="input-sm form-control"> 
+                            	<span class="input-group-btn">
+                    				<button type="button" class="btn btn-sm btn-primary">搜索</button> 
+                            	</span>
+                            </div>	                        
+	                    </div>
+	                    <div class="ibox-content consnit_content">
+	                        <div class="pb15 table-bordered nuit_box">
+	                        	<h5>大兴建设单位</h5>
+	                        	<div class="unit_detail">
+	                        		<div class="col-md-6 text-center spec_index">
+	                        			<span>设备总数</span>
+	                        			<span class="text-success hsg spec_val">320</span>
+	                        		</div>
+	                        		<div class="col-md-6 common_index">
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdgreen"></span>
+	                                        	<span class="yd_bggreen"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">负责人</span>
+	                                    	<span class="text-navy dev_num">张三</span>	
+	                        			</div>
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdgreen"></span>
+	                                        	<span class="yd_bggreen"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">投资额</span>
+	                                    	<span class="text-navy dev_num">300万</span>	
+	                        			</div>
+	                        			
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdred"></span>
+	                                        	<span class="yd_bgred"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">故障设备数</span>
+	                                    	<span class="text-danger dev_num">123</span>	
+	                        			</div>
+	                        			
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdred"></span>
+	                                        	<span class="yd_bgred"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">故障率</span>
+	                                    	<span class="text-danger dev_num">16%</span>	
+	                        			</div>
+	                        			
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdred"></span>
+	                                        	<span class="yd_bgred"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">报废率</span>
+	                                    	<span class="text-danger dev_num">3.2%</span>	
+	                        			</div>
+	                        			
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdgreen"></span>
+	                                        	<span class="yd_bggreen"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">设备完好率</span>
+	                                    	<span class="text-navy dev_num">96%</span>	
+	                        			</div>
+	                        			
+	                        		</div>
+	                        	</div>
+	                        </div>
+	                        <div class=" pb15 table-bordered nuit_box">
+	                        	<h5>大兴建设单位</h5>
+	                        	<div class="unit_detail">
+	                        		<div class="col-md-6 text-center spec_index">
+	                        			<span>设备故障率</span>
+	                        			<span class="text-success hsg spec_val">2.8%</span>
+	                        		</div>
+	                        		<div class="col-md-6 common_index">
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdgreen"></span>
+	                                        	<span class="yd_bggreen"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">负责人</span>
+	                                    	<span class="text-navy dev_num">张三</span>	
+	                        			</div>
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdgreen"></span>
+	                                        	<span class="yd_bggreen"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">投资额</span>
+	                                    	<span class="text-navy dev_num">300万</span>	
+	                        			</div>
+	                        			
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdred"></span>
+	                                        	<span class="yd_bgred"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">故障设备数</span>
+	                                    	<span class="text-danger dev_num">123</span>	
+	                        			</div>
+	                        			
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdred"></span>
+	                                        	<span class="yd_bgred"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">故障率</span>
+	                                    	<span class="text-danger dev_num">16%</span>	
+	                        			</div>
+	                        			
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdred"></span>
+	                                        	<span class="yd_bgred"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">报废率</span>
+	                                    	<span class="text-danger dev_num">3.2%</span>	
+	                        			</div>
+	                        			
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdgreen"></span>
+	                                        	<span class="yd_bggreen"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">设备完好率</span>
+	                                    	<span class="text-navy dev_num">96%</span>	
+	                        			</div>
+	                        			
+	                        		</div>
+	                        	</div>
+	                        </div>
+	                    	<div class=" pb15 table-bordered nuit_box">
+	                        	<h5>大兴建设单位</h5>
+	                        	<div class="unit_detail">
+	                        		<div class="col-md-6 text-center spec_index">
+	                        			<span>设备故障率</span>
+	                        			<span class="text-success hsg spec_val">2.2%</span>
+	                        		</div>
+	                        		<div class="col-md-6 common_index">
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdgreen"></span>
+	                                        	<span class="yd_bggreen"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">负责人</span>
+	                                    	<span class="text-navy dev_num">张三</span>	
+	                        			</div>
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdgreen"></span>
+	                                        	<span class="yd_bggreen"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">投资额</span>
+	                                    	<span class="text-navy dev_num">300万</span>	
+	                        			</div>
+	                        			
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdred"></span>
+	                                        	<span class="yd_bgred"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">故障设备数</span>
+	                                    	<span class="text-danger dev_num">123</span>	
+	                        			</div>
+	                        			
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdred"></span>
+	                                        	<span class="yd_bgred"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">故障率</span>
+	                                    	<span class="text-danger dev_num">16%</span>	
+	                        			</div>
+	                        			
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdred"></span>
+	                                        	<span class="yd_bgred"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">报废率</span>
+	                                    	<span class="text-danger dev_num">3.2%</span>	
+	                        			</div>
+	                        			
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdgreen"></span>
+	                                        	<span class="yd_bggreen"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">设备完好率</span>
+	                                    	<span class="text-navy dev_num">96%</span>	
+	                        			</div>
+	                        			
+	                        		</div>
+	                        	</div>
+	                        </div>
+	                    	<div class=" pb15 table-bordered nuit_box">
+	                        	<h5>大兴建设单位</h5>
+	                        	<div class="unit_detail">
+	                        		<div class="col-md-6 text-center spec_index">
+	                        			<span>设备故障率</span>
+	                        			<span class="text-success hsg spec_val">1.6%</span>
+	                        		</div>
+	                        		<div class="col-md-6 common_index">
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdgreen"></span>
+	                                        	<span class="yd_bggreen"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">负责人</span>
+	                                    	<span class="text-navy dev_num">张三</span>	
+	                        			</div>
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdgreen"></span>
+	                                        	<span class="yd_bggreen"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">投资额</span>
+	                                    	<span class="text-navy dev_num">300万</span>	
+	                        			</div>
+	                        			
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdred"></span>
+	                                        	<span class="yd_bgred"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">故障设备数</span>
+	                                    	<span class="text-danger dev_num">123</span>	
+	                        			</div>
+	                        			
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdred"></span>
+	                                        	<span class="yd_bgred"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">故障率</span>
+	                                    	<span class="text-danger dev_num">16%</span>	
+	                        			</div>
+	                        			
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdred"></span>
+	                                        	<span class="yd_bgred"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">报废率</span>
+	                                    	<span class="text-danger dev_num">3.2%</span>	
+	                        			</div>
+	                        			
+	                        			<div class="dimens">
+		                        			<div class="zs_color">
+	                                        	<span class="yd_bdgreen"></span>
+	                                        	<span class="yd_bggreen"></span>				                                        		
+	                                    	</div>
+	                                    	<span class="dev_numtxt">设备完好率</span>
+	                                    	<span class="text-navy dev_num">96%</span>	
+	                        			</div>
+	                        			
+	                        		</div>
+	                        	</div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="row">
+	       	 	<a name="003"></a>
+	            <div class="col-sm-12">
+	                <div class="ibox float-e-margins">
+	                    <div class="ibox-title">
+	                        <h5>数据图表</h5>
+	                        <div class="ibox-tools">
+	                            <a class="collapse-link">
+	                                <i class="fa fa-chevron-up"></i>
+	                            </a>
+	                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+	                                <i class="fa fa-wrench"></i>
+	                            </a>
+	                            <ul class="dropdown-menu dropdown-user">
+	                                <li><a href="accident.html#">选项1</a>
+	                                </li>
+	                                <li><a href="accident.html#">选项2</a>
+	                                </li>
+	                            </ul>
+	                            <a class="close-link">
+	                                <i class="fa fa-times"></i>
+	                            </a>
+	                        </div>
+	                    </div>
+		                <div class="ibox-content hid">
+		                	<div class="col-md-6">
+		                		<h5>设备故障数</h5>
+	                        	<div class="echarts" id="fail_num" style="height: 360px;"></div>
+		                	</div>
+		                	<div class="col-md-6">
+		                		<h5>故障率排名</h5>
+	                        	<div class="echarts" id="protfail_rate" style="height: 360px;"></div>
+		                	</div>
+		                	<div class="col-md-6">
+		                		<h5>即将过期设备数</h5>
+	                        	<div class="echarts" id="equip_overdue" style="height: 360px;"></div>
+		                	</div>
+		                	<div class="col-md-6">
+		                		<h5>设备完好率</h5>
+	                        	<div class="echarts" id="protgood_rate" style="height: 360px;"></div>
+		                	</div>		                	
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="row">
+	        	<a name="004"></a>
+	            <div class="col-sm-12">
+	                <div class="ibox float-e-margins">
+	                    <div class="ibox-title">
+	                        <h5>综合排名  TOP3</h5>
+	                        <div class="ibox-tools">
+	                            <a class="collapse-link">
+	                                <i class="fa fa-chevron-up"></i>
+	                            </a>
+	                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+	                                <i class="fa fa-wrench"></i>
+	                            </a>
+	                            <ul class="dropdown-menu dropdown-user">
+	                                <li><a href="accident.html#">选项1</a>
+	                                </li>
+	                                <li><a href="accident.html#">选项2</a>
+	                                </li>
+	                            </ul>
+	                            <a class="close-link">
+	                                <i class="fa fa-times"></i>
+	                            </a>
+	                        </div>
+	                    </div>
+		                <div class="ibox-content">
+		                	<div class="alert alert-warning">
+	                   			<br/>
+	                   			<h3 class="text-justify">&nbsp;&nbsp;经过分析得出，建设单位，根据服务质量与故障率综合评定，性价比前三的单位分别如下所示：</h3>
+	                   			<div id="const_fen" class="echarts"></div>
+	                   		</div>		                	
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="row">
+	        	<a name="005"></a>
+	            <div class="col-sm-12">
+	                <div class="ibox float-e-margins mb0">
+	                    <div class="ibox-title">
+	                        <h5>结论分析</h5>
+	                        <div class="ibox-tools">
+	                            <a class="collapse-link">
+	                                <i class="fa fa-chevron-up"></i>
+	                            </a>
+	                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+	                                <i class="fa fa-wrench"></i>
+	                            </a>
+	                            <ul class="dropdown-menu dropdown-user">
+	                                <li><a href="accident.html#">选项1</a>
+	                                </li>
+	                                <li><a href="accident.html#">选项2</a>
+	                                </li>
+	                            </ul>
+	                            <a class="close-link">
+	                                <i class="fa fa-times"></i>
+	                            </a>
+	                        </div>
+	                    </div>
+		                <div class="ibox-content hid">
+                        	<div class="col-md-6 pb15 table-bordered minhigh prompt_box">
+                        		<div class="col-md-12 pdlr0 prompt_con">
+                        			<span class="hpicon"></span>
+                        			<span class="hpnam">秦皇岛建设单位服务质量、故障率均存在严重问题，应引起足够的重视！</span>
+                        		</div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	       
+	       	       
+		    <div class="alert alert-warning">
+		            信息统计时间：2017年5月8日0时 至 5月14日24时
+	        </div>
+	        <br/> <br/>
+	        <div class="hsave">
+		        <a class="badge-info backToTop" title="返回顶部" style="display: none;">
+	                <i class="glyphicon glyphicon-eject"></i>
+	            </a>
+	            <a class="badge-warning" title="导出">
+	                <i class="glyphicon glyphicon-share"></i>
+	            </a>
+	             <a class="badge-success" title="打印">
+	                <i class="glyphicon glyphicon-print"></i>
+	            </a>
+	        </div>
+		</div>
+	</div>
+	<script src="/analysis/static/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/analysis/static/js/bootstrap.min.js?v=3.3.5"></script>
+    <script src="/analysis/static/js/plugins/footable/footable.all.min.js"></script>
+    <script src="/analysis/static/js/plugins/echarts/echarts.js"></script>
+    <script src="/analysis/static/js/content.min.js?v=1.0.0"></script>
+    <script>
+        $(document).ready(function(){$(".footable").footable();});
+    </script>
+    <!--滚动监听-->
+    <script src="/analysis/static/modules/analysis/js/navhfix.js"></script>
+	<!--设备  js-->
+	<script src="/analysis/static/modules/device/js/device.js"></script>
+    <!--设备故障数-->
+    <script src="/analysis/static/modules/device/js/fail_num.js"></script>
+    <!--故障率排名-->
+    <script src="/analysis/static/modules/device/js/protfail_rate.js"></script>
+    <!--即将过期设备数-->
+    <script src="/analysis/static/modules/device/js/equip_overdue.js"></script>
+    <!--设备完好率排名-->
+    <script src="/analysis/static/modules/device/js/protgood_rate.js"></script>
+    <!--综合排名  TOP3-->
+    <script src="/analysis/static/modules/device/js/const_fen.js"></script>
+</body>
+
+</html>

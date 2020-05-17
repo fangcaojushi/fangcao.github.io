@@ -1,0 +1,89 @@
+/* ========================================================================
+ * collision.css  
+ * 区域信息碰撞研判
+ * by wh 20170906
+ * ========================================================================*/
+/***********条件选择*************************************/
+.schlr{
+	padding: 0 5px;
+}
+.hid{
+	overflow: hidden;
+}
+.hcondition{
+	position: relative;
+}
+.hcondition .hr-line-dashed{
+	/*margin: 10px 0;*/
+}
+.hcondition .harea .beui{
+	font-size: 80px;
+	margin: 20px auto;
+}
+.hcondition .harea .col-md-3,
+.holresult .hschcar .col-md-3{
+	border-left:1px solid #e7eaec;
+}
+.hcondition .harea .col-md-3:nth-child(1),
+.holresult .hschcar .col-md-3:nth-child(1){
+	border-left:0px;
+}
+.hcondition .harea .hplace{
+	height: 120px;
+	width: 100%;
+	margin-top: 10px;
+	border: 1px solid #e7eaec;
+	background-color: #fff;
+}
+/***********查询结果*************************************/
+.holresult{
+	
+}
+.holresult .hschcar{
+	margin: 0;
+	padding: 0;
+}
+.holresult .hschcar li{
+	display: block;
+	cursor: pointer;
+	border-bottom: 1px dotted #e7eaec ;
+	overflow: hidden;
+}
+.holresult .hschcar li p{
+	margin: 5px 0 ;
+}
+.holresult .hschcar li p span{
+	padding: 0 5px ;
+}
+.holresult .hschcar li:hover{
+	background-color: #F9F9F9;
+}
+.holresult .hschcar .col-md-3{
+	min-height: 100px;
+}
+.holresult .hschcar .col-md-3 h1{
+	margin-top: 10px;
+}
+.holresult .hschcar .beui{
+	font-size: 50px;
+	margin: 20px auto;
+	opacity: .8;
+}
+
+@media only screen and (max-width:1710px ) {
+	.hcondition .form-horizontal .col-md-3 .col-md-4,
+	.hcondition .form-horizontal .col-md-3 .col-md-7{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+@media only screen and (max-width:1440px ) {
+	.hcondition .harea .beui{
+		font-size: 50px;
+		margin: 20px auto;
+	}
+	.holresult .hschcar .beui{
+		font-size: 40px;
+		margin: 20px auto;
+	}
+}

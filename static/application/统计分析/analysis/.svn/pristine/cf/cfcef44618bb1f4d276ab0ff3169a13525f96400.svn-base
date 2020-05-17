@@ -1,0 +1,61 @@
+$(function() {
+	var htrend = echarts.init(document.getElementById("htrend")),
+	htrendopt = {
+	    title: {
+	        text: '',
+	    },
+	    color:['#a8c95f','#58b4ef'],
+	    tooltip : {
+	       trigger: 'axis',
+	        showDelay : 0,
+	        axisPointer:{
+	            show: true,
+	            type : 'cross',
+	            lineStyle: {
+	                type : 'dashed',
+	                width : 1
+	            }
+        },
+        zlevel: 1
+	    },
+	    legend: {
+	        data:['去年','今年']
+	    },
+	    grid: {
+			x: 40,
+			x2: 40,
+			y2: 24
+		},
+	    toolbox: {
+	        show: true,
+	        feature: {
+	            magicType: {show: true, type: ['stack', 'tiled']},
+	            saveAsImage: {show: true}
+	        }
+	    },
+	    xAxis: {
+	        type: 'category',
+	        boundaryGap: false,
+	        data: []
+	    },
+	    yAxis: {
+	        type: 'value'
+	    },
+	    series: [
+	    {
+	        name: '去年',
+	        type: 'line',
+	        smooth: true,
+	        areaStyle: {normal: {}},
+	        data: [1330, 1182, 1734, 1791, 1390, 1130, 1110, 1382, 1834, 1991, 1690, 1530]
+	    },
+	    {
+	        name: '今年',
+	        type: 'line',
+	        smooth: true,
+	        areaStyle: {normal: {}},
+	        data: [1110, 1032, 1301, 1234, 1120, 1090, 1020, 1182, 1734, 1791, 1390, 1130]
+	    }]
+	};
+	htrend.setOption(htrendopt), $(window).resize(htrend.resize);
+})

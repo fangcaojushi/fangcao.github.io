@@ -1,0 +1,92 @@
+$(function() {
+	var hwf_city = echarts.init(document.getElementById("cover-rate")),
+	option = {
+	color: ['#a6cb5f', '#ED5565','#5facdb', '#F7B516', '#24CBE5', '#DDDF00', '#64E572', '#FF9655', '#54b68d', '#6AF9C4'],
+//  title: {
+//      text: '堆叠区域图'
+//  },
+    tooltip : {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            label: {
+                backgroundColor: '#6a7985'
+            }
+        }
+    },
+    legend: {
+        data:['设备覆盖面积(50米)','区域面积','设备覆盖率(50米)','设备覆盖面积(30米)','设备覆盖率（30米）']
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['梁溪区','滨湖区','惠山区','锡山区','新吴区','江阴市','宜兴市']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value',
+            axisLabel: {
+            formatter: '{value} %'
+        },
+          position: 'left'
+        },{
+        type: 'value',
+        min: 0,
+        max: 5000,
+        position: 'right'
+    }
+    ],
+    series : [
+        {
+            name:'设备覆盖面积(50米)',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[1200, 1300, 1000, 1300, 2000, 2300, 2100]
+        },
+        {
+            name:'区域面积',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[2200, 1800, 1900, 2300, 2900, 3300, 2100]
+        },
+        {
+            name:'设备覆盖率(50米)',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[15, 23, 20, 15, 19, 33, 24]
+        },
+        {
+            name:'设备覆盖面积(30米)',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[3200, 3300, 3000, 2500, 2900, 2300, 3000]
+        },
+        {
+            name:'设备覆盖率(30米)',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[32, 33, 30, 27, 29, 23, 32]
+        }
+        
+    ]
+};
+	hwf_city.setOption(option), $(window).resize(hwf_city.resize);
+})

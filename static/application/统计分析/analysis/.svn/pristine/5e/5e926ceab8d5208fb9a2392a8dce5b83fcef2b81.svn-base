@@ -1,0 +1,56 @@
+.frequency-label{
+	padding-left: 0;
+	padding-right: 0;
+}
+.frequency-input{
+	padding-right: 0;
+}
+.frequency-inpput-word{
+	padding-left: 6px;
+}
+.frequency-list{
+	overflow: hidden;
+}
+.frequency-list ul,li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.frequency-list-title{
+	text-align: left;
+	overflow: hidden;
+	line-height: 60px;
+	font-size: 18px;
+	border: 1px solid #ddd;
+	font-weight: bold;
+}
+.frequency-list-item{
+	text-align: left;
+	overflow: hidden;
+	line-height: 60px;
+	font-size: 16px;
+	border-bottom: 1px solid #eee;
+}
+.frequency-item-num{
+	font-size: 22px;
+	padding-left: 80px;
+}
+.frequency-list-title-num{
+	padding-left: 80px;
+}
+.frequency-item-n{
+	font-size: 18px;
+}
+.frequency-item-detail{
+	
+	border-right:1px solid #eee;
+}
+.frequency-item-num{
+	border-left: 1px solid #eee;
+}
+.pre-scrollable{
+	max-height: 2000px;
+}
+.frequency-list-body li:hover{
+	background-color:#f3f3f4;
+}

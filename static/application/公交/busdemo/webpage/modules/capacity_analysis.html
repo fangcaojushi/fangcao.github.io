@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<title>公交运量运力分析</title>
+		<!--bootstrap框架css-->
+		<link href="../../static/common/css/bootstrap.css" rel="stylesheet" />
+		<!--导航菜单和兼容手机端导航菜单-->
+		<link href="../../static/default_theme/bootsnav.css" rel="stylesheet" />
+		<link href="../../static/common/fonts/FontAwesome/font-awesome.css" rel="stylesheet" />
+		<!--public为公用的样式-->
+		<link href="../../static/default_theme/public.css" rel="stylesheet" />
+		<link href="../../static/modules/analysis/css/analysis.css" rel="stylesheet" />
+
+	</head>
+
+	<body>
+		<!--导航菜单-->
+		<script src="../../static/common/js/menu.js"></script>
+		<!--正文区域-->
+		<div class="bodycon">
+			<!--该页的标题区域-->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 fen-title">
+						<h2 class="text-center gj_title">公交运量运力分析</h2>
+						<div class="lg-txt">
+							<div class="light">
+								<img class="faguang" src="../../static/common/images/shanliang.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid high_95">
+				<div class="container-fluid high_40 selection_my">
+					<div class=" high_33 search_analysis">
+						<!--搜索条件区域开始-->
+						<div class="container-fluid  search_analysis_box">
+							<row class="high_100">
+								<div class="col-md-3 high_100">
+									<div class="fen"></div>
+									<h3 class="col-md-2">时间</h3>
+									<div class="col-md-10">
+										<button class="btn btn-search dropdown-toggle col-md-12" type="button" id="dropdownMenu_time">
+										    <b id="YMD_content" class="search_text">请选择时间</b>
+										    <span class="caret triangle"></span>
+										  </button>
+										  <div  class="moreselect ">
+											  <!-- 年月日 tabs -->
+											  <ul class="nav nav-tabs col-md-2 col-md-offset-1" role="tablist">
+											    <li role="presentation" class="active"><a href="#yeartab" aria-controls="yeartab" role="tab" data-toggle="tab">年</a></li>
+											    <li role="presentation"><a href="#monthtab" aria-controls="monthtab" role="tab" data-toggle="tab">月</a></li>
+											    <li role="presentation"><a href="#daytab" aria-controls="daytab" role="tab" data-toggle="tab">日</a></li>
+											  </ul>
+											
+											  <!-- 年月日 panes -->
+											  <div class="tab-content col-md-8">
+											    <div role="tabpanel" class="tab-pane active" id="yeartab">
+											    		<select name="yearY" class="col-md-10 col-md-offset-1"></select>
+											    		<div class="col-md-10 col-md-offset-1 quick">
+														<span>近3月</span>
+														<span>近半年</span>
+														<span>近1年</span>
+														<span>近3年</span>
+														<span>近5年</span>
+														<span>近10年</span>
+													</div>
+											    		<select name="monthY" class="col-md-10 col-md-offset-1" style="display: none;"></select>
+											    </div>
+											    <div role="tabpanel" class="tab-pane" id="monthtab">
+											    		<select name="yearM" class="col-md-10 col-md-offset-1"></select>
+													<select name="monthM" class="col-md-10 col-md-offset-1"></select>
+											    </div>
+											    <div role="tabpanel" class="tab-pane" id="daytab">
+											    		<select name="yearD" class="col-md-10 col-md-offset-1"></select>
+													<select name="monthD" class="col-md-10 col-md-offset-1"></select>
+													<select name="dayD" class="col-md-10 col-md-offset-1"></select>
+											    </div>
+											  </div>
+											  <div class="col-md-12 bg6">
+											  	<button id="time_submit" class="btn btn-info pull-right btnstyle">确定</button>
+											  	<button id="time_cancel" class="btn btn-default pull-right btnstyle">取消</button>
+											  </div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 high_100">
+									<div class="fen"></div>
+									<h3 class="col-md-2">线路</h3>
+									<div class="dropdown col-md-10">
+										<button class="btn btn-search dropdown-toggle col-md-12" type="button" id="dropdownMenu_line" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										    <b class="search_text">请选择线路</b>
+										    <span class="caret triangle"></span>
+										</button>
+										<ul class="dropdown-menu dropdownMenu_timew" aria-labelledby="dropdownMenu_line">
+											<li>
+												<div class="col-md-2 classification">运通客运公司</div>
+												<div class="col-md-10">
+													<span>18</span>
+													<span>19</span>
+													<span>20</span>
+													<span>21</span>
+													<span>22</span>
+													<span>24</span>
+													<span>25</span>
+													<span>26</span>
+													<span>27</span>
+													<span>28</span>
+													<span>30</span>
+													<span>31</span>
+													<!--此为上下行，暂做注释-->
+													<!--<span><img src="../../static/common/images/upstream.png" title="上行"/>23<img src="../../static/common/images/downward.png" title="下行"/></span>-->
+													<!--<span><img src="../../static/common/images/upstream_active.png" title="上行"/>29<img src="../../static/common/images/downward.png" title="下行"/></span>-->
+													
+												</div>
+											</li>
+											<li>
+												<div class="col-md-2 classification">畅达通公司</div>
+												<div class="col-md-10">
+													<span>1</span>
+													<span>2</span>
+													<span>3</span>
+													<span>4</span>
+													<span>5</span>
+													<span>6</span>
+													<span>7</span>
+													<span>8</span>
+													<span>9</span>
+													<span>10</span>
+													<span>11</span>
+													<span>12</span>
+												</div>
+											</li>
+											<!--<li>
+												<button class="btn btn-info pull-right">确定</button>
+											</li>-->
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-3 high_100">
+									<div class="fen"></div>
+									<h3 class="col-md-2">车辆</h3>
+									<div class="dropdown col-md-10">
+										<button class="btn btn-search btn-gray dropdown-toggle col-md-12" type="button" id="dropdownMenu_car" data-toggle="" aria-haspopup="true" aria-expanded="true">
+						    <b class="search_text">请选择车辆</b>
+						    <span class="caret triangle"></span>
+						  </button>
+										<ul class="dropdown-menu dropdownMenu_timew" aria-labelledby="dropdownMenu_car">
+											<li>
+												您当前所选的条件为：  畅达通公司 > <b class="line_select">21</b> 路公交车 
+											</li>
+											<li>
+												<div class="col-md-12">
+													<span>3611</span>
+													<span>3621</span>
+													<span>3631</span>
+													<span>3641</span>
+													<span>3651</span>
+													<span>3661</span>
+													<span>3671</span>
+													<span>3681</span>
+													<span>3691</span>
+													<span>3610</span>
+													<span>3611</span>
+													<span>3612</span>
+												</div>
+											<!--<li>
+												<button class="btn btn-info pull-right">确定</button>
+											</li>-->
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-3 high_100">
+									<div class="fen"></div>
+									<h3 class="col-md-2">站点</h3>
+									<div class="dropdown col-md-10">
+										<button class="btn btn-search btn-gray dropdown-toggle col-md-12" type="button" id="dropdownMenu_site" data-toggle="" aria-haspopup="false" aria-expanded="true">
+						    <b class="search_text">请选择站点</b>
+						    <span class="caret triangle"></span>
+						  </button>
+										<ul class="dropdown-menu dropdownMenu_site" aria-labelledby="dropdownMenu_site">
+											<li>
+												您当前所选的条件为：  畅达通公司 > <b class="line_select">21</b> 路公交车 
+											</li>
+											<li class="display_site">
+												<div class="col-md-12 overall">
+													<div class="direction_my">
+														<img src="../../static/common/images/direction.png""/>
+													</div>
+													<span><i></i>开封路</span>
+													<span><i></i>四流南路</span>
+													<span><i></i>中心医院</span>
+													<span><i></i>水清沟</span>
+													<span><i></i>金华路四流南路</span>
+													<span><i></i>金沙路</span>
+													<span><i></i>瑞安路南站</span>
+													<span><i></i>宣化路</span>
+													<span><i></i>四方小学</span>
+													<span><i></i>四方</span>
+													<span><i></i>海岸路</span>
+													<span><i></i>内蒙古路长途站</span>
+													<span><i></i>长春路</span>
+													<span><i></i>埕口路</span>
+													<span><i></i>华阳路</span>
+													<span><i></i>科技街(颐高数码广场)</span>
+													<span><i></i>包头路小学</span>
+													<span><i></i>海员</span>
+													<span><i></i>小港</span>
+													<span><i></i>菏泽路</span>
+													<span><i></i>东平路</span>
+													<span><i></i>团岛</span>
+												</div>
+											<!--<li>
+												<button class="btn btn-info pull-right">确定</button>
+											</li>-->
+										</ul>
+									</div>
+								</div>
+							</row>
+
+						</div>
+						
+					<!--搜索条件区域结束-->
+					</div>
+					<div class="high_18 screening" id="">
+						<p class="pull-left selection_title">您当前选择的分类条件:</p>
+						<div class="pull-left" id="">
+							<!--筛选条件显示-->
+							<div class="screening_condition" id="selected_time" >
+								<div class="screening_content">
+									<span class="pull-left condition">近30天</span>
+									<span class="pull-right close_btn">
+					                    <button id="close_selected_time" type="button" class="screening_close">
+										</button>
+									</span>
+									<span class="clearfix"></span>
+								</div>
+							</div>
+							
+							<div class="screening_condition" id="selected_line">
+								<div class="screening_content">
+									<span class="pull-left unit">线路名称:</span>
+									<span class="pull-left condition">22</span>
+									<span class="pull-right close_btn">
+					                    <button  id="close_selected_line" type="button" class="screening_close">
+										</button>
+									</span>
+									<span class="clearfix"></span>
+								</div>
+							</div>
+							<div class="screening_condition" id="selected_car">
+								<div class="screening_content">
+									<span class="pull-left unit">车辆编号:</span>
+									<span class="pull-left condition">3821</span>
+									<span class="pull-right close_btn">
+					                    <button  id="close_selected_car" type="button" class="screening_close">
+										</button>
+									</span>
+									<span class="clearfix"></span>
+								</div>
+							</div>
+							<div class="screening_condition" id="selected_site">
+								<div class="screening_content">
+									<span class="pull-left unit">站点名称:</span>
+									<span class="pull-left condition">万盛站</span>
+									<span class="pull-right close_btn">
+					                    <button  id="close_selected_site" type="button" class="screening_close">
+										</button>
+									</span>
+									<span class="clearfix"></span>
+								</div>
+							</div>
+							<div class="screening_condition" id="selected_all">
+								<div  class="delete">
+									<span>清空筛选条件</span>
+								</div>
+							</div>						
+						</div>
+						<div class="query pull-right">
+							<button type="button" class="btn">查询</button>
+						</div>
+					</div>
+					<div class="container-fluid high_40 real-time_data">
+						<table width="100%">
+							<tbody>
+								<tr>
+									<td>
+										<h5>公交运量累计(人)</h5>
+										<div class="par">
+											<p>
+												<number class="timer count-number" data-to="863532" data-speed="2500">863,532
+												</number>
+											</p>
+										</div>
+									</td>
+									<td>
+										<h5>早高峰累计(人)</h5>
+										<div class="par">
+											<p>
+												<number class="timer count-number" data-to="263861" data-speed="2500">263,861
+												</number>
+											</p>
+										</div>
+									</td>
+									<td>
+										<h5>晚高峰累计(人)</h5>
+										<div class="par">
+											<p>
+												<number class="timer count-number" data-to="326832" data-speed="2500">326,832
+												</number>
+											</p>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					</div>
+				<div class="container-fluid high_60 chart_my">
+					<div class="pull-right detail">
+						<a href="">
+							<img src="../../static/common/images/text_img.png" alt="" />
+						</a>
+						<a href="">
+							<img src="../../static/common/images/fx_img2.png" alt="" />
+						</a>
+					</div>
+					<!--运量运力分析图表div-->
+					<div id="volume" class="chart96"></div>
+				</div>
+
+			</div>
+		</div>
+		<div class="maskbox"></div>
+		<!--引入jquery包，进行异步加载-->
+		<script src="../../static/common/js/jquery-1.11.2.min.js"></script>
+		<!--bootstrap包，请勿修改-->
+		<script src="../../static/common/js/bootstrap.js"></script>
+		<!--导航菜单，请勿修改-->
+		<script src="../../static/common/js/bootsnav.js"></script>
+		<!--highcharts图表-->
+		<script src="../../static/common/js/highcharts.js"></script>
+		<!--highcharts图表3d图-->
+		<script src="../../static/common/js/highcharts-3d.js"></script>
+		<!--动态数字包，请勿修改-->
+		<script src="../../static/common/js/number.js"></script>
+		<!--条件选择器-->
+		<script src="../../static/modules/analysis/js/analysis_search.js"></script>
+		<!--运量运力分析js图表-->
+		<script src="../../static/modules/analysis/js/volume_analysis.js"></script>
+		
+	</body>
+
+</html>

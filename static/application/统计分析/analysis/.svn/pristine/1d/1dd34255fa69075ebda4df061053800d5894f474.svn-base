@@ -1,0 +1,261 @@
+*{
+	font-size: 14px;
+}
+p{
+	line-height: 25px;
+}
+.hid{
+	overflow: hidden;
+}
+.hsg{
+	font-weight: bold;
+	font-size: 60px;
+}
+.haccident thead th{
+	font-size: 14px;
+}
+.haccident  tbody td,
+.haccident thead th{
+	text-align: center;
+}
+.haccident tbody td:nth-child(1){
+	text-align: left;
+}
+.hroadmx tbody td:nth-child(1){
+	text-align: center;
+}
+.hroadmx tbody td:nth-child(2){
+	text-align: left;
+}
+.echarts{
+	height: 300px;
+}
+.sgdiudie{
+	height: 400px;
+}
+.hvs{
+	width:90%;
+	margin: 0 auto
+}
+.hvs td{
+	padding:10px;
+	position: relative;
+	height: 40px;
+}
+.hvs td h1{
+	font-weight: bold;
+}
+.hvs tr td b{
+	opacity: 0;
+}
+.hvs tr:hover td b{
+	opacity: 1;
+}
+.hvs td b{
+	display: block;
+	position: absolute;
+	z-index: 555;
+	top:5px;
+	font-weight: normal;
+	transition: all .2s;
+	cursor: default;
+	padding: 0 5px;
+}
+.hvs td span{
+	display: block;
+	height: 22px;
+	overflow: hidden;
+	top: 5px;
+	line-height: 22px;
+	cursor: default;
+	transition: all .2s;
+	z-index: 55;
+}
+.hvs tr td:nth-child(1) span{
+	position: absolute;
+	right: 0;
+	background-color: #a8c95f;
+	/*box-shadow: inset 0 0 0 #16987e, 0 2px 0 0 #16987e, 0 4px 2px #999;*/
+	padding-right: 10px;
+}
+.hvs tr td:nth-child(1) b{
+	color: #9bc04b;
+	right: 10px;
+	background: #fff;
+}
+.hvs tr td:nth-child(3) span{
+	position: absolute;
+	left: 0;
+	background-color: #58b4ef;
+	/*box-shadow: inset 0 0 0 #d44150, 0 2px 0 0 #d44150, 0 4px 2px #999;*/
+	padding-left: 10px;
+}
+.hvs tr td:nth-child(3) b{
+	left: 10px;
+	color: #48a9e7;
+	background: #fff;
+}
+.hvs tr td:nth-child(1){
+	width: 35%;
+	text-align: right;
+}
+.hvs tr td:nth-child(2){
+	text-align: center;
+	width: 30%;
+	font-weight: bold;
+	background-color: #f9f9f9;
+	/*border-left: #ccc 1px solid;
+	border-right: #ccc 1px solid;*/
+}
+.hvs tr:nth-child(1) td:nth-child(2){
+	border-left: #fff 1px solid;
+	border-right: #fff 1px solid;
+}
+.hvs tr:nth-child(1) td h1{
+	/*border-bottom: 1px solid #ccc;*/
+}
+.hvs tr td:nth-child(3){
+	width: 35%;
+}
+.hjy h2{
+	font-weight: bold;
+}
+.hjy h4{
+	line-height: 35px;
+	font-weight: normal;
+}
+.hjy .fa{
+	padding:0 5px;
+}
+/***********拥堵页面   开始**********/
+.yd_bgyell{	
+		background-color: #fed102;
+}
+.yd_bdyell{	
+		border: 14px solid #fed102;
+}
+
+
+.yd_bggreen{	
+		background-color: #008000;
+}
+.yd_bdgreen{	
+		border: 14px solid #008000;
+}
+
+
+.yd_bglightgreen{	
+		background-color: #99cc00;
+}
+.yd_bdlightgreen{	
+		border: 14px solid #99cc00;
+}
+
+
+.yd_bgorgan{	
+		background-color:#fe9900;
+}
+.yd_bdorgan{	
+		border: 14px solid #fe9900;
+}
+
+
+.yd_bgred{	
+		background-color:#fe0000;
+}
+.yd_bdred{	
+		border: 14px solid #fe0000;
+}
+.hcongestion td .zs_color{
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    position: relative;
+}
+.hcongestion td .zs_color span{
+	width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 20px;
+    position: absolute;
+}
+.hcongestion td .zs_color span:first-child{
+    opacity: 0.4;
+    left: -4px;
+    top: -4px;
+}
+.hcongestion td .zs_color span:nth-child(2){
+	left: 0;
+    top: 0;
+}
+.hcongestion thead th,.hcongestion tbody td{
+	text-align: center;
+}
+.congest_road .peak_selet{
+	float: left;
+	margin-right: 25px;
+	margin-top: -5px;
+}
+.congest_road .ibox-content{
+	padding: 0;
+	height: 425px;
+	overflow: hidden;
+	position: relative;
+}
+.congest_road .top10_box.cur{
+	opacity: 1;
+}
+.congest_road .top10_box{
+	overflow: hidden;
+    position: absolute;
+    /*top: 0px;*/
+    left: 0;
+    width: 100%;
+    opacity: 0;
+}
+.congest_road .peak_selet label.active{
+	background-color: #1ab394;
+    border-color: #1ab394;
+    color: #fff;
+}
+.pdb18{
+	padding-bottom: 18px;
+}
+.hcongetent tbody td:nth-child(1){
+	text-align: center;
+}
+.chart_legend .sk{
+	display: inline-block;
+	width: 28px;
+	height: 14px;
+	border-radius: 3px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.chart_legend ul,.chart_legend li{
+	list-style: none;
+}
+.chart_legend li{
+	margin-top: 8px;
+}
+/***********拥堵页面   结束**********/
+@media only screen and (max-width:1440px ) {
+	.htjbox .col-md-6{
+		margin-left: 0px ;
+		padding:0 ;
+	}
+	.echarts{
+		height: 240px;
+	}
+	.sgdiudie{
+		height: 350px;
+	}
+	.hsg{
+		font-weight: bold;
+		font-size: 30px;
+	}
+	.haccident thead th{
+		font-size: 12px;
+	}
+}

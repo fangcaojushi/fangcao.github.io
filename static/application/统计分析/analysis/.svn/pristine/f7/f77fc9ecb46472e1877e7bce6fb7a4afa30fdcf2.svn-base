@@ -1,0 +1,59 @@
+.fake-detail-pic .ibox-content{
+	overflow: hidden;	
+}
+.fake-detail-content .ibox-content{
+	overflow: hidden;
+}
+.fake-detail-list li{
+	vertical-align: top;
+	line-height: 50px;
+	font-size: 16px;
+	border-bottom: 1px solid #ddd;
+}
+.fake-detail-content .ibox{
+	animation: listshow 1s;
+}
+.fake-pic-box img{
+	width:100%;
+	height:100%;
+}
+.fake-detail-pic{
+	position:relative;
+}
+.fake-card{
+	width:150px;
+	height:150px;
+	border-radius: 200px;
+	background-color:#ed5565;
+	position:absolute;
+	left:50%;
+	top:30%;
+	z-index: 1000;
+	margin-left: -75px;
+	text-align: center;
+	line-height: 150px;
+	color:#fff;
+	font-size: 30px;
+	font-weight: bold;
+	transform:rotate(-20deg);
+	opacity:0.9;
+	animation:howshow 2s;
+}
+@keyframes howshow{
+	from{
+		opacity:0.1;
+	}
+	to{
+		opacity:0.9;
+	}
+}
+@keyframes listshow{
+	from{
+		margin-top:500px;
+		opacity: 0.3;
+	}
+	to{
+		margin-top:0;
+		opacity:1;
+	}
+}

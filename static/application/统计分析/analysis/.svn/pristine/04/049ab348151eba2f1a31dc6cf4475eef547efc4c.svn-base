@@ -1,0 +1,150 @@
+/* ========================================================================
+ * collision.css  
+ * 区域信息碰撞研判
+ * by wh 20170906
+ * ========================================================================*/
+/***********条件选择*************************************/
+.schlr{
+	padding: 0 5px;
+}
+.hid{
+	overflow: hidden;
+}
+.hcondition{
+	position: relative;
+}
+.hcondition .hr-line-dashed{
+	/*margin: 10px 0;*/
+}
+.hcondition .harea .beui{
+	font-size: 80px;
+	margin: 20px auto;
+}
+.hcondition .harea .col-md-3,
+.holresult .hschcar .col-md-3{
+	border-left:1px solid #e7eaec;
+}
+.hcondition .harea .col-md-3:nth-child(1),
+.holresult .hschcar .col-md-3:nth-child(1){
+	border-left:0px;
+}
+.hcondition .harea .hplace{
+	height: 120px;
+	padding: 8px;
+	width: 100%;
+	margin-top: 10px;
+	border: 1px solid #e7eaec;
+	background-color: #fff;
+}
+.hcondition .harea .hplace ol,
+.hcondition .harea .hplace ol li{
+	margin: 0;
+	padding: 0 5px 0 15px;
+}
+.hcondition .harea .hplace ol li{
+	padding: 3px 0;
+	font-size: 14px;
+}
+/***********查询结果*************************************/
+.high100{
+	height: 100%;
+}
+.holresult.pre-scrollable {
+    min-height: 260px;
+    max-height: 700px;
+    overflow-y: scroll;
+}
+.holresult{
+	
+}
+.holresult .hschcar{
+	margin: 0;
+	padding: 0;
+}
+.holresult .hschcar li{
+	display: block;
+	cursor: pointer;
+	border-bottom: 1px dotted #e7eaec ;
+	overflow: hidden;
+}
+.holresult .hschcar li p{
+	margin: 5px 0 ;
+}
+.holresult .hschcar li p span{
+	padding: 0 5px ;
+}
+.holresult .hschcar li:hover{
+	background-color: #F9F9F9;
+}
+.holresult .hschcar .col-md-3 h1{
+	margin-top: 10px;
+}
+.holresult .hschcar .beui{
+	font-size: 50px;
+	margin: 20px auto;
+	opacity: .8;
+}
+.hdetailbox{
+	position: fixed;
+	/*width: 90%;
+	height: 90%;
+	left: 5%;
+	top:5%;*/
+	width: 100%;
+	height: 100%;
+	left:0%;
+	top:0%;
+	z-index: -9999;
+	display: block;
+	border-radius: 5px;
+}
+.hdetaildi{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left:0%;
+	top:0%;
+	z-index: -999;
+	display: block;
+	background: #F3F3F4;
+}
+.hdetailbox .closeico {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgba(255,255,255,.8);
+}
+.hdetailbox .closeico:hover{
+	color: rgba(255,255,255,1);
+}
+@media only screen and (max-width:1710px ) {
+	.hcondition .form-horizontal .col-md-3 .col-md-4,
+	.hcondition .form-horizontal .col-md-3 .col-md-7{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+@media only screen and (max-width:1440px ) {
+	.hcondition .harea .beui{
+		font-size: 50px;
+		margin: 20px auto;
+	}
+	.holresult .hschcar .beui{
+		font-size: 40px;
+		margin: 20px auto;
+	}
+	.harea .col-md-8 button.dim{
+		padding: 6px;
+	}
+	.harea  .col-md-8  button i.schlr{
+		padding: 0 3px 0 0;
+	}
+	.hcondition .harea .hplace ol li{
+		padding: 2px 0;
+		font-size: 13px;
+	}
+}

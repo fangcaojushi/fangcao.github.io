@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<title>公交发车频率分析</title>
+		<!--bootstrap框架css-->
+		<link href="../../static/common/css/bootstrap.css" rel="stylesheet" />
+		<!--导航菜单和兼容手机端导航菜单-->
+		<link href="../../static/default_theme/bootsnav.css" rel="stylesheet" />
+		<link href="../../static/common/fonts/FontAwesome/font-awesome.css" rel="stylesheet" />
+		<!--public为公用的样式-->
+		<link href="../../static/default_theme/public.css" rel="stylesheet" />
+		<link href="../../static/modules/analysis/css/analysis.css" rel="stylesheet" />
+		
+	</head>
+
+	<body>
+		<!--导航菜单-->
+		<script src="../../static/common/js/menu.js"></script>
+		<!--正文区域-->
+		<div class="bodycon">
+			<!--该页的标题区域-->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 fen-title">
+						<h2 class="text-center gj_title">公交发车频率分析</h2>
+						<div class="lg-txt">
+							<div class="light">
+								<img class="faguang" src="../../static/common/images/shanliang.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid high_95">
+				<div class="high_10 screening">
+					<p class="pull-left selection_title">发车频率的分类条件:</p>
+					<div class="pull-left">
+						<!--筛选条件显示-->
+						<div class="selected_frequerncy" >
+								<span class="active">近30天</span>
+								<span>近1年</span>
+								<span>近5年</span>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid high_45">
+					<!--发车间隔的div-->
+					<div id="car_interval" class="chartmy"></div>
+				</div>
+				<div class="container-fluid high_45">
+					<!--发车班次的div-->
+					<div id="car_number" class="chartmy"></div>
+				</div>
+
+			</div>
+		</div>
+		<!--引入jquery包，进行异步加载-->
+		<script src="../../static/common/js/jquery-1.11.2.min.js"></script>
+		<!--bootstrap包，请勿修改-->
+		<script src="../../static/common/js/bootstrap.js"></script>
+		<!--导航菜单，请勿修改-->
+		<script src="../../static/common/js/bootsnav.js"></script>
+		<!--条件选择器-->
+		<script src="../../static/modules/analysis/js/analysis_search.js"></script>
+		<!--highcharts图表-->
+		<script src="../../static/common/js/highcharts.js"></script>
+		<!--highcharts图表3d图-->
+		<script src="../../static/common/js/highcharts-3d.js"></script>
+		<!--发车间隔的图表-->
+		<script src="../../static/modules/analysis/js/car_interval.js"></script>
+		<!--发车班次总量的图表-->
+		<script src="../../static/modules/analysis/js/car_number.js"></script>
+	</body>
+
+</html>

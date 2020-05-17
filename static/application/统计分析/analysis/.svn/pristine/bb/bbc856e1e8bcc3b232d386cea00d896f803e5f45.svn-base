@@ -1,0 +1,67 @@
+$(function() {
+	var hweekwf = echarts.init(document.getElementById("hweekwf")),
+	hweekwfopt = {
+	    title: {
+	        text: ''
+	    },
+	    color:['#58b4ef','#a8c95f'],
+	    tooltip : {
+	        trigger: 'axis',
+	        axisPointer: {
+	            type: 'cross',
+	            label: {
+	                backgroundColor: '#6a7985'
+	            }
+	        }
+	    },
+	    legend: {
+	        data:['本年','上年']
+	    },
+	    toolbox: {
+	        feature: {
+	            magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+	            restore : {show: true},
+	            saveAsImage : {show: true}
+	        }
+	    },
+	    grid: {
+	        left: '3%',
+	        right: '4%',
+	        bottom: '3%',
+	        containLabel: true
+	    },
+	    xAxis : [
+	        {
+	            type : 'category',
+	            boundaryGap : false,
+	            data : ['星期一','星期二','星期三','星期四','星期五','星期六','星期日']
+	        }
+	    ],
+	    yAxis : [
+	        {
+	            type : 'value'
+	        }
+	    ],
+	    series : [
+	        {
+	            name:'上年',
+	            type:'line',
+	            smooth:true,
+	            stack: '总量',
+	            areaStyle: {normal: {}},
+	            data:[1120, 1132, 1101, 1134, 490, 1230, 1810]
+	        },
+	        {
+	            name:'本年',
+	            type:'line',
+	            smooth:true,
+	            stack: '总量',
+	            areaStyle: {normal: {}},
+	            data:[1020, 982, 991, 1010, 404, 1090, 1130]
+	        }
+	       
+	    ]
+	};
+
+	hweekwf.setOption(hweekwfopt), $(window).resize(hweekwf.resize);
+})

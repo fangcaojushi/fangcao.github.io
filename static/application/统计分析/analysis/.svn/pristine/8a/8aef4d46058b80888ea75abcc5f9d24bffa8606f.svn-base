@@ -1,0 +1,364 @@
+/* ========================================================================
+ * detailed.css  
+ * 针对区域信息碰撞研判，频繁过车研判
+ * by wh 20170912
+ * ========================================================================*/
+@charset "utf-8";
+* {
+	/*margin: 0;
+	padding: 0;*/
+	list-style-type: none;
+}
+/*html,
+body {
+	width: 100%;
+	height: 100%;
+}*/
+
+/*a {
+	color: #ffffcc;
+	text-decoration: none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+a:hover,
+a.selected {
+	color: #ffcc00;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+	text-align: center;
+	color: #ccc;
+	text-shadow: #000 1px 1px 2px;
+	margin-bottom: 5px;
+}
+
+h1 {
+	font-size: 18px;
+}
+
+h2 {
+	font-size: 14px;
+}
+*/
+
+/* timeline */
+.high100{
+	height: 100%;
+}
+#timeline {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	background: #F3F3F4;
+}
+.hdetailtitle{
+	background: #1AB394;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	padding: 10px 0;
+}
+#dates {
+	position: relative;
+	height: 100%;
+	width:20%;
+	left: auto;
+	margin-left: auto;
+	bottom: auto;
+	z-index: auto;
+	padding: 30px 0;
+	box-sizing: border-box;
+	float: left;
+	margin-right:20px;
+	border-right: 2px #1AB394 solid;
+	background: #fff;
+	padding-right: 2px;
+	
+}
+/*.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}*/
+#dates li {
+	width: 100%;
+	position: relative;
+	height: 80px;
+	text-align: right;
+	padding-right: 30px;
+	cursor: pointer;
+	text-indent: 0;
+}
+#dates li:hover{
+	font-weight: bold;
+}
+#dates li.active a h3 {
+	color: #f8860b;
+}
+#dates li.active i {
+	background: #f8860b;
+	border:1px double #ea7c04;
+	box-shadow: 1px 1px 5px rgba(248,134,11,.8);
+}
+#dates li i{
+	width: 20px;
+	height: 20px;
+	background: #1AB394;
+	position: absolute;
+	right: -13px;
+	text-align: center;
+	line-height: 18px;
+	top:20px;
+	z-index: 9999;
+	display: block;
+	border-radius: 10px;
+	border:1px double #0B997C;
+	color: #fff;
+	box-shadow: 1px 1px 5px rgba(20,177,145,.8);
+	cursor: pointer;
+	font-style: normal;
+}
+#dates a {
+	padding-top: 10px;
+}
+#dates a h3{
+	color: #1AB394;
+	padding-top: 10px;
+}
+#dates a p{
+	color: #C0C0C0;
+}
+#dates .selected {
+}
+
+#issues {
+	width:75%;
+	height: 100%;
+	overflow: hidden;
+	float: left;
+}
+
+/*#issues li {
+	width: 100%;
+	height: 600px;
+}
+
+#issues li img {
+	margin: 60px 0 0 70px;
+}
+
+#issues li h1 {
+	color: #ffcc00;
+	font-size: 48px;
+	text-align: center;
+	text-shadow: #000 1px 1px 2px;
+}
+
+#issues li p {
+	font-size: 14px;
+	margin: 10px 20px;
+	font-weight: normal;
+	line-height: 22px;
+	text-shadow: #000 1px 1px 2px;
+}*/
+
+.cardetails {
+	width: 77%;
+	height: 100%;
+	float:left;
+}
+
+.mtlclear {
+	font-size: 16px;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.mtrclear {
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.txtPic p {
+	/*background: #4889fd;*/
+	border-radius: 2px;
+	/*color: #fff;*/
+	float: right;
+	padding: 4px 10px;
+	margin-left: 6px;
+	cursor: pointer;
+}
+
+.txtPic p i {
+	font-weight: bold;
+	font-size: 15px;
+	margin-left: 2px;
+	font-style: normal;
+}
+
+.cardetails .carwh {
+	width: 100%;
+	/*height: 100%;*/
+	height: auto;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.cardetails .closecar {
+	width: 35px;
+	height: 35px;
+	border-radius: 17px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	overflow: hidden;
+	cursor: pointer;
+	text-align: center;
+	line-height: 35px;
+}
+.cardetails .datamx tr td {
+	padding: 8px 5px;
+	font-size: 16px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.cardetails .datamx tr td:nth-child(2) {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.infor h5 {
+	margin: 0;
+	padding: 10px 0;
+}
+
+.cardetails .mxbtn {
+	position: relative;
+}
+
+.cardetails .mxbtn button {
+	margin-bottom: 10px;
+	width: 47%;
+}
+
+.cardetails .mxbtn .mtr {
+	margin-right: 5%;
+}
+
+}
+
+.mtlclear {
+	font-size: 16px;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.mtrclear {
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.txtPic p {
+	/*background: #4889fd;*/
+	border-radius: 2px;
+	/*color: #fff;*/
+	float: right;
+	padding: 4px 10px;
+	margin-left: 6px;
+	cursor: pointer;
+}
+
+.txtPic p i {
+	font-weight: bold;
+	font-size: 15px;
+	margin-left: 2px;
+	font-style: normal;
+}
+
+.cardetails .carwh {
+	/*width: 100%;
+	height: 100%;*/
+	/*height: auto;*/
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.cardetails .closecar {
+	width: 35px;
+	height: 35px;
+	border-radius: 17px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	overflow: hidden;
+	cursor: pointer;
+	text-align: center;
+	line-height: 35px;
+}
+
+.cardetails .datamx tr td {
+	padding: 8px 5px;
+	font-size: 16px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.cardetails .datamx tr td:nth-child(2) {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.infor h5 {
+	margin: 0;
+	padding: 10px 0;
+}
+
+.cardetails .mxbtn {
+	position: relative;
+}
+
+.cardetails .mxbtn button {
+	margin-bottom: 10px;
+	width: 47%;
+}
+
+.cardetails .mxbtn .mtr {
+	margin-right: 5%;
+}
+
+.hright{
+	right:0px;
+	left:auto
+}
+
+@media only screen and (max-width: 1440px) {
+	.cardetails .datamx tr td {
+		padding: 5px 2px;
+		font-size: 13px;
+		text-align: left;
+		vertical-align: top;
+	}
+	
+	.cardetails .datamx tr td:nth-child(2) {
+		font-size: 15px;
+		font-weight: bold;
+	}
+	
+}

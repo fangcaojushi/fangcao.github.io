@@ -1,0 +1,650 @@
+body{
+	background-image: none;
+	background-color: rgba(1,9,52,0.93);
+}
+/************************平均速度***********************/
+.search_analysis .search_analysis_box .speed_analysis{
+	width: 100%;
+	margin-left: -3%;
+}
+/************************统计分析的搜索样式*******************************************/
+.search_analysis_box{
+	color: #999;
+}
+.search_analysis_box{
+	height: 8%;
+	padding: 20px 0;
+}
+.search_analysis_box h3{
+	padding: 0;
+	margin: 0;
+	line-height: 38px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.search_analysis_box .btn-search  .search_text{
+	font-weight: normal;
+}
+.search_analysis_box .btn-search  .triangle{
+	position: absolute;
+	top:15px;
+	right:10px;
+}
+.search_analysis_box .btn-search {
+    color: #333;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0px 5px 20px rgba(3,120,251,.8);
+    border: rgba(3,120,251,.8) 1px solid;
+    /*border-radius: 0;*/
+}
+.search_analysis_box .btn-gray{
+	background-color: #666;
+	/*box-shadow: 0px 0px 10px #666;*/
+	/*border: #666 2px solid;*/
+}
+/************************年月日选项卡*******************************************/
+.search_analysis{
+	background: rgba(95, 135, 255, 0.07);
+	border-bottom: #354286 1px dotted;
+}
+.search_analysis_box .moreselect{
+	width: 130%;
+	display: none;
+	border-radius: 5px;
+	position: absolute;
+	top:35px;
+	z-index: 9999;
+	padding-top: 15px;
+	margin-left: -20%;
+	margin-top: -2px;
+	background-color:#F0F0F0;
+}
+.search_analysis_box .moreselect .nav-tabs {
+  border-bottom: none;
+  border-right: 1px solid #ddd;
+  padding: 10px 0;
+}
+ 
+.search_analysis_box .moreselect .nav-tabs > li {
+  float: right;
+  margin-right: -1px;
+  width: 100%;
+  text-align: center;  
+}
+.search_analysis_box .moreselect .nav-tabs > li > a {
+  font-size: 16px;
+  width: 100%;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 0 0 4px;
+}
+.search_analysis_box .moreselect .nav-tabs > li > a:hover {
+  border-color: #eee #ddd  #eee #eee ;
+}
+.search_analysis_box .moreselect  .nav-tabs > li.active > a,
+.search_analysis_box .moreselect .nav-tabs > li.active > a:hover,
+.search_analysis_box .moreselect .nav-tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-right-color: transparent;
+
+}
+.search_analysis_box .moreselect .nav-tabs.nav-justified {
+  width: 100%;
+  border-right: 0;
+}
+.search_analysis_box .moreselect .nav-tabs.nav-justified > li {
+  
+  float: none;
+}
+.search_analysis_box .moreselect .nav-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+.search_analysis_box .moreselect .tab-content{
+	color: #000;
+	background-color:#fff;
+	height: 150px;
+	padding-top: 10px;
+	border-radius: 0 5px 5px 0;
+}
+.search_analysis_box .moreselect .tab-content select{
+	height: 30px;
+	margin-bottom: 10px;
+}
+.search_analysis_box .moreselect .tab-content span {
+	box-sizing: content-box;
+	width: 33%;
+	text-align: center;
+	display: block;
+	text-align: center;
+	float: left;
+	margin: 5px 0;
+	border: none;
+	/*padding: 2px 0;
+	border: #666 1px solid;*/
+	background-color: transparent;
+	transition: all .2s;
+	/*background: rgba(255,255,255,.5);*/
+	color: #000;
+	cursor: pointer;
+	position: relative;
+}
+.search_analysis_box .moreselect .tab-content select {
+	/*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    border: solid 1px #999;
+    /*很关键：将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: url("/busdemo/static/common/images/arrow.png") no-repeat scroll 96% center transparent;
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    padding-right: 10%;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+.search_analysis_box .moreselect .tab-content select::-ms-expand { display: none; }
+
+.search_analysis_box .moreselect .tab-content option{
+	padding-left: 8%;
+}
+.search_analysis_box .moreselect .tab-content .quick {
+	border: #61AEFA 1px dotted;
+	background: #e2f4fc;
+	border-radius: 5px;
+	margin-top: 10px;
+	padding: 10px 0;
+}
+.search_analysis_box .moreselect .tab-content span:hover {
+	color: #ff0000;
+}
+.search_analysis_box .moreselect .tab-content span.active{
+	background-color: #ec7b02;
+	color: #fff;
+}
+.search_analysis_box .moreselect .btnstyle{
+	padding: 5px 20px;
+	margin: 5px 10px;
+}
+
+/************************线路，车辆，站牌 dropdownMenu_timew统一样式*******************************************/
+.search_analysis_box .dropdownMenu_timew {
+	width:150%;
+	margin-left: -25%;
+	margin-top: -2px;
+	background-color:#F0F0F0;
+}
+.search_analysis_box .dropdownMenu_timew > li{
+	border-bottom: #999 1px  dotted;
+	clear: both;
+	width: 100%;
+	overflow: hidden;
+	padding: 8px;
+}
+.search_analysis_box .dropdownMenu_timew > li:last-child
+,.search_analysis_box .dropdownMenu_site > li:last-child{
+	border-bottom: none;
+}
+.search_analysis_box .dropdownMenu_timew > li > div > span {
+	width: 50px;
+	display: block;
+	text-align: center;
+	float: left;
+	margin: 5px;
+	border: none;
+	/*padding: 2px 0;
+	border: #666 1px solid;*/
+	background-color: transparent;
+	/*background: rgba(255,255,255,.5);*/
+	transition: all .2s; 
+	color: #000;
+	cursor: pointer;
+}
+
+/************************公交站站牌*******************************************/
+.search_analysis_box .dropdownMenu_site {
+	width: 200%;
+	margin-left: -100%;
+	margin-top: -2px;
+	background-color:#F0F0F0;
+}
+.search_analysis_box .dropdownMenu_site > li{
+	border-bottom: #999 1px  dotted;
+	clear: both;
+	width: 100%;
+	overflow: hidden;
+	padding: 8px;
+	cursor: default;
+}
+.search_analysis_box .line_select{
+	padding: 0 10px;
+	color: #000000;
+	cursor: default;
+}
+.search_analysis_box .dropdownMenu_site > li > div{
+	margin-top: 10px;
+	border-top:#00D600 5px solid;
+}
+.search_analysis_box .dropdownMenu_site > li > div > span {
+	box-sizing: content-box;
+	width: 20px;
+	display: block;
+	text-align: center;
+	float: left;
+	margin: 5px;
+	border: none;
+	/*padding: 2px 0;
+	border: #666 1px solid;*/
+	background-color: transparent;
+	transition: all .5s;
+	/*background: rgba(255,255,255,.5);*/
+	color: #000;
+	cursor: pointer;
+	position: relative;
+}
+.search_analysis_box .dropdownMenu_site > li > div > span > i{
+	width: 10px;
+	height: 10px;
+	background: #00D600;
+	position: absolute;
+	z-index: 99;
+	top:0px;
+	left: 50%;
+	margin-left:-5px;
+	margin-top: -15px;
+	border-radius: 5px;
+	border:#00FF00 1px double;
+	box-shadow: 1px 2px 5px #000000;
+}
+.search_analysis_box .dropdownMenu_timew > li > .classification{
+	display: inline-block;
+	color: #666;
+	text-align: center;
+	line-height: 30px;
+}
+.search_analysis_box li  div span:hover{
+	color: #3582F8;
+	
+}
+/************************遮盖层*******************************************/
+
+.maskbox{
+	width:100%;
+	height: 100%;
+	background:rgba(0,0,0,.5);
+	position: absolute;
+	left:0;
+	top: 0;
+	z-index: 9998;
+	display: none;
+}
+/********************分担率分析的表格样式************************************/
+.sharing_table{
+	width:100%;
+	/*height: 96%;*/
+	overflow-y:auto;
+	font-size: 18px;
+	border: rgba(181,181,179,0.30) 1px dashed;
+	cursor: default;
+}
+.offset_table
+{
+	margin-left:4%;
+	width: 95%;
+}
+
+#tbl_box{
+	height: 100%;
+	overflow-y:auto;
+}
+.sharing_table tr{
+	animation: sharingdh .5s;
+	-moz-animation: sharingdh .5s;
+	-ms-animation: sharingdh .5s;
+	-webkit-animation: sharingdh .5s;
+	opacity: 0;
+	animation-fill-mode:forwards;
+}
+.sharing_table tr.top_position{
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.sharing_table tr:nth-child(1)
+{
+	animation-delay: 100ms;
+}
+.sharing_table tr:nth-child(2)
+{
+	animation-delay: 200ms;
+}
+.sharing_table tr:nth-child(3)
+{
+	animation-delay: 300ms;
+}
+.sharing_table tr:nth-child(4)
+{
+	animation-delay: 400ms;
+}
+.sharing_table tr:nth-child(5)
+{
+	animation-delay: 500ms;
+}
+.sharing_table tr:nth-child(6)
+{
+	animation-delay: 600ms;
+}
+.sharing_table tr:nth-child(7)
+{
+	animation-delay: 700ms;
+}
+.sharing_table tr:nth-child(8)
+{
+	animation-delay: 800ms;
+}
+.sharing_table tr:nth-child(9)
+{
+	animation-delay: 900ms;
+}
+.sharing_table tr:nth-child(10)
+{
+	animation-delay: 1000ms;
+}
+@keyframes sharingdh
+{
+	from {
+		opacity: 0;
+		margin-top: -50px;
+		margin-left:-50px
+	   }
+	to {
+		margin-top:0px;
+		margin-left:0px;
+		opacity: 1;
+	   }
+}
+@-moz-keyframes sharingdh
+{
+	from {
+		opacity: 0;
+		margin-top: -50px;
+		margin-left:-50px
+	   }
+	to {
+		margin-top:0px;
+		margin-left:0px;
+		opacity: 1;
+	   }
+}
+@-webkit-keyframes sharingdh
+{
+	from {
+		opacity: 0;
+		margin-top: -50px;
+		margin-left:-50px
+	   }
+	to {
+		margin-top:0px;
+		margin-left:0px;
+		opacity: 1;
+	   }
+}
+@-ms-keyframes sharingdh
+{
+	from {
+		opacity: 0;
+		margin-top: -50px;
+		margin-left:-50px
+	   }
+	to {
+		margin-top:0px;
+		margin-left:0px;
+		opacity: 1;
+	   }
+}
+.sharing_table th,.sharing_table td{
+	padding: 5px 10px;
+	border-right: rgba(181,181,179,0.2) 1px dashed;
+	border-bottom: rgba(181,181,179,0.2) 1px dashed;
+}
+.sharing_table.text-center th{
+	text-align: center;
+	color: #fff;
+}
+.sharing_table th{
+	font-size: 20px;
+}
+.sharing_table tr:nth-child(2n){
+	background-color: rgba(14,33,103,.2);
+}
+.sharing_table tr:hover{
+	background-color: rgba(14,33,103,.7);
+	color: #fff;
+}
+.sharing_table tr.headtr,
+.sharing_table tr.headtr:hover{
+	font-size: 20px;
+	background-color: rgba(14,33,103,.9);
+	text-align: center;
+	color: #fff;
+}
+/********************运算后的实时数据显示************************************/
+.real-time_data{
+	padding-top: 20px;
+}
+.real-time_data table td{
+	color: #fff; 
+}
+
+.real-time_data table td number{
+	color: rgb(191, 191, 191);
+	font-size: 66px;
+	font-weight: bold;
+}
+.real-time_data table td:hover number,.real-time_data table td:hover h5{
+		cursor: default;
+	    color: rgb(3, 159, 251);
+}
+.real-time_data table td .par{
+		text-align: center;
+}
+.real-time_data table td h5{
+	text-align: center;
+	color:#aabad5;
+	font-size: 18px;
+	font-weight:normal;
+}
+
+/********************筛选条件**********************/
+.selection_title{
+	font-size: 16px; 
+	margin-left: 1.5%;
+}
+.selection_my{
+	padding-left: 0;
+	padding-right: 0;
+}
+.screening{
+	/*border-bottom: 1px solid #404040;*/
+	padding-top: 20px;
+	background: rgba(95, 135, 255, 0.07);
+
+}
+.screening_condition{ 
+	float: left; 
+	margin-left: 15px;
+	display: none;
+}
+#selected_time,
+#selected_all{
+	display: block;
+}
+.screening_condition .delete{ 
+	cursor: pointer;
+	border: 1px solid #666;
+	color: #666;
+	padding: 0px 12px;
+	line-height: 27px;
+	margin-left: 20px;
+}
+.screening_condition .delete:hover{ 
+	border: 1px solid #fe9900;
+	color: #fe9900;
+}
+.screening_condition .screening_content{
+	cursor: pointer;
+	padding:  0px 6px 0px 12px;
+	border: 1px solid #fe9900;
+	overflow: hidden;
+}
+/*.screening_condition .screening_content .close_btn{
+	line-height: 27px;
+}*/
+.screening_condition .screening_content .screening_close span{
+	color:#fe9900 ;
+}
+.screening_condition .screening_content .screening_close{
+	border: none;
+	width: 11px;
+	height: 11px;
+	background-image: url(/busdemo/static/common/images/close.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: transparent;
+	/*vertical-align: middle;*/
+	margin-top: 8px;
+}
+.screening_condition .screening_content:hover{
+	border: 1px dotted #fe9900;
+	color: #fe9900;
+}
+.screening_condition .screening_content:hover span{
+	color: #fe9900;
+}
+.screening_condition .screening_content:hover .screening_close{
+	background-image: url(/busdemo/static/common/images/close_hover.png);
+}
+.screening_condition .screening_content .unit{
+	color:#666 ;
+}
+.screening_condition .screening_content .condition{
+	color:#fe9900 ;
+}
+.screening_condition .screening_content .condition, .screening_condition .screening_content .unit{
+	margin-right: 10px;
+	line-height: 27px;
+}
+/*********************分析的选中状态，右下角加对号*************************/
+.selected_frequerncy span  {
+	float: left; 
+	margin-left: 15px;
+	cursor: pointer;
+	padding: 5px 30px;
+	border: 1px dotted #666;
+	color: #666;
+	overflow: hidden;
+}
+.selected_frequerncy span:hover  {
+	border: 1px dotted #fe9900;
+	color: #fe9900;
+}
+
+.selected_frequerncy span.active{
+	border: 1px solid #fe9900;
+	color: #fe9900;
+	background: right bottom url(/busdemo/static/common/images/gou_img.png) no-repeat;
+	/*display: none;*/
+}
+
+.screening .query .btn{
+	padding: 5px 20px;
+	color: #fff;
+	background-color:#7ac42b;
+	margin-right: 32px;
+	
+}
+.screening .query .btn:hover{
+	background-color:#ff7e3c;
+}
+/*********************下侧图表显示*************************/
+.chart_my{
+	position: relative;
+	border-top: 1px dotted rgba(29, 74, 158, 0.53);
+	padding-top: 80px;
+}
+.detail img:hover {
+	opacity: 0.8;
+}
+.detail{
+	position: absolute;
+	z-index: 999;
+	top: -5px;
+	right: 15px;
+}
+.dropdown-menu .display_site{
+	position: relative;
+}
+.dropdown-menu .display_site .overall{
+	width: 99%;
+}
+.dropdown-menu .display_site .overall .direction_my{
+	position: absolute;
+	width: 21px;
+	height: 14px;
+    right: -7px;
+    top: -20px;
+}
+.dropdown-menu .display_site .overall .direction_my img{
+	vertical-align: bottom;
+	width: 100%;
+	height: 100%;
+}
+@media only screen and (max-width: 1366px) {
+	.real-time_data table td number{
+		font-size: 30px;
+	}
+	.real-time_data table td h5{
+		font-size: 14px;
+	}
+	.screening{
+		padding-top: 6px;
+	}
+	.real-time_data {
+   		padding-top: 25px;
+	}
+	.search_analysis_box h3{
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.search_analysis_box .btn-search  .triangle{
+		top:12px;
+	}
+	.search_analysis_box .btn-search{
+		padding: 4px 12px;
+	}
+	.search_analysis_box .fen{
+		height: 6px;
+	}
+	.sharing_table{
+		font-size: 12px;
+		margin-top: 0px;
+	}
+	.sharing_table th,.sharing_table td{
+	padding: 4px 5px;
+	}
+	.sharing_table th{
+		font-size: 15px;
+	}
+	.sharing_table tr.headtr,
+	.sharing_table tr.headtr:hover{
+		font-size: 15px;
+	}
+}

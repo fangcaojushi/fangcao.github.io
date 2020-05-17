@@ -1,0 +1,1061 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+.trees {
+	width: 99%;
+	height: 90%;
+	padding: 5% 0 5% 5%;
+	overflow: auto;
+}
+
+.treehight {
+	top: 550px;
+	height: 300px;
+	padding-top: 20px;
+}
+
+.gjzs_box {
+	margin: 10px;
+	position: relative;
+}
+
+.gjzs_box * {
+	margin: 0;
+	padding: 0;
+}
+
+.gjzs_box .gjzs_con {
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	height: 170px;
+	background: rgba(1, 9, 52, 1);
+}
+
+.gjzs_menu {
+	width: 100%;
+	height: 30px;
+	box-sizing: border-box;
+	border-bottom: 1px dotted #00C1DE;
+	clear: both;
+}
+
+.gjzs_menu a {
+	color: #297AB7;
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	width: auto;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.gjzs_menu a:after {
+	border-right: #aaa solid 1px;
+}
+
+.gjzs_menu a:hover,
+.gjzs_menu a.cur {
+	background-color: rgba(3, 31, 135, 0.8);
+	color: #fff;
+}
+
+.gjzs_menu a span {
+	list-style: none;
+	background: rgba(255, 0, 0, 0.80);
+	color: #fff;
+	border-radius: 10px;
+	line-height: 15px;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.gjzs_menu a.cur {
+	border-bottom: 2px solid rgb(0, 196, 255);
+}
+
+.gjzs_box .gjzs_con.cur {
+	opacity: 1;
+}
+
+.gjzs_box .gjzs_con .progress {
+	height: 10px;
+	background-color: rgba(167, 198, 245, 0.30);
+}
+
+.gjzs_box .zhibiao {
+	width: 100%;
+	text-align: center;
+}
+
+.gjzs_box .zhibiao td {
+	padding: 5px 0;
+}
+
+
+/*全局指标*/
+
+.qjzb {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*全局指标*/
+
+.qjzb h5 {
+	font-size: 12px;
+}
+
+.qjzb h1 {
+	font-size: 30px;
+	line-height: 55px;
+	height: 55px;
+}
+
+.qjzb td {
+	width: 50%;
+	height: 50%;
+	text-align: center;
+	cursor: default;
+}
+
+.qjzb td:hover {
+	background: #eee;
+	color: #009900;
+}
+
+
+/**********************************与道路公用的*************************************************************/
+
+.rightbg1_c {
+	padding: 0px;
+	padding-left: 1px;
+	width: 100%;
+	height: 140px;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+.rightbg1_c img {
+	position: absolute;
+	z-index: 9;
+	top: 0;
+	left: 0;
+	min-width: 200px;
+	width: 100%;
+	height: auto;
+}
+
+.rightbg1_c_date {
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	text-align: center;
+	font-family: "Arial", "微软雅黑", "宋体";
+	font-size: 15px;
+	color: #fff;
+	z-index: 99;
+}
+
+.rightbg_jtzs {
+	width: 100%;
+	z-index: 99;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: auto;
+}
+
+.rightbg_jtzs h1 {
+	padding-bottom: 50px;
+	text-align: center;
+	line-height: 30px;
+	font-family: "Arial", "微软雅黑", "宋体";
+	font-size: 40px;
+	color: #fff;
+}
+
+.rightbg_jtzs h2 {
+	text-align: center;
+	line-height: 20px;
+	font-family: "微软雅黑", "Arial", "宋体";
+	font-size: 14px;
+	color: #fff;
+}
+
+.win_position4 .list_lh {
+	height: 220px;
+	overflow: hidden;
+	width: 80%;
+	margin: 20px auto;
+}
+
+.win_position4 .list_lh a {
+	color: #99FF33;
+}
+
+
+/*******************************雷达************************************************************/
+
+.point-area {
+	text-align: center;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	-webkit-transition: opacity 0.5s ease-out;
+	-moz-transition: opacity 0.5s ease-out;
+	-o-transition: opacity 0.5s ease-out;
+	transition: opacity 0.5s ease-out;
+	z-index: 9999;
+	cursor: pointer;
+}
+
+.point-area * {
+	display: block;
+}
+
+.point-area .point {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 10px;
+	height: 10px;
+	margin: auto;
+	-webkit-border-radius: 50%;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 50%;
+	-moz-background-clip: padding;
+	border-radius: 50%;
+	background-clip: padding-box;
+	background: transparent;
+}
+
+.point-area .point-shadow:after {
+	-webkit-box-shadow: inset 0 0 5em rgba(0, 205, 236, 0.16);
+	-moz-box-shadow: inset 0 0 5em rgba(0, 205, 236, 0.16);
+	box-shadow: inset 0 0 5em rgba(0, 205, 236, 0.16);
+}
+
+.point-area .point-white {
+	background-color: #fff;
+	border: 1px solid #00C1DE;
+}
+
+.point-area .point-dot {
+	background-color: #6AD7E9;
+	border: 1px solid rgba(0, 205, 236, 0.37);
+}
+
+.point-area .point-10 {
+	width: 100%;
+	height: 100%;
+}
+
+.point-area .point-10:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 50%;
+	border: 2px solid #00cdec;
+	opacity: 0;
+	-webkit-animation: ripple 4500ms ease-out 225ms infinite;
+	-moz-animation: ripple 4500ms ease-out 225ms infinite;
+	-o-animation: ripple 4500ms ease-out 225ms infinite;
+	animation: ripple 4500ms ease-out 225ms infinite;
+}
+
+.point-area .point-20 {
+	width: 100%;
+	height: 100%;
+}
+
+.point-area .point-20:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 50%;
+	border: 2px solid #00cdec;
+	opacity: 0;
+	-webkit-animation: ripple 4500ms ease-out 450ms infinite;
+	-moz-animation: ripple 4500ms ease-out 450ms infinite;
+	-o-animation: ripple 4500ms ease-out 450ms infinite;
+	animation: ripple 4500ms ease-out 450ms infinite;
+}
+
+.point-area .point-30 {
+	width: 100%;
+	height: 100%;
+}
+
+.point-area .point-30:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 50%;
+	border: 2px solid #00cdec;
+	opacity: 0;
+	-webkit-animation: ripple 4500ms ease-out 675ms infinite;
+	-moz-animation: ripple 4500ms ease-out 675ms infinite;
+	-o-animation: ripple 4500ms ease-out 675ms infinite;
+	animation: ripple 4500ms ease-out 675ms infinite;
+}
+
+.point-area .point-40 {
+	width: 100%;
+	height: 100%;
+}
+
+.point-area .point-40:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 50%;
+	border: 2px solid #00cdec;
+	opacity: 0;
+	-webkit-animation: ripple 4500ms ease-out 900ms infinite;
+	-moz-animation: ripple 4500ms ease-out 900ms infinite;
+	-o-animation: ripple 4500ms ease-out 900ms infinite;
+	animation: ripple 4500ms ease-out 900ms infinite;
+}
+
+.point-area .point-50 {
+	width: 100%;
+	height: 100%;
+}
+
+.point-area .point-50:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 50%;
+	border: 2px solid #00cdec;
+	opacity: 0;
+	-webkit-animation: ripple 4500ms ease-out 1125ms infinite;
+	-moz-animation: ripple 4500ms ease-out 1125ms infinite;
+	-o-animation: ripple 4500ms ease-out 1125ms infinite;
+	animation: ripple 4500ms ease-out 1125ms infinite;
+}
+
+.point-area .point-60 {
+	width: 100%;
+	height: 100%;
+}
+
+.point-area .point-60:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 50%;
+	border: 2px solid #00cdec;
+	opacity: 0;
+	-webkit-animation: ripple 4500ms ease-out 1350ms infinite;
+	-moz-animation: ripple 4500ms ease-out 1350ms infinite;
+	-o-animation: ripple 4500ms ease-out 1350ms infinite;
+	animation: ripple 4500ms ease-out 1350ms infinite;
+}
+
+.point-area .point-70 {
+	width: 100%;
+	height: 100%;
+}
+
+.point-area .point-70:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 50%;
+	border: 2px solid #00cdec;
+	opacity: 0;
+	-webkit-animation: ripple 4500ms ease-out 1575ms infinite;
+	-moz-animation: ripple 4500ms ease-out 1575ms infinite;
+	-o-animation: ripple 4500ms ease-out 1575ms infinite;
+	animation: ripple 4500ms ease-out 1575ms infinite;
+}
+
+.point-area .point-80 {
+	width: 100%;
+	height: 100%;
+}
+
+.point-area .point-80:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 50%;
+	border: 2px solid #00cdec;
+	opacity: 0;
+	-webkit-animation: ripple 4500ms ease-out 1800ms infinite;
+	-moz-animation: ripple 4500ms ease-out 1800ms infinite;
+	-o-animation: ripple 4500ms ease-out 1800ms infinite;
+	animation: ripple 4500ms ease-out 1800ms infinite;
+}
+
+.point-area .point-90 {
+	width: 100%;
+	height: 100%;
+}
+
+.point-area .point-90:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 50%;
+	border: 2px solid #00cdec;
+	opacity: 0;
+	-webkit-animation: ripple 4500ms ease-out 2025ms infinite;
+	-moz-animation: ripple 4500ms ease-out 2025ms infinite;
+	-o-animation: ripple 4500ms ease-out 2025ms infinite;
+	animation: ripple 4500ms ease-out 2025ms infinite;
+}
+
+.point-area .point-100 {
+	width: 100%;
+	height: 100%;
+}
+
+.point-area .point-100:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 50%;
+	border: 2px solid #00cdec;
+	opacity: 0;
+	-webkit-animation: ripple 4500ms ease-out 2250ms infinite;
+	-moz-animation: ripple 4500ms ease-out 2250ms infinite;
+	-o-animation: ripple 4500ms ease-out 2250ms infinite;
+	animation: ripple 4500ms ease-out 2250ms infinite;
+}
+
+@-webkit-keyframes ripple {
+	0% {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes ripple {
+	0% {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	50% {
+		-webkit-transform: scale(0.5);
+		transform: scale(0.5);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+
+@-o-keyframes ripple {
+	0% {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	50% {
+		-webkit-transform: scale(0.5);
+		transform: scale(0.5);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+
+@keyframes ripple {
+	0% {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	50% {
+		-webkit-transform: scale(0.5);
+		transform: scale(0.5);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+
+.shoushuo_window .win_title {
+	width: 30px;
+}
+
+
+/*******************************总体公交zongtigongjiao************************************************************/
+
+#km_clock {
+	text-align: center;
+	position: relative;
+	background: url(/busdemo/static/common/images/shudu1.png) top center no-repeat;
+	background-size: auto 100%;
+}
+
+#km_clock .clocktick {
+	/*display: none;*/
+	height: 100%;
+	width: auto;
+	/*z-index:48;*/
+	transform: rotate(40deg);
+}
+
+#km_clock .clockfen {
+	height: 25%;
+}
+
+#km_clock .clock_text {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#km_clock span {
+	cursor: default;
+}
+
+.info-text1 {
+	display: block;
+	color: #3191d7;
+}
+
+.info-text2 {
+	display: block;
+	color: #00ff00;
+	/*font-size: 40px;
+	animation: flash 1.5s infinite; */
+}
+
+.info-text3 {
+	display: block;
+	color: #52a5e7;
+	font-style: italic;
+}
+
+.info-text4 {
+	display: block;
+	color: #2b70d5;
+	font-style: italic
+}
+
+.basic_gjdata {
+	width: 90%;
+	height: 80%;
+	padding: 5% 0;
+	margin: 0 auto;
+}
+
+.basic_gjdata .basic_title number {
+	color: #00FF00;
+	font-weight: bold;
+}
+
+.basic_gjdata .progress {
+	height: 10%;
+	max-height: 10px;
+	min-height: 5px;
+	background-color: #0e192a;
+}
+
+
+/*公交车弹窗样式*/
+
+.content {
+	padding: 9px;
+}
+
+.popover.right {
+	background-color: rgba(1, 9, 52, 0.90);
+	z-index: 9999;
+}
+
+.popover-title {
+	text-align: center;
+	color: #12e624;
+	font-family: "微软雅黑";
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 2px;
+	background-color: #031d30;
+	opacity: .95;
+	border-bottom: 1px solid #031421;
+	border-radius: 2px 2px 0 0;
+}
+
+.car_title {
+	/*padding: 8px 0;
+	width: 200px;*/
+}
+
+.car_title .car_name {
+	font-size: 16px;
+	letter-spacing: 2px;
+	cursor: default;
+	font-weight: bold;
+	margin: 2px 0;
+	color: #333;
+}
+
+.car_title .car_name i,
+.car_title .car_name b {
+	font-size: 10px;
+	color: #666;
+	display: block;
+	margin-top: -5px;
+	cursor: default;
+}
+.car_title .car_name span{
+	padding-left: 8px ;
+	font-size: 14px;
+	color: #666;
+}
+#xiangqing_car,
+#xiangqing_car:hover b {
+	cursor: pointer;
+	letter-spacing: 0px;
+	color: #d9534f;
+}
+
+#xiangqing_car:hover,
+#xiangqing_car:hover b {
+	color: #12e624;
+}
+
+
+/*.car_title .btn{ padding:5px 18px;}*/
+
+.close {
+	opacity: 0.3;
+}
+
+.close:hover {
+	opacity: 0.8;
+}
+
+.popover.right> .arrow:after {
+	border-right-color: #031d30;
+}
+
+
+/*公交车详情页*/
+
+#xiangqing_car_modal {
+	position: absolute;
+	background-color: rgba(1, 9, 52, 0.90);
+	display: none;
+	top: 155px;
+	left: 0;
+	width: 100%;
+	padding: 10%;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: default;
+}
+
+#xiangqing_car_modal .car_con .pull-right {
+	color: #12e624;
+}
+
+#car_show {
+	animation: carneirong 1s infinite;
+}
+
+@keyframes carneirong {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+
+/*视频插件页面*/
+
+#car_shipin_modal {
+	width: 500px;
+	height: 400px;
+	position: absolute;
+	z-index: 9999;
+	left: 260px;
+	top: 0px;
+	background-color: rgba(1, 9, 52, 0.90);
+	padding: 10px;
+	border-radius: 8px;
+	display: none;
+}
+
+#car_shipin_modal .car_shipin_title {
+	height: 30px;
+}
+
+
+/*报警异常*/
+
+ul.yichang {
+	padding: 0 !important;
+	width: 100% !important;
+	overflow: inherit;
+}
+
+ul.yichang> li {
+	position: relative;
+	padding: 10px 2px 2px 0px !important;
+}
+
+ul.yichang> li> h5 {
+	margin: 0;
+}
+
+ul.yichang> li> h5> a {
+	color: #99FF33;
+}
+
+ul.yichang> li> h5> .btn {
+	border-radius: 2px;
+	padding: 1px 6px;
+	font-size: 12px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+ul.yichang> li> .xinxi2> a> span {
+	color: red;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+ul.yichangt> li> p {
+	margin-bottom: 0;
+}
+
+ul.yichang .xinxi {
+	font-size: 10px;
+	color: #656565;
+}
+
+ul.yichang .xinxi2 a {
+	font-size: 12px;
+	color: #aabad5;
+}
+/****************图表显示问题调整     正常状态*************/
+#warn #highcharts-0 svg tspan{
+	font-size: 12px;
+	font-weight: normal;
+}
+#volume #highcharts-10 svg tspan{
+	font-size: 12px;
+	font-weight: normal;
+}
+#operate #highcharts-12 svg tspan{
+	font-size: 12px;
+	font-weight: normal;
+}
+#energy #highcharts-16 svg tspan{
+	font-size: 14px;
+}
+#road #highcharts-18 svg tspan{
+	font-size: 14px;
+}
+#service #highcharts-2 svg tspan{
+	font-weight: bold;
+	font-size: 14px;
+}
+@media only screen and (max-width:1440px) {
+	/****************图表显示问题调整     小屏状态*************/
+	#warn #highcharts-0 svg tspan{
+	font-size: 10px;
+	font-weight: normal;
+	}
+	#volume #highcharts-10 svg tspan{
+	font-size: 10px;
+	font-weight: normal;
+	}
+	#operate #highcharts-12 svg tspan{
+	font-size: 10px;
+	font-weight: normal;
+	}
+	#energy #highcharts-16 svg tspan{
+		font-size: 12px;
+    	font-weight: bold;
+	}
+	#road #highcharts-18 svg tspan{
+		font-size: 12px;
+    	font-weight: bold;
+	}
+	#service #highcharts-2 svg tspan{
+		font-size: 12px;
+    	font-weight: bold;
+	}
+	#km_clock .info-text2 {
+		font-size: 18px;
+		display: block;
+		color: #00ff00;
+		position: absolute;
+		top: 50%;
+		margin-top: 0px;
+		text-align: center;
+		width: 100%;
+	}
+	.high9_wai h5 {
+		margin: 10px 0;
+		font-size: 14px;
+	}
+	.progress {
+		margin-bottom: 5px;
+	}
+	.basic_title span {
+		font-size: 12px;
+	}
+	.basic_gjdata {
+		width: 90%;
+		height: 86%;
+		padding: 1.5% 0;
+	}
+	.treehight {
+		top: 320px;
+		height: 250px;
+		/*-top:20px;*/
+	}
+	#state_full {
+		min-height: 240px;
+	}
+	#state_full .highcharts-subtitle {
+		display: none;
+	}
+	#warn {
+		min-height: 200px;
+	}
+}
+
+
+/*搜索框样式*/
+
+.treehight .search_left .text {
+	vertical-align: middle;
+	width: 97%;
+	height: 28px;
+	color: #334a6f;
+	border: 1px solid rgba(12, 49, 128, 0.6);
+	display: block;
+	padding: 0 30px;
+	background-color: transparent;
+	font-size: 12px;
+	outline: none;
+	border-radius: 0;
+}
+
+.treehight .search_left .text:focus {
+	box-shadow: 0 0 8px #187adf;
+	background-color: transparent;
+	color: #d3d3d3;
+	border: none;
+}
+
+
+/****************************************实时监控的数据**********************************************************************/
+
+.bordertop {
+	border-top: 1px dotted #00C1DE;
+}
+
+.realtime_data {
+	margin-top: 5px;
+}
+
+.realtime_data li {
+	padding-left: 8px;
+	width: 48%;
+	overflow: hidden;
+	height: 26px;
+	margin-top: 6px;
+	display: inline-block;
+}
+
+.realtime_data li i {
+	width: 30px;
+	height: 24px;
+	float: left;
+	background-image: url(/busdemo/static/common/images/realtime_data.png);
+	background-repeat: no-repeat;
+}
+
+.realtime_data li i.rlt1 {
+	background-position: 0 0;
+}
+
+.realtime_data li i.rlt2 {
+	background-position: -33px 0;
+}
+
+.realtime_data li i.rlt3 {
+	background-position: 0px -26px;
+}
+
+.realtime_data li i.rlt4 {
+	background-position: -33px -26px;
+}
+
+.realtime_data li i.rlt5 {
+	background-position: 0px -53px;
+}
+
+.realtime_data li i.rlt6 {
+	background-position: -33px -53px;
+}
+
+.realtime_data li span {
+	width: 100px;
+	color: #06a0ed;
+	float: right;
+	font-size: 12px;
+	/*line-height: 30px;*/
+	cursor: default;
+}
+
+.realtime_data li span b {
+	width: 45px;
+	/*color: #aabad5;*/
+	font-size: 18px;
+	text-shadow: 1px 1px 2px #286ec2;
+	text-align: right;
+	display: inline-block;
+	font-weight: normal;
+}
+
+.ylpm {
+	padding-top: 10px;
+}
+
+.ylpm li {
+	height: 18px;
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+}
+
+.ylpm li h6,
+.ylpm li div,
+.ylpm li span,
+.ylpm li b,
+.ylpm li h6 number,
+.ylpm li p {
+	float: left;
+	position: relative;
+	cursor: default;
+}
+
+.ylpm li h6 {
+	width: 10%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.ylpm li h6 number {
+	margin: 2px auto;
+	height: 15px;
+	border: #00C4FF 1px solid;
+	border-radius: 2px;
+	width: 18px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.ylpm li div {
+	width: 50%;
+	height: 12px;
+}
+
+.ylpm li div p {
+	display: block;
+	height: 80%;
+	margin-top: 5px;
+}
+
+.ylpm li span {
+	width: 20%;
+	font-size: 13px;
+	color: #06a0ed;
+}
+
+.ylpm li b {
+	width: 20%;
+	text-align: right;
+	font-size: 13px;
+}
+/*公交车弹窗样式*/
+.bus {
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	visibility: visible;
+	opacity: 1;
+	cursor: pointer;
+}

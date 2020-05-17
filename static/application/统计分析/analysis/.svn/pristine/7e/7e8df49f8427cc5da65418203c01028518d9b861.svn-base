@@ -1,0 +1,220 @@
+$(function() {
+	var hweekwf = echarts.init(document.getElementById("hweekwf")),
+	hweekwfopt = {
+	    backgroundColor: "#fff",
+	    color: ['#a6cb5f', '#ED5565','#5facdb', '#F7B516', '#24CBE5', '#6AF9C4'],
+	    "title": {
+	       text:""
+	    },
+	    grid: {
+			x: 40,
+			x2: 40,
+			y2: 24
+		},
+	    "tooltip": {
+	        "trigger": "axis",
+	        "axisPointer": {
+	            "type": "shadow",
+	            textStyle: {
+	                color: "#fff"
+	            }
+	
+	        },
+	    },
+	    "legend": {
+	        "data": ['闯红灯', '违法停车','超速', '逆行','查处危险品','其它']
+	    },
+	     
+	
+	    "calculable": false,
+	    "xAxis": [{
+	        "type": "category",
+	       
+	        "data":['周一','周二','周三','周四','周五','周六','周日'],
+	    }],
+	    "yAxis": [{
+	        "type": "value",
+	        "splitLine": {
+	            "show": false
+	        },
+	        "axisLine": {
+	            lineStyle: {
+	                color: '#90979c'
+	            }
+	        },
+	        "axisTick": {
+	            "show": false
+	        },
+	        "axisLabel": {
+	            "interval": 0,
+	
+	        },
+	        "splitArea": {
+	            "show": false
+	        },
+	
+	    }],
+	    
+	    "series": [
+	        {
+	            "name": "闯红灯",
+	            "type": "bar",
+//	            "stack": "总量",
+	            "barMaxWidth": 40,
+	            "barGap": "10%",
+	            label: {
+	                normal: {
+	                    show: true,
+	                    position:"top"
+	                }
+	            },
+	            "data": [
+	                1709,
+	                2217,
+	                1455,
+	                1610,
+	                1219,
+	                1433,
+	                1544
+	                
+	            ],
+	        },
+	
+	        {
+	            "name": "违法停车",
+	            "type": "bar",
+//	            "stack": "总量",
+ 				"barMaxWidth": 40,
+ 				label: {
+	                normal: {
+	                    show: true,
+	                    position:"top"
+	                }
+	            },
+	            "data": [
+	                827,
+	                776,
+	                507,
+	                420,
+	                800,
+	                482,
+	                504
+	            ]
+	        },
+	        {
+	            "name": "超速",
+	            "type": "bar",
+//	            "stack": "总量",
+ 				"barMaxWidth": 40,
+ 				label: {
+	                normal: {
+	                    show: true,
+	                    position:"top"
+	                }
+	            },
+	            "data": [
+	                527,
+	                776,
+	                507,
+	                420,
+	                880,
+	                282,
+	                284
+	            ]
+	        },
+	        {
+	            "name": "逆行",
+	            "type": "bar",
+//	            "stack": "总量",
+ 				"barMaxWidth": 40,
+ 				label: {
+	                normal: {
+	                    show: true,
+	                    position:"top"
+	                }
+	            },
+	            "data": [
+	                327,
+	                476,
+	                507,
+	                120,
+	                800,
+	                482,
+	                204
+	            ]
+	        },
+	        {
+	            "name": "查处危险品",
+	            "type": "bar",
+//	            "stack": "总量",
+ 				"barMaxWidth": 40,
+ 				label: {
+	                normal: {
+	                    show: true,
+	                    position:"top"
+	                }
+	            },
+	            "data": [
+	                327,
+	                176,
+	                507,
+	                120,
+	                200,
+	                482,
+	                204
+	            ]
+	        },
+	        {
+	            "name": "其它",
+	            "type": "bar",
+//	            "stack": "总量",
+ 				"barMaxWidth": 40,
+ 				label: {
+	                normal: {
+	                    show: true,
+	                    position:"top"
+	                }
+	            },
+	            "data": [
+	                370,
+	                76,
+	                57,
+	                100,
+	                20,
+	                42,
+	                24
+	            ]
+	        }, {
+	            "name": "违法总数",
+	            "type": "line",
+	            "stack": "总量",
+	            symbolSize:10,
+	            symbol:'circle',
+	            "itemStyle": {
+	                "normal": {
+	                    "color": "#ccc",
+	                    "barBorderRadius": 0,
+	                    "label": {
+	                        "show": true,
+	                        "position": "top",
+	                        formatter: function(p) {
+	                            return p.value > 0 ? (p.value) : '';
+	                        }
+	                    }
+	                }
+	            },
+	            "data": [
+	                2036,
+	                3869,
+	                2962,
+	                1530,
+	                2519,
+	                1915,
+	                1748
+	            ]
+	        },
+	    ]
+	};
+
+	hweekwf.setOption(hweekwfopt), $(window).resize(hweekwf.resize);
+})

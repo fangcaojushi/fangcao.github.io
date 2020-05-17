@@ -1,0 +1,26 @@
+{
+	"code":200,
+	"msg":"成功",
+	"data":[
+		{
+			"url":"static/application/演示大交通/traffic-monitoring.html",
+			"src":"static/application/大交通/slider1.jpg",
+			"title":"大交通"
+		},
+		{
+			"url":"static/application/停车/file.html",
+			"src":"static/application/停车/slide.png",
+			"title":"智慧停车"
+		},
+		{
+			"url":"static/application/统计分析/analysis/webpage/modules/index.html",
+			"src":"static/application/统计分析/slide.png",
+			"title":"交通数据统计分析"
+		},
+		{
+			"url":"static/application/公交/busdemo/webpage/modules/login.html",
+			"src":"static/application/公交/slide.png",
+			"title":"万盛公交"
+		}
+	]
+}

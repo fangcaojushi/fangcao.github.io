@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<title>公交运营监控</title>
+<!--百度地图-->
+<link href="http://api.map.baidu.com/library/TrafficControl/1.4/src/TrafficControl_min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Kc50NR2vnseUm3o4DFmoYij2ELNudI8q"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/TrafficControl/1.4/src/TrafficControl_min.js"></script>
+<!--bootstrap框架css-->
+<link href="../../static/common/css/bootstrap.css" rel="stylesheet" />
+<!--导航菜单和兼容手机端导航菜单-->
+<link href="../../static/default_theme/bootsnav.css" rel="stylesheet"/>
+<link href="../../static/common/fonts/FontAwesome/font-awesome.css" rel="stylesheet"/>
+<!--public为公用的样式-->
+<link href="../../static/default_theme/public.css" rel="stylesheet"/>
+<link href="../../static/default_theme/bus.css" rel="stylesheet"/>
+<link href="../../static/default_theme/monitor.css" rel="stylesheet"/>
+<!--引入jquery包，进行异步加载-->
+<script  src="../../static/common/js/jquery-1.11.2.min.js"></script>
+<!--目录树及自定义滚动条css-->
+<link href="../../static/common/css/tree.css" rel="stylesheet" />
+<link href="../../static/common/css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+</head>
+<body>
+<!--导航菜单-->
+<script src="../../static/common/js/menu.js"></script>
+<!--正文区域-->
+<!--该页的标题区域，显示与否待定-->
+<div class="title_sub">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 fen-title">
+				<h2 class="text-center gj_title">公交运营监控</h2>
+				<div class="lg-txt">
+	            	<p class="light">
+	            		<img class="faguang" src="../../static/common/images/shanliang.png"/>
+	            	</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--地图的引用-->
+<div id="allmap"></div>
+<!--公交车图标序列-->
+<img src="../../static/common/images/online.png" class="bus" style="top: 235px; left: 1415px; " />
+<img src="../../static/common/images/online.png" class="bus" style="top: 482px; left: 423px; " />
+<img src="../../static/common/images/alarm.png" class="bus" style="top: 653px; left: 621px; " />
+<img src="../../static/common/images/online.png" class="bus" style="top: 594px; left: 347px; " />
+<img src="../../static/common/images/operate.png" class="bus" style="top: 264px; left: 343px; " />
+<img src="../../static/common/images/online.png" class="bus" style="top: 763px; left: 415px; " />
+<img src="../../static/common/images/operate.png" class="bus" style="top: 321px; left: 1150px; " />
+<img src="../../static/common/images/online.png" class="bus" style="top: 711px; left: 1050px; " />
+<img src="../../static/common/images/online.png" class="bus" style="top: 621px; left: 1190px; " />
+<img src="../../static/common/images/online.png" class="bus" style="top: 561px; left: 1250px; " />
+<img src="../../static/common/images/operate.png" class="bus" style="top: 641px; left: 1310px; " />
+<img src="../../static/common/images/online.png" class="bus" style="top: 496px; left: 1150px; " />
+<img src="../../static/common/images/online.png" class="bus" style="top: 451px; left: 1050px; " />
+<img src="../../static/common/images/operate.png" class="bus" style="top: 291px; left: 1190px; " />
+<img src="../../static/common/images/no-online.png" class="bus" style="top: 851px; left: 1250px; " />
+<img src="../../static/common/images/operate.png" class="bus" style="top: 641px; left: 1310px; " />
+<img src="../../static/common/images/online.png" class="bus" style="top: 567px; left: 903px; " />
+<img src="../../static/common/images/online.png" class="bus" style="top: 623px; left: 621px; " />
+<img src="../../static/common/images/operate.png" class="bus" style="top: 473px; left: 757px; " />
+<img src="../../static/common/images/alarm.png" class="bus" style="top: 204px; left: 313px; " />
+<img src="../../static/common/images/online.png" class="bus" style="top: 214px; left: 495px; " />
+<!--公交车图标悬停后显示的内容-->
+<div class="over_win">
+    <div class="popover top">
+        <div class="arrow"></div>
+        
+        <div class="popover-content">
+             <div class="car_title">
+                    <h6 class="car_name">311路<span>编号:3825 </span></h6>
+                    <span class="clearfix"></span>
+              </div>   
+        </div>
+     </div>
+</div>
+
+<!--右侧的数据显示区域-->
+<div class="shoushuo_window win_position7 bg7">
+    	<div  class="win_title bg8">
+        	公交指数
+    </div>
+    <div class="fen"></div>
+    <!--重点数据区域-->
+     <table class="gqz">
+      <tbody>
+      	<tr>
+      		<td class="se9">
+		       
+		        <p  class=" guangyanzi " >
+		            <number class="font_big timer count-number" data-to="37" data-speed="2500">37</number>
+		           	<em>km/h</em>
+		        </p>		
+		         <h5>平均时速</h5>
+		    </td>              
+			<td class="se3">
+		       
+		        <p class=" guangyanzi ">
+		            <number class="font_big timer count-number" data-to="15" data-speed="2500">112</number>
+		           <em>辆/天</em>
+		        </p>	
+		         <h5>在线车辆</h5>
+		   </td>  
+		   <td class="se1">
+		       
+		        <p class="se1 guangyanzi ">
+		            <number class="font_big timer count-number" data-to="15" data-speed="2500">15</font></number>
+		           <em>3/15</em>
+		        </p>			
+		         <h5>实时报警</h5>
+		   </td> 
+      </tbody>
+     </table>
+     <!--常规数据区域-->
+     <div  class="realtime_data bordertop">
+     	<li>
+     		<i class="rlt1"></i>
+     		<span>线路总线<b class="se1">24</b></span>
+     	</li>
+     	<li>
+     		<i class="rlt2"></i>
+     		<span>配车总数<b class="se2">299</b></span>
+     	</li>
+     	<li>
+     		<i class="rlt3"></i>
+     		<span>当日配车<b class="se10">292</b></span>
+     	</li>
+     	<li>
+     		<i class="rlt5"></i>
+     		<span>运行车辆<b class="se8">99</b></span>
+     	</li>
+     	<li>
+     		<i class="rlt6"></i>
+     		<span>停主副站<b class="se7">89</b></span>
+     	</li>
+     	<li>
+     		<i class="rlt4"></i>
+     		<span>其它情况<b class="se4">12</b></span>
+     	</li>
+     </div>
+     <!--top10运量分析-->
+     <div class="fen"></div>
+     <div class="gjzs_menu">
+          <a href="#" class="cur">运量分析</a>
+          <a href="#">平均速度</a>
+         <!--<a href="#">待定</a>-->
+     </div>
+      <div class="gjzs_box">
+        <div id="link1" class="gjzs_con cur">
+            <div class="ylpm">
+		      	<li>
+		      		<h6>
+		      			<number>1</number>
+		      		</h6>
+					<span>37路</span>
+					<div>
+						<p class="bg1" style="width: 100%;"></p>
+					</div>
+					<b>11860</b>		
+				</li>
+				<li>
+		      		<h6>
+		      			<number>2</number>
+		      		</h6>
+					<span>218路</span>
+					<div>
+						<p class="bg1" style="width: 95%;"></p>
+					</div>
+					<b>10346</b>		
+				</li>
+				<li>
+		      		<h6>
+		      			<number>3</number>
+		      		</h6>
+					<span>38路</span>
+					<div>
+						<p class="bg1" style="width: 90%;"></p>
+					</div>
+					<b>9567</b>		
+				</li>
+				<li>
+		      		<h6>
+		      			<number>4</number>
+		      		</h6>
+					<span>13路</span>
+					<div>
+						<p class="bg2" style="width: 80%;"></p>
+					</div>
+					<b>9567</b>		
+				</li>
+				<li>
+		      		<h6>
+		      			<number>5</number>
+		      		</h6>
+					<span>32路</span>
+					<div>
+						<p class="bg2" style="width: 70%;"></p>
+					</div>
+					<b>9567</b>		
+				</li>
+				<li>
+		      		<h6>
+		      			<number>6</number>
+		      		</h6>
+					<span>32路</span>
+					<div>
+						<p class="bg2" style="width: 60%;"></p>
+					</div>
+					<b>9567</b>		
+				</li>
+				<li>
+		      		<h6>
+		      			<number>7</number>
+		      		</h6>
+					<span>32路</span>
+					<div>
+						<p class="bg3" style="width: 50%;"></p>
+					</div>
+					<b>9567</b>		
+				</li>
+				<li>
+		      		<h6>
+		      			<number>8</number>
+		      		</h6>
+					<span>32路</span>
+					<div>
+						<p class="bg3" style="width: 40%;"></p>
+					</div>
+					<b>9567</b>		
+				</li>
+				<li>
+		      		<h6>
+		      			<number>9</number>
+		      		</h6>
+					<span>32路</span>
+					<div>
+						<p class="bg3" style="width: 30%;"></p>
+					</div>
+					<b>9567</b>		
+				</li>
+				<li>
+		      		<h6>
+		      			<number>10</number>
+		      		</h6>
+					<span>32路</span>
+					<div>
+						<p class="bg3" style="width: 20%;"></p>
+					</div>
+					<b>9567</b>		
+				</li>
+		    </div>
+        </div>
+        <div id="link2"  class="gjzs_con">
+        	<div class="ylpm">
+        		<div class="item  high_100">
+					<div class="col2_90 speed_parking">
+						<li><i class="bg1"></i>
+							<p>万东北路（红枫路-桂花路）</p><em class="se1">16.2</em>
+						</li>
+						<li><i class="bg1"></i>
+							<p>翠屏路（塔山路-建新路）</p><em class="se1">18.6</em>
+						</li>
+						<li><i class="bg1"></i>
+							<p>三角路（重庆103医院附近）</p><em class="se1">19.3</em>
+						</li>
+						<li><i class="bg3"></i>
+							<p>东城大道（冯家湾-天鹿大道）</p><em class="se3">23.6</em>
+						</li>
+						<li><i class="bg3"></i>
+							<p>绕城路（翠屏路附近）</p><em class="se3">26.4</em>
+						</li>
+						<li><i class="bg3"></i>
+							<p>万新路（新田路-204省道）</p><em class="se3">28.8</em>
+						</li>
+						<li><i class="bg3"></i>
+							<p>万盛大道（子如广场附近）</p><em class="se3">29.6</em>
+						</li>
+						<li><i class="bg4"></i>
+							<p>新村路（城北大桥-北街）</p><em class="se4">33.2</em>
+						</li>
+						<li><i class="bg4"></i>
+							<p>南门路（龙角路-新虹桥）</p><em class="se4">35.6</em>
+						</li>
+						<li><i class="bg4"></i>
+							<p>勤俭路（松林路-万东北路）</p><em class="se4">37.5</em>
+						</li>
+
+					</div>
+
+				</div>
+		    </div>
+        </div>
+        </div>
+     </div>
+<!--线路选择 目录树 搜索区域-->
+<div class="shoushuo_window  bg7 treehight shoushuo_window_hidden">
+    	<div  class="win_title bg8">
+        	线路选择
+        </div>
+        <div class="search_left" style="margin-top: -20px; margin-left: 20px;">
+             <img src="../../static/common/images/sou.png" class="sousuo-btn">
+             <input type="text" value="请输入设备名称" class="text">
+       </div>
+       <!--此为单独引用目录树的独立文件调用方式，目录出现双滚动条，暂放-->
+        <!--<iframe src="tree.html" height="80%" style="overflow: hidden;"></iframe>-->
+        <div class="trees" >
+			<div id="tree">
+			</div>
+		</div>
+</div>
+
+
+<!--bootstrap包，请勿修改-->
+<script  src="../../static/common/js/bootstrap.js"></script>
+<!--导航菜单，请勿修改-->
+<script  src="../../static/common/js/bootsnav.js"></script>
+<!--演示系统的基本js-->
+<script  src="../../static/common/js/demonstrate.js"></script>
+<!--公交车的鼠标悬浮后，显示线路名称及编号，例11路 编号:3829 为异步加载-->
+<script  src="../../static/modules/supervise/js/float_win.js"></script>
+<!--百度路况-->
+<script  src="../../static/modules/supervise/js/map_lk.js"></script>
+<!--移动bus-->
+<script  src="../../static/modules/supervise/js/bus_move.js"></script>
+<!--jquery-migrate就是一个过渡插件 让你在原来代码上升级jquery 不用修改代码用的-->
+<script  src="../../static/common/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<!--设置目录树样式-->
+<script  src="../../static/common/js/jquery.tree.js" type="text/javascript"></script>
+<script  src="../../static/common/js/tree1.js" type="text/javascript"></script>
+<script  src="../../static/common/js/tree_style.js" type="text/javascript"></script>
+<!--设置滚动条样式-->
+<script  src="../../static/common/js/min_js/jquery.mousewheel.min.js"></script>
+<script  src="../../static/common/js/min_js/jquery.mCustomScrollbar.min.js"></script>
+<!--后台在引用时，请将如下代码引入到动态数据内容加载之后，在执行如下的操作，否则无滚动条的效果-->
+<script type='text/javascript'>
+    (function($){
+        $(window).load(function(){
+            $(".trees").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
+</body>
+</html>

@@ -1,0 +1,602 @@
+/*********************************搜索框样式*********************************************/
+input::-webkit-input-placeholder { /* WebKit browsers */  
+	color: #454357;
+}
+
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+	color: #454357;
+}
+
+input::-moz-placeholder { /* Mozilla Firefox 19+ */  
+	color: #454357;
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color: #454357;
+}
+
+.search_left .sousuo-btn{
+	z-index: 1;  
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 6px;
+	height: 16px;  
+	width: 16px;
+}
+/**********************************左侧列表**********************************************/
+.box_my{
+	padding-left: 0;
+	padding-right:0;
+	width: 100%;
+	height: 100%;
+}
+
+.search_left{
+	margin-left: auto;
+	margin-right:auto;
+	padding:10px 8px;
+	clear:both;
+	background-color:transparent;
+	border-bottom:dotted 1px #1e3356;
+}
+
+.left_z{
+	height: 100%;
+	width:260px;
+	background-color: rgb(21, 30, 45);
+	box-sizing:border-box;
+}
+
+.search_left .text{
+	vertical-align:middle;
+	width:100%;
+	height:28px;
+	color: #334a6f;
+	border: 1px solid rgba(12, 49, 128, 0.95);
+	display: block;
+	padding:0 30px;
+	background-color:transparent;
+	font-size:12px;
+	outline: none;
+	border-radius: 0;
+}
+
+/*输入框获得焦点时样式*/
+.search_left .text:focus {
+    box-shadow: 0 0 8px #187adf;
+	background-color:transparent;
+	color:#d3d3d3;
+  	border:none;
+}
+
+.left_z .left-title1,.left-title2,.left-title3,.left-title4,.left-title5{
+	background-color:rgb(26, 43, 70);
+	padding-bottom:9px;
+	padding-top:9px;
+	color:#fff;
+	padding-left: 10px;
+	border-bottom: 1px solid #08101f;
+}
+
+.left_z h5{
+	margin-top: 0;
+}
+
+.left_z .tree_left{
+	width: 100%;
+}
+
+.left_z .tree_left .shoushuo_window{
+	background-color:transparent;
+	width: auto;
+	position: inherit;
+	overflow:auto;
+}
+
+/*右侧视频插件*/
+.right_z{
+	height: 100%;
+	position: relative;
+}
+/*解决视频插件遮盖导航菜单的问题*/
+.maskIframe {
+	width: 100%;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: transparent;
+	display: none;
+}
+.maskFull{
+	width:22px;
+	height: 22px;
+	z-index: 1;
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	background: transparent;
+}
+
+.right_z img,
+.right_z .movieObject{
+    width: 100%;
+    height: 100%;
+}
+
+/*手风琴效果*/
+.accordion_left{
+	background-color:rgb(21, 30, 45);
+}
+
+.spchange{
+	/*height: 28.5%;*/
+	height: 300px;
+	width:260px;
+}
+
+.accordion_left .accordion {
+	height: 100%;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.accordion_left .accordion .link1 {
+    cursor: pointer;
+    display: block;
+    color: #4d4d4d;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion_left .accordion li:last-child .link1 {
+    border-bottom: 0;
+}
+
+.accordion_left .accordion li i {
+    background-color: transparent;
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    font-size: 18px;
+    color: rgba(9, 36, 193, 0.9);
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion_left .accordion li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.accordion_left .accordion li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/*----------------------------云台、预置位-----------------------------*/
+.accordion_left .accordion .submenu {
+    background-color: transparent;
+    font-size: 12px;
+    color: #fff;
+    display: block;
+}
+
+.accordion_left .accordion .submenu td{
+	 color: #5e6e94;
+}
+
+.accordion_left .accordion .submenu li {
+    border-bottom: 1px solid #4b4a5e;
+}
+
+.accordion_left .accordion .submenu a {
+    display: block;
+    text-decoration: none;
+    color: #d9d9d9;
+    padding: 12px;
+    padding-left: 42px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.accordion_left .accordion .submenu .menu{
+	border: none;
+	width: 100%;
+}
+.accordion_left .accordion .submenu .menu .form-group .input-group{
+	width: 80%
+}
+
+.accordion_left .accordion .submenu .btn{
+	padding: 6px 22px;
+	border-radius: 2px;
+	font-size: 12px;
+    display: block;
+    border: none; margin-left: auto;
+    margin-right: auto;
+    margin-top: 22px;
+    margin-bottom: 11px;
+    color: #eee;
+    background-color: #026fd0 ;
+    border-color: #111C2F;
+}
+
+.accordion_left .accordion .submenu .btn:focus,.accordion_left .accordion .submenu .btn:hover{
+	background-color:#eee ;
+	outline: 0;
+	color: #232E42;
+}    
+
+.accordion_left .accordion .submenu .form-group{
+	margin-bottom:0;
+}
+
+.accordion_left .accordion .submenu .menu .checkbox-inline{
+	color: #d9d9d9;
+}
+
+.accordion_left .accordion .submenu .menu a{
+    display: block;
+    text-decoration: none;
+    color: #d9d9d9;
+    padding: 6px;
+    padding-left: 30px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.accordion_left .accordion .submenu .menu a:hover {
+    background-color: rgba(5,40,245,0.40);
+    color: #FFF;
+}
+
+.accordion_left .accordion .submenu .menu a:hover span{
+    background-color:transparent;
+    color: #FFF;
+}
+
+.accordion_left .accordion .submenu .menu a:hover img{
+    background-color:transparent;
+}
+
+.accordion_left .accordion .submenu span{
+	font-size: 12px;
+}
+.accordion_left .accordion .submenu.menu img{
+	vertical-align: middle;
+	height: 14px;
+}
+
+.input-group .form-control,.input-group .input-group-addon{
+	background-color:transparent;
+	border-radius:2px;
+	border: 1px solid #003e64;
+}
+
+.accordion_left .accordion .submenu li{
+	background-color: transparent;
+	border-bottom: 1px solid rgba(0,78,255,0);
+	opacity: 0.8;
+}
+
+.accordion_left .accordion .submenu .form-group input{
+	background-color: transparent;
+	border: 1px solid #003e64;
+	padding-right: 0;
+	height: 35px;
+}
+
+.accordion_left .accordion .submenu input:focus{
+	border: 1px solid #003e64;
+	box-shadow: 0 0 8px #187adf;
+	background-color:transparent;
+	color:#d3d3d3;
+}
+
+.accordion_left .accordion .submenu .menu,.accordion_left .accordion .submenu .menu span{
+	background-color: transparent;
+}
+
+.accordion_left .accordion .submenu .input-group{
+	padding-top: 14px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.accordion_left .accordion .submenu .input-group span{
+	padding-right: 10px;
+}
+
+.left_z h5{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+/*******************搜索结果列表样式*****************/
+.spchange .search_list{
+	position: relative;
+	width: 260px;
+	padding-top: 10px;
+}
+.spchange .search_list table{
+	color: #5e6e94;
+	width: 96%;
+	table-layout: fixed;
+}
+table > thead > tr > th{
+	text-align: center;
+}
+.spchange .search_list table td{
+	text-align: center;
+	height: 28px;
+	width: 100px;
+	vertical-align: middle;
+	overflow:hidden; 
+	white-space:nowrap; 
+}
+.spchange .search_list table td span{
+	vertical-align: middle;
+	width: 14px;
+    height: 14px;
+    display: inline-block;
+    cursor: pointer;
+}
+.spchange .search_list table td .opt-download{
+	background-image: url(/busdemo/static/common/images/opt-download.png);
+	background-size:auto 100%;
+	background-repeat: no-repeat;
+	opacity: 0.8;
+}
+.spchange .search_list table td .opt-broadcast{
+	background-image: url(/busdemo/static/common/images/opt-broadcast.png);
+	background-size:auto 100%;
+	background-repeat: no-repeat;
+	opacity: 0.85;
+}
+.spchange .search_list table td .opt-download:hover,.spchange .search_list table td .opt-broadcast:hover{
+	opacity: 1;
+}
+.spchange .search_list .table-bordered{
+	border: 1px solid #003e64;
+}
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td{
+	border: 1px solid #003e64;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+	padding: 4px;
+}
+#back .return{
+	height: 31px;
+    top: 1px;
+    right: 0;
+    position: absolute;
+    padding: 4px 10px;
+    border-radius: 0;
+    font-size: 12px;
+    display: block;
+    border: none;
+    color: #eee;
+    background-color: #026fd0 ;
+    border-color: #111C2F;
+}    
+#sear_list table{
+	margin-bottom: 0;
+}
+#sear_list{
+	height: 76%;
+	padding-top: 10px;
+	display: none;
+	position: inherit;
+	overflow:auto;
+}
+/*#map_modal{
+	display: none;
+    height: 300px;
+    margin: 0px;
+    padding: 10px;
+    width: 400px;
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    z-index: 999;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgb(26, 43, 70);;
+    padding: 0px 10px 10px 10px;
+    border-radius: 8px;
+}
+#map_modal .map_modal_title{
+	height: 30px;
+}
+#map_modal .map_modal_title span{
+	line-height: 30px;
+}
+#map_modal_btn{
+	position: absolute;
+    z-index: 9999;
+    right: 10px;
+    bottom: 10px;
+}*/
+.res_num,#back{
+	display: none;
+}
+.res_num p{
+	text-align: center;
+    margin-top: 6px; 
+}
+.res_num p span{
+	color: #00FF00;
+}
+#map_close{
+	margin-top:-3px;
+}	
+tbody tr:nth-child(odd){
+	background-color:rgba(5,8,12,0.6);
+}
+@media only screen and (max-width:1440px ) {
+	#sear_list{
+		height: 70%;
+	}
+	.accordion_left .accordion .submenu .input-group{
+	padding-top: 6px;
+	}
+	.accordion_left .accordion .submenu .form-group input{
+		height: 28px;
+	}
+	.accordion_left .accordion .submenu .btn{
+		margin-top: 6px;
+		padding: 4px 22px;
+	}
+	.res_num p{
+    margin-top: 0px; 
+}
+}
+@media only screen and (max-width:1280px ) {
+	.accordion_left .accordion .submenu .input-group{
+		padding-top: 4px;
+	}
+	.accordion_left .accordion .submenu .form-group input{
+		height: 28px;
+	}
+	.accordion_left .accordion .submenu .btn{
+		margin-top: 6px;
+	}
+	#sear_list{
+		height: 65%;
+	}
+	.res_num p{
+		margin-top: 3px;
+	}
+}
+
+
+
+/***************公交运营状态监控页   平均速度排名****************/
+.shoushuo_window .gjzs_box{
+	margin: 2px;
+}
+.ylpm{
+	padding-top: 0;
+}
+.speed_parking li {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+	border-bottom: #003e64 1px dotted;
+	height: 18px;
+}
+
+.speed_parking li * {
+	cursor: default;
+}
+
+.speed_parking li i {
+	float: left;
+	width: 13px;
+	height: 100%;
+	border-radius: 0px;
+	margin-right: 16px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.speed_parking li p {
+	width: 70%;
+	display: inline-block;
+	font-size: 12px;
+}
+
+.speed_parking li em {
+	width: 10%;
+	display: inline-block;
+	font-size: 13px;
+	font-style: normal;
+	text-align: right;
+}
+
+.gjzs_box .gjzs_con{
+	height: 188px;
+}
+
+@media only screen and (max-width:1366px ) {
+	.col2_90 {
+			height: 110px;
+			margin: 0;
+	}
+	.speed_parking li {
+		height: 18px;
+	}
+	.speed_parking li em,
+	.speed_parking li p {
+		font-size: 12px;
+	}
+	.speed_parking li i {
+		width: 13px;
+		margin: 0 5px;
+	}
+	.road_left{
+	position: absolute;
+	top: 16px;
+	left: 0;
+	z-index: 999;
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%,rgba(0, 0, 0, 0.7) 50%,rgba(0, 0, 0, 0) 100%);
+	width: 240px;
+	height: 13px;
+	}
+	.road_right{
+	position: absolute;
+	right: 0;
+	top: 16px;
+	z-index: 999;
+	width: 240px;
+	height: 13px;
+	background:linear-gradient(to left, rgba(0, 0, 0, 0.9) 0%,rgba(0, 0, 0, 0.7) 50%,rgba(0, 0, 0, 0) 100%);
+	}
+}
+/*无视频*/
+.nomovie{
+	width: 260px;
+	height: 30px;
+	position: absolute;
+	z-index: 9999;
+	left: 0;
+	bottom: 300px;
+	background: #f8e474;
+	color: #000;
+	box-sizing: border-box;
+	padding: 5px;
+	/*display:none;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

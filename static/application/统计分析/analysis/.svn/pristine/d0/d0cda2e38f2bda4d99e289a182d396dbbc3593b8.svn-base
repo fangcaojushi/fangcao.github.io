@@ -1,0 +1,154 @@
+.blue{
+	color:#1c84c6;
+}
+.green{
+	color:#1ab394;
+}
+.red{
+	color:#ed5565;
+}
+.padb16{
+	padding-bottom: 16px;
+}
+.pdb40{
+	padding-bottom: 40px;
+}
+.margint25{
+	margin-top: 25px;
+}
+.margint25 label{
+	font-size: 16px;
+}
+.beforetitle{
+	display: inline-block;
+	width:4px;
+	height: 14px;
+	background-color:#1c84c6;
+}
+.intitle{
+	display: inline-block;
+}
+.parttitle{
+	padding-left: 20px;
+}
+.pre-scrollable{
+	max-height: 2000px;
+}
+.inspection .project-list table tr td{
+	border-bottom: none;
+}
+.inspection .project-list table tr{
+	border-bottom: 1px solid #e7eaec;;
+}
+.inspection .label{
+	padding: 6px 14px;
+	background-color: #fff;
+	color:#676a6c;
+	border:1px solid #ddd;
+}
+.inspection .focusitem{
+	background-color: #1AB394;
+	border: none;
+	color:#fff;
+}
+.inspection thead tr td{
+	font-weight: bold;	
+}
+.inspection .pro-times{
+	min-width: 88px;
+}
+.inspection .pro-problem{
+	max-width: 600px;
+}
+
+.iboxbottom{
+	margin-bottom: 0;
+}
+.statistic-chart{
+	overflow: hidden;
+}
+.status-sort{
+	margin-top: -50px;
+}
+.distribution2 .ibox-content h3{
+	background-color: #1ab394;
+    color: #fff;
+    padding: 4px 4px;
+}
+/*统计页概况修改*/
+.static .sum .ibox-content{
+	border-top:none;
+	padding-top: 5px;
+}
+.static .sum .ibox-content h1{
+	margin-bottom: 10px;
+	font-size: 36px;
+}
+/*设备分布页*/
+.distribution h3{
+	font-weight: 400;
+}
+.distribution .disort{
+	position: fixed;
+	top:20px;
+	left:20px;
+	z-index: 100;
+	width:200px;
+}
+.distribution .ibox-title{
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.4);
+	color:#fff;
+	cursor: pointer;
+}
+.distribution .ibox-content{
+	background-color: rgba(0,0,0,0.4);
+	color:#fff;
+}
+.distribution .disort .disleft{
+	float:left;
+	border-right: 1px solid #e7eaec;
+    width: 50%;
+}
+.distribution .disort .disright{
+	float:right;
+}
+.distribution .disort .ibox-content2{
+	display: none;
+}
+/*右侧管理单位推荐    开始*/
+.width100{
+	width: 100%;
+}
+.static .right_panel{
+	padding: 20px 0px 10px 10px;
+}
+.static .right_panel .recmend{
+	text-align: center;
+	padding-bottom: 25px;
+	font-size: 20px;
+	color: #959595;
+	border-bottom: #ccc dashed 1px;
+}
+.right_panel .unit_list{
+	margin-bottom: 15px;
+	border-bottom: #ccc dashed 1px;
+}
+.right_panel .unit_list .compy_name{
+	margin-left: 15px;
+	font-size: 18px;
+}
+.right_panel .unit_list .compy_name span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background: #1ab394;
+	margin-right: 5px;
+}
+.right_panel .unit_list table .specf_num{
+	margin-top: 0px;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+/*右侧管理单位推荐    结束*/

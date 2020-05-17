@@ -1,0 +1,108 @@
+// blowup.min.js
+// Paul Krishnamurthy 2016
+/* ========================================================================
+ * blowup.min.js
+ * by WH
+ * 单张图片的放大镜
+ * 放大倍数 multiple 默认倍数2
+ * ========================================================================*/
+(function($){
+    $.fn.JNMagnifier=function(setting){
+    
+		if(setting&&setting.renderTo){
+			if(typeof(setting.renderTo)=="string"){
+				setting.renderTo = $(setting.renderTo);
+			}
+		}else{
+			return;
+		}
+		var _img_org_ = this.children("img");
+		_img_org_.css("cursor","pointer");
+
+		var __w = 0;
+		var __h = 0;
+		
+		var hltposition=$('#details');
+		var __left = Math.round(hltposition.offset().left);
+		var __top = Math.round(hltposition.offset().top);
+
+		var _move_x = 0;
+		var _move_y = 0;
+		
+		var _val_w = (setting.renderTo.width() / 2);
+		var _val_h = (setting.renderTo.height() / 2);
+
+		_img_org_.mouseover(function(){
+			setting.renderTo.html('<img src="' + _img_org_.attr("src") + '" style="position:absolute;" id="JNMagnifierrenderToImg" />');
+			setting.renderTo.show();
+			var timer = setInterval(function(){
+				__w = $("#JNMagnifierrenderToImg").width() / _img_org_.width();
+				__h = $("#JNMagnifierrenderToImg").height() /_img_org_.height();
+				if(__w>0){
+					clearInterval(timer);
+				}
+			},100);
+		});
+		
+		_img_org_.mouseout(function(){
+			setting.renderTo.hide();
+		});
+		
+		_img_org_.mousemove(function(e){
+//			setting.renderTo.css({"left":(e.clientX-__left) + "px ","top":(e.clientY-__top) + "px"});
+			_move_x =0-Math.round((document.documentElement.scrollLeft+e.clientX-__left) * __w - _val_w);
+			_move_y =0-Math.round((document.documentElement.scrollTop+e.clientY-__top) * __h - _val_h);
+			$("#JNMagnifierrenderToImg").css({"left":_move_x + "px ","top":_move_y + "px"});
+		});
+	}
+})(jQuery);
+/* ========================================================================
+ * by wh 17.8.12 10:43
+ * 图片的等比例缩放
+ * ========================================================================*/
+//图片的距展示窗的边距
+var movepd=10,
+//图片居中，置left,top的初始值为边距值
+moveleft=410,
+movetop=10;
+function DrawImage(ImgD, FitWidth, FitHeight) {
+    var image = new Image();
+    image.src = ImgD.src;
+    if (image.width > 0 && image.height > 0) {
+        if (image.width / image.height >= FitWidth / FitHeight) {
+                ImgD.width = FitWidth;
+                ImgD.height = (image.height * FitWidth) / image.width;
+           
+        } else {
+           
+                ImgD.height = FitHeight;
+                ImgD.width = (image.width * FitHeight) / image.height;
+            
+        }
+    }
+}
+/* ========================================================================
+ * 图片放大镜
+ * ========================================================================*/  
+$(function(){
+	
+//	$('.cardetails .item img').blowup();
+	var scaleboxw =$(window).width()*0.77*0.75-movepd*2;
+	var scaleboxh = $(window).height()*0.95-movepd*2;
+	var num=1;
+	$(".cardetails .item img").each(function () {
+	   DrawImage(this, scaleboxw, scaleboxh);
+//	   $(this).blowup();
+		$("#ShowPictureBox"+num.toString()).JNMagnifier({
+            renderTo:"#ShowBigPictureBox"
+        });
+        num+=1;
+	});
+})
+/* ========================================================================
+ * 详情页滚动条高度设置
+ * ========================================================================*/  
+ $(function(){
+ 	$("#dates").height($(window).height()-46);
+    	$(".dates-line").height($("#dates li").length*80-40);
+ })

@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>数据分析-拥堵详情</title>
+		<meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+		<meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="/analysis/static/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+		<link href="/analysis/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+		<link href="/analysis/static/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+		<link href="/analysis/static/css/animate.min.css" rel="stylesheet">
+		<link href="/analysis/static/css/style.min.css?v=4.0.0" rel="stylesheet">
+		<base target="_blank">
+		<link href="/analysis/static/modules/analysis/css/navhfix.css" rel="stylesheet" />
+		<link href="/analysis/static/modules/analysis/css/analysis.css" rel="stylesheet" />
+	</head>
+
+	<body class="gray-bg">
+		<div class="row  border-bottom white-bg dashboard-header">
+			<div class="col-sm-12">
+				<p>通过对拥堵情况的分析，根据掌握的信息，运用数学、力学、工程学的基本方法，为<b>分析和判断拥堵原因</b>提供依据；再通过对大量已经发生的交通拥堵原因统计、分析，从中<b>得出趋势性的结论</b>，以便为采取决策提供依据和基础。同时也可以对现在采取的行政政策和措施进行分析，即对所采取政策和措施的有效程度和道路安全设施的<b>投资效率等进行分析</b>。
+				</p>
+
+			</div>
+		</div>
+		<div class="wrapper wrapper-content">
+			<div class="hnav hnavfixbox">
+				<div class="hnavfixbt">
+					<a href="#001" class="hcur" target="_self"><i class="fa fa-info-circle"></i>拥堵概要</a>
+					<a href="#002" target="_self"><i class="glyphicon glyphicon-list-alt"></i>交通指数走势</a>
+					<a href="#003" target="_self"><i class="fa fa-pie-chart"></i>拥堵信息</a>					
+					<a href="#004" target="_self"><i class="fa fa-pie-chart"></i>拥堵高发路段</a>					
+					<a href="#005" target="_self"><i class="fa fa-area-chart"></i>拥堵预测</a>
+					<a href="#006" target="_self"><i class="glyphicon glyphicon-book"></i>结论</a>
+				</div>
+			</div>
+			<br/>
+			<div class="hcontext">
+				<div class="row active">
+					<a name="001"></a>
+					<div class="col-sm-3">
+						<div class="ibox">
+							<div class="ibox-content hid pdb18">
+								<h5 class="m-b-md">交通指数</h5>
+								<div class="col-md-6">
+									<h1 class="text-danger hsg">6</h1>
+									<!--<h5 class="text-danger">轻度拥堵</h5>-->
+								</div>
+								<div class="col-md-6">
+									<h2 class="text-danger">
+		                               <i class="fa fa-play fa-rotate-270"></i> 上升
+		                            </h2>
+									<small>增长20%<i class="fa fa-level-up"></i><br/>本周最高指数:6.8</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="ibox">
+							<div class="ibox-content hid">
+								<h5 class="m-b-md">日均拥堵时长(h)</h5>
+								<div class="col-md-6">
+									<h1 class="text-danger hsg">3.21</h1>
+								</div>
+								<div class="col-md-6">
+									<h2 class="text-danger">
+	                                    <i class="fa fa-play fa-rotate-270"></i> 上升
+	                                </h2>
+									<small>增长20%<i class="fa fa-level-up"></i></small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="ibox">
+							<div class="ibox-content hid">
+								<h5 class="m-b-md">拥堵延时指数</h5>
+								<div class="col-md-6">
+									<h1 class="text-danger hsg">1.65</h1>
+								</div>
+								<div class="col-md-6">
+									<h2 class="text-danger">
+		                               <i class="fa fa-play fa-rotate-270"></i> 上升
+		                            </h2>
+									<small>增长44%<i class="fa fa-level-up"></i></small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="ibox">
+							<div class="ibox-content hid ">
+								<h5 class="m-b-md">道路高峰出行平均速度(km/h)</h5>
+								<div class="col-md-6">
+									<h1 class="text-danger hsg">30.6</h1>
+								</div>
+								<div class="col-md-6">
+									<h2 class="text-danger">
+	                                <i class="fa fa-play fa-rotate-270"></i> 上升
+	                            </h2>
+									<small>增长38%<i class="fa fa-level-up"></i></small>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<a name="002"></a>
+					<div class="col-sm-12">
+						<div class="ibox float-e-margins">
+							<div class="ibox-title">
+		                        <h5>交通指数走势</h5>
+		                        <div class="ibox-tools">
+		                            <a class="collapse-link">
+		                                <i class="fa fa-chevron-up"></i>
+		                            </a>
+		                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+		                                <i class="fa fa-wrench"></i>
+		                            </a>
+		                            <ul class="dropdown-menu dropdown-user">
+		                                <li><a href="accident.html#">选项1</a>
+		                                </li>
+		                                <li><a href="accident.html#">选项2</a>
+		                                </li>
+		                            </ul>
+		                            <a class="close-link">
+		                                <i class="fa fa-times"></i>
+		                            </a>
+		                        </div>
+		                    </div>
+		                    <div class="ibox-content posre">
+		                        <div class="echarts" id="jamindex" style="height: 450px;"></div>
+		                        <div class="xaxis_display">
+		                        	<span class="pdl8">星期一</span>
+		                        	<span class="pdl10">星期二</span>
+		                        	<span class="pdl10">星期三</span>
+		                        	<span class="pdl10">星期四</span>
+		                        	<span class="pdl10">星期五</span>
+		                        	<span class="pdl10">星期六</span>
+		                        	<span class="pdl10">星期日</span>
+		                        </div>
+		                    </div>
+						</div>
+					</div>				
+				</div>
+				<div class="row">
+					<a name="003"></a>
+					<div class="col-sm-12">
+						<div class="ibox float-e-margins">
+							<div class="ibox-title">
+		                        <h5>拥堵信息</h5>
+		                        <div class="ibox-tools">
+		                            <a class="collapse-link">
+		                                <i class="fa fa-chevron-up"></i>
+		                            </a>
+		                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+		                                <i class="fa fa-wrench"></i>
+		                            </a>
+		                            <ul class="dropdown-menu dropdown-user">
+		                                <li><a href="accident.html#">选项1</a>
+		                                </li>
+		                                <li><a href="accident.html#">选项2</a>
+		                                </li>
+		                            </ul>
+		                            <a class="close-link">
+		                                <i class="fa fa-times"></i>
+		                            </a>
+		                        </div>
+		                    </div>
+		                    <div class="ibox-content">
+		                        <table class="table table-hover table-bordered table-striped haccident hcongetent">
+		                       		<thead>
+		                       			<tr>
+		                                    <th>城区</th>
+		                                    <th>拥堵指数</th>
+		                                    <th>指数增长率</th>
+		                                    <th>高速/快速路   平均速度</th>
+		                                    <th>速度增长率</th>
+		                                    <th>主干路   平均速度</th>
+		                                    <th>速度增长率</th>
+		                                    <th>拥堵里程数</th>
+		                                    <!--<th>直接财产损失/万元</th>-->
+		                                </tr>
+		                       		</thead>
+		                            <tbody>
+		                                <tr>
+		                                    <td width="20%" class="text-center">南长区</td>
+		                                    <td>6.2</td>
+		                                    <td class="text-danger"> <i class="fa fa-level-up"></i> 40%</td>
+		                                    <td>26.5</td>
+		                                    <td class="text-danger"> <i class="fa fa-level-up"></i> 40%</td>
+		                                    <td>32.6</td>
+		                                     <td class="text-danger"> <i class="fa fa-level-up"></i> 40%</td>
+		                                    <td>46</td>
+		                                </tr>
+		                                <tr>
+		                                    <td>崇安区 </td>
+		                                    <td>5.3</td>
+		                                    <td class="text-navy"> <i class="fa fa-level-down"></i> -12%</td>
+		                                    <td>32</td>
+		                                     <td class="text-navy"> <i class="fa fa-level-down"></i> -12%</td>
+		                                    <td>26</td>
+		                                     <td class="text-navy"> <i class="fa fa-level-down"></i> -12%</td>
+		                                    <td>44</td>
+		                                </tr>
+		                                <tr>
+		                                    <td>北塘区</td>
+		                                    <td>4.8</td>
+		                                    <td class="text-danger"> <i class="fa fa-level-up"></i> 30%</td>
+		                                    <td>72</td>
+		                                     <td class="text-navy"> <i class="fa fa-level-down"></i> -12%</td>
+		                                    <td>58</td>
+		                                     <td class="text-navy"> <i class="fa fa-level-down"></i> -12%</td>
+		                                    <td>42</td>
+		                                </tr>
+		                                <tr>
+		                                    <td>锡山区</td>
+		                                    <td>4.2</td>
+		                                    <td class="text-navy"> <i class="fa fa-level-down"></i> -23%</td>
+		                                    <td>146</td>
+		                                     <td class="text-navy"> <i class="fa fa-level-down"></i> -12%</td>
+		                                    <td>52</td>
+		                                     <td class="text-navy"> <i class="fa fa-level-down"></i> -12%</td>
+		                                    <td>38</td>
+		                                </tr>
+		                                <tr>
+		                                    <td>湖滨区</td>
+		                                    <td>3.8</td>
+		                                    <td class="text-navy"> <i class="fa fa-level-down"></i> -11%</td>
+		                                    <td>62</td>
+		                                     <td class="text-navy"> <i class="fa fa-level-down"></i> -11%</td>
+		                                    <td>56</td>
+		                                     <td class="text-navy"> <i class="fa fa-level-down"></i> -11%</td>
+		                                    <td>36</td>
+		                                </tr>
+		                                <tr>
+		                                    <td>无锡站</td>
+		                                    <td>3.1</td>
+		                                    <td class="text-navy"> <i class="fa fa-level-down"></i> -13%</td>
+		                                    <td>36</td>
+		                                     <td class="text-navy"> <i class="fa fa-level-down"></i> -11%</td>
+		                                    <td>52</td>
+		                                    <td class="text-navy"> <i class="fa fa-level-down"></i> -11%</td>
+		                                    <td>36</td>
+		                                </tr>
+		                                <tr>
+		                                    <td>鼋头渚</td>
+		                                    <td>2.9</td>
+		                                    <td class="text-danger"> <i class="fa fa-level-up"></i> 4%</td>
+		                                    <td>26</td>
+		                                    <td class="text-danger"> <i class="fa fa-level-up"></i> 4%</td>
+		                                    <td>35</td>
+		                                    <td class="text-danger"> <i class="fa fa-level-up"></i> 4%</td>
+		                                    <td>32</td>
+		                                </tr>
+		                                <tr>
+		                                    <td>全市</td>
+		                                    <td>2.5</td>
+		                                    <td class="text-danger"> <i class="fa fa-level-up"></i> 13%</td>
+		                                    <td>25</td>
+		                                    <td class="text-danger"> <i class="fa fa-level-up"></i> 16%</td>
+		                                    <td>30</td>
+		                                    <td class="text-danger"> <i class="fa fa-level-up"></i> 24%</td>
+		                                    <td>25</td>
+		                                </tr>
+		                            </tbody>
+		                        </table>
+		                        
+		                    </div>
+						</div>
+					</div>				
+				</div>
+				<div class="row">
+					<a name="004"></a>
+					<div class="col-sm-6">
+						<div class="ibox float-e-margins">
+							<div class="ibox-title">
+								<h5>拥堵高发路段</h5>
+								<div class="ibox-tools">
+									<a class="collapse-link">
+										<i class="fa fa-chevron-up"></i>
+									</a>
+									<a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+										<i class="fa fa-wrench"></i>
+									</a>
+									<ul class="dropdown-menu dropdown-user">
+										<li>
+											<a href="accident.html#">选项1</a>
+										</li>
+										<li>
+											<a href="accident.html#">选项2</a>
+										</li>
+									</ul>
+									<a class="close-link">
+										<i class="fa fa-times"></i>
+									</a>
+								</div>
+							</div>
+							<div class="ibox-content">
+								<div class="echarts" id="higconroad" style="height: 360px;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="ibox float-e-margins">
+							<div class="ibox-title">
+								<h5>拥堵原因</h5>
+								<div class="ibox-tools">
+									<a class="collapse-link">
+										<i class="fa fa-chevron-up"></i>
+									</a>
+									<a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+										<i class="fa fa-wrench"></i>
+									</a>
+									<ul class="dropdown-menu dropdown-user">
+										<li>
+											<a href="accident.html#">选项1</a>
+										</li>
+										<li>
+											<a href="accident.html#">选项2</a>
+										</li>
+									</ul>
+									<a class="close-link">
+										<i class="fa fa-times"></i>
+									</a>
+								</div>
+							</div>
+							<div class="ibox-content">
+								<div class="echarts" id="higconreason" style="height: 360px;"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+						<a name="005"></a>
+						<div class="row congest_road">
+				            <div class="col-sm-12">
+				                <div class="ibox float-e-margins">
+				                    <div class="ibox-title">
+				                        <h5>拥堵路段  TOP10</h5>                       
+				                        <div class="ibox-tools">
+				                        	<div class="row peak_selet">
+					                            <div class="m-b-xs">
+					                                <div data-toggle="buttons" class="btn-group">
+					                                    <label class="btn btn-sm btn-white active">
+					                                        <input type="radio" id="option1" name="options">早高峰
+					                                    </label>
+					                                    <label class="btn btn-sm btn-white ">
+					                                        <input type="radio" id="option2" name="options">晚高峰
+					                                    </label>                                   
+					                                </div>
+					                            </div>
+					                        </div>
+				                            <a class="collapse-link">
+				                                <i class="fa fa-chevron-up"></i>
+				                            </a>
+				                            <a class="dropdown-toggle" data-toggle="dropdown" href="table_basic.html#">
+				                                <i class="fa fa-wrench"></i>
+				                            </a>
+				                            <ul class="dropdown-menu dropdown-user">
+				                                <li><a href="table_basic.html#">选项1</a>
+				                                </li>
+				                                <li><a href="table_basic.html#">选项2</a>
+				                                </li>
+				                            </ul>
+				                            <a class="close-link">
+				                                <i class="fa fa-times"></i>
+				                            </a>
+				                        </div>
+				                    </div>
+				                    <div class="ibox-content">
+				                        <div id="link1" class="top10_box table-responsive1 cur">
+				                            <table class="table table-striped hcongestion">
+				                                <thead>
+				                                    <tr>
+				                                        <th width="10%">排名</th>
+				                                        <th width="30%">拥堵路段</th>
+				                                        <th width="20%">拥堵时长</th>
+				                                        <th width="20%">交通指数</th>
+				                                        <th width="20%">平均速度</th>
+				                                    </tr>
+				                                </thead>
+				                                <tbody>
+				                                    <tr>
+				                                        <td>
+				                                        	<div class="zs_color">
+					                                        	<span class="yd_bdred"></span>
+					                                        	<span class="yd_bgred">1</span>				                                        		
+				                                        	</div>
+				                                        </td>
+				                                        <td>凤翔路路(从环北路辅路到庙下路南向北)</td>
+				                                        <td>16</td>
+				                                        <td>6.8</td>
+				                                        <td>22km/h</td>
+				<!--                                        <td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                    	<td>
+				                                    		<div class="zs_color">
+					                                        	<span class="yd_bdred"></span>
+					                                        	<span class="yd_bgred">2</span>				                                        		
+				                                        	</div>
+				                                    	</td>
+				                                        <td>广瑞路(上马墩路附近附近)</td>
+				                                        <td>14</td>
+				                                        <td>6.4</td>
+				                                         <td>26km/h</td>
+				                                        <!--<td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                    	<td>
+				                                    		<div class="zs_color">
+					                                        	<span class="yd_bdred"></span>
+					                                        	<span class="yd_bgred">3</span>				                                        		
+				                                       		</div>	
+				                                    	</td>
+				                                        <td>人民东路（从江海东路到解放东路东向西）</td>
+				                                        <td>12</td>
+				                                        <td>5.7</td>
+				                                         <td>33lm/h</td>
+				                                        <!--<td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                    	<td>
+				                                    		<div class="zs_color">
+					                                        	<span class="yd_bdred"></span>
+					                                        	<span class="yd_bgred">4</span>				                                        		
+				                                        	</div>
+				                                    	</td>
+				                                        <td>江海西路（从锡澄路到洛南路东向西）</td>
+				                                        <td>10</td>
+				                                        <td>4.8</td>
+				                                         <td>40km/h</td>
+				                                        <!--<td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                    	<td>
+				                                    		<div class="zs_color">
+					                                        	<span class="yd_bdred"></span>
+					                                        	<span class="yd_bgred">5</span>				                                        		
+				                                        	</div>
+				                                    	</td>
+				                                        <td>广南路(从快速内环东到广瑞路南向北)</td>
+				                                        <td>9</td>
+				                                        <td>4.2</td>
+				                                         <td>41km/h</td>
+				<!--                                        <td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                    	<td>
+				                                    		<div class="zs_color">
+					                                        	<span class="yd_bdred"></span>
+					                                        	<span class="yd_bgred">6</span>				                                        		
+				                                        	</div>
+				                                    	</td>
+				                                        <td>中山路(从南长街到解放西路南向北)</td>
+				                                        <td>8</td>
+				                                        <td>3.7</td>
+				                                         <td>44km/h</td>
+				                                        <!--<td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                    	<td>
+				                                    		<div class="zs_color">
+					                                        	<span class="yd_bdred"></span>
+					                                        	<span class="yd_bgred">7</span>				                                        		
+				                                       		</div>	
+				                                    	</td>
+				                                        <td>京沪高速（从下场渡到后庄路南向北）</td>
+				                                        <td>7</td>
+				                                        <td>3.2</td>
+				                                         <td>50km/h</td>
+				                                        <!--<td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                     <tr>
+				                                    	<td>
+				                                    		<div class="zs_color">
+					                                        	<span class="yd_bdorgan"></span>
+					                                        	<span class="yd_bgorgan">8</span>				                                        		
+				                                       		</div>	
+				                                    	</td>
+				                                        <td>通天大道（从无锡收费站到县前东街北向南）</td>
+				                                        <td>6</td>
+				                                        <td>3.1</td>
+				                                         <td>52km/h</td>
+				                                        <!--<td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                    	<td>
+				                                    		<div class="zs_color">
+					                                        	<span class="yd_bdyell"></span>
+					                                        	<span class="yd_bgyell">9</span>				                                        		
+				                                        	</div>
+				                                    	</td>
+				                                        <td>峭岐枢纽（峭岐枢纽南向北）</td>
+				                                        <td>4</td>
+				                                        <td>2.8</td>
+				                                         <td>54km/h</td>
+				                                        <!--<td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                    	<td>
+				                                    		<div class="zs_color">
+					                                        	<span class="yd_bdyell"></span>
+					                                        	<span class="yd_bgyell">10</span>				                                        		
+				                                        	</div>
+				                                    	</td>
+				                                        <td>锡沪中路(从江海东路到广瑞路东向西)</td>
+				                                        <td>3</td>
+				                                        <td>2.1</td>
+				                                         <td>56km/h</td>
+				<!--                                        <td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                </tbody>
+				                            </table>
+				                        </div>
+				                        <div id="link2"class="top10_box table-responsive2">
+				                            <table class="table table-striped hcongestion">
+				                                <thead>
+				                                    <tr>
+				                                        <th width="10%">排名</th>
+				                                        <th width="30%">拥堵路段</th>
+				                                        <th width="20%">拥堵时长</th>
+				                                        <th width="20%">交通指数</th>
+				                                        <th width="20%">平均速度</th>
+				                                    </tr>
+				                                </thead>
+				                                <tbody>
+				                                    <tr>
+				                                        <td>
+				                                        	<div class="zs_color">
+					                                        	<span class="yd_bdred"></span>
+					                                        	<span class="yd_bgred">1</span>				                                        		
+				                                        	</div>
+				                                        </td>
+				                                        <td>凤翔路路(从环北路辅路到庙下路南向北)</td>
+				                                        <td>16</td>
+				                                        <td>6.8</td>
+				                                        <td>22km/h</td>
+				<!--                                        <td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                    	<td>
+				                                    		<div class="zs_color">
+					                                        	<span class="yd_bdred"></span>
+					                                        	<span class="yd_bgred">2</span>				                                        		
+				                                        	</div>
+				                                    	</td>
+				                                        <td>广瑞路(上马墩路附近附近)</td>
+				                                        <td>14</td>
+				                                        <td>6.4</td>
+				                                         <td>26km/h</td>
+				                                        <!--<td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                    	<td>
+				                                    		<div class="zs_color">
+					                                        	<span class="yd_bdred"></span>
+					                                        	<span class="yd_bgred">3</span>				                                        		
+				                                       		</div>	
+				                                    	</td>
+				                                        <td>人民东路（从江海东路到解放东路东向西）</td>
+				                                        <td>12</td>
+				                                        <td>5.7</td>
+				                                         <td>33lm/h</td>
+				                                        <!--<td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                    	<td>
+				                                    		<div class="zs_color">
+					                                        	<span class="yd_bdred"></span>
+					                                        	<span class="yd_bgred">4</span>				                                        		
+				                                        	</div>
+				                                    	</td>
+				                                        <td>江海西路（从锡澄路到洛南路东向西）</td>
+				                                        <td>10</td>
+				                                        <td>4.8</td>
+				                                         <td>40km/h</td>
+				                                        <!--<td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                    	<td>
+				                                    		<div class="zs_color">
+					                                        	<span class="yd_bdred"></span>
+					                                        	<span class="yd_bgred">5</span>				                                        		
+				                                        	</div>
+				                                    	</td>
+				                                        <td>广南路(从快速内环东到广瑞路南向北)</td>
+				                                        <td>9</td>
+				                                        <td>4.2</td>
+				                                         <td>41km/h</td>
+				<!--                                        <td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                    	<td>
+				                                    		<div class="zs_color">
+					                                        	<span class="yd_bdred"></span>
+					                                        	<span class="yd_bgred">6</span>				                                        		
+				                                        	</div>
+				                                    	</td>
+				                                        <td>中山路(从南长街到解放西路南向北)</td>
+				                                        <td>8</td>
+				                                        <td>3.7</td>
+				                                         <td>44km/h</td>
+				                                        <!--<td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                    	<td>
+				                                    		<div class="zs_color">
+					                                        	<span class="yd_bdred"></span>
+					                                        	<span class="yd_bgred">7</span>				                                        		
+				                                       		</div>	
+				                                    	</td>
+				                                        <td>京沪高速（从下场渡到后庄路南向北）</td>
+				                                        <td>7</td>
+				                                        <td>3.2</td>
+				                                         <td>50km/h</td>
+				                                        <!--<td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                     <tr>
+				                                    	<td>
+				                                    		<div class="zs_color">
+					                                        	<span class="yd_bdorgan"></span>
+					                                        	<span class="yd_bgorgan">8</span>				                                        		
+				                                       		</div>	
+				                                    	</td>
+				                                        <td>通天大道（从无锡收费站到县前东街北向南）</td>
+				                                        <td>6</td>
+				                                        <td>3.1</td>
+				                                         <td>52km/h</td>
+				                                        <!--<td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                    	<td>
+				                                    		<div class="zs_color">
+					                                        	<span class="yd_bdyell"></span>
+					                                        	<span class="yd_bgyell">9</span>				                                        		
+				                                        	</div>
+				                                    	</td>
+				                                        <td>峭岐枢纽（峭岐枢纽南向北）</td>
+				                                        <td>4</td>
+				                                        <td>2.8</td>
+				                                         <td>54km/h</td>
+				                                        <!--<td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                    	<td>
+				                                    		<div class="zs_color">
+					                                        	<span class="yd_bdyell"></span>
+					                                        	<span class="yd_bgyell">10</span>				                                        		
+				                                        	</div>
+				                                    	</td>
+				                                        <td>锡沪中路(从江海东路到广瑞路东向西)</td>
+				                                        <td>3</td>
+				                                        <td>2.1</td>
+				                                         <td>56km/h</td>
+				<!--                                        <td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>-->
+				                                        </td>
+				                                    </tr>
+				                                </tbody>
+				                            </table>
+				                        </div>
+				
+				                    </div>
+				                </div>
+				            </div>
+				
+				        </div>
+					</div>
+				<div class="row">
+					<a name="006"></a>
+					<div class="col-sm-6">
+						<div class="ibox float-e-margins">
+							<div class="ibox-title">
+								<h5>拥堵趋势分析</h5>
+								<div class="ibox-tools">
+									<a class="collapse-link">
+										<i class="fa fa-chevron-up"></i>
+									</a>
+									<a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+										<i class="fa fa-wrench"></i>
+									</a>
+									<ul class="dropdown-menu dropdown-user">
+										<li>
+											<a href="accident.html#">选项1</a>
+										</li>
+										<li>
+											<a href="accident.html#">选项2</a>
+										</li>
+									</ul>
+									<a class="close-link">
+										<i class="fa fa-times"></i>
+									</a>
+								</div>
+							</div>
+							<div class="ibox-content">
+								<div class="echarts" id="congestrend"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="ibox float-e-margins">
+							<div class="ibox-title">
+								<h5>拥堵时间段</h5>
+								<div class="ibox-tools">
+									<a class="collapse-link">
+										<i class="fa fa-chevron-up"></i>
+									</a>
+									<a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+										<i class="fa fa-wrench"></i>
+									</a>
+									<ul class="dropdown-menu dropdown-user">
+										<li>
+											<a href="accident.html#">选项1</a>
+										</li>
+										<li>
+											<a href="accident.html#">选项2</a>
+										</li>
+									</ul>
+									<a class="close-link">
+										<i class="fa fa-times"></i>
+									</a>
+								</div>
+							</div>
+							<div class="ibox-content hid">
+								<div class="col-md-9">
+									<div class="echarts" id="congestime"></div>									
+								</div>
+								<div class="col-md-3 chart_legend">
+									<ul>
+										<li class="level-1">
+											<span class="sk yd_bggreen"></span>
+											<span>畅通</span>
+										</li>
+										<li class="level-2">
+											<span class="sk yd_bglightgreen"></span>
+											<span>基本畅通</span>
+										</li>
+										<li class="level-3">
+											<span class="sk yd_bgyell"></span>
+											<span>缓行</span>
+										</li>
+										<li class="level-4">
+											<span class="sk yd_bgorgan"></span>
+											<span>拥堵</span>
+										</li>
+										<li class="level-5">
+											<span class="sk yd_bgred"></span>
+											<span>非常拥堵</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<a name=""></a>
+					<div class="col-sm-6">
+						<div class="ibox float-e-margins">
+							<div class="ibox-title">
+								<h5>早晚高峰拥堵预测</h5>
+								<div class="ibox-tools">
+									<a class="collapse-link">
+										<i class="fa fa-chevron-up"></i>
+									</a>
+									<a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+										<i class="fa fa-wrench"></i>
+									</a>
+									<ul class="dropdown-menu dropdown-user">
+										<li>
+											<a href="accident.html#">选项1</a>
+										</li>
+										<li>
+											<a href="accident.html#">选项2</a>
+										</li>
+									</ul>
+									<a class="close-link">
+										<i class="fa fa-times"></i>
+									</a>
+								</div>
+							</div>
+							<div class="ibox-content">
+								<div class="echarts" id="soorla_peak"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="ibox float-e-margins">
+							<div class="ibox-title">
+								<h5>未来一周每小时拥堵预测</h5>
+								<div class="ibox-tools">
+									<a class="collapse-link">
+										<i class="fa fa-chevron-up"></i>
+									</a>
+									<a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+										<i class="fa fa-wrench"></i>
+									</a>
+									<ul class="dropdown-menu dropdown-user">
+										<li>
+											<a href="accident.html#">选项1</a>
+										</li>
+										<li>
+											<a href="accident.html#">选项2</a>
+										</li>
+									</ul>
+									<a class="close-link">
+										<i class="fa fa-times"></i>
+									</a>
+								</div>
+							</div>
+							<div class="ibox-content hid">
+								<div class="col-md-10">
+									<div class="echarts" id="congeshour"></div>								
+								</div>
+								<div class="col-md-2 chart_legend">
+									<ul>
+										<li class="level-1">
+											<span class="sk yd_bggreen"></span>
+											<span>畅通</span>
+										</li>
+										<li class="level-2">
+											<span class="sk yd_bglightgreen"></span>
+											<span>基本畅通</span>
+										</li>
+										<li class="level-3">
+											<span class="sk yd_bgyell"></span>
+											<span>缓行</span>
+										</li>
+										<li class="level-4">
+											<span class="sk yd_bgorgan"></span>
+											<span>拥堵</span>
+										</li>
+										<li class="level-5">
+											<span class="sk yd_bgred"></span>
+											<span>非常拥堵</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<a name="007"></a>
+					<div class="col-sm-12">
+						<div class="ibox float-e-margins">
+							<div class="ibox-title">
+								<h5>结论分析</h5>
+								<div class="ibox-tools">
+									<a class="collapse-link">
+										<i class="fa fa-chevron-up"></i>
+									</a>
+									<a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+										<i class="fa fa-wrench"></i>
+									</a>
+									<ul class="dropdown-menu dropdown-user">
+										<li>
+											<a href="accident.html#">选项1</a>
+										</li>
+										<li>
+											<a href="accident.html#">选项2</a>
+										</li>
+									</ul>
+									<a class="close-link">
+										<i class="fa fa-times"></i>
+									</a>
+								</div>
+							</div>
+							<div class="ibox-content hid">
+	                    		<div class="col-md-5">
+	                    			<table class="hvs">
+	                    				<tr>
+	                    					<td>
+	                    						<h3>同期</h3>
+	                    					</td>
+	                    					<td>
+	                    						<h1>VS</h1>
+	                    					</td>
+	                    					<td>
+	                    						<h3>本周</h3>
+	                    					</td>
+	                    				</tr>
+	                    				<tr>
+	                    					<td>
+	                    						<b class="num_conl">2.2</b>
+	                    						<span class="chart_conl" style="width: 70%;"></span>
+	                    					</td>
+	                    					<td>交通指数</td>
+	                    					<td>
+	                    						<span class="chart_conr pdlr0" style="width: 95%;"></span>
+	                    						<b class="num_conr">3.1</b>
+	                    					</td>
+	                    				</tr>	                    				
+	                    				<tr>
+	                    					<td>
+	                    						<b class="num_conl1">2.6h</b>
+	                    						<span class="chart_conl1" style="width:58%;"></span>
+	                    					</td>
+	                    					<td>日均拥堵时长</td>
+	                    					<td>
+	                    						<span class="chart_conr1" style="width: 78%;"></span>
+	                    						<b class="num_conr1">3.26h</b>
+	                    					</td>
+	                    				</tr>
+	                    				<tr>
+	                    					<td>
+	                    						<b class="num_conl2">1.21</b>
+	                    						<span class="chart_conl2" style="width:30%;"></span>
+	                    					</td>
+	                    					<td>拥堵延时指数</td>
+	                    					<td>
+	                    						<span class="chart_conr2" style="width: 55%;"></span>
+	                    						<b class="num_conr2">1.65</b>
+	                    					</td>
+	                    				</tr>
+	                    				<tr>
+	                    					<td>
+	                    						<b class="num_conl3">30.6 km/h</b>
+	                    						<span class="chart_conl3" style="width:10%;"></span>
+	                    					</td>
+	                    					<td>高峰平均速度</td>
+	                    					<td>
+	                    						<span class="chart_conr3" style="width: 19%;"></span>
+	                    						<b class="num_conr3">28.6 km/h</b>
+	                    					</td>
+	                    				</tr>
+	                    			</table>
+	                    		</div>
+	                    		<div class="col-md-4 hjy improving">
+	                    			<h3>拥堵与同期相比</h3>
+	                    			<h4>
+	                    				<p>全市拥堵指数上升，<span class=" text-danger">增长<i class="fa fa-level-up"></i>  2%</span>。</p>
+	                    				<p>拥堵时长与同期<span class=" text-danger">降低<i class="fa fa-level-down"></i>  2%</span>。</p>
+	                    				<p>
+	                    					南长区，<span class=" text-danger">拥堵指数增长<i class="fa fa-level-up"></i>  12%</span>;  
+	                    					崇安区，<span class=" text-info">拥堵指数减少<i class="fa fa-level-down"></i>  50%</span>;  
+	                    					北塘区，<span class=" text-danger">拥堵指数增长<i class="fa fa-level-up"></i>  26%</span>;  
+	                    					锡山区，<span class=" text-danger">拥堵指数增长<i class="fa fa-level-up"></i>  19%</span>;  
+	                    					湖滨区，<span class=" text-danger">拥堵指数增长<i class="fa fa-level-up"></i>  35%</span>;  
+	                    				</p>
+	                    			</h4>
+	                    		</div>
+	                    		<div class="col-md-3 hjy">
+	                    			<h3>改进措施</h3>
+	                    			<h4>
+	                    				<blockquote>
+	                    					<li>加大<b>乱停车现象</b>管理的力度，缓解拥堵状况</li>
+		                    				<li>对崇安区,锡山区加大<b>施工占道交通的疏导</b>，做好切实有效的交通管控。</li>
+		                    				<li>立即修复湖滨路与凤翔路口的红绿灯</li>	
+	                    				</blockquote>
+	                    			</h4>
+	                    		</div>
+                    		</div>
+						</div>
+					</div>
+				</div>
+				<div class="alert alert-warning">
+					信息统计时间：2017年5月8日0时 至 5月14日24时
+				</div>
+				<br/> <br/>
+				<div class="hsave">
+					<a class="badge-info backToTop" title="返回顶部" style="display: none;">
+						<i class="glyphicon glyphicon-eject"></i>
+					</a>
+					<a class="badge-warning" title="导出">
+						<i class="glyphicon glyphicon-share"></i>
+					</a>
+					<a class="badge-success" title="打印">
+						<i class="glyphicon glyphicon-print"></i>
+
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script src="/analysis/static/js/jquery.min.js?v=2.1.4"></script>
+		<script src="/analysis/static/js/bootstrap.min.js?v=3.3.5"></script>
+		<script src="/analysis/static/js/plugins/echarts/echarts.js"></script>		
+		<script src="/analysis/static/modules/analysis/js/congestion/congestion.js"></script>
+		
+		<script src="/analysis/static/js/content.min.js?v=1.0.0"></script>
+		<script src="/analysis/static/js/plugins/morris/raphael-2.1.0.min.js"></script>
+		<script src="/analysis/static/js/plugins/morris/morris.js"></script>
+		<!--<script src="/analysis/static/js/plugins/peity/jquery.peity.min.js"></script>
+		<script src="/analysis/static/js/demo/peity-demo.min.js"></script>-->
+		
+		<!--交通指数走势-->
+		<script src="/analysis/static/modules/analysis/js/congestion/jamindex.js"></script>
+		<!--拥堵高发路段-->
+		<script src="/analysis/static/modules/analysis/js/congestion/higconroad.js"></script>
+		<!--拥堵高发原因-->
+		<script src="/analysis/static/modules/analysis/js/congestion/higconreason.js"></script>
+		<!--拥堵趋势分析-->
+		<script src="/analysis/static/modules/analysis/js/congestion/congestrend.js"></script>
+		<!--早晚高峰拥堵预测-->
+		<script src="/analysis/static/modules/analysis/js/congestion/soorla_peak.js"></script>
+		<!--未来一周每小时拥堵预测-->
+		<script src="/analysis/static/modules/analysis/js/congestion/congeshour.js"></script>
+		<!--拥堵时间段-->
+		<script src="/analysis/static/modules/analysis/js/congestion/congestime.js"></script>
+		<!--拥堵页面返回顶部-->
+		<script src="/analysis/static/modules/analysis/js/navhfix.js"></script>
+		<!--本周与同期数据显示位置设置-->
+		<script src="/analysis/static/modules/analysis/js/Posiset.js"></script>
+	</body>
+
+</html>

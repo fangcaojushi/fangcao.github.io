@@ -1,0 +1,59 @@
+	function getHeight(name,searchname,distance){
+		var winhigh = $(window).height();
+		var searchhigh = $(searchname).height();
+		$(name).height(winhigh - searchhigh - distance);
+	}
+$(
+	//跟车关联页，获取列表高度，加滚动条
+	function genche(){
+		getHeight(".follow-list",".search-for-high",129);		
+		getHeight(".frequency-list-body",".search-for-high",166);
+		getHeight(".fake-list-body",".search-for-high",166);
+		$(".alert-detail").height($(window).height()*0.7 - 40);
+    	//跟车关联页，列表点击显示隐藏切换
+    $(".follow-list-part-title").click(function() {
+	    var n = $(this).attr("value");
+	    var showone = ".follow-l" + n;
+	    $(showone).slideToggle();
+  	})
+    //弹窗的出现与隐藏
+    $(".glyphicon-picture").click(function(){
+	    	$(".follow-alert").show();
+	    	$(".alert-bg").show();
+    })
+    $(".glyphicon-remove").click(function(){
+	    	$(".follow-alert").hide();
+	    	$(".alert-bg").hide();
+    })
+    //开始时间
+	lay('#version').html('-v'+ laydate.v);
+	//区域一
+	laydate.render({
+	  elem: '#followstart',
+	  type: 'datetime',
+	});
+	//结束时间
+	laydate.render({
+	  elem: '#followend',
+	  type: 'datetime',
+	});
+	//按键点击
+	$(".follow-search-btn .follow-btn1").click(function(){
+		$(this).removeClass("btn-primary");
+		$(".follow-btn2").addClass("btn-primary");
+	})
+	$(".follow-search-btn .follow-btn2").click(function(){
+		$(this).removeClass("btn-primary");
+		$(".follow-btn1").addClass("btn-primary");
+	})
+	//初次入城页面弹窗的出现与隐藏
+    $(".frequency-list .btn-warning.btn-outline").click(function(){
+	    	$(".follow-alert").slideDown(500);
+	    	$(".alert-bg").show();
+    })
+    $(".frequency-list .glyphicon-remove").click(function(){
+	    	$(".follow-alert").hide();
+	    	$(".alert-bg").hide();
+    })
+  }
+)

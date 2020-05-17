@@ -1,0 +1,29 @@
+document.writeln("<div class=\"ys_menu\">");
+document.writeln("		<a href=\"jtztjk.html\" target=\"_self\" class=\"yianshi1\">首页</a>");
+document.writeln("		<a href=\"dljtzs.html\" target=\"_self\" class=\"yianshi2\">指数</a>");
+document.writeln("		<a href=\"jtyxts.html\" target=\"_self\" class=\"yianshi3\">态势</a>");
+document.writeln("		<a href=\"dlsbjk.html\" target=\"_self\" class=\"yianshi4\">运维</a>");
+document.writeln("		<a href=\"zhongdianjk.html\" target=\"_self\" class=\"yianshi5\">热区</a>");
+document.writeln("		<a href=\"jwzq.html\" target=\"_self\" class=\"yianshi6\">执勤</a>");
+document.writeln("		<a href=\"czssjk.html\" target=\"_self\" class=\"yianshi7\">监控</a>");
+document.writeln("		<a href=\"\" target=\"_self\" class=\"yianshi8\"></a>");
+document.writeln("		<div class=\"touminglvl\"></div>");
+document.writeln("	</div>");
+
+
+$(function(){
+	var bodycon_obj=$('.bodycon');
+	var body_height=$(window).height();
+	bodycon_obj.css('height',body_height-60+'px');
+	var menuobj=$(".ys_menu>a"); 
+  	menuobj.click(function(){ 
+//	menuobj.each(function(i){ 
+//		$(this).removeClass("cur"+(i+1).toString()); 
+//	});
+//	var menuClassname=$(this).attr("class").substr(4);
+//	$(this).addClass("cur"+menuClassname); 
+	$(this).siblings('a').removeClass('select');  // 删除其他兄弟元素的样式
+	$(this).addClass('select');                   // 添加当前元素的样式
+  }); 
+	
+});

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=9" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>公交车载视频</title>
+    <!--bootstrap框架css-->
+    <link rel="stylesheet" href="../../static/common/css/bootstrap.css">
+    <!--兼容手机端导航菜单-->
+    <link href="../../static/common/fonts/FontAwesome/font-awesome.css" rel="stylesheet"/>
+	<!--设置皮肤css-->
+	<link href="../../static/default_theme/bootsnav.css" rel="stylesheet"/><!--导航菜单css-->	
+	<link rel="stylesheet" href="../../static/default_theme/public.css" />
+    <link rel="stylesheet" href="../../static/default_theme/monitor.css">
+    <!--公共样式css-->
+    <link rel="stylesheet" href="../../static/common/css/tree.css"  type="text/css" />
+    <link rel="stylesheet" href="../../static/common/css/jquery.mCustomScrollbar.css">
+</head>
+<body >
+	<!--导航菜单-->
+	<script src="../../static/common/js/menu.js"></script>
+	<!--解决全屏按钮的遮盖问题-->
+	<iframe class="maskFull" allowTransparency="true"></iframe>
+	<!--正文-->
+    <div class="bodycon">
+    <div class="container-fluid box_my">
+        <div class="left_z pull-left">
+           
+            <div class="tree_left">
+                    <div class="tree_top">
+                        <h5 class="left-title5">设备列表</h5>
+                        <!--搜索-->
+                        <div class="search_left">
+                            <img src="../../static/common/images/sou.png" class="sousuo-btn">
+                            <input type="text" value="请输入设备名称" class="text">
+                        </div>
+                    </div>
+                    <!--目录树-->
+                    <div id='shipin_list' class="shoushuo_window  bg7 treehight">
+                    		 <div class="trees">
+					         <div id="tree" >
+					        </div>
+					      </div>
+                    </div>
+                    
+            </div>
+            <div class="accordion_left" style="height: 10px;"></div>
+        </div>
+        <!-- c视频插件-->
+        <div class=" pull-right">
+        	<!--该页的标题区域，显示与否待定-->
+			<div class="right_z">
+				<img src="../../static/common/images/movie_1.jpg" class="movieObject"/>
+				<!--<object id="priewMulScreen" class="movieObject" name="priewMulScreen" classid="clsid:96693F65-796D-4775-98A1-0A6CF8152981">
+				</object>-->
+				<!--解决视频插件遮盖导航菜单的问题-->
+				<iframe class="maskIframe" allowTransparency="true"></iframe>			
+			</div>
+			
+        </div>
+    </div>
+    
+    </div>
+</body>
+<!-- 视频插件初始化 -->
+    <script language="javascript" for="priewMulScreen" event="FireOcxInit">
+        priewMulScreen.SetOcxAttribute(2);
+    </script>
+<script src="../../static/common/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="../../static/common/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<script src="../../static/common/js/bootsnav.js"></script>
+<script src="../../static/common/js/bootstrap.js"></script>
+
+<script src="../../static/modules/video/js/video.js"></script>
+<script src="../../static/common/js/jquery.tree.js" type="text/javascript"></script>
+<script src="../../static/common/js/tree2.js" type="text/javascript"></script>
+<!--设置目录树样式-->
+<script src="../../static/common/js/tree_style.js" type="text/javascript"></script>
+<!--设置滚动条样式-->
+<script src="../../static/common/js/min_js/jquery.mousewheel.min.js"></script>
+<script src="../../static/common/js/min_js/jquery.mCustomScrollbar.min.js"></script>
+<script type='text/javascript'>
+    (function($){
+        $(window).load(function(){
+            $(".shoushuo_window").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
+
+</html>

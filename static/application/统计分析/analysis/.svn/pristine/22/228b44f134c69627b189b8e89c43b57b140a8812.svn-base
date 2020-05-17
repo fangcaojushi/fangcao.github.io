@@ -1,0 +1,75 @@
+*{
+	font-size: 14px;
+}
+.hsave{
+	position: fixed;
+	bottom: 50px;
+	right: 26px;
+	z-index: 100;
+}
+.hsave a{
+	height: 38px;
+	width: 38px;
+	display: block;
+	padding: 9px 8px;
+	margin: 0 10px;
+	text-align: center;
+	border-radius: 50%;
+	transition: all .5s;
+}
+.hsave a:hover{
+	color: #fff;
+	background-color: #006621;
+}
+p{
+	line-height: 25px;
+}
+.hid{
+	overflow: hidden;
+}
+.hsg{
+	font-weight: bold;
+	font-size: 60px;
+}
+.haccident thead th{
+	font-size: 14px;
+}
+.haccident  tbody td,
+.haccident thead th{
+	text-align: center;
+}
+.haccident tbody td:nth-child(1){
+	text-align: left;
+}
+.hroadmx tbody td:nth-child(1){
+	text-align: center;
+}
+.hroadmx tbody td:nth-child(2){
+	text-align: left;
+}
+.echarts{
+	height: 300px;
+}
+.sgdiudie{
+	height: 400px;
+}
+
+@media only screen and (max-width:1440px ) {
+	.htjbox .col-md-6{
+		margin-left: 0px ;
+		padding:0 ;
+	}
+	.echarts{
+		height: 240px;
+	}
+	.sgdiudie{
+		height: 350px;
+	}
+	.hsg{
+		font-weight: bold;
+		font-size: 40px;
+	}
+	.haccident thead th{
+		font-size: 12px;
+	}
+}

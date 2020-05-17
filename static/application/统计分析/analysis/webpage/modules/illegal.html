@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>违法分析</title>
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="../../static/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="../../static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+	<link href="../../static/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+	<link href="../../static/css/plugins/footable/footable.core.css" rel="stylesheet">
+    <link href="../../static/css/animate.min.css" rel="stylesheet">
+    <link href="../../static/css/style.min.css?v=4.0.0" rel="stylesheet">
+    <base target="_blank">
+	<link href="../../static/modules/analysis/css/navhfix.css" rel="stylesheet"/>
+	<link href="../../static/modules/analysis/css/analysis.css" rel="stylesheet"/>
+</head>
+
+<body class="gray-bg">
+ <div class="row  border-bottom white-bg dashboard-header">
+	    <div class="col-sm-12">
+            <p>本周共查处交通违法<b>5933</b>起，其中教育纠正<b>4100</b>人次，警告<b>795</b>人次，罚款处罚<b>4000</b>起，暂扣驾驶证<b>26</b>本，吊销驾驶证<b>8</b>本，行政拘留<b>3</b>人次。
+            </p>
+            <p class="text-success">
+           	 	本年累计交通违法<b>1.71</b>亿起，其中教育纠正<b>4473.2</b>万人次，警告<b>795.6</b>万人次，罚款处罚<b>1.12</b>起，暂扣驾驶证<b>26.7</b>万本，吊销驾驶证<b>1.8</b>万本，行政拘留<b>7.3</b>万人次。
+            </p>
+        </div>
+    </div>
+<div class="wrapper wrapper-content">
+	<div class="hnav hnavfixbox">  
+	    <div class="hnavfixbt"> 
+	        <a href="#001" class="hcur" target="_self"><i class="fa fa-info-circle"></i>违法概要</a>
+	        <a href="#002"  target="_self"><i class="glyphicon glyphicon-list-alt"></i>违法数据统计</a>
+	        <a href="#003" target="_self"><i class="fa fa-unlink"></i>高发路段</a>
+	        <a href="#004"  target="_self"><i class="fa fa-pie-chart"></i>违法原因分析</a> 
+	        <a href="#005" target="_self"><i class="fa fa-area-chart"></i>违法趋势</a>
+	        <a href="#006"  target="_self"><i class="glyphicon glyphicon-book"></i>结论</a> 
+	    </div>  
+	</div>
+	<br/>
+	<div class="hcontext">
+		<div class="row active">
+			<a name="001"></a>
+            <div class="col-sm-3">
+                <div class="ibox">
+                    <div class="ibox-content hid">
+                        <h5 class="m-b-md">电警抓拍</h5>
+                        <div class="col-md-6">
+                    			<h1 class="text-danger hsg">3293</h1>
+                    		</div>
+                    		<div class="col-md-6">
+                    			<h2 class="text-danger">
+                               <i class="fa fa-play fa-rotate-270"></i> 上升
+                            </h2>
+                    			<small>环比增加18起，增加12%<i class="fa fa-level-up"></i></small>
+                    		</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="ibox">
+                	<!--style="background:url(https://mc.qcloudimg.com/static/img/4bffa77ee56c7d3927e54568a18f1005/image.png) #fff right top no-repeat;filter: gray;"-->
+                    <div class="ibox-content hid">
+                        <h5 class="m-b-md">现场执法</h5>
+                        <div class="col-md-6">
+                    			<h1 class="text-danger hsg">1633</h1>
+                    		</div>
+                    		<div class="col-md-6">
+                    			<h2 class="text-danger">
+                               <i class="fa fa-play fa-rotate-270"></i> 上升
+                            </h2>
+                    			<small>环比增加38起，增加12%<i class="fa fa-level-up"></i></small>
+                    		</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="ibox">
+                    <div class="ibox-content hid">
+                        <h5 class="m-b-md">两客一危</h5>
+                        <div class="col-md-6">
+                    			<h1 class="text-navy hsg">133</h1>
+                    		</div>
+                    		<div class="col-md-6">
+                    			<h2 class="text-navy">
+                                <i class="fa fa-play fa-rotate-90"></i> 下降
+                            </h2>
+                    			<small>环比减少18起，减少20%<i class="fa fa-level-down"></i></small>
+                    		</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="ibox">
+                    <div class="ibox-content hid">
+                        <h5 class="m-b-md">本周违法总数</h5>
+                        		<div class="col-md-6">
+                        			<h1 class="text-navy hsg">6933</h1>
+                        		</div>
+                        		<div class="col-md-6">
+                        			<h2 class="text-navy">
+                                    <i class="fa fa-play fa-rotate-90"></i> 下降
+                                </h2>
+                        			<small>环比减少210起，减少20%<i class="fa fa-level-down"></i></small>
+                        		</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+        		<div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>违法类型时间段统计</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div id="hweekwf" class="echarts" style="height: 420px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+       	 	<a name="002"></a>
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>违法数据统计</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+	                    	<table class="footable table table-hover table-bordered table-striped haccident" data-sorting="true">
+	                       		<thead>
+	                       			<tr>
+	                                    <th>交警大队名称</th>
+	                                    <th data-type="number">违法总数/起</th>
+	                                    <th data-type="number">违法增长率</th>
+	                                    <th data-type="number">电警抓拍</th>
+	                                    <th data-type="number">电警增长率</th>
+	                                    <th data-type="number">违法停车</th>
+	                                    <th data-type="number">违停增长率</th>
+	                                    <th data-type="number">查处危险品</th>
+	                                    <th data-type="number">查危增长率</th>
+	                                    <th data-type="number">教育纠正/起</th>
+	                                </tr>
+	                       		</thead>
+	                            <tbody>
+	                                <tr>
+	                                    <td width="20%">崇安区交警大队</td>
+	                                    <td data-value="1293">1293</td>
+	                                    <td data-value="0.4" class="text-danger"> <i class="fa fa-level-up"></i> 40%</td>
+	                                    <td data-value="993">993</td>
+	                                    <td data-value="-0.2" class="text-navy"> <i class="fa fa-level-down"></i> 20%</td>
+	                                    <td data-value="216">216</td>
+	                                    <td data-value="0.43" class="text-danger"> <i class="fa fa-level-up"></i> 43%</td>
+	                                    <td data-value="38">38</td>
+	                                    <td data-value="-0.42"  class="text-navy"> <i class="fa fa-level-down"></i> 42%</td>
+	                                    <td data-value="900" >900</td>
+	                                </tr>
+	                                <tr>
+	                                    <td>梁溪区交警大队车管所 </td>
+	                                    <td data-value="923">923</td>
+	                                    <td data-value="0.2"  class="text-danger"> <i class="fa fa-level-up"></i> 20%</td>
+	                                    <td data-value="693" >693</td>
+	                                    <td data-value="0.3"  class="text-danger"> <i class="fa fa-level-up"></i> 30%</td>
+	                                    <td data-value="116" >116</td>
+	                                    <td data-value="0.2"  class="text-danger"> <i class="fa fa-level-up"></i> 20%</td>
+	                                    <td data-value="138" >138</td>
+	                                    <td data-value="-0.1"  class="text-navy"> <i class="fa fa-level-down"></i> 10%</td>
+	                                    <td data-value="893" >893</td>
+	                                </tr>
+	                                <tr>
+	                                    <td>滨湖区交警大队四中队</td>
+	                                    <td data-value="693">693</td>
+	                                    <td data-value="0.08"  class="text-danger"> <i class="fa fa-level-up"></i> 8%</td>
+	                                    <td data-value="593"  >593</td>
+	                                    <td data-value="0.13"  class="text-danger"> <i class="fa fa-level-up"></i> 13%</td>
+	                                    <td data-value="96" >96</td>
+	                                    <td data-value="0.22"  class="text-danger"> <i class="fa fa-level-up"></i> 22%</td>
+	                                    <td data-value="18" >18</td>
+	                                    <td data-value="0.14"  class="text-danger"> <i class="fa fa-level-up"></i> 14%</td>
+	                                    <td data-value="580" >580</td>
+	                                </tr>
+	                                <tr>
+	                                    <td>北塘区交警大队</td>
+	                                    <td data-value="1010">1010</td>
+	                                    <td data-value="0.13"  class="text-danger"> <i class="fa fa-level-up"></i> 13%</td>
+	                                    <td data-value="983" >983</td>
+	                                    <td data-value="0.32"  class="text-danger"> <i class="fa fa-level-up"></i> 32%</td>
+	                                    <td data-value="266" >266</td>
+	                                    <td data-value="0.06"  class="text-danger"> <i class="fa fa-level-up"></i> 6%</td>
+	                                    <td data-value="58" >58</td>
+	                                    <td data-value="0.11"  class="text-danger"> <i class="fa fa-level-up"></i> 11%</td>
+	                                    <td data-value="1090" >1090</td>
+	                                </tr>
+	                                <tr>
+	                                    <td>南长区交警大队景区大队</td>
+	                                    <td data-value="1293">1293</td>
+	                                    <td data-value="0.18"  class="text-danger"> <i class="fa fa-level-up"></i> 18%</td>
+	                                    <td data-value="993" >993</td>
+	                                    <td data-value="0.13"  class="text-danger"> <i class="fa fa-level-up"></i> 13%</td>
+	                                    <td data-value="216" >216</td>
+	                                    <td data-value="-0.22"  class="text-navy"> <i class="fa fa-level-down"></i> 22%</td>
+	                                    <td data-value="38" >38</td>
+	                                    <td data-value="0.14"  class="text-danger"> <i class="fa fa-level-up"></i> 14%</td>
+	                                    <td data-value="900" >900</td>
+	                                </tr>
+	                                <tr>
+	                                    <td>惠山区交警大队停车场</td>
+	                                    <td data-value="329">329</td>
+	                                    <td data-value="0.23"  class="text-danger"> <i class="fa fa-level-up"></i> 23%</td>
+	                                    <td data-value="193" >193</td>
+	                                    <td data-value="0.21"  class="text-danger"> <i class="fa fa-level-up"></i> 21%</td>
+	                                    <td data-value="261" >261</td>
+	                                    <td data-value="0.14"  class="text-danger"> <i class="fa fa-level-up"></i> 14%</td>
+	                                    <td data-value="56" >56</td>
+	                                    <td data-value="0.03"  class="text-danger"> <i class="fa fa-level-up"></i> 3%</td>
+	                                    <td data-value="320" >320</td>
+	                                </tr>
+	                                <tr>
+	                                    <td>新吴区交警大队巡逻疏导大队</td>
+	                                    <td data-value="1293">1293</td>
+	                                    <td data-value="0.13"  class="text-danger"> <i class="fa fa-level-up"></i> 13%</td>
+	                                    <td data-value="993" >993</td>
+	                                    <td data-value="0.11"  class="text-danger"> <i class="fa fa-level-up"></i> 11%</td>
+	                                    <td data-value="216" >216</td>
+	                                    <td data-value="0.35"  class="text-danger"> <i class="fa fa-level-up"></i> 35%</td>
+	                                    <td data-value="38" >38</td>
+	                                    <td data-value="0.40"  class="text-danger"> <i class="fa fa-level-up"></i> 40%</td>
+	                                    <td data-value="900" >900</td>
+	                                </tr>
+	                                <tr>
+	                                    <td>全市</td>
+	                                    <td data-value="4933">4933</td>
+	                                    <td data-value="0.12"  class="text-danger"> <i class="fa fa-level-up"></i> 12%</td>
+	                                    <td data-value="3293" >3293</td>
+	                                    <td data-value="0.32"  class="text-danger"> <i class="fa fa-level-up"></i> 32%</td>
+	                                    <td data-value="1633" >1633</td>
+	                                    <td data-value="-0.12"  class="text-navy"> <i class="fa fa-level-down"></i> 12%</td>
+	                                    <td data-value="133" >133</td>
+	                                    <td data-value="0.14"  class="text-danger"> <i class="fa fa-level-up"></i> 14%</td>
+	                                    <td data-value="4000" >4000</td>
+	                                </tr>
+	                            </tbody>
+	                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="row">
+        	<a name="003"></a>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>全市违法与处罚分析</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="echarts" id="hwf_city"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>各大队违法分析</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="echarts" id="hwf_team"></div>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <div class="row">
+        	<a name="004"></a>   
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>违法高发路段TOP10</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content  hid">
+                    	<div class="col-sm-6">
+                    		 <div class="sgdiudie"  id="highroadwf"></div>
+                    	</div>
+                    	<div class="col-md-6">
+                    		<table class="table table-hover table-bordered table-striped haccident hroadmx">
+                       		<thead>
+                       			<tr>
+                       				<th>排名</th>
+                                    <th>高发路段名</th>
+                                    <th>违法/起</th>
+                                    <th>处罚/起</th>
+                                    <th>违法代码</th>
+                                    <th>高发频率</th>
+                                </tr>
+                       		</thead>
+                            <tbody>
+                                <tr>
+                                	   <td>1</td>
+                                    <td width="30%">东华路片区</td>
+                                    <td>102</td>
+                                    <td>91</td>
+                                    <td>1209</td>
+                                    <td>1132</td>
+                                </tr>
+                                 <tr>
+                                 	<td>2</td>
+                                    <td>振石路</td>
+                                    <td>96</td>
+                                    <td>89</td>
+                                    <td>1301</td>
+                                    <td>1096</td>
+                                </tr>
+                                <tr>
+                                 	<td>3</td>
+                                    <td>翠山路</td>
+                                    <td>96</td>
+                                    <td>29</td>
+                                    <td>1625</td>
+                                    <td>1096</td>
+                                </tr>
+                                <tr>
+                                 	<td>4</td>
+                                    <td>丹山路</td>
+                                    <td>96</td>
+                                    <td>29</td>
+                                    <td>1301</td>
+                                    <td>1096</td>
+                                </tr>
+                                <tr>
+                                 	<td>5</td>
+                                    <td>北惠路</td>
+                                    <td>96</td>
+                                    <td>59</td>
+                                    <td>1344</td>
+                                    <td>1096</td>
+                                </tr>
+                                <tr>
+                                 	<td>6</td>
+                                    <td>南湖路</td>
+                                    <td>86</td>
+                                    <td>29</td>
+                                    <td>1625</td>
+                                    <td>1096</td>
+                                </tr>
+                                <tr>
+                                 	<td>7</td>
+                                    <td>湖西路</td>
+                                    <td>73</td>
+                                    <td>29</td>
+                                    <td>1301</td>
+                                    <td>1096</td>
+                                </tr>
+                                <tr>
+                                 	<td>8</td>
+                                    <td>健康路</td>
+                                    <td>69</td>
+                                    <td>29</td>
+                                    <td>1208</td>
+                                    <td>1096</td>
+                                </tr>
+                                <tr>
+                                 	<td>9</td>
+                                    <td>盛岸路</td>
+                                    <td>53</td>
+                                    <td>29</td>
+                                    <td>1344</td>
+                                    <td>1096</td>
+                                </tr>
+                                <tr>
+                                 	<td>10</td>
+                                    <td>兴源北路</td>
+                                    <td>45</td>
+                                    <td>29</td>
+                                    <td>1301</td>
+                                    <td>1096</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    	</div>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <div class="row">
+        	<a name="005"></a>      
+           <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>综合违法原因分析</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="echarts" id="hwf_reason"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>执法力度分析</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                       <table class="table table-hover table-bordered table-striped haccident hchufa">
+                       		<thead>
+                       			<tr>
+                                    <th>交警队名称</th>
+                                    <th>查处总起数</th>
+                                    <th>电警抓拍</th>
+                                    <th>审核通过率</th>
+                                    <th>现场查处</th>
+                                    <th>现场处罚</th>
+                                </tr>
+                       		</thead>
+                            <tbody>
+                                <tr>
+                                    <td width="30%">崇安区交警大队四中队</td>
+                                    <td>2102</td>
+                                    <td>1209</td>
+                                    <td>85%</td>
+                                    <td>332</td>
+                                    <td>91</td>
+                                </tr>
+                                 <tr>
+                                    <td>滨湖区交警大队车管所</td>
+                                    <td>2096</td>
+                                    <td>1301</td>
+                                    <td>89%</td>
+                                    <td>596</td>
+                                    <td>89</td>
+                                </tr>
+                                <tr>
+                                    <td>梁溪区交警大队</td>
+                                    <td>1296</td>
+                                    <td>925</td>
+                                    <td>95%</td>
+                                    <td>196</td>
+                                    <td>29</td>
+                                </tr>
+                                <tr>
+                                    <td>北塘区交警大队停车场</td>
+                                    <td>1396</td>
+                                    <td>1301</td>
+                                    <td>90%</td>
+                                    <td>396</td>
+                                    <td>29</td>
+                                </tr>
+                                <tr>
+                                    <td>南山交警大队景区大队</td>
+                                    <td>2096</td>
+                                    <td>1344</td>
+                                    <td>85%</td>
+                                    <td>106</td>
+                                    <td>59</td>
+                                </tr>
+                                <tr>
+                                    <td>惠山区交警大队 </td>
+                                    <td>886</td>
+                                    <td>625</td>
+                                    <td>75%</td>
+                                    <td>169</td>
+                                    <td>29</td>
+                                </tr>
+                                <tr>
+                                    <td>锡山区交警大队巡逻疏导大队</td>
+                                    <td>773</td>
+                                    <td>701</td>
+                                    <td>65%</td>
+                                    <td>73</td>
+                                    <td>29</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="row">
+        	<a name="006"></a>      
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>违法趋势分析</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="echarts" id="htrend" style="height: 420px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="row">
+        		<a name="007"></a>
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                     <div class="ibox-title">
+                        <h5>结论/建议</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="accident.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="accident.html#">选项1</a>
+                                </li>
+                                <li><a href="accident.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content hid">
+                    		<div class="col-md-5">
+                    			<table class="hvs">
+                    				<tr>
+                    					<td>
+                    						<h3>本周</h3>
+                    					</td>
+                    					<td>
+                    						<h1>VS</h1>
+                    					</td>
+                    					<td>
+                    						<h3>同期</h3>
+                    					</td>
+                    				</tr>
+                    				<tr>
+                    					<td>
+                    						<b class="num_conl4">5896起</b>
+                    						<span class="chart_conl4" style="width:80%;"></span>
+                    					</td>
+                    					<td>电警抓拍</td>
+                    					<td>
+                    						<span class="chart_conr4" style="width: 100%;"></span>
+                    						<b class="num_conr4">6396起</b>
+                    					</td>
+                    				</tr>
+                    				<tr>
+                    					<td>
+                    						<b class="num_conl5">4696起</b>
+                    						<span class="chart_conl5" style="width:58%;"></span>
+                    					</td>
+                    					<td>审核通过</td>
+                    					<td>
+                    						<span class="chart_conr5" style="width: 75%;"></span>
+                    						<b class="num_conr5">5326起</b>
+                    					</td>
+                    				</tr>
+                    				<tr>
+                    					<td>
+                    						<b class="num_conl6">2696起</b>
+                    						<span class="chart_conl6" style="width:30%;"></span>
+                    					</td>
+                    					<td>现场查处</td>
+                    					<td>
+                    						<span class="chart_conr6" style="width: 55%;"></span>
+                    						<b class="num_conr6">3326起</b>
+                    					</td>
+                    				</tr>
+                    				<tr>
+                    					<td>
+                    						<b class="num_conl7">396起</b>
+                    						<span class="chart_conl7" style="width:10%;"></span>
+                    					</td>
+                    					<td>两客一危</td>
+                    					<td>
+                    						<span class="chart_conr7" style="width: 19%;"></span>
+                    						<b class="num_conr7">426起</b>
+                    					</td>
+                    				</tr>
+                    			</table>
+                    		</div>
+                    		<div class="col-md-4 hjy improving">
+                    			<h3>违法与同期相比</h3>
+                    			<h4>
+                    				<p>全市违法总数增加12起，<span class=" text-danger">增加<i class="fa fa-level-up"></i>  2%</span>。</p>
+                    				<p>伤人违法与同期<span class=" text-success">持平</span>,  受伤人数减少1人,  <span class=" text-info">减少<i class="fa fa-level-down"> 0.6%</i> </p>
+                    				<p>死亡违法减少2起，<span class=" text-info">减少<i class="fa fa-level-down"> 50%</i></span>,   死亡人数减少3人，<span class=" text-info">减少<i class="fa fa-level-down"> 60%</i> </p>
+                    				<p>
+                    					滨湖区支队违法总数，<span class=" text-danger">增加<i class="fa fa-level-up"></i>  12%</span>;  
+                    					北塘区支队违法总数，<span class=" text-info">减少<i class="fa fa-level-down"></i>  50%</span>;  
+                    					惠山支队违法总数，<span class=" text-danger">增加<i class="fa fa-level-up"></i>  26%</span>;  
+                    					南长支队违法总数，<span class=" text-danger">增加<i class="fa fa-level-up"></i>  19%</span>;  
+                    					锡山支队违法总数，<span class=" text-danger">增加<i class="fa fa-level-up"></i>  35%</span>;  
+                    				</p>
+                    			</h4>
+                    		</div>
+                    		<div class="col-md-3 hjy">
+                    			<h3>改进措施</h3>
+                    			<h4>
+                    				<blockquote>
+                    					<li>加大<b>酒驾</b>查处的力度，重点车辆的管理</li>
+	                    				<li>对新吴区,水清沟片区加大<b>摩托车的管控</b>，做好切实有效的市场管控。</li>
+	                    				<li>立即修复盛岸路与春申路口的红绿灯</li>	
+                    				</blockquote>
+                    			</h4>
+                    		</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-warning">
+            信息统计时间：2017年5月8日0时 至 5月14日24时
+        </div>
+        <br/> <br/>
+        <div class="hsave">
+	        <a class="badge-info backToTop" title="返回顶部" style="display: none;">
+                <i class="glyphicon glyphicon-eject"></i>
+            </a>
+            <a class="badge-warning" title="导出">
+                <i class="glyphicon glyphicon-share"></i>
+            </a>
+             <a class="badge-success" title="打印">
+                <i class="glyphicon glyphicon-print"></i>
+
+            </a>
+        </div>
+	</div>
+</div>
+    <script src="../../static/js/jquery.min.js?v=2.1.4"></script>
+    <script src="../../static/js/bootstrap.min.js?v=3.3.5"></script>
+    <script src="../../static/js/plugins/footable/footable.all.min.js"></script>
+    <script src="../../static/js/plugins/echarts/echarts.js"></script>
+    <script src="../../static/js/content.min.js?v=1.0.0"></script>
+    <script>
+        $(document).ready(function(){$(".footable").footable();});
+    </script>
+    <!--一周违法分析-->
+    <script src="../../static/modules/analysis/js/illegal/hweekwf.js"></script>
+    <!--全市违法分析-->
+    <script src="../../static/modules/analysis/js/illegal/hwf_city.js"></script>
+    <!--大队违法分析-->
+    <script src="../../static/modules/analysis/js/illegal/hwf_team.js"></script>
+    <!--高发路段分析-->
+    <script src="../../static/modules/analysis/js/illegal/highroadwf.js"></script>
+     <!--原因分析-->
+    <script src="../../static/modules/analysis/js/illegal/hwf_reason.js"></script>
+     <!--趋势-->
+    <script src="../../static/modules/analysis/js/accident/htrend.js"></script>
+    <script src="../../static/modules/analysis/js/navhfix.js"></script>
+	<!--本周与同期数据显示位置设置-->
+	<script src="../../static/modules/analysis/js/Posiset.js"></script>
+</body>
+
+</html>

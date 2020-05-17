@@ -1,0 +1,64 @@
+.fake-detail-pic .ibox-content{
+	overflow: hidden;	
+}
+.fake-detail-content .ibox-content{
+	overflow: hidden;
+}
+.fake-detail-list li{
+	vertical-align: top;
+	line-height: 50px;
+	font-size: 16px;
+	border-bottom: 1px solid #ddd;
+}
+.fake-detail-content .ibox{
+	animation: listshow 1s;
+}
+.fake-pic-box {
+	padding:0;
+	background-color: #eee;
+}
+.fake-detail-pic{
+	position:relative;
+}
+.fake-detail-pic .fake-vs{
+	width:120px;
+	height:120px;
+	position: absolute;
+	left:50%;
+	margin-left: -60px;
+	top:30%;
+	z-index: 9;
+}
+.fake-vs .vs-opac{
+	width:120px;
+	height:120px;
+	background-color:#ed5565;
+	opacity: .2;
+	border-radius:120px;
+	position: absolute;
+	left:0;
+	top:0;
+}
+.fake-vs .txt{
+	width:100px;
+	height:100px;
+	background-color:#fff;
+	border-radius:100px;
+	margin:10px;
+	color:#ed5565;
+	line-height: 100px;
+	text-align: center;
+	font-size: 30px;
+	text-shadow: 0 2px 4px;
+	position: relative;
+}
+@keyframes listshow{
+	from{
+		margin-top:500px;
+		opacity: 0.3;
+	}
+	to{
+		margin-top:0;
+		opacity:1;
+	}
+}

@@ -1,0 +1,55 @@
+*{
+	font-size: 14px;
+}
+.hsave{
+	position: fixed;
+	bottom: 50px;
+	right: 26px;
+	z-index: 100;
+}
+.hsave a{
+	height: 38px;
+	width: 38px;
+	display: block;
+	padding: 9px 8px;
+	margin: 0 10px;
+	text-align: center;
+	border-radius: 50%;
+	transition: all .5s;
+}
+.hsave a:hover{
+	color: #fff;
+	background-color: #006621;
+}
+p{
+	line-height: 25px;
+}
+.htjbox{
+	overflow: hidden;
+}
+.htjbox h1{
+	font-weight: bold;
+	font-size: 60px;
+}
+.hsgthead th{
+		font-size: 14px;
+	}
+.echarts{
+	height: 300px;
+}
+@media only screen and (max-width:1440px ) {
+	.htjbox .col-md-6{
+		margin-left: 0px ;
+		padding:0 ;
+	}
+	.echarts{
+		height: 240px;
+	}
+	.htjbox h1{
+		font-weight: bold;
+		font-size: 40px;
+	}
+	.hsgthead th{
+		font-size: 12px;
+	}
+}

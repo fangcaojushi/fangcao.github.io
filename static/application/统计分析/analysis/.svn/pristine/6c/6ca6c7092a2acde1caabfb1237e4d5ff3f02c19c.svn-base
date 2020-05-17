@@ -1,0 +1,73 @@
+$(function() {
+	var e = echarts.init(document.getElementById("soorla_peak")),
+	a = {
+	    title : {
+	        text: '',
+	        subtext: ''
+	    },
+	    tooltip : {
+	        trigger: 'axis'
+	    },
+	    grid: {
+	        height: '70%',
+	        y: '20%'
+	    },
+	    legend: {
+	        data:['早高峰','晚高峰']
+	    },
+	    toolbox: {
+	        show : true,
+	        feature : {
+	            dataView : {show: true, readOnly: false},
+	            magicType : {show: true, type: ['line', 'bar']},
+	            restore : {show: true},
+	            saveAsImage : {show: true}
+	        }
+	    },
+	    calculable : true,
+	    xAxis : [
+	        {
+	            type : 'category',
+	            data : ["周一","周二","周三","周四","周五","周六","周日"]
+	        }
+	    ],
+	    yAxis : [
+	        {
+	            type : 'value'
+	        }
+	    ],
+	    series : [
+	        {
+	            name:'早高峰',
+	            type:'bar',
+	            itemStyle: {
+			      normal: {
+			        color: '#a8c95f'
+			      }
+			    },
+	            data:[3.4, 2.8, 6.5, 5.9, 6.3, 6.1, 5.8],
+	            markPoint : {
+	                data : [
+	                    {type : 'max', name: '最大值'},
+	                ]
+	            }
+	        },
+	        {
+	            name:'晚高峰',
+	            type:'bar',
+	            itemStyle: {
+			      normal: {
+			        color: '#58b4ef'
+			      }
+			    },
+	            data:[5.8, 6.2, 8.1, 8.8, 7.5, 7.2, 9.1],
+	            markPoint : {
+	                data : [
+	                    {type : 'max', name: '最大值'},
+	                ]
+	            }
+	        }
+	    ]
+	};
+	e.setOption(a), $(window).resize(e.resize);
+})

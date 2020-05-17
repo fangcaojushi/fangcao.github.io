@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>明细页</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="/analysis/static/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="/analysis/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="/analysis/static/css/style.min.css?v=4.0.0" rel="stylesheet">
+    <base target="_blank">
+    <link href="/analysis/static/modules/judge/css/detailed.css" rel="stylesheet"/>
+</head>
+<!--
+    	作者：wh
+    	时间：2017-09-12
+    	描述：区域信息碰撞研判
+    -->
+<body>
+	<div id="timeline">
+		<h1 class="hdetailtitle">苏B 89728 过车详情</h1>
+			<ul id="dates" >
+				<li>
+					<a href="#" class="">
+						<h3>蠡湖大道金城西路到太湖西大道</h3>
+						<p>2017-05-06 10:45:53</p>
+					</a>
+					<i>1</i>
+				</li>
+				<li>
+					<a href="#" class="">
+						<h3>无锡市滨湖区钟秀路</h3>
+						<p>2017-05-06 10:45:53</p>
+					</a>
+					<i>2</i>
+				</li>
+				<li>
+					<a href="#" class="">
+						<h3>金城西路与青祁路交汇处蠡湖一号</h3>
+						<p>2017-05-06 10:45:53</p>
+					</a>
+					<i>3</i>
+				</li>
+				<li>
+					<a href="#" class="">
+						<h3>太湖西大道/鸿桥路</h3>
+						<p>2017-05-06 10:45:53</p>
+					</a>
+					<i>4</i>
+				</li>
+			</ul>
+			<ul id="issues" style="height: 6000px; margin-top: -4800px;">
+				<li id="#1900" class="" style="opacity: 0.2;">
+					<img src="aa_files/1.png" width="256" height="256">
+					<h1>1900</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+				<li id="#1930" style="opacity: 0.2;">
+					<img src="aa_files/2.png" width="256" height="256">
+					<h1>1930</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+				<li id="#1944" style="opacity: 0.2;" class="">
+					<img src="aa_files/3.png" width="256" height="256">
+					<h1>1944</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+				<li id="#1950" style="opacity: 0.2;" class="">
+					<img src="aa_files/4.png" width="256" height="256">
+					<h1>1950</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+				<li id="#1971" style="opacity: 0.2;" class="">
+					<img src="aa_files/5.png" width="256" height="256">
+					<h1>1971</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+				<li id="#1977" style="opacity: 0.2;">
+					<img src="aa_files/6.png" width="256" height="256">
+					<h1>1977</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+				<li id="#1989" style="opacity: 0.2;" class="">
+					<img src="aa_files/7.png" width="256" height="256">
+					<h1>1989</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+				<li id="#1999" style="opacity: 0.2;" class="">
+					<img src="aa_files/8.png" width="256" height="256">
+					<h1>1999</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+				<li id="#2001" style="opacity: 1;" class="selected">
+					<img src="aa_files/9.png" width="256" height="256">
+					<h1>2001</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+				<li id="#2011" style="opacity: 0.2;" class="">
+					<img src="aa_files/10.png" width="256" height="256">
+					<h1>2011</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+			</ul>
+			<div id="grad_top"></div>
+			<div id="grad_bottom"></div>
+			<a href="#" id="next">+</a>
+			<a href="#" id="prev">-</a>
+		</div>
+
+    <!--明细页开始结束 -->
+	<script src="/analysis/static/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/analysis/static/js/bootstrap.min.js?v=3.3.5"></script>
+    <script src="/analysis/static/js/content.min.js?v=1.0.0"></script>
+    
+</body>
+
+</html>

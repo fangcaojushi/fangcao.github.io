@@ -1,0 +1,61 @@
+$(function() {
+	var e = echarts.init(document.getElementById("higconreason")),
+	a = {
+		title: {
+			text: ""
+		},
+		tooltip: {
+			trigger: ""
+		},
+		legend: {
+			  data:['不可避免','人为原因']
+		},
+		grid: {
+			x: 40,
+			x2: 40,
+			y2: 24
+		},
+		calculable: !0,
+		xAxis: [{
+			type: "category",
+			data: ["早晚高峰","道路施工","占道经营","接孩子乱停车"]
+		}],
+		yAxis: {},
+		series: [{
+            name:'不可避免',
+            type: 'bar',
+            barWidth:34,//设置柱子的宽度
+            label: {
+                normal: {
+                    show: true,
+                    position:"top"
+                }
+            },
+            itemStyle: {
+		      normal: {
+		        color: '#a8c95f'
+		      }
+		    },
+            data: [86, 70, 55, 82]
+        },
+        {
+            name:'人为原因',
+            type: 'bar',
+            barWidth:34,//设置柱子的宽度
+            label: {
+            
+                normal: {
+                    show: true,
+                    position:"top"
+                }
+            },
+            itemStyle: {
+		      normal: {
+		        color: '#58b4ef'
+		      }
+		    },
+            data: [18, 22, 34, 28]
+        }]
+	};
+	e.setOption(a), $(window).resize(e.resize);
+})

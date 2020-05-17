@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<title>公共安全监测分析</title>
+		<!--bootstrap框架css-->
+		<link href="../../static/common/css/bootstrap.css" rel="stylesheet" />
+		<!--导航菜单和兼容手机端导航菜单-->
+		<link href="../../static/default_theme/bootsnav.css" rel="stylesheet" />
+		<link href="../../static/common/fonts/FontAwesome/font-awesome.css" rel="stylesheet" />
+		<!--public为公用的样式-->
+		<link href="../../static/default_theme/public.css" rel="stylesheet" />
+		<link href="../../static/modules/analysis/css/analysis.css" rel="stylesheet" />
+		<!--滚动条-->
+		<link rel="stylesheet" href="../../static/common/css/jquery.mCustomScrollbar.css">
+	</head>
+
+	<body>
+		<!--导航菜单-->
+		<script src="../../static/common/js/menu.js"></script>
+		<!--正文区域-->
+		<div class="bodycon">
+			<!--该页的标题区域-->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 fen-title">
+						<h2 class="text-center gj_title">公共安全监测分析</h2>
+						<div class="lg-txt">
+							<div class="light">
+								<img class="faguang" src="../../static/common/images/shanliang.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid high_95">
+				<div class="high_10 screening">
+					<p class="pull-left selection_title">发车频率的分类条件:</p>
+					<div class="pull-left">
+						<!--筛选条件显示-->
+						<div class="selected_frequerncy" >
+								<span class="active">近1年</span>
+								<span>近5年</span>
+								<span>2016</span>
+								<span>2015</span>
+								<span>2014</span>
+						</div>
+					</div>
+				</div>
+				<div class="fen"></div>
+				<div class="container-fluid high_50">
+					<!--公共安全监测的div-->
+					<div id="safety" class="chartmy"></div>
+				</div>
+				<div class="fen"></div>
+				<div class="container-fluid offset_table high_30"  >
+					<div id="tbl_box">
+						<!--公共安全监测table-->
+						<table class="sharing_table  text-center" id="tbl_con">
+							<thead>
+								<tr class="headtr">
+									<td width="20%">时间</td>
+									<td width="20%">超速</td>
+									<td width="20%">飞站</td>
+									<td width="20%">偏移</td>
+									<td width="20%">总数</td>
+								</tr>
+							</thead>
+	            				<tbody>
+								<tr>
+									<td width="20%">2017-2</td>
+									<td width="20%">13</td>
+									<td width="20%">36</td>
+									<td width="20%">29</td>
+									<td width="20%">87</td>
+									
+								</tr>
+								<tr>
+									<td>2017-2</td>
+									<td>13</td>
+									<td>36</td>
+									<td>29</td>
+									<td>87</td>
+									
+								</tr>
+								<tr>
+									<td>2017-2</td>
+									<td>13</td>
+									<td>36</td>
+									<td>29</td>
+									<td>87</td>
+									
+								</tr>
+								<tr>
+									<td>2017-2</td>
+									<td>13</td>
+									<td>36</td>
+									<td>29</td>
+									<td>87</td>
+									
+								</tr>
+								<tr>
+									<td>2017-2</td>
+									<td>13</td>
+									<td>36</td>
+									<td>29</td>
+									<td>87</td>
+									
+								</tr>
+								<tr>
+									<td>2017-2</td>
+									<td>13</td>
+									<td>36</td>
+									<td>29</td>
+									<td>87</td>
+									
+								</tr>
+								<tr>
+									<td>2017-2</td>
+									<td>13</td>
+									<td>36</td>
+									<td>29</td>
+									<td>87</td>
+									
+								</tr>
+								<tr>
+									<td>2017-2</td>
+									<td>13</td>
+									<td>36</td>
+									<td>29</td>
+									<td>87</td>
+									
+								</tr>
+								<tr>
+									<td>2017-2</td>
+									<td>13</td>
+									<td>36</td>
+									<td>29</td>
+									<td>87</td>
+									
+								</tr>
+								<tr>
+									<td>2017-2</td>
+									<td>13</td>
+									<td>36</td>
+									<td>29</td>
+									<td>87</td>
+									
+								</tr>
+								<tr>
+									<td>2017-2</td>
+									<td>13</td>
+									<td>36</td>
+									<td>29</td>
+									<td>87</td>
+									
+								</tr>
+								<tr>
+									<td>2017-2</td>
+									<td>13</td>
+									<td>36</td>
+									<td>29</td>
+									<td>87</td>
+									
+								</tr>
+							  <tbody>
+							</table>
+					
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--引入jquery包，进行异步加载-->
+		<script src="../../static/common/js/jquery-1.11.2.min.js"></script>
+		<!--bootstrap包，请勿修改-->
+		<script src="../../static/common/js/bootstrap.js"></script>
+		<!--导航菜单，请勿修改-->
+		<script src="../../static/common/js/bootsnav.js"></script>
+		<!--条件选择器-->
+		<script src="../../static/modules/analysis/js/analysis_search.js"></script>
+		<!--highcharts图表-->
+		<script src="../../static/common/js/highcharts.js"></script>
+		<!--highcharts图表3d图-->
+		<script src="../../static/common/js/highcharts-3d.js"></script>
+		<!--公共安全监测的图表-->
+		<script src="../../static/modules/analysis/js/safety.js"></script>
+		<script src="../../static/common/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+		<!--设置table表头固定上方显示-->
+		<script src="../../static/modules/analysis/js/jQuery_FixedTableHead.js"></script>
+		<!--设置滚动条样式-->
+		<script src="../../static/common/js/min_js/jquery.mousewheel.min.js"></script>
+		<script src="../../static/common/js/min_js/jquery.mCustomScrollbar.min.js"></script>
+		<script type='text/javascript'>
+		    (function($){
+		        $(window).load(function(){
+		            $("#tbl_box").mCustomScrollbar();
+		        });
+		    })(jQuery);
+		</script>
+	</body>
+
+</html>

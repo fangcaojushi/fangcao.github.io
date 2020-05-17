@@ -1,0 +1,138 @@
+$(function() {
+	var hweekwf = echarts.init(document.getElementById("hweekwf")),
+	hweekwfopt = {
+	    backgroundColor: "#fff",
+	    color: ['#a6cb5f', '#5facdb','#ED5565'],
+	    "title": {
+	       text:""
+	    },
+	    grid: {
+			x: 40,
+			x2: 40,
+			y2: 24
+		},
+	    "tooltip": {
+	        "trigger": "axis",
+	        "axisPointer": {
+	            "type": "shadow",
+	            textStyle: {
+	                color: "#fff"
+	            }
+	
+	        },
+	    },
+	    "legend": {
+	        "data": ['电警抓拍', '违法停车', '查处危险品']
+	    },
+	     
+	
+	    "calculable": false,
+	    "xAxis": [{
+	        "type": "category",
+	       
+	        "data":['周一','周二','周三','周四','周五','周六','周日'],
+	    }],
+	    "yAxis": [{
+	        "type": "value",
+	        "splitLine": {
+	            "show": false
+	        },
+	        "axisLine": {
+	            lineStyle: {
+	                color: '#90979c'
+	            }
+	        },
+	        "axisTick": {
+	            "show": false
+	        },
+	        "axisLabel": {
+	            "interval": 0,
+	
+	        },
+	        "splitArea": {
+	            "show": false
+	        },
+	
+	    }],
+	    
+	    "series": [
+	        {
+	            "name": "电警抓拍",
+	            "type": "bar",
+//	            "stack": "总量",
+	            "barMaxWidth": 40,
+	            "barGap": "10%",
+	            "data": [
+	                1709,
+	                3217,
+	                2455,
+	                2610,
+	                2219,
+	                1433,
+	                1544
+	                
+	            ],
+	        },
+	
+	        {
+	            "name": "违法停车",
+	            "type": "bar",
+//	            "stack": "总量",
+	            "data": [
+	                327,
+	                476,
+	                507,
+	                120,
+	                800,
+	                482,
+	                204
+	            ]
+	        },
+	
+	        {
+	            "name": "查处危险品",
+	            "type": "bar",
+//	            "stack": "总量",
+	            "data": [
+	                327,
+	                176,
+	                507,
+	                120,
+	                200,
+	                482,
+	                204
+	            ]
+	        }, {
+	            "name": "违法总数",
+	            "type": "line",
+//	            "stack": "总量",
+	            symbolSize:10,
+	            symbol:'circle',
+	            "itemStyle": {
+	                "normal": {
+	                    "color": "#ccc",
+	                    "barBorderRadius": 0,
+	                    "label": {
+	                        "show": true,
+	                        "position": "top",
+	                        formatter: function(p) {
+	                            return p.value > 0 ? (p.value) : '';
+	                        }
+	                    }
+	                }
+	            },
+	            "data": [
+	                2036,
+	                3869,
+	                2962,
+	                1530,
+	                2519,
+	                1915,
+	                1748
+	            ]
+	        },
+	    ]
+	};
+
+	hweekwf.setOption(hweekwfopt), $(window).resize(hweekwf.resize);
+})

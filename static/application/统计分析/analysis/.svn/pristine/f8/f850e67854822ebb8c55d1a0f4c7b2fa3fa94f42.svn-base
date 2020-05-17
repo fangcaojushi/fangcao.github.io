@@ -1,0 +1,109 @@
+// 指定图表的配置项和数据
+ var spirit = 'path://M648.119679 359.89065 957.096752 407.049716 733.588259 636.144438 786.391882 959.733301 510.022461 807.02327 233.708298 959.848934 286.398334 636.261095 62.832536 407.163303 371.751281 359.948979 509.905804 65.585741Z';
+var maxData = 100;      
+$(function() {
+ // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('opera_fen')),
+		
+		option = {
+		    tooltip: {
+		    },
+		    xAxis: {
+		        max: maxData,
+		        splitLine: {show: false},
+		        offset: 10,
+		        axisLine: {
+		            lineStyle: {
+		                color: '#999'
+		            }
+		        },
+		        axisLabel: {
+		            margin: 10
+		        }
+		    },
+		    yAxis: {
+		        data: ['内蒙古运维单位', '大兴运维单位','合川运维单位'],
+		        inverse: true,
+		        axisTick: {show: false},
+		        axisLine: {show: false},
+		        axisLabel: {
+		            margin: 10,
+		            textStyle: {
+		                color: '#333',
+		                fontSize: 18
+		            }
+		        }
+		    },
+		    grid: {
+		        top: 'center',
+		        height: 200,
+		        left: 300,
+		        right: 100
+		    },
+		    series: [{
+		        // current data
+		        type: 'pictorialBar',
+		        symbol: spirit,
+		        symbolRepeat: 'fixed',
+		        symbolMargin: '5%',
+		        symbolClip: true,
+		        symbolSize: 30,
+		        symbolBoundingData: maxData,
+		        data: [98, 92, 89],
+		        markLine: {
+		            symbol: 'none',
+		            label: {
+		                normal: {
+		                    formatter: 'max: {c}',
+		                    position: 'start'
+		                }
+		            },
+		            lineStyle: {
+		                normal: {
+		                    color: 'green',
+		                    type: 'dotted',
+		                    opacity: 0.2,
+		                    width: 2
+		                }
+		            },
+		            data: [{
+		                type: 'max'
+		            }]
+		        },
+		        z: 10
+		    }, {
+		        // full data
+		        type: 'pictorialBar',
+		        itemStyle: {
+		            normal: {
+		                opacity: 0.2
+		            }
+		        },
+		        label: {
+		            normal: {
+		                show: true,
+		                formatter: function (params) {
+		                    return (params.value / maxData * 100).toFixed();
+		                },
+		                position: 'outside',
+		                offset: [10, 0],
+		                textStyle: {
+		                    color: 'green',
+		                    fontSize: 18
+		                }
+		            }
+		        },
+		        animationDuration: 0,
+		        symbolRepeat: 'fixed',
+		        symbolMargin: '5%',
+		        symbol: spirit,
+		        symbolSize: 30,
+		        symbolBoundingData: maxData,
+		        data: [100, 100, 100],
+		        z: 5
+		    }]
+		};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option), $(window).resize(myChart.resize);
+ })  

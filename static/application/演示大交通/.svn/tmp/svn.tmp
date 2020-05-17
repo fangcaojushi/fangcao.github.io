@@ -1,0 +1,13 @@
+.ys_menu{width: 645px; padding: 0 20px; height: 80px; position: absolute; bottom: 0; left: 50%; margin-left: -322px; background: url(../images/menubar.png) center bottom no-repeat; z-index: 9999; overflow: hidden;}
+.ys_menu a{ display:inline-table; text-align: center; width: 52px; height: 63px; background-image: url(../images/menuico.png); background-repeat: no-repeat; transition: all .5s; margin-left: 26px;  margin-top:15px; font-size: 14px; color:/* rgba(255,255,255,1)*/#000; text-align: center; vertical-align: top;  line-height:83px; text-shadow: 0px 2px 1px #fff;}
+.ys_menu .touminglvl{ width: 100%; background:url(../images/menubar.png) left bottom no-repeat; height: 15px;opacity:0.65;filter:alpha(opacity=65); position: absolute; bottom: 0; left: 0; z-index: 99999;}
+.ys_menu a.yianshi1{ background-position: -5px -4px;}
+.ys_menu a.yianshi2{ background-position: -82px -4px;}
+.ys_menu a.yianshi3{ background-position: -159px -4px;}
+.ys_menu a.yianshi4{ background-position: -234px -4px;}
+.ys_menu a.yianshi5{ background-position: -309px -4px;}
+.ys_menu a.yianshi6{ background-position: -385px -4px;}
+.ys_menu a.yianshi7{ background-position: -462px -4px;}
+.ys_menu a.yianshi8{ background-position: -538px -4px;}
+.ys_menu a.select,.ys_menu a:hover{ background-position-y: -23px;line-height:45px;}
+

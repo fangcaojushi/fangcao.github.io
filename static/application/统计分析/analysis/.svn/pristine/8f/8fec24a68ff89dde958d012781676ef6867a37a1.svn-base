@@ -1,0 +1,174 @@
+$(function() {
+	var hwf_city = echarts.init(document.getElementById("equip_overdue"));
+	
+var labelTop = {
+normal : {
+    label : {
+        show : true,
+        position : 'center',
+        formatter :  '{c}',
+        textStyle: {
+            baseline : 'bottom'
+        }
+    },
+    labelLine : {
+        show : false
+    },
+   color:['#ed5565'],
+    }
+};
+var labelFromatter = {
+    normal : {
+        label : {
+            formatter : function (params){
+                return params.value
+            },
+            textStyle: {
+                baseline : 'top'
+            }
+        }
+    },
+}
+var labelBottom = {
+    normal : {
+         color: '#1ab394',
+        label : {
+            show : true,
+            position : 'center',
+            formatter : '{b}'
+        },
+        labelLine : {
+            show : false
+        }
+    },
+    emphasis: {
+         color: '#1ab394',
+    }
+};
+var radius = [40, 55];
+option = {
+    legend: {
+    	show : false,
+        x : 'center',
+        y : 'center',
+       data : ['大兴项目','秦皇岛项目','合川项目','万盛项目','乌鲁木齐项目','昆明项目','苏州项目']
+    },
+    title : {
+        text: '',
+        subtext: '',
+        x: 'center'
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            dataView : {show: true, readOnly: false},
+            magicType : {
+                show: true, 
+                type: ['pie', 'funnel'],
+                option: {
+                    funnel: {
+                        width: '20%',
+                        height: '30%',
+                        itemStyle : {
+                            normal : {
+                                label : {
+                                    formatter : function (params){
+                                        return  params.value
+                                    },
+                                    textStyle: {
+                                        baseline : 'middle'
+                                    }
+                                }
+                            },
+                        } 
+                    }
+                }
+            },
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    series : [
+        {
+            type : 'pie',
+            center : ['10%', '30%'],
+            radius : radius,
+            x: '0%', // for funnel
+            itemStyle : labelFromatter,             
+            data : [
+                {name:'大兴项目', value:1000, itemStyle : labelBottom},
+                {name:'即将过期设备数', value:8,itemStyle : labelTop}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['30%', '30%'],
+            radius : radius,
+            x:'20%', // for funnel
+            itemStyle : labelFromatter,
+            data : [
+                {name:'秦皇岛项目', value:566, itemStyle : labelBottom},
+                {name:'即将过期设备数', value:24,itemStyle : labelTop}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['50%', '30%'],
+            radius : radius,
+            x:'40%', // for funnel
+            itemStyle : labelFromatter,
+            data : [
+                {name:'合川项目', value:635, itemStyle : labelBottom},
+                {name:'即将过期设备数', value:15,itemStyle : labelTop}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['70%', '30%'],
+            radius : radius,
+            x:'60%', // for funnel
+            itemStyle : labelFromatter,
+            data : [
+                {name:'万盛项目', value:460, itemStyle : labelBottom},
+                {name:'即将过期设备数', value:20,itemStyle : labelTop}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['90%', '30%'],
+            radius : radius,
+            x:'80%', // for funnel
+            itemStyle : labelFromatter,
+            data : [
+                {name:'乌鲁木齐项目', value:653, itemStyle : labelBottom},
+                {name:'即将过期设备数', value:17,itemStyle : labelTop}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['10%', '70%'],
+            radius : radius,
+            y: '55%',   // for funnel
+            x: '0%',    // for funnel
+            itemStyle : labelFromatter,
+            data : [
+                {name:'昆明项目', value:378, itemStyle : labelBottom},
+                {name:'即将过期设备数', value:22,itemStyle : labelTop}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['30%', '70%'],
+            radius : radius,
+            y: '55%',   // for funnel
+            x:'20%',    // for funnel
+            itemStyle : labelFromatter,
+            data : [
+                {name:'苏州项目', value:478, itemStyle : labelBottom},
+                {name:'即将过期设备数', value:12,itemStyle : labelTop}
+            ]
+        }
+    ]
+};                                     
+	hwf_city.setOption(option), $(window).resize(hwf_city.resize);
+})

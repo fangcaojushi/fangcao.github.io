@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>公交专用地图</title>
+		<!--百度地图-->
+		<link href="http://api.map.baidu.com/library/TrafficControl/1.4/src/TrafficControl_min.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Kc50NR2vnseUm3o4DFmoYij2ELNudI8q"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/library/TrafficControl/1.4/src/TrafficControl_min.js"></script>
+		<!--bootstrap框架css-->
+	    <link rel="stylesheet" href="../../static/common/css/bootstrap.css">
+	    <!--兼容手机端导航菜单-->
+	    <link href="../../static/common/fonts/FontAwesome/font-awesome.css" rel="stylesheet"/>
+		<!--设置皮肤css-->
+		<link href="../../static/default_theme/bootsnav.css" rel="stylesheet"/><!--导航菜单css-->	
+		<link rel="stylesheet" href="../../static/default_theme/public.css" />
+	     <!--公共样式css-->
+		<link rel="stylesheet" href="../../static/modules/supervise/css/thematic_map.css">
+		<link rel="stylesheet" href="../../static/common/css/animate.css">
+		
+	</head>
+
+	<body>
+		<!--导航菜单-->
+		<script src="../../static/common/js/menu.js"></script>
+		<!--地图的引用-->
+		<div id="allmap"></div>
+		<!--正文-->
+		<div class="bodycon">
+			<!--****************标题区域****************-->
+			<div class="title_sub">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 fen-title">
+							<h2 class="text-center gj_title">公交专题地图</h2>
+							<div class="lg-txt">
+				            	<p class="light">
+				            		<img class="faguang" src="../../static/common/images/shanliang.png"/>
+				            	</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--*****************搜索列表****************-->
+			<div id="map_search">
+				<div id="searchbox" class="searchbox">
+					<div id="sear_con">
+						<div id="searchbox_content" class="searchbox-content">
+							<input id="posit" class="posit" placeholder="搜地点、查公交、找路线"/>
+							<div id="" class="clear_content" title="清空"></div>						</div>
+					</div>
+					<button id="search-button" data-title="搜索"></button>
+				</div>
+				<!--***********搜索结果显示**********-->
+				<ul class="poilist" style="display: none;">
+					<li class="title_one">
+						<span class="sum">
+							当前显示&nbsp;1&nbsp;到&nbsp;5&nbsp;条数据，共
+							<span>&nbsp;15&nbsp;</span>
+							条数据
+						</span>
+					</li>
+					<li class="search-item">
+						<div class="marker">            
+							<a href="" class="num-1"></a>        
+						</div>
+						<div class="result">
+							<div class="row nam"> 
+								<span>                
+									<a href="">106路公交车(运通客运公司)</a>                                									</span>                                                                                
+								</span> 
+							</div>
+							<div class="row addr"> 
+								<span class="" title="车辆编号：116">车辆编号：116</span> 
+							</div>
+							<div class="row tel"> 车牌号码：渝D.53728</div>
+						</div>		
+					</li>					
+					<li class="search-item">
+							<div class="marker">            
+								<a href="" class="num-2"></a>        
+							</div>
+							<div class="result">
+								<div class="row nam"> 
+									<span>                
+										<a href="">106路公交车(运通客运公司)</a>                                									</span>                                                                                
+									</span> 
+								</div>
+								<div class="row addr"> 
+									<span class="" title="车辆编号：116">车辆编号：116</span> 
+								</div>
+								<div class="row tel"> 车牌号码：渝D.53728</div>
+							</div>	
+						</li>					
+					<li class="search-item">
+							<div class="marker">            
+								<a href="" class="num-3"></a>        
+							</div>
+							<div class="result">
+								<div class="row nam"> 
+									<span>                
+										<a href="">106路公交车(运通客运公司)</a>                                									</span>                                                                                
+									</span> 
+								</div>
+								<div class="row addr"> 
+									<span class="" title="车辆编号：116">车辆编号：116</span> 
+								</div>
+								<div class="row tel"> 车牌号码：渝D.53728</div>
+							</div>
+						</li>					
+					<li class="search-item">
+							<div class="marker">            
+								<a href="" class="num-4"></a>        
+							</div>
+							<div class="result">
+								<div class="row nam"> 
+									<span>                
+										<a href="">106路公交车(运通客运公司)</a>                                									</span>                                                                                
+									</span> 
+								</div>
+								<div class="row addr"> 
+									<span class="" title="车辆编号：116">车辆编号：116</span> 
+								</div>
+								<div class="row tel"> 车牌号码：渝D.53728</div>
+							</div>
+						</li>		
+					<li class="search-item">
+							<div class="marker">            
+								<a href="" class="num-5"></a>        
+							</div>
+							<div class="result">
+								<div class="row nam"> 
+									<span>                
+										<a href="">106路公交车(运通客运公司)</a>                                									</span>                                                                                
+									</span> 
+								</div>
+								<div class="row addr"> 
+									<span class="" title="车辆编号：116">车辆编号：116</span> 
+								</div>
+								<div class="row tel"> 车牌号码：渝D.53728</div>
+							</div>	
+					</li>					
+					<li class="col-xs-10 col-xs-offset-1 text-center">
+						<ul class="pagination">
+						    <li><a href="#">&laquo;</a></li>
+						    <li class="active"><a href="#">1</a></li>
+						    <li><a href="#">2</a></li>
+						    <li><a href="#">3</a></li>
+						    <li><a href="#">&raquo;</a></li>
+						</ul>
+					</li>
+				</ul>	
+				<!--***********默认搜索模块*************-->
+			    <div  class="default_module">
+			     	<li>
+			     		<a href="#">
+			     			<i class="def1"></i>
+			     			<span>公交站</span>
+			     		</a>
+			     	</li>
+			     	<li>
+			     		<a href="#">
+			     			<i class="def2"></i>
+			     			<span>维修厂</span>
+			     		</a>			     		
+			     	</li>
+			     	<li>
+			     		<a href="#">
+			     			<i class="def4"></i>
+			     			<span>公交线路</span>
+			     		</a>			     		
+			     	</li>
+			     	<li>
+			     		<a href="#">
+			     			<i class="def3"></i>
+			     			<span>加油加气</span>
+			     		</a>			     		
+			     	</li>
+			     	<li>
+			     		<a href="#">
+			     			<i class="def6"></i>
+			     			<span>停车场</span>
+			     		</a>	
+			     	</li>
+			     	<li>
+			     		<a href="#">
+			     			<i class="def5"></i>
+			     			<span>电子站牌</span>
+			     		</a>	
+			     	</li>
+
+			     	<li class="sure_my">
+			     		<button class="btn btn-info pull-right ensure">确定</button>	
+			     	</li>
+			    </div>
+			</div>
+			<!--***********地图工具图标*************-->
+			<div class="map_tool">
+			    <ul>
+			    	 <li>			          
+				         	<iframe allowtransparency="true" frameborder="0" width="180" height="36" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=3&t=1&v=0&d=3&bd=0&k=&f=&q=1&e=1&a=1&c=54511&w=180&h=36&align=center"></iframe>
+				    </li>
+				    <li>			          
+				         <a id="road_condition" href="#">
+			     			<i class="tool2"></i>
+			     			<span>路况</span>
+			     		</a>
+				    </li>
+				    <li>			          
+				         <a href="">
+			     			<i class="tool3"></i>
+			     			<span>测距</span>
+			     		</a>
+				    </li>
+				    <li>			          
+				         <a href="">
+			     			<i class="tool4"></i>
+			     			<span>标记</span>
+			     		</a>
+				    </li>
+				    <li>			          
+				         <a href="">
+			     			<i class="tool5"></i>
+			     			<span>框选</span>
+			     		</a>
+				    </li>
+				   
+			    </ul>
+				<!--地图显示-->
+		        <div id="map_modal">
+		            <div class="map_modal_title">
+		                <span class="pull-left ss_lk">实时路况</span>
+		                <span class="pull-right lk_btn">
+		                    <button type="button" class="close"  id="map_close" title="关闭">
+		                    	<span aria-hidden="true">&times;</span>
+		                    </button>
+		                </span>
+		                <span class="clearfix"></span>
+		         	 </div>   
+		         	 <div class="traffic-legend">
+		         	 	<span class="bg1">严重拥堵</span>
+		         	 	<span class="bg2">拥挤</span>
+		         	 	<span class="bg3">缓行</span>
+		         	 	<span class="bg4">畅通</span>
+		         	 </div>
+		         	 <div class="traffic-content">
+		         	 	<span>更新时间:</span>
+		         	 	<span>22:32</span>
+		         	 	<span class="update"></span>
+		         	 </div>
+		         	 
+		        </div>
+			</div>
+			<!--公交车图标序列-->
+			<div class="bus_icon bus_icon1" title="停车场" style="top: 235px; left: 525px; "></div>
+			<div class="bus_icon bus_icon2" title="加油加气" style="top: 482px; left: 423px; "></div>
+			<div class="bus_icon bus_icon3" title="维修厂" style="top: 623px; left: 921px; "></div>
+			<div class="bus_icon bus_icon4" title="公交线路" style="top: 534px; left: 1147px; "></div>
+			<div class="bus_icon bus_icon5" title="电子站牌" style="top: 264px; left: 643px;"></div>
+			<div class="bus_icon bus_icon6" title="公交站" style="top: 463px; left: 715px;  "></div>
+			<div class="bus_icon bus_icon1" title="停车场" style="top: 625px; left: 995px; "></div>
+			<div class="bus_icon bus_icon2" title="加油加气" style="top: 382px; left: 883px; "></div>
+			<div class="bus_icon bus_icon3" title="维修厂" style="top: 423px; left: 731px; "></div>
+			<div class="bus_icon bus_icon4" title="公交线路" style="top: 219px; left: 947px; "></div>
+			<div class="bus_icon bus_icon5" title="电子站牌" style="top: 324px; left: 833px;"></div>
+			<div class="bus_icon bus_icon6" title="公交站" style="top: 533px; left: 1265px;  "></div>
+		</div>
+	</body>
+	<script src="../../static/common/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="../../static/common/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+	<script src="../../static/common/js/bootsnav.js"></script>
+	<script src="../../static/common/js/bootstrap.js"></script>
+	<script src="../../static/modules/supervise/js/thematic_map.js"></script>
+	<!--百度路况-->
+	<script  src="../../static/modules/supervise/js/map_lk.js"></script>
+</html>
