@@ -1,7 +1,122 @@
 {
 	"code": 200,
 	"msg": "成功",
-	"data": [{
+	"data": [
+			{
+				"type": "systems",
+				"typeName": "综合应用",
+				"list": [{
+						"src": "3d.png",
+						"title": "3D线上会展平台",
+						"url": "https://yundinghuizhan.yundingmeta.com/3d/?exhibitionId=6264b2e79f332416c523a65d#/?exhibitionId=6264b2e79f332416c523a65d",
+						"describe": "交互式线上会展平台:web在线会展、小程序、app一站式服务"
+					},
+					{
+						"src": "建站.jpg",
+						"title": "快速建站模板",
+						"url": "https://www.yundingmeta.com/#/",
+						"describe": "通过管理后台，对网站数据的动态配置，快速构建网站"
+					},
+					{
+						"src": "大屏.png",
+						"title": "交通数据大屏展示",
+						"url": "static/application/演示大交通/traffic-monitoring.html",
+						"describe": "数据中心集控大屏交通数据实时展示，包括数据可视化分析、道路交通指数、交通运行态势、道路设备监控、警务执勤等"
+					},
+					{
+						"src": "数据统计.png",
+						"title": "大数据统计分析",
+						"url": "static/application/统计分析/analysis/webpage/modules/index.html",
+						"describe": "数据统计，通过Echarts图表的形式，统计分析数据"
+					},
+					{
+						"src": "公交.png",
+						"title": "公交系统管理平台",
+						"url": "static/application/公交/busdemo/webpage/modules/login.html",
+						"describe": "实时监控公交车运行轨迹、速度、运量、车载视频等，分析站点建设覆盖率、分担率、公交运力、发车频率建设情况"
+					},
+					{
+						"src": "监狱.jpg",
+						"title": "青岛城阳监狱项目",
+						"describe": "包括了触摸屏、门禁管理、周界报警、食堂、设备、人员管理、视频监控、大屏展示等综合管理的平台。",
+						"url": "static/application/监狱安防/file.html"
+					},
+					{
+						"src": "济南供热.jpg",
+						"title": "东营换热站管理平台",
+						"describe": "包括设备管理、实时监测、温控预警、数据管理、数据备份等，pc机端与app端的双模式。",
+						"url": "static/application/无人值守/file.html"
+					},
+					{
+						"src": "年会.png",
+						"title": "线上年会",
+						"describe": "包括了触摸屏、门禁管理、周界报警、食堂、设备、人员管理、视频监控、大屏展示等综合管理的平台。",
+						"url": "static/application/云钉/nianhui.html"
+					},
+					{
+						"src": "综合平台.jpg",
+						"title": "综合平台",
+						"url": "static/application/综合交通/file.html",
+						"describe": "包括指挥调度、信息统计、态势监控、诱导实时监控、系统管理等"
+					},
+					{
+						"src": "大会.png",
+						"title": "第二届儒商大会",
+						"describe": "抢抓新机遇，共谋新发展。第二届儒商大会暨青年企业家创新发展国际峰会上。",
+						"url": "static/application/云钉/dahui.html"
+					},
+					{
+						"src": "指挥调度.png",
+						"title": "应急指挥调度系统",
+						"describe": "青岛应急指挥调度系统。",
+						"url": "static/application/指挥调度/file.html"
+					}
+				]
+			},
+			{
+			"type": "soft",
+			"typeName": "应用软件",
+			"list": [{
+					"src": "大交通.jpg",
+					"title": "交通集成管控",
+					"url": "static/application/大交通/file.html",
+					"describe": "包括数据可视化分析、道路交通指数、交通运行态势、道路设备监控、警务执勤等。"
+				},
+				{
+					"src": "统计分析.jpg",
+					"title": "统计分析",
+					"url": "static/application/统计分析/file.html",
+					"describe": "交通违法、事故、套牌车、拥堵、频繁过车等的分析研判"
+				},
+				{
+
+					"src": "公交.jpg",
+					"title": "公交监测综合平台",
+					"url": "static/application/公交/file.html",
+					"describe": "实时监控公交车运行轨迹、速度、运量、车载视频等"
+
+				},
+				{
+					"src": "综合平台.jpg",
+					"title": "综合平台",
+					"url": "static/application/综合交通/file.html",
+					"describe": "包括指挥调度、信息统计、态势监控、诱导实时监控、系统管理等"
+				},
+				{
+					"src": "济南供热.jpg",
+					"title": "东营换热站管理平台",
+					"describe": "包括设备管理、实时监测、温控预警、数据管理、数据备份等，pc机端与app端的双模式。",
+					"url": "static/application/无人值守/file.html"
+				},
+				{
+					"src": "监狱.jpg",
+					"title": "青岛城阳监狱项目",
+					"describe": "包括了触摸屏、门禁管理、周界报警、食堂、设备、人员管理、视频监控、大屏展示等综合管理的平台。",
+					"url": "static/application/监狱安防/file.html"
+				}
+			]
+		},
+		{
 			"type": "special",
 			"typeName": "专题",
 			"list": [{
@@ -241,52 +356,21 @@
 			]
 		},
 		{
-			"type": "soft",
-			"typeName": "应用软件",
-			"list": [{
-					"src": "大交通.jpg",
-					"title": "交通集成管控",
-					"url": "static/application/大交通/file.html",
-					"describe": "包括数据可视化分析、道路交通指数、交通运行态势、道路设备监控、警务执勤等。"
-				},
-				{
-					"src": "统计分析.jpg",
-					"title": "统计分析",
-					"url": "static/application/统计分析/file.html",
-					"describe": "交通违法、事故、套牌车、拥堵、频繁过车等的分析研判"
-				},
-				{
-
-					"src": "公交.jpg",
-					"title": "公交监测综合平台",
-					"url": "static/application/公交/file.html",
-					"describe": "实时监控公交车运行轨迹、速度、运量、车载视频等"
-
-				},
-				{
-					"src": "综合平台.jpg",
-					"title": "综合平台",
-					"url": "static/application/综合平台/file.html",
-					"describe": "包括指挥调度、信息统计、态势监控、诱导实时监控、系统管理等"
-				},
-				{
-					"src": "济南供热.jpg",
-					"title": "东营换热站管理平台",
-					"describe": "包括设备管理、实时监测、温控预警、数据管理、数据备份等，pc机端与app端的双模式。",
-					"url": "static/application/无人值守/file.html"
-				},
-				{
-					"src": "监狱.jpg",
-					"title": "青岛城阳监狱项目",
-					"describe": "包括了触摸屏、门禁管理、周界报警、食堂、设备、人员管理、视频监控、大屏展示等综合管理的平台。",
-					"url": "static/application/监狱安防/file.html"
-				}
-			]
-		},
-		{
 			"type": "web",
 			"typeName": "网站",
 			"list": [
+				{
+					"src": "3d.png",
+					"title": "3D线上会展平台",
+					"url": "https://yundinghuizhan.yundingmeta.com/3d/?exhibitionId=6264b2e79f332416c523a65d#/?exhibitionId=6264b2e79f332416c523a65d",
+					"describe": "交互式线上会展平台:web在线会展、小程序、app一站式服务"
+				},
+				{
+					"src": "建站.jpg",
+					"title": "快速建站模板",
+					"url": "https://www.yundingmeta.com/#/",
+					"describe": "通过管理后台，对网站数据的动态配置，快速构建网站"
+				},
 			{
 				"src": "jkq.jpg",
 				"title": "金孔雀",
@@ -341,6 +425,18 @@
 			"type": "Mobil",
 			"typeName": "App应用",
 			"list": [
+				{
+					"src": "年会.png",
+					"title": "线上年会",
+					"describe": "包括了触摸屏、门禁管理、周界报警、食堂、设备、人员管理、视频监控、大屏展示等综合管理的平台。",
+					"url": "static/application/云钉/nianhui.html"
+				},
+				{
+					"src": "大会.png",
+					"title": "第二届儒商大会",
+					"describe": "抢抓新机遇，共谋新发展。第二届儒商大会暨青年企业家创新发展国际峰会上。",
+					"url": "static/application/云钉/dahui.html"
+				},
 				{
 					"src": "停车.png",
 					"title": "智能停车",
